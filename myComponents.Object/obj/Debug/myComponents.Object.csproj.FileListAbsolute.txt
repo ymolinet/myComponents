@@ -1,0 +1,18 @@
+C:\Users\YANNICK\Documents\Visual Studio 2010\Projects\myComponents\myComponents.Object\bin\Debug\myComponents.Object.dll
+C:\Users\YANNICK\Documents\Visual Studio 2010\Projects\myComponents\myComponents.Object\bin\Debug\myComponents.Object.pdb
+C:\Users\YANNICK\Documents\Visual Studio 2010\Projects\myComponents\myComponents.Object\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\YANNICK\Documents\Visual Studio 2010\Projects\myComponents\myComponents.Object\obj\Debug\myComponents.Object.dll
+C:\Users\YANNICK\Documents\Visual Studio 2010\Projects\myComponents\myComponents.Object\obj\Debug\myComponents.Object.pdb
+C:\Users\Yannick.ADN-SYSTEMES\Documents\Visual Studio 2010\Projects\myComponents\myComponents.Object\bin\Debug\myComponents.Object.dll
+C:\Users\Yannick.ADN-SYSTEMES\Documents\Visual Studio 2010\Projects\myComponents\myComponents.Object\bin\Debug\myComponents.Object.pdb
+C:\Users\Yannick.ADN-SYSTEMES\Documents\Visual Studio 2010\Projects\myComponents\myComponents.Object\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Yannick.ADN-SYSTEMES\Documents\Visual Studio 2010\Projects\myComponents\myComponents.Object\obj\Debug\myComponents.Object.dll
+C:\Users\Yannick.ADN-SYSTEMES\Documents\Visual Studio 2010\Projects\myComponents\myComponents.Object\obj\Debug\myComponents.Object.pdb
+\\ADNPSBS01\Users\Yannick\Documents\Visual Studio 2010\Projects\myComponents\myComponents.Object\bin\Debug\myComponents.Object.dll
+\\ADNPSBS01\Users\Yannick\Documents\Visual Studio 2010\Projects\myComponents\myComponents.Object\bin\Debug\myComponents.Object.pdb
+\\ADNPSBS01\Users\Yannick\Documents\Visual Studio 2010\Projects\myComponents\myComponents.Object\obj\Debug\myComponents.Object.dll
+\\ADNPSBS01\Users\Yannick\Documents\Visual Studio 2010\Projects\myComponents\myComponents.Object\obj\Debug\myComponents.Object.pdb
+C:\Projets\Visual Studio\myComponents\myComponents.Object\bin\Debug\myComponents.Object.dll
+C:\Projets\Visual Studio\myComponents\myComponents.Object\bin\Debug\myComponents.Object.pdb
+C:\Projets\Visual Studio\myComponents\myComponents.Object\obj\Debug\myComponents.Object.dll
+C:\Projets\Visual Studio\myComponents\myComponents.Object\obj\Debug\myComponents.Object.pdb

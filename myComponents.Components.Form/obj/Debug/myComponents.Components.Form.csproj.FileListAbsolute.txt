@@ -1,0 +1,8 @@
+C:\Users\Yannick.ADN-SYSTEMES\Documents\Visual Studio 2010\Projects\myComponents\myComponents.Components.Form\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Yannick.ADN-SYSTEMES\Documents\Visual Studio 2010\Projects\myComponents\myComponents.Components.Form\obj\Debug\ResGen.read.1.tlog
+C:\Users\Yannick.ADN-SYSTEMES\Documents\Visual Studio 2010\Projects\myComponents\myComponents.Components.Form\obj\Debug\ResGen.write.1.tlog
+C:\Users\Yannick.ADN-SYSTEMES\Documents\Visual Studio 2010\Projects\myComponents\myComponents.Components.Form\bin\Debug\myComponents.Components.Form.dll
+C:\Users\Yannick.ADN-SYSTEMES\Documents\Visual Studio 2010\Projects\myComponents\myComponents.Components.Form\bin\Debug\myComponents.Components.Form.pdb
+C:\Users\Yannick.ADN-SYSTEMES\Documents\Visual Studio 2010\Projects\myComponents\myComponents.Components.Form\obj\Debug\myComponents.Components.Form.SerialBox.resources
+C:\Users\Yannick.ADN-SYSTEMES\Documents\Visual Studio 2010\Projects\myComponents\myComponents.Components.Form\obj\Debug\myComponents.Components.Form.dll
+C:\Users\Yannick.ADN-SYSTEMES\Documents\Visual Studio 2010\Projects\myComponents\myComponents.Components.Form\obj\Debug\myComponents.Components.Form.pdb

@@ -1,0 +1,34 @@
+C:\Users\Yannick.ADN-SYSTEMES\Documents\Visual Studio 2010\Projects\myComponents\myComponents.SerialMaker\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Yannick.ADN-SYSTEMES\Documents\Visual Studio 2010\Projects\myComponents\myComponents.SerialMaker\obj\Debug\myComponents.SerialMaker.frmMain.resources
+C:\Users\Yannick.ADN-SYSTEMES\Documents\Visual Studio 2010\Projects\myComponents\myComponents.SerialMaker\obj\Debug\ResGen.read.1.tlog
+C:\Users\Yannick.ADN-SYSTEMES\Documents\Visual Studio 2010\Projects\myComponents\myComponents.SerialMaker\obj\Debug\ResGen.write.1.tlog
+C:\Users\Yannick.ADN-SYSTEMES\Documents\Visual Studio 2010\Projects\myComponents\myComponents.SerialMaker\obj\Debug\Serial Maker.exe
+C:\Users\Yannick.ADN-SYSTEMES\Documents\Visual Studio 2010\Projects\myComponents\myComponents.SerialMaker\obj\Debug\Serial Maker.pdb
+C:\Users\Yannick.ADN-SYSTEMES\Documents\Visual Studio 2010\Projects\myComponents\myComponents.SerialMaker\bin\Debug\Serial Maker.exe
+C:\Users\Yannick.ADN-SYSTEMES\Documents\Visual Studio 2010\Projects\myComponents\myComponents.SerialMaker\bin\Debug\Serial Maker.pdb
+C:\Users\Yannick.ADN-SYSTEMES\Documents\Visual Studio 2010\Projects\myComponents\myComponents.SerialMaker\bin\Debug\myComponents.Crypto.dll
+C:\Users\Yannick.ADN-SYSTEMES\Documents\Visual Studio 2010\Projects\myComponents\myComponents.SerialMaker\bin\Debug\myComponents.Crypto.pdb
+C:\Users\Yannick.ADN-SYSTEMES\Documents\Visual Studio 2010\Projects\myComponents\myComponents.SerialMaker\bin\Debug\myComponents.Components.Forms.dll
+C:\Users\Yannick.ADN-SYSTEMES\Documents\Visual Studio 2010\Projects\myComponents\myComponents.SerialMaker\bin\Debug\myComponents.Components.Forms.pdb
+\\ADNPSBS01\Users\Yannick\Documents\Visual Studio 2010\Projects\myComponents\myComponents.SerialMaker\bin\Debug\Serial Maker.exe
+\\ADNPSBS01\Users\Yannick\Documents\Visual Studio 2010\Projects\myComponents\myComponents.SerialMaker\bin\Debug\Serial Maker.pdb
+\\ADNPSBS01\Users\Yannick\Documents\Visual Studio 2010\Projects\myComponents\myComponents.SerialMaker\bin\Debug\myComponents.Components.Forms.dll
+\\ADNPSBS01\Users\Yannick\Documents\Visual Studio 2010\Projects\myComponents\myComponents.SerialMaker\bin\Debug\myComponents.Crypto.dll
+\\ADNPSBS01\Users\Yannick\Documents\Visual Studio 2010\Projects\myComponents\myComponents.SerialMaker\bin\Debug\myComponents.Components.Forms.pdb
+\\ADNPSBS01\Users\Yannick\Documents\Visual Studio 2010\Projects\myComponents\myComponents.SerialMaker\bin\Debug\myComponents.Crypto.pdb
+\\ADNPSBS01\Users\Yannick\Documents\Visual Studio 2010\Projects\myComponents\myComponents.SerialMaker\obj\Debug\myComponents.SerialMaker.frmMain.resources
+\\ADNPSBS01\Users\Yannick\Documents\Visual Studio 2010\Projects\myComponents\myComponents.SerialMaker\obj\Debug\myComponents.SerialMaker.csproj.GenerateResource.Cache
+\\ADNPSBS01\Users\Yannick\Documents\Visual Studio 2010\Projects\myComponents\myComponents.SerialMaker\obj\Debug\Serial Maker.exe
+\\ADNPSBS01\Users\Yannick\Documents\Visual Studio 2010\Projects\myComponents\myComponents.SerialMaker\obj\Debug\Serial Maker.pdb
+\\ADNPSBS01\Users\Yannick\Documents\Visual Studio 2010\Projects\myComponents\myComponents.SerialMaker\obj\Debug\myComponents.SerialMaker.csprojResolveAssemblyReference.cache
+C:\Projets\Visual Studio\myComponents\myComponents.SerialMaker\bin\Debug\Serial Maker.exe
+C:\Projets\Visual Studio\myComponents\myComponents.SerialMaker\bin\Debug\Serial Maker.pdb
+C:\Projets\Visual Studio\myComponents\myComponents.SerialMaker\bin\Debug\myComponents.Components.Forms.dll
+C:\Projets\Visual Studio\myComponents\myComponents.SerialMaker\bin\Debug\myComponents.Crypto.dll
+C:\Projets\Visual Studio\myComponents\myComponents.SerialMaker\bin\Debug\myComponents.Components.Forms.pdb
+C:\Projets\Visual Studio\myComponents\myComponents.SerialMaker\bin\Debug\myComponents.Crypto.pdb
+C:\Projets\Visual Studio\myComponents\myComponents.SerialMaker\obj\Debug\myComponents.SerialMaker.csprojResolveAssemblyReference.cache
+C:\Projets\Visual Studio\myComponents\myComponents.SerialMaker\obj\Debug\myComponents.SerialMaker.frmMain.resources
+C:\Projets\Visual Studio\myComponents\myComponents.SerialMaker\obj\Debug\myComponents.SerialMaker.csproj.GenerateResource.Cache
+C:\Projets\Visual Studio\myComponents\myComponents.SerialMaker\obj\Debug\Serial Maker.exe
+C:\Projets\Visual Studio\myComponents\myComponents.SerialMaker\obj\Debug\Serial Maker.pdb

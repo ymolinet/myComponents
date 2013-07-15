@@ -1,0 +1,31 @@
+c:\Users\YAMOL\Documents\Visual Studio 2010\Projects\myComponents\myComponents.Utilities\bin\Debug\myComponents.Utilities.dll
+c:\Users\YAMOL\Documents\Visual Studio 2010\Projects\myComponents\myComponents.Utilities\bin\Debug\myComponents.Utilities.pdb
+c:\Users\YAMOL\Documents\Visual Studio 2010\Projects\myComponents\myComponents.Utilities\obj\Debug\ResolveAssemblyReference.cache
+c:\Users\YAMOL\Documents\Visual Studio 2010\Projects\myComponents\myComponents.Utilities\obj\Debug\myComponents.Utilities.dll
+c:\Users\YAMOL\Documents\Visual Studio 2010\Projects\myComponents\myComponents.Utilities\obj\Debug\myComponents.Utilities.pdb
+C:\Users\YANNICK\Documents\Visual Studio 2010\Projects\myComponents\myComponents.Utilities\bin\Debug\myComponents.Utilities.dll
+C:\Users\YANNICK\Documents\Visual Studio 2010\Projects\myComponents\myComponents.Utilities\bin\Debug\myComponents.Utilities.pdb
+C:\Users\YANNICK\Documents\Visual Studio 2010\Projects\myComponents\myComponents.Utilities\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\YANNICK\Documents\Visual Studio 2010\Projects\myComponents\myComponents.Utilities\obj\Debug\myComponents.Utilities.dll
+C:\Users\YANNICK\Documents\Visual Studio 2010\Projects\myComponents\myComponents.Utilities\obj\Debug\myComponents.Utilities.pdb
+C:\Users\Yannick.ADN-SYSTEMES\Documents\Visual Studio 2010\Projects\myComponents\myComponents.Utilities\bin\Debug\myComponents.Utilities.dll
+C:\Users\Yannick.ADN-SYSTEMES\Documents\Visual Studio 2010\Projects\myComponents\myComponents.Utilities\bin\Debug\myComponents.Utilities.pdb
+C:\Users\Yannick.ADN-SYSTEMES\Documents\Visual Studio 2010\Projects\myComponents\myComponents.Utilities\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Yannick.ADN-SYSTEMES\Documents\Visual Studio 2010\Projects\myComponents\myComponents.Utilities\obj\Debug\myComponents.Utilities.dll
+C:\Users\Yannick.ADN-SYSTEMES\Documents\Visual Studio 2010\Projects\myComponents\myComponents.Utilities\obj\Debug\myComponents.Utilities.pdb
+\\ADNPSBS01\Users\Yannick\Documents\Visual Studio 2010\Projects\myComponents\myComponents.Utilities\bin\Debug\myComponents.Utilities.dll
+\\ADNPSBS01\Users\Yannick\Documents\Visual Studio 2010\Projects\myComponents\myComponents.Utilities\bin\Debug\myComponents.Utilities.pdb
+\\ADNPSBS01\Users\Yannick\Documents\Visual Studio 2010\Projects\myComponents\myComponents.Utilities\obj\Debug\myComponents.Utilities.dll
+\\ADNPSBS01\Users\Yannick\Documents\Visual Studio 2010\Projects\myComponents\myComponents.Utilities\obj\Debug\myComponents.Utilities.pdb
+\\ADNPSBS01\Users\Yannick\Documents\Visual Studio 2010\Projects\myComponents\myComponents.Utilities\obj\Debug\myComponents.Utilities.csprojResolveAssemblyReference.cache
+\\ADNPSBS01\Users\Yannick\Documents\Visual Studio 2010\Projects\myComponents\myComponents.Utilities\bin\Debug\Ionic.Zip.dll
+\\ADNPSBS01\Users\Yannick\Documents\Visual Studio 2010\Projects\myComponents\myComponents.Utilities\bin\Debug\Ionic.Zip.pdb
+\\ADNPSBS01\Users\Yannick\Documents\Visual Studio 2010\Projects\myComponents\myComponents.Utilities\bin\Debug\Ionic.Zip.xml
+C:\Projets\Visual Studio\myComponents\myComponents.Utilities\bin\Debug\myComponents.Utilities.dll
+C:\Projets\Visual Studio\myComponents\myComponents.Utilities\bin\Debug\myComponents.Utilities.pdb
+C:\Projets\Visual Studio\myComponents\myComponents.Utilities\bin\Debug\Ionic.Zip.dll
+C:\Projets\Visual Studio\myComponents\myComponents.Utilities\bin\Debug\Ionic.Zip.pdb
+C:\Projets\Visual Studio\myComponents\myComponents.Utilities\bin\Debug\Ionic.Zip.xml
+C:\Projets\Visual Studio\myComponents\myComponents.Utilities\obj\Debug\myComponents.Utilities.csprojResolveAssemblyReference.cache
+C:\Projets\Visual Studio\myComponents\myComponents.Utilities\obj\Debug\myComponents.Utilities.dll
+C:\Projets\Visual Studio\myComponents\myComponents.Utilities\obj\Debug\myComponents.Utilities.pdb

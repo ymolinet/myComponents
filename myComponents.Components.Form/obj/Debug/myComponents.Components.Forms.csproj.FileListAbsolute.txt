@@ -1,0 +1,21 @@
+C:\Users\Yannick.ADN-SYSTEMES\Documents\Visual Studio 2010\Projects\myComponents\myComponents.Components.Form\bin\Debug\myComponents.Components.Forms.dll
+C:\Users\Yannick.ADN-SYSTEMES\Documents\Visual Studio 2010\Projects\myComponents\myComponents.Components.Form\bin\Debug\myComponents.Components.Forms.pdb
+C:\Users\Yannick.ADN-SYSTEMES\Documents\Visual Studio 2010\Projects\myComponents\myComponents.Components.Form\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Yannick.ADN-SYSTEMES\Documents\Visual Studio 2010\Projects\myComponents\myComponents.Components.Form\obj\Debug\myComponents.Components.Forms.SerialBox.resources
+C:\Users\Yannick.ADN-SYSTEMES\Documents\Visual Studio 2010\Projects\myComponents\myComponents.Components.Form\obj\Debug\ResGen.read.1.tlog
+C:\Users\Yannick.ADN-SYSTEMES\Documents\Visual Studio 2010\Projects\myComponents\myComponents.Components.Form\obj\Debug\ResGen.write.1.tlog
+C:\Users\Yannick.ADN-SYSTEMES\Documents\Visual Studio 2010\Projects\myComponents\myComponents.Components.Form\obj\Debug\myComponents.Components.Forms.dll
+C:\Users\Yannick.ADN-SYSTEMES\Documents\Visual Studio 2010\Projects\myComponents\myComponents.Components.Form\obj\Debug\myComponents.Components.Forms.pdb
+\\ADNPSBS01\Users\Yannick\Documents\Visual Studio 2010\Projects\myComponents\myComponents.Components.Form\bin\Debug\myComponents.Components.Forms.dll
+\\ADNPSBS01\Users\Yannick\Documents\Visual Studio 2010\Projects\myComponents\myComponents.Components.Form\bin\Debug\myComponents.Components.Forms.pdb
+\\ADNPSBS01\Users\Yannick\Documents\Visual Studio 2010\Projects\myComponents\myComponents.Components.Form\obj\Debug\myComponents.Components.Forms.SerialBox.resources
+\\ADNPSBS01\Users\Yannick\Documents\Visual Studio 2010\Projects\myComponents\myComponents.Components.Form\obj\Debug\myComponents.Components.Forms.csproj.GenerateResource.Cache
+\\ADNPSBS01\Users\Yannick\Documents\Visual Studio 2010\Projects\myComponents\myComponents.Components.Form\obj\Debug\myComponents.Components.Forms.dll
+\\ADNPSBS01\Users\Yannick\Documents\Visual Studio 2010\Projects\myComponents\myComponents.Components.Form\obj\Debug\myComponents.Components.Forms.pdb
+C:\Projets\Visual Studio\myComponents\myComponents.Components.Form\bin\Debug\myComponents.Components.Forms.dll
+C:\Projets\Visual Studio\myComponents\myComponents.Components.Form\bin\Debug\myComponents.Components.Forms.pdb
+C:\Projets\Visual Studio\myComponents\myComponents.Components.Form\obj\Debug\myComponents.Components.Forms.SerialBox.resources
+C:\Projets\Visual Studio\myComponents\myComponents.Components.Form\obj\Debug\myComponents.Components.Forms.csproj.GenerateResource.Cache
+C:\Projets\Visual Studio\myComponents\myComponents.Components.Form\obj\Debug\myComponents.Components.Forms.dll
+C:\Projets\Visual Studio\myComponents\myComponents.Components.Form\obj\Debug\myComponents.Components.Forms.pdb
+C:\Projets\Visual Studio\myComponents\myComponents.Components.Form\obj\Debug\myComponents.Components.Forms.csprojResolveAssemblyReference.cache

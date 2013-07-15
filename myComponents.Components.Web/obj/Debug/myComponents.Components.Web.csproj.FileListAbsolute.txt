@@ -1,0 +1,26 @@
+C:\Users\Yannick.ADN-SYSTEMES\Documents\Visual Studio 2010\Projects\myComponents\myComponents.Components\bin\Debug\myComponents.Components.dll
+C:\Users\Yannick.ADN-SYSTEMES\Documents\Visual Studio 2010\Projects\myComponents\myComponents.Components\bin\Debug\myComponents.Components.pdb
+C:\Users\Yannick.ADN-SYSTEMES\Documents\Visual Studio 2010\Projects\myComponents\myComponents.Components\bin\Debug\Gaia.WebWidgets.dll
+C:\Users\Yannick.ADN-SYSTEMES\Documents\Visual Studio 2010\Projects\myComponents\myComponents.Components\bin\Debug\Gaia.WebWidgets.xml
+C:\Users\Yannick.ADN-SYSTEMES\Documents\Visual Studio 2010\Projects\myComponents\myComponents.Components\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Yannick.ADN-SYSTEMES\Documents\Visual Studio 2010\Projects\myComponents\myComponents.Components\obj\Debug\myComponents.Components.dll
+C:\Users\Yannick.ADN-SYSTEMES\Documents\Visual Studio 2010\Projects\myComponents\myComponents.Components\obj\Debug\myComponents.Components.pdb
+\\ADNPSBS01\Users\Yannick\Documents\Visual Studio 2010\Projects\myComponents\myComponents.Components\bin\Debug\myComponents.Components.dll
+\\ADNPSBS01\Users\Yannick\Documents\Visual Studio 2010\Projects\myComponents\myComponents.Components\bin\Debug\myComponents.Components.pdb
+\\ADNPSBS01\Users\Yannick\Documents\Visual Studio 2010\Projects\myComponents\myComponents.Components\bin\Debug\Gaia.WebWidgets.dll
+\\ADNPSBS01\Users\Yannick\Documents\Visual Studio 2010\Projects\myComponents\myComponents.Components\bin\Debug\Gaia.WebWidgets.xml
+\\ADNPSBS01\Users\Yannick\Documents\Visual Studio 2010\Projects\myComponents\myComponents.Components\obj\Debug\myComponents.Components.Web.csprojResolveAssemblyReference.cache
+\\ADNPSBS01\Users\Yannick\Documents\Visual Studio 2010\Projects\myComponents\myComponents.Components\obj\Debug\myComponents.Components.dll
+\\ADNPSBS01\Users\Yannick\Documents\Visual Studio 2010\Projects\myComponents\myComponents.Components\obj\Debug\myComponents.Components.pdb
+\\ADNPSBS01\Users\Yannick\Documents\Visual Studio 2010\Projects\myComponents\myComponents.Components.Web\bin\Debug\myComponents.Components.Web.dll
+\\ADNPSBS01\Users\Yannick\Documents\Visual Studio 2010\Projects\myComponents\myComponents.Components.Web\bin\Debug\myComponents.Components.Web.pdb
+\\ADNPSBS01\Users\Yannick\Documents\Visual Studio 2010\Projects\myComponents\myComponents.Components.Web\bin\Debug\Gaia.WebWidgets.dll
+\\ADNPSBS01\Users\Yannick\Documents\Visual Studio 2010\Projects\myComponents\myComponents.Components.Web\bin\Debug\Gaia.WebWidgets.xml
+\\ADNPSBS01\Users\Yannick\Documents\Visual Studio 2010\Projects\myComponents\myComponents.Components.Web\obj\Debug\myComponents.Components.Web.dll
+\\ADNPSBS01\Users\Yannick\Documents\Visual Studio 2010\Projects\myComponents\myComponents.Components.Web\obj\Debug\myComponents.Components.Web.pdb
+C:\Projets\Visual Studio\myComponents\myComponents.Components.Web\bin\Debug\myComponents.Components.Web.dll
+C:\Projets\Visual Studio\myComponents\myComponents.Components.Web\bin\Debug\myComponents.Components.Web.pdb
+C:\Projets\Visual Studio\myComponents\myComponents.Components.Web\bin\Debug\Gaia.WebWidgets.dll
+C:\Projets\Visual Studio\myComponents\myComponents.Components.Web\obj\Debug\myComponents.Components.Web.csprojResolveAssemblyReference.cache
+C:\Projets\Visual Studio\myComponents\myComponents.Components.Web\obj\Debug\myComponents.Components.Web.dll
+C:\Projets\Visual Studio\myComponents\myComponents.Components.Web\obj\Debug\myComponents.Components.Web.pdb

@@ -1,0 +1,43 @@
+C:\Users\Yannick.ADN-SYSTEMES\Documents\Visual Studio 2010\Projects\myComponents\myComponents.SoftwareLocker\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Yannick.ADN-SYSTEMES\Documents\Visual Studio 2010\Projects\myComponents\myComponents.SoftwareLocker\obj\Debug\myComponents.SoftwareLocker.Interfaces.frm.frmCompany.resources
+C:\Users\Yannick.ADN-SYSTEMES\Documents\Visual Studio 2010\Projects\myComponents\myComponents.SoftwareLocker\obj\Debug\myComponents.SoftwareLocker.Interfaces.frm.org_frmDialog.resources
+C:\Users\Yannick.ADN-SYSTEMES\Documents\Visual Studio 2010\Projects\myComponents\myComponents.SoftwareLocker\obj\Debug\myComponents.SoftwareLocker.Interfaces.frm.frmDialog.resources
+C:\Users\Yannick.ADN-SYSTEMES\Documents\Visual Studio 2010\Projects\myComponents\myComponents.SoftwareLocker\obj\Debug\ResGen.read.1.tlog
+C:\Users\Yannick.ADN-SYSTEMES\Documents\Visual Studio 2010\Projects\myComponents\myComponents.SoftwareLocker\obj\Debug\ResGen.write.1.tlog
+C:\Users\Yannick.ADN-SYSTEMES\Documents\Visual Studio 2010\Projects\myComponents\myComponents.SoftwareLocker\bin\Debug\myComponents.SoftwareLocker.dll.config
+C:\Users\Yannick.ADN-SYSTEMES\Documents\Visual Studio 2010\Projects\myComponents\myComponents.SoftwareLocker\bin\Debug\myComponents.SoftwareLocker.dll
+C:\Users\Yannick.ADN-SYSTEMES\Documents\Visual Studio 2010\Projects\myComponents\myComponents.SoftwareLocker\bin\Debug\myComponents.SoftwareLocker.pdb
+C:\Users\Yannick.ADN-SYSTEMES\Documents\Visual Studio 2010\Projects\myComponents\myComponents.SoftwareLocker\bin\Debug\myComponents.Components.Forms.dll
+C:\Users\Yannick.ADN-SYSTEMES\Documents\Visual Studio 2010\Projects\myComponents\myComponents.SoftwareLocker\bin\Debug\myComponents.Crypto.dll
+C:\Users\Yannick.ADN-SYSTEMES\Documents\Visual Studio 2010\Projects\myComponents\myComponents.SoftwareLocker\bin\Debug\myComponents.Components.Forms.pdb
+C:\Users\Yannick.ADN-SYSTEMES\Documents\Visual Studio 2010\Projects\myComponents\myComponents.SoftwareLocker\bin\Debug\myComponents.Crypto.pdb
+C:\Users\Yannick.ADN-SYSTEMES\Documents\Visual Studio 2010\Projects\myComponents\myComponents.SoftwareLocker\obj\Debug\myComponents.SoftwareLocker.dll
+C:\Users\Yannick.ADN-SYSTEMES\Documents\Visual Studio 2010\Projects\myComponents\myComponents.SoftwareLocker\obj\Debug\myComponents.SoftwareLocker.pdb
+\\ADNPSBS01\Users\Yannick\Documents\Visual Studio 2010\Projects\myComponents\myComponents.SoftwareLocker\bin\Debug\myComponents.SoftwareLocker.dll.config
+\\ADNPSBS01\Users\Yannick\Documents\Visual Studio 2010\Projects\myComponents\myComponents.SoftwareLocker\bin\Debug\myComponents.SoftwareLocker.dll
+\\ADNPSBS01\Users\Yannick\Documents\Visual Studio 2010\Projects\myComponents\myComponents.SoftwareLocker\bin\Debug\myComponents.SoftwareLocker.pdb
+\\ADNPSBS01\Users\Yannick\Documents\Visual Studio 2010\Projects\myComponents\myComponents.SoftwareLocker\bin\Debug\myComponents.Components.Forms.dll
+\\ADNPSBS01\Users\Yannick\Documents\Visual Studio 2010\Projects\myComponents\myComponents.SoftwareLocker\bin\Debug\myComponents.Crypto.dll
+\\ADNPSBS01\Users\Yannick\Documents\Visual Studio 2010\Projects\myComponents\myComponents.SoftwareLocker\bin\Debug\myComponents.Components.Forms.pdb
+\\ADNPSBS01\Users\Yannick\Documents\Visual Studio 2010\Projects\myComponents\myComponents.SoftwareLocker\bin\Debug\myComponents.Crypto.pdb
+\\ADNPSBS01\Users\Yannick\Documents\Visual Studio 2010\Projects\myComponents\myComponents.SoftwareLocker\obj\Debug\myComponents.SoftwareLocker.csprojResolveAssemblyReference.cache
+\\ADNPSBS01\Users\Yannick\Documents\Visual Studio 2010\Projects\myComponents\myComponents.SoftwareLocker\obj\Debug\myComponents.SoftwareLocker.Interfaces.frm.frmCompany.resources
+\\ADNPSBS01\Users\Yannick\Documents\Visual Studio 2010\Projects\myComponents\myComponents.SoftwareLocker\obj\Debug\myComponents.SoftwareLocker.Interfaces.frm.org_frmDialog.resources
+\\ADNPSBS01\Users\Yannick\Documents\Visual Studio 2010\Projects\myComponents\myComponents.SoftwareLocker\obj\Debug\myComponents.SoftwareLocker.Interfaces.frm.frmDialog.resources
+\\ADNPSBS01\Users\Yannick\Documents\Visual Studio 2010\Projects\myComponents\myComponents.SoftwareLocker\obj\Debug\myComponents.SoftwareLocker.csproj.GenerateResource.Cache
+\\ADNPSBS01\Users\Yannick\Documents\Visual Studio 2010\Projects\myComponents\myComponents.SoftwareLocker\obj\Debug\myComponents.SoftwareLocker.dll
+\\ADNPSBS01\Users\Yannick\Documents\Visual Studio 2010\Projects\myComponents\myComponents.SoftwareLocker\obj\Debug\myComponents.SoftwareLocker.pdb
+C:\Projets\Visual Studio\myComponents\myComponents.SoftwareLocker\bin\Debug\myComponents.SoftwareLocker.dll.config
+C:\Projets\Visual Studio\myComponents\myComponents.SoftwareLocker\bin\Debug\myComponents.SoftwareLocker.dll
+C:\Projets\Visual Studio\myComponents\myComponents.SoftwareLocker\bin\Debug\myComponents.SoftwareLocker.pdb
+C:\Projets\Visual Studio\myComponents\myComponents.SoftwareLocker\bin\Debug\myComponents.Components.Forms.dll
+C:\Projets\Visual Studio\myComponents\myComponents.SoftwareLocker\bin\Debug\myComponents.Crypto.dll
+C:\Projets\Visual Studio\myComponents\myComponents.SoftwareLocker\bin\Debug\myComponents.Components.Forms.pdb
+C:\Projets\Visual Studio\myComponents\myComponents.SoftwareLocker\bin\Debug\myComponents.Crypto.pdb
+C:\Projets\Visual Studio\myComponents\myComponents.SoftwareLocker\obj\Debug\myComponents.SoftwareLocker.csprojResolveAssemblyReference.cache
+C:\Projets\Visual Studio\myComponents\myComponents.SoftwareLocker\obj\Debug\myComponents.SoftwareLocker.Interfaces.frm.frmCompany.resources
+C:\Projets\Visual Studio\myComponents\myComponents.SoftwareLocker\obj\Debug\myComponents.SoftwareLocker.Interfaces.frm.org_frmDialog.resources
+C:\Projets\Visual Studio\myComponents\myComponents.SoftwareLocker\obj\Debug\myComponents.SoftwareLocker.Interfaces.frm.frmDialog.resources
+C:\Projets\Visual Studio\myComponents\myComponents.SoftwareLocker\obj\Debug\myComponents.SoftwareLocker.csproj.GenerateResource.Cache
+C:\Projets\Visual Studio\myComponents\myComponents.SoftwareLocker\obj\Debug\myComponents.SoftwareLocker.dll
+C:\Projets\Visual Studio\myComponents\myComponents.SoftwareLocker\obj\Debug\myComponents.SoftwareLocker.pdb

@@ -1,0 +1,41 @@
+C:\Users\Yannick.ADN-SYSTEMES\Documents\Visual Studio 2010\Projects\myComponents\myComponents.ActivationWebService\bin\myComponents.ActivationWebService.dll
+C:\Users\Yannick.ADN-SYSTEMES\Documents\Visual Studio 2010\Projects\myComponents\myComponents.ActivationWebService\bin\myComponents.ActivationWebService.pdb
+C:\Users\Yannick.ADN-SYSTEMES\Documents\Visual Studio 2010\Projects\myComponents\myComponents.ActivationWebService\bin\myComponents.Crypto.dll
+C:\Users\Yannick.ADN-SYSTEMES\Documents\Visual Studio 2010\Projects\myComponents\myComponents.ActivationWebService\bin\myComponents.Crypto.pdb
+C:\Users\Yannick.ADN-SYSTEMES\Documents\Visual Studio 2010\Projects\myComponents\myComponents.ActivationWebService\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Yannick.ADN-SYSTEMES\Documents\Visual Studio 2010\Projects\myComponents\myComponents.ActivationWebService\obj\Debug\myComponents.ActivationWebService.dll
+C:\Users\Yannick.ADN-SYSTEMES\Documents\Visual Studio 2010\Projects\myComponents\myComponents.ActivationWebService\obj\Debug\myComponents.ActivationWebService.pdb
+C:\Users\Yannick.ADN-SYSTEMES\Documents\Visual Studio 2010\Projects\myComponents\myComponents.ActivationWebService\bin\Gaia.WebWidgets.dll
+C:\Users\Yannick.ADN-SYSTEMES\Documents\Visual Studio 2010\Projects\myComponents\myComponents.ActivationWebService\bin\Gaia.WebWidgets.Extensions.dll
+C:\Users\Yannick.ADN-SYSTEMES\Documents\Visual Studio 2010\Projects\myComponents\myComponents.ActivationWebService\bin\Gaia.WebWidgets.Effects.dll
+C:\Users\Yannick.ADN-SYSTEMES\Documents\Visual Studio 2010\Projects\myComponents\myComponents.ActivationWebService\bin\Gaia.WebWidgets.xml
+C:\Users\Yannick.ADN-SYSTEMES\Documents\Visual Studio 2010\Projects\myComponents\myComponents.ActivationWebService\bin\Gaia.WebWidgets.Extensions.xml
+C:\Users\Yannick.ADN-SYSTEMES\Documents\Visual Studio 2010\Projects\myComponents\myComponents.ActivationWebService\bin\Gaia.WebWidgets.Effects.xml
+\\ADNPSBS01\Users\Yannick\Documents\Visual Studio 2010\Projects\myComponents\myComponents.ActivationWebService\bin\myComponents.ActivationWebService.dll
+\\ADNPSBS01\Users\Yannick\Documents\Visual Studio 2010\Projects\myComponents\myComponents.ActivationWebService\bin\myComponents.ActivationWebService.pdb
+\\ADNPSBS01\Users\Yannick\Documents\Visual Studio 2010\Projects\myComponents\myComponents.ActivationWebService\bin\Gaia.WebWidgets.dll
+\\ADNPSBS01\Users\Yannick\Documents\Visual Studio 2010\Projects\myComponents\myComponents.ActivationWebService\bin\Gaia.WebWidgets.Extensions.dll
+\\ADNPSBS01\Users\Yannick\Documents\Visual Studio 2010\Projects\myComponents\myComponents.ActivationWebService\bin\myComponents.Crypto.dll
+\\ADNPSBS01\Users\Yannick\Documents\Visual Studio 2010\Projects\myComponents\myComponents.ActivationWebService\bin\mysql.data.dll
+\\ADNPSBS01\Users\Yannick\Documents\Visual Studio 2010\Projects\myComponents\myComponents.ActivationWebService\bin\Gaia.WebWidgets.Effects.dll
+\\ADNPSBS01\Users\Yannick\Documents\Visual Studio 2010\Projects\myComponents\myComponents.ActivationWebService\bin\myComponents.Crypto.pdb
+\\ADNPSBS01\Users\Yannick\Documents\Visual Studio 2010\Projects\myComponents\myComponents.ActivationWebService\bin\Gaia.WebWidgets.xml
+\\ADNPSBS01\Users\Yannick\Documents\Visual Studio 2010\Projects\myComponents\myComponents.ActivationWebService\bin\Gaia.WebWidgets.Extensions.xml
+\\ADNPSBS01\Users\Yannick\Documents\Visual Studio 2010\Projects\myComponents\myComponents.ActivationWebService\bin\Gaia.WebWidgets.Effects.xml
+\\ADNPSBS01\Users\Yannick\Documents\Visual Studio 2010\Projects\myComponents\myComponents.ActivationWebService\obj\Debug\myComponents.ActivationWebService.csprojResolveAssemblyReference.cache
+\\ADNPSBS01\Users\Yannick\Documents\Visual Studio 2010\Projects\myComponents\myComponents.ActivationWebService\obj\Debug\myComponents.ActivationWebService.dll
+\\ADNPSBS01\Users\Yannick\Documents\Visual Studio 2010\Projects\myComponents\myComponents.ActivationWebService\obj\Debug\myComponents.ActivationWebService.pdb
+C:\Projets\Visual Studio\myComponents\myComponents.ActivationWebService\bin\myComponents.ActivationWebService.dll
+C:\Projets\Visual Studio\myComponents\myComponents.ActivationWebService\bin\myComponents.ActivationWebService.pdb
+C:\Projets\Visual Studio\myComponents\myComponents.ActivationWebService\bin\Gaia.WebWidgets.dll
+C:\Projets\Visual Studio\myComponents\myComponents.ActivationWebService\bin\Gaia.WebWidgets.Extensions.dll
+C:\Projets\Visual Studio\myComponents\myComponents.ActivationWebService\bin\myComponents.Crypto.dll
+C:\Projets\Visual Studio\myComponents\myComponents.ActivationWebService\bin\mysql.data.dll
+C:\Projets\Visual Studio\myComponents\myComponents.ActivationWebService\bin\Gaia.WebWidgets.Effects.dll
+C:\Projets\Visual Studio\myComponents\myComponents.ActivationWebService\bin\myComponents.Crypto.pdb
+C:\Projets\Visual Studio\myComponents\myComponents.ActivationWebService\obj\Debug\myComponents.ActivationWebService.csprojResolveAssemblyReference.cache
+C:\Projets\Visual Studio\myComponents\myComponents.ActivationWebService\obj\Debug\myComponents.ActivationWebService.dll
+C:\Projets\Visual Studio\myComponents\myComponents.ActivationWebService\obj\Debug\myComponents.ActivationWebService.pdb
+C:\Projets\Visual Studio\myComponents\myComponents.ActivationWebService\bin\Gaia.WebWidgets.xml
+C:\Projets\Visual Studio\myComponents\myComponents.ActivationWebService\bin\Gaia.WebWidgets.Extensions.xml
+C:\Projets\Visual Studio\myComponents\myComponents.ActivationWebService\bin\Gaia.WebWidgets.Effects.xml

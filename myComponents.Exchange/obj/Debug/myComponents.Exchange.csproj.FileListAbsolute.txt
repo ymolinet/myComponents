@@ -1,0 +1,30 @@
+C:\Users\Yannick.ADN-SYSTEMES\Documents\Visual Studio 2010\Projects\myComponents\myComponents.Exchange\bin\Debug\myComponents.Exchange.dll
+C:\Users\Yannick.ADN-SYSTEMES\Documents\Visual Studio 2010\Projects\myComponents\myComponents.Exchange\bin\Debug\myComponents.Exchange.pdb
+C:\Users\Yannick.ADN-SYSTEMES\Documents\Visual Studio 2010\Projects\myComponents\myComponents.Exchange\bin\Debug\myComponents.Object.dll
+C:\Users\Yannick.ADN-SYSTEMES\Documents\Visual Studio 2010\Projects\myComponents\myComponents.Exchange\bin\Debug\myComponents.Object.pdb
+C:\Users\Yannick.ADN-SYSTEMES\Documents\Visual Studio 2010\Projects\myComponents\myComponents.Exchange\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Yannick.ADN-SYSTEMES\Documents\Visual Studio 2010\Projects\myComponents\myComponents.Exchange\obj\Debug\myComponents.Exchange.dll
+C:\Users\Yannick.ADN-SYSTEMES\Documents\Visual Studio 2010\Projects\myComponents\myComponents.Exchange\obj\Debug\myComponents.Exchange.pdb
+C:\Users\Yannick.ADN-SYSTEMES\Documents\Visual Studio 2010\Projects\myComponents\myComponents.Exchange\bin\Debug\System.Management.Automation.dll
+\\ADNPSBS01\Users\Yannick\Documents\Visual Studio 2010\Projects\myComponents\myComponents.Exchange\bin\Debug\myComponents.Exchange.dll
+\\ADNPSBS01\Users\Yannick\Documents\Visual Studio 2010\Projects\myComponents\myComponents.Exchange\bin\Debug\myComponents.Exchange.pdb
+\\ADNPSBS01\Users\Yannick\Documents\Visual Studio 2010\Projects\myComponents\myComponents.Exchange\bin\Debug\System.Management.Automation.dll
+\\ADNPSBS01\Users\Yannick\Documents\Visual Studio 2010\Projects\myComponents\myComponents.Exchange\obj\Debug\myComponents.Exchange.csprojResolveAssemblyReference.cache
+\\ADNPSBS01\Users\Yannick\Documents\Visual Studio 2010\Projects\myComponents\myComponents.Exchange\obj\Debug\myComponents.Exchange.dll
+\\ADNPSBS01\Users\Yannick\Documents\Visual Studio 2010\Projects\myComponents\myComponents.Exchange\obj\Debug\myComponents.Exchange.pdb
+\\ADNPSBS01\Users\Yannick\Documents\Visual Studio 2010\Projects\myComponents\myComponents.Exchange\bin\Debug\myComponents.Utilities.dll
+\\ADNPSBS01\Users\Yannick\Documents\Visual Studio 2010\Projects\myComponents\myComponents.Exchange\bin\Debug\myComponents.Utilities.pdb
+\\ADNPSBS01\Users\Yannick\Documents\Visual Studio 2010\Projects\myComponents\myComponents.Exchange\bin\Debug\Ionic.Zip.dll
+\\ADNPSBS01\Users\Yannick\Documents\Visual Studio 2010\Projects\myComponents\myComponents.Exchange\bin\Debug\Ionic.Zip.pdb
+\\ADNPSBS01\Users\Yannick\Documents\Visual Studio 2010\Projects\myComponents\myComponents.Exchange\bin\Debug\Ionic.Zip.xml
+C:\Projets\Visual Studio\myComponents\myComponents.Exchange\bin\Debug\myComponents.Exchange.dll
+C:\Projets\Visual Studio\myComponents\myComponents.Exchange\bin\Debug\myComponents.Exchange.pdb
+C:\Projets\Visual Studio\myComponents\myComponents.Exchange\bin\Debug\myComponents.Utilities.dll
+C:\Projets\Visual Studio\myComponents\myComponents.Exchange\bin\Debug\System.Management.Automation.dll
+C:\Projets\Visual Studio\myComponents\myComponents.Exchange\bin\Debug\Ionic.Zip.dll
+C:\Projets\Visual Studio\myComponents\myComponents.Exchange\bin\Debug\myComponents.Utilities.pdb
+C:\Projets\Visual Studio\myComponents\myComponents.Exchange\bin\Debug\Ionic.Zip.pdb
+C:\Projets\Visual Studio\myComponents\myComponents.Exchange\bin\Debug\Ionic.Zip.xml
+C:\Projets\Visual Studio\myComponents\myComponents.Exchange\obj\Debug\myComponents.Exchange.csprojResolveAssemblyReference.cache
+C:\Projets\Visual Studio\myComponents\myComponents.Exchange\obj\Debug\myComponents.Exchange.dll
+C:\Projets\Visual Studio\myComponents\myComponents.Exchange\obj\Debug\myComponents.Exchange.pdb

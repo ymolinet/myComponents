@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:s0="http://tempuri.org/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" name="ActivationService" targetNamespace="http://tempuri.org/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xs:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:element name="HelloWorld">
+        <xs:complexType />
+      </xs:element>
+      <xs:element name="HelloWorldResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="1" name="HelloWorldResult" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="GetSerialKey">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="1" name="AppIdentifier" type="xs:string" />
+            <xs:element minOccurs="0" maxOccurs="1" name="CompIdentifier" type="xs:string" />
+            <xs:element minOccurs="0" maxOccurs="1" name="CompanyName" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="GetSerialKeyResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="1" name="GetSerialKeyResult" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="string" nillable="true" type="xs:string" />
+    </xs:schema>
+  </types>
+  <message name="HelloWorldSoapIn">
+    <part name="parameters" element="s0:HelloWorld" />
+  </message>
+  <message name="HelloWorldSoapOut">
+    <part name="parameters" element="s0:HelloWorldResponse" />
+  </message>
+  <message name="GetSerialKeySoapIn">
+    <part name="parameters" element="s0:GetSerialKey" />
+  </message>
+  <message name="GetSerialKeySoapOut">
+    <part name="parameters" element="s0:GetSerialKeyResponse" />
+  </message>
+  <message name="HelloWorldHttpGetIn" />
+  <message name="HelloWorldHttpGetOut">
+    <part name="Body" element="s0:string" />
+  </message>
+  <message name="GetSerialKeyHttpGetIn">
+    <part name="AppIdentifier" type="s:string" />
+    <part name="CompIdentifier" type="s:string" />
+    <part name="CompanyName" type="s:string" />
+  </message>
+  <message name="GetSerialKeyHttpGetOut">
+    <part name="Body" element="s0:string" />
+  </message>
+  <message name="HelloWorldHttpPostIn" />
+  <message name="HelloWorldHttpPostOut">
+    <part name="Body" element="s0:string" />
+  </message>
+  <message name="GetSerialKeyHttpPostIn">
+    <part name="AppIdentifier" type="s:string" />
+    <part name="CompIdentifier" type="s:string" />
+    <part name="CompanyName" type="s:string" />
+  </message>
+  <message name="GetSerialKeyHttpPostOut">
+    <part name="Body" element="s0:string" />
+  </message>
+  <portType name="ActivationServiceSoap">
+    <operation name="HelloWorld">
+      <input message="s0:HelloWorldSoapIn" />
+      <output message="s0:HelloWorldSoapOut" />
+    </operation>
+    <operation name="GetSerialKey">
+      <input message="s0:GetSerialKeySoapIn" />
+      <output message="s0:GetSerialKeySoapOut" />
+    </operation>
+  </portType>
+  <portType name="ActivationServiceSoap12">
+    <operation name="HelloWorld">
+      <input message="s0:HelloWorldSoapIn" />
+      <output message="s0:HelloWorldSoapOut" />
+    </operation>
+    <operation name="GetSerialKey">
+      <input message="s0:GetSerialKeySoapIn" />
+      <output message="s0:GetSerialKeySoapOut" />
+    </operation>
+  </portType>
+  <portType name="ActivationServiceHttpGet">
+    <operation name="HelloWorld">
+      <input message="s0:HelloWorldHttpGetIn" />
+      <output message="s0:HelloWorldHttpGetOut" />
+    </operation>
+    <operation name="GetSerialKey">
+      <input message="s0:GetSerialKeyHttpGetIn" />
+      <output message="s0:GetSerialKeyHttpGetOut" />
+    </operation>
+  </portType>
+  <portType name="ActivationServiceHttpPost">
+    <operation name="HelloWorld">
+      <input message="s0:HelloWorldHttpPostIn" />
+      <output message="s0:HelloWorldHttpPostOut" />
+    </operation>
+    <operation name="GetSerialKey">
+      <input message="s0:GetSerialKeyHttpPostIn" />
+      <output message="s0:GetSerialKeyHttpPostOut" />
+    </operation>
+  </portType>
+  <binding name="ActivationServiceSoap" type="s0:ActivationServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="HelloWorld">
+      <soap:operation soapAction="http://tempuri.org/HelloWorld" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="GetSerialKey">
+      <soap:operation soapAction="http://tempuri.org/GetSerialKey" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <binding name="ActivationServiceSoap12" type="s0:ActivationServiceSoap12">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="HelloWorld">
+      <soap12:operation soapAction="http://tempuri.org/HelloWorld" style="document" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+    </operation>
+    <operation name="GetSerialKey">
+      <soap12:operation soapAction="http://tempuri.org/GetSerialKey" style="document" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <binding name="ActivationServiceHttpGet" type="s0:ActivationServiceHttpGet">
+    <http:binding verb="GET" />
+    <operation name="HelloWorld">
+      <http:operation location="/HelloWorld" />
+      <input>
+        <http:urlEncoded />
+      </input>
+      <output>
+        <mime:mimeXml part="Body" />
+      </output>
+    </operation>
+    <operation name="GetSerialKey">
+      <http:operation location="/GetSerialKey" />
+      <input>
+        <http:urlEncoded />
+      </input>
+      <output>
+        <mime:mimeXml part="Body" />
+      </output>
+    </operation>
+  </binding>
+  <binding name="ActivationServiceHttpPost" type="s0:ActivationServiceHttpPost">
+    <http:binding verb="POST" />
+    <operation name="HelloWorld">
+      <http:operation location="/HelloWorld" />
+      <input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </input>
+      <output>
+        <mime:mimeXml part="Body" />
+      </output>
+    </operation>
+    <operation name="GetSerialKey">
+      <http:operation location="/GetSerialKey" />
+      <input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </input>
+      <output>
+        <mime:mimeXml part="Body" />
+      </output>
+    </operation>
+  </binding>
+  <service name="ActivationService">
+    <port name="ActivationServiceSoap" binding="s0:ActivationServiceSoap">
+      <soap:address location="https://activation.adn-systemes.fr:444/ActivationService.asmx" />
+    </port>
+    <port name="ActivationServiceSoap12" binding="s0:ActivationServiceSoap12">
+      <soap12:address location="https://activation.adn-systemes.fr:444/ActivationService.asmx" />
+    </port>
+    <port name="ActivationServiceHttpGet" binding="s0:ActivationServiceHttpGet">
+      <http:address location="https://activation.adn-systemes.fr:444/ActivationService.asmx" />
+    </port>
+    <port name="ActivationServiceHttpPost" binding="s0:ActivationServiceHttpPost">
+      <http:address location="https://activation.adn-systemes.fr:444/ActivationService.asmx" />
+    </port>
+  </service>
+</definitions>

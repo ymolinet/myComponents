@@ -1,0 +1,11 @@
+bin\Debug\SoftwareLocker.dll
+bin\Debug\SoftwareLocker.pdb
+bin\Debug\SerialBoxes.dll
+bin\Debug\FilterControls.dll
+bin\Debug\FilterControls.pdb
+bin\Debug\SerialBoxes.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\SoftwareLocker.frmDialog.resources
+obj\Debug\TrialMaker.csproj.GenerateResource.Cache
+obj\Debug\SoftwareLocker.dll
+obj\Debug\SoftwareLocker.pdb

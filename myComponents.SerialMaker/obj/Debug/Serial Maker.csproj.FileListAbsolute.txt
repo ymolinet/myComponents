@@ -1,0 +1,16 @@
+C:\Users\Yannick.ADN-SYSTEMES\Desktop\Serial_Maker\Serial Maker\Serial Maker\obj\Debug\Serial Maker.exe
+C:\Users\Yannick.ADN-SYSTEMES\Desktop\Serial_Maker\Serial Maker\Serial Maker\obj\Debug\Serial Maker.pdb
+C:\Users\Yannick.ADN-SYSTEMES\Documents\Visual Studio 2010\Projects\SoftwareLocker\Serial Maker\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Yannick.ADN-SYSTEMES\Documents\Visual Studio 2010\Projects\SoftwareLocker\Serial Maker\obj\Debug\Serial_Maker.frmMain.resources
+C:\Users\Yannick.ADN-SYSTEMES\Documents\Visual Studio 2010\Projects\SoftwareLocker\Serial Maker\obj\Debug\ResGen.read.1.tlog
+C:\Users\Yannick.ADN-SYSTEMES\Documents\Visual Studio 2010\Projects\SoftwareLocker\Serial Maker\obj\Debug\ResGen.write.1.tlog
+C:\Users\Yannick.ADN-SYSTEMES\Documents\Visual Studio 2010\Projects\SoftwareLocker\Serial Maker\obj\Debug\Serial Maker.exe
+C:\Users\Yannick.ADN-SYSTEMES\Documents\Visual Studio 2010\Projects\SoftwareLocker\Serial Maker\bin\Debug\Serial Maker.exe
+C:\Users\Yannick.ADN-SYSTEMES\Documents\Visual Studio 2010\Projects\SoftwareLocker\Serial Maker\bin\Debug\Serial Maker.pdb
+C:\Users\Yannick.ADN-SYSTEMES\Documents\Visual Studio 2010\Projects\SoftwareLocker\Serial Maker\bin\Debug\SoftwareLocker.dll
+C:\Users\Yannick.ADN-SYSTEMES\Documents\Visual Studio 2010\Projects\SoftwareLocker\Serial Maker\bin\Debug\SoftwareLocker.pdb
+C:\Users\Yannick.ADN-SYSTEMES\Documents\Visual Studio 2010\Projects\SoftwareLocker\Serial Maker\obj\Debug\Serial Maker.pdb
+C:\Users\Yannick.ADN-SYSTEMES\Documents\visual studio 2010\Projects\SoftwareLocker\Serial Maker\bin\Debug\FilterControls.dll
+C:\Users\Yannick.ADN-SYSTEMES\Documents\visual studio 2010\Projects\SoftwareLocker\Serial Maker\bin\Debug\FilterControls.pdb
+C:\Users\Yannick.ADN-SYSTEMES\Documents\visual studio 2010\Projects\SoftwareLocker\Serial Maker\bin\Debug\SerialBoxes.dll
+C:\Users\Yannick.ADN-SYSTEMES\Documents\visual studio 2010\Projects\SoftwareLocker\Serial Maker\bin\Debug\SerialBoxes.pdb

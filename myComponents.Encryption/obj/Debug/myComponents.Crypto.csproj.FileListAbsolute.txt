@@ -1,0 +1,13 @@
+C:\Users\Yannick.ADN-SYSTEMES\Documents\Visual Studio 2010\Projects\myComponents\myComponents.Encryption\bin\Debug\myComponents.Crypto.dll
+C:\Users\Yannick.ADN-SYSTEMES\Documents\Visual Studio 2010\Projects\myComponents\myComponents.Encryption\bin\Debug\myComponents.Crypto.pdb
+C:\Users\Yannick.ADN-SYSTEMES\Documents\Visual Studio 2010\Projects\myComponents\myComponents.Encryption\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Yannick.ADN-SYSTEMES\Documents\Visual Studio 2010\Projects\myComponents\myComponents.Encryption\obj\Debug\myComponents.Crypto.dll
+C:\Users\Yannick.ADN-SYSTEMES\Documents\Visual Studio 2010\Projects\myComponents\myComponents.Encryption\obj\Debug\myComponents.Crypto.pdb
+\\ADNPSBS01\Users\Yannick\Documents\Visual Studio 2010\Projects\myComponents\myComponents.Encryption\bin\Debug\myComponents.Crypto.dll
+\\ADNPSBS01\Users\Yannick\Documents\Visual Studio 2010\Projects\myComponents\myComponents.Encryption\bin\Debug\myComponents.Crypto.pdb
+\\ADNPSBS01\Users\Yannick\Documents\Visual Studio 2010\Projects\myComponents\myComponents.Encryption\obj\Debug\myComponents.Crypto.dll
+\\ADNPSBS01\Users\Yannick\Documents\Visual Studio 2010\Projects\myComponents\myComponents.Encryption\obj\Debug\myComponents.Crypto.pdb
+C:\Projets\Visual Studio\myComponents\myComponents.Encryption\bin\Debug\myComponents.Crypto.dll
+C:\Projets\Visual Studio\myComponents\myComponents.Encryption\bin\Debug\myComponents.Crypto.pdb
+C:\Projets\Visual Studio\myComponents\myComponents.Encryption\obj\Debug\myComponents.Crypto.dll
+C:\Projets\Visual Studio\myComponents\myComponents.Encryption\obj\Debug\myComponents.Crypto.pdb

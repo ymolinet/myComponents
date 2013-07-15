@@ -1,0 +1,42 @@
+C:\Users\YANNICK\Documents\Visual Studio 2010\Projects\myComponents\myServices\bin\Debug\myServices.exe
+C:\Users\YANNICK\Documents\Visual Studio 2010\Projects\myComponents\myServices\bin\Debug\myServices.pdb
+C:\Users\YANNICK\Documents\Visual Studio 2010\Projects\myComponents\myServices\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\YANNICK\Documents\Visual Studio 2010\Projects\myComponents\myServices\obj\x86\Debug\myServices.Properties.Resources.resources
+C:\Users\YANNICK\Documents\Visual Studio 2010\Projects\myComponents\myServices\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\YANNICK\Documents\Visual Studio 2010\Projects\myComponents\myServices\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\YANNICK\Documents\Visual Studio 2010\Projects\myComponents\myServices\obj\x86\Debug\myServices.exe
+C:\Users\YANNICK\Documents\Visual Studio 2010\Projects\myComponents\myServices\obj\x86\Debug\myServices.pdb
+C:\Users\YANNICK\Documents\Visual Studio 2010\Projects\myComponents\myServices\bin\Debug\myComponents.Object.dll
+C:\Users\YANNICK\Documents\Visual Studio 2010\Projects\myComponents\myServices\bin\Debug\myComponents.Object.pdb
+C:\Users\YANNICK\Documents\Visual Studio 2010\Projects\myComponents\myServices\obj\x86\Debug\myServices.ConfigForm.resources
+C:\Users\Yannick.ADN-SYSTEMES\Documents\Visual Studio 2010\Projects\myComponents\myServices\bin\Debug\myServices.exe
+C:\Users\Yannick.ADN-SYSTEMES\Documents\Visual Studio 2010\Projects\myComponents\myServices\bin\Debug\myServices.pdb
+C:\Users\Yannick.ADN-SYSTEMES\Documents\Visual Studio 2010\Projects\myComponents\myServices\bin\Debug\myComponents.Object.dll
+C:\Users\Yannick.ADN-SYSTEMES\Documents\Visual Studio 2010\Projects\myComponents\myServices\bin\Debug\myComponents.Object.pdb
+C:\Users\Yannick.ADN-SYSTEMES\Documents\Visual Studio 2010\Projects\myComponents\myServices\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Yannick.ADN-SYSTEMES\Documents\Visual Studio 2010\Projects\myComponents\myServices\obj\x86\Debug\myServices.ConfigForm.resources
+C:\Users\Yannick.ADN-SYSTEMES\Documents\Visual Studio 2010\Projects\myComponents\myServices\obj\x86\Debug\myServices.Properties.Resources.resources
+C:\Users\Yannick.ADN-SYSTEMES\Documents\Visual Studio 2010\Projects\myComponents\myServices\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Yannick.ADN-SYSTEMES\Documents\Visual Studio 2010\Projects\myComponents\myServices\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Yannick.ADN-SYSTEMES\Documents\Visual Studio 2010\Projects\myComponents\myServices\obj\x86\Debug\myServices.exe
+C:\Users\Yannick.ADN-SYSTEMES\Documents\Visual Studio 2010\Projects\myComponents\myServices\obj\x86\Debug\myServices.pdb
+\\ADNPSBS01\Users\Yannick\Documents\Visual Studio 2010\Projects\myComponents\myServices\bin\Debug\myServices.exe
+\\ADNPSBS01\Users\Yannick\Documents\Visual Studio 2010\Projects\myComponents\myServices\bin\Debug\myComponents.Object.dll
+\\ADNPSBS01\Users\Yannick\Documents\Visual Studio 2010\Projects\myComponents\myServices\bin\Debug\myServices.pdb
+\\ADNPSBS01\Users\Yannick\Documents\Visual Studio 2010\Projects\myComponents\myServices\bin\Debug\myComponents.Object.pdb
+\\ADNPSBS01\Users\Yannick\Documents\Visual Studio 2010\Projects\myComponents\myServices\obj\x86\Debug\myServices.csprojResolveAssemblyReference.cache
+\\ADNPSBS01\Users\Yannick\Documents\Visual Studio 2010\Projects\myComponents\myServices\obj\x86\Debug\myServices.ConfigForm.resources
+\\ADNPSBS01\Users\Yannick\Documents\Visual Studio 2010\Projects\myComponents\myServices\obj\x86\Debug\myServices.Properties.Resources.resources
+\\ADNPSBS01\Users\Yannick\Documents\Visual Studio 2010\Projects\myComponents\myServices\obj\x86\Debug\myServices.csproj.GenerateResource.Cache
+\\ADNPSBS01\Users\Yannick\Documents\Visual Studio 2010\Projects\myComponents\myServices\obj\x86\Debug\myServices.exe
+\\ADNPSBS01\Users\Yannick\Documents\Visual Studio 2010\Projects\myComponents\myServices\obj\x86\Debug\myServices.pdb
+C:\Projets\Visual Studio\myComponents\myServices\bin\Debug\myServices.exe
+C:\Projets\Visual Studio\myComponents\myServices\bin\Debug\myServices.pdb
+C:\Projets\Visual Studio\myComponents\myServices\bin\Debug\myComponents.Object.dll
+C:\Projets\Visual Studio\myComponents\myServices\bin\Debug\myComponents.Object.pdb
+C:\Projets\Visual Studio\myComponents\myServices\obj\x86\Debug\myServices.csprojResolveAssemblyReference.cache
+C:\Projets\Visual Studio\myComponents\myServices\obj\x86\Debug\myServices.ConfigForm.resources
+C:\Projets\Visual Studio\myComponents\myServices\obj\x86\Debug\myServices.Properties.Resources.resources
+C:\Projets\Visual Studio\myComponents\myServices\obj\x86\Debug\myServices.csproj.GenerateResource.Cache
+C:\Projets\Visual Studio\myComponents\myServices\obj\x86\Debug\myServices.exe
+C:\Projets\Visual Studio\myComponents\myServices\obj\x86\Debug\myServices.pdb
