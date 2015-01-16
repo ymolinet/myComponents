@@ -39,3 +39,10 @@ C:\Projets\Visual Studio\myComponents\myComponents.ActivationWebService\obj\Debu
 C:\Projets\Visual Studio\myComponents\myComponents.ActivationWebService\bin\Gaia.WebWidgets.xml
 C:\Projets\Visual Studio\myComponents\myComponents.ActivationWebService\bin\Gaia.WebWidgets.Extensions.xml
 C:\Projets\Visual Studio\myComponents\myComponents.ActivationWebService\bin\Gaia.WebWidgets.Effects.xml
+C:\Users\Yannick.ADN-SYSTEMES\Projets\Visual Studio\myComponents\myComponents.ActivationWebService\bin\myComponents.ActivationWebService.dll
+C:\Users\Yannick.ADN-SYSTEMES\Projets\Visual Studio\myComponents\myComponents.ActivationWebService\bin\myComponents.ActivationWebService.pdb
+C:\Users\Yannick.ADN-SYSTEMES\Projets\Visual Studio\myComponents\myComponents.ActivationWebService\bin\myComponents.Crypto.dll
+C:\Users\Yannick.ADN-SYSTEMES\Projets\Visual Studio\myComponents\myComponents.ActivationWebService\bin\myComponents.Crypto.pdb
+C:\Users\Yannick.ADN-SYSTEMES\Projets\Visual Studio\myComponents\myComponents.ActivationWebService\obj\Debug\myComponents.ActivationWebService.csprojResolveAssemblyReference.cache
+C:\Users\Yannick.ADN-SYSTEMES\Projets\Visual Studio\myComponents\myComponents.ActivationWebService\obj\Debug\myComponents.ActivationWebService.dll
+C:\Users\Yannick.ADN-SYSTEMES\Projets\Visual Studio\myComponents\myComponents.ActivationWebService\obj\Debug\myComponents.ActivationWebService.pdb

@@ -19,3 +19,9 @@ C:\Projets\Visual Studio\myComponents\myComponents.Components.Form\obj\Debug\myC
 C:\Projets\Visual Studio\myComponents\myComponents.Components.Form\obj\Debug\myComponents.Components.Forms.dll
 C:\Projets\Visual Studio\myComponents\myComponents.Components.Form\obj\Debug\myComponents.Components.Forms.pdb
 C:\Projets\Visual Studio\myComponents\myComponents.Components.Form\obj\Debug\myComponents.Components.Forms.csprojResolveAssemblyReference.cache
+C:\Users\Yannick.ADN-SYSTEMES\Projets\Visual Studio\myComponents\myComponents.Components.Form\bin\Debug\myComponents.Components.Forms.dll
+C:\Users\Yannick.ADN-SYSTEMES\Projets\Visual Studio\myComponents\myComponents.Components.Form\bin\Debug\myComponents.Components.Forms.pdb
+C:\Users\Yannick.ADN-SYSTEMES\Projets\Visual Studio\myComponents\myComponents.Components.Form\obj\Debug\myComponents.Components.Forms.SerialBox.resources
+C:\Users\Yannick.ADN-SYSTEMES\Projets\Visual Studio\myComponents\myComponents.Components.Form\obj\Debug\myComponents.Components.Forms.csproj.GenerateResource.Cache
+C:\Users\Yannick.ADN-SYSTEMES\Projets\Visual Studio\myComponents\myComponents.Components.Form\obj\Debug\myComponents.Components.Forms.dll
+C:\Users\Yannick.ADN-SYSTEMES\Projets\Visual Studio\myComponents\myComponents.Components.Form\obj\Debug\myComponents.Components.Forms.pdb

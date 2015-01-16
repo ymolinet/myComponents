@@ -32,3 +32,14 @@ C:\Projets\Visual Studio\myComponents\myComponents.SerialMaker\obj\Debug\myCompo
 C:\Projets\Visual Studio\myComponents\myComponents.SerialMaker\obj\Debug\myComponents.SerialMaker.csproj.GenerateResource.Cache
 C:\Projets\Visual Studio\myComponents\myComponents.SerialMaker\obj\Debug\Serial Maker.exe
 C:\Projets\Visual Studio\myComponents\myComponents.SerialMaker\obj\Debug\Serial Maker.pdb
+C:\Users\Yannick.ADN-SYSTEMES\Projets\Visual Studio\myComponents\myComponents.SerialMaker\bin\Debug\Serial Maker.exe
+C:\Users\Yannick.ADN-SYSTEMES\Projets\Visual Studio\myComponents\myComponents.SerialMaker\bin\Debug\Serial Maker.pdb
+C:\Users\Yannick.ADN-SYSTEMES\Projets\Visual Studio\myComponents\myComponents.SerialMaker\bin\Debug\myComponents.Components.Forms.dll
+C:\Users\Yannick.ADN-SYSTEMES\Projets\Visual Studio\myComponents\myComponents.SerialMaker\bin\Debug\myComponents.Crypto.dll
+C:\Users\Yannick.ADN-SYSTEMES\Projets\Visual Studio\myComponents\myComponents.SerialMaker\bin\Debug\myComponents.Components.Forms.pdb
+C:\Users\Yannick.ADN-SYSTEMES\Projets\Visual Studio\myComponents\myComponents.SerialMaker\bin\Debug\myComponents.Crypto.pdb
+C:\Users\Yannick.ADN-SYSTEMES\Projets\Visual Studio\myComponents\myComponents.SerialMaker\obj\Debug\myComponents.SerialMaker.csprojResolveAssemblyReference.cache
+C:\Users\Yannick.ADN-SYSTEMES\Projets\Visual Studio\myComponents\myComponents.SerialMaker\obj\Debug\myComponents.SerialMaker.frmMain.resources
+C:\Users\Yannick.ADN-SYSTEMES\Projets\Visual Studio\myComponents\myComponents.SerialMaker\obj\Debug\myComponents.SerialMaker.csproj.GenerateResource.Cache
+C:\Users\Yannick.ADN-SYSTEMES\Projets\Visual Studio\myComponents\myComponents.SerialMaker\obj\Debug\Serial Maker.exe
+C:\Users\Yannick.ADN-SYSTEMES\Projets\Visual Studio\myComponents\myComponents.SerialMaker\obj\Debug\Serial Maker.pdb

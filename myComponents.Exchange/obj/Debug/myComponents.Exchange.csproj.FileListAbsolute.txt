@@ -28,3 +28,12 @@ C:\Projets\Visual Studio\myComponents\myComponents.Exchange\bin\Debug\Ionic.Zip.
 C:\Projets\Visual Studio\myComponents\myComponents.Exchange\obj\Debug\myComponents.Exchange.csprojResolveAssemblyReference.cache
 C:\Projets\Visual Studio\myComponents\myComponents.Exchange\obj\Debug\myComponents.Exchange.dll
 C:\Projets\Visual Studio\myComponents\myComponents.Exchange\obj\Debug\myComponents.Exchange.pdb
+C:\Users\Yannick.ADN-SYSTEMES\Projets\Visual Studio\myComponents\myComponents.Exchange\bin\Debug\myComponents.Exchange.dll
+C:\Users\Yannick.ADN-SYSTEMES\Projets\Visual Studio\myComponents\myComponents.Exchange\bin\Debug\myComponents.Exchange.pdb
+C:\Users\Yannick.ADN-SYSTEMES\Projets\Visual Studio\myComponents\myComponents.Exchange\bin\Debug\myComponents.Utilities.dll
+C:\Users\Yannick.ADN-SYSTEMES\Projets\Visual Studio\myComponents\myComponents.Exchange\bin\Debug\System.Management.Automation.dll
+C:\Users\Yannick.ADN-SYSTEMES\Projets\Visual Studio\myComponents\myComponents.Exchange\bin\Debug\Ionic.Zip.dll
+C:\Users\Yannick.ADN-SYSTEMES\Projets\Visual Studio\myComponents\myComponents.Exchange\bin\Debug\myComponents.Utilities.pdb
+C:\Users\Yannick.ADN-SYSTEMES\Projets\Visual Studio\myComponents\myComponents.Exchange\obj\Debug\myComponents.Exchange.csprojResolveAssemblyReference.cache
+C:\Users\Yannick.ADN-SYSTEMES\Projets\Visual Studio\myComponents\myComponents.Exchange\obj\Debug\myComponents.Exchange.dll
+C:\Users\Yannick.ADN-SYSTEMES\Projets\Visual Studio\myComponents\myComponents.Exchange\obj\Debug\myComponents.Exchange.pdb

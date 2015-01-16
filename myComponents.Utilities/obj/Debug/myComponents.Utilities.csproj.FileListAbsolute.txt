@@ -29,3 +29,7 @@ C:\Projets\Visual Studio\myComponents\myComponents.Utilities\bin\Debug\Ionic.Zip
 C:\Projets\Visual Studio\myComponents\myComponents.Utilities\obj\Debug\myComponents.Utilities.csprojResolveAssemblyReference.cache
 C:\Projets\Visual Studio\myComponents\myComponents.Utilities\obj\Debug\myComponents.Utilities.dll
 C:\Projets\Visual Studio\myComponents\myComponents.Utilities\obj\Debug\myComponents.Utilities.pdb
+C:\Users\Yannick.ADN-SYSTEMES\Projets\Visual Studio\myComponents\myComponents.Utilities\bin\Debug\myComponents.Utilities.dll
+C:\Users\Yannick.ADN-SYSTEMES\Projets\Visual Studio\myComponents\myComponents.Utilities\bin\Debug\myComponents.Utilities.pdb
+C:\Users\Yannick.ADN-SYSTEMES\Projets\Visual Studio\myComponents\myComponents.Utilities\obj\Debug\myComponents.Utilities.dll
+C:\Users\Yannick.ADN-SYSTEMES\Projets\Visual Studio\myComponents\myComponents.Utilities\obj\Debug\myComponents.Utilities.pdb

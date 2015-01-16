@@ -41,3 +41,17 @@ C:\Projets\Visual Studio\myComponents\myComponents.SoftwareLocker\obj\Debug\myCo
 C:\Projets\Visual Studio\myComponents\myComponents.SoftwareLocker\obj\Debug\myComponents.SoftwareLocker.csproj.GenerateResource.Cache
 C:\Projets\Visual Studio\myComponents\myComponents.SoftwareLocker\obj\Debug\myComponents.SoftwareLocker.dll
 C:\Projets\Visual Studio\myComponents\myComponents.SoftwareLocker\obj\Debug\myComponents.SoftwareLocker.pdb
+C:\Users\Yannick.ADN-SYSTEMES\Projets\Visual Studio\myComponents\myComponents.SoftwareLocker\bin\Debug\myComponents.SoftwareLocker.dll.config
+C:\Users\Yannick.ADN-SYSTEMES\Projets\Visual Studio\myComponents\myComponents.SoftwareLocker\bin\Debug\myComponents.SoftwareLocker.dll
+C:\Users\Yannick.ADN-SYSTEMES\Projets\Visual Studio\myComponents\myComponents.SoftwareLocker\bin\Debug\myComponents.SoftwareLocker.pdb
+C:\Users\Yannick.ADN-SYSTEMES\Projets\Visual Studio\myComponents\myComponents.SoftwareLocker\bin\Debug\myComponents.Components.Forms.dll
+C:\Users\Yannick.ADN-SYSTEMES\Projets\Visual Studio\myComponents\myComponents.SoftwareLocker\bin\Debug\myComponents.Crypto.dll
+C:\Users\Yannick.ADN-SYSTEMES\Projets\Visual Studio\myComponents\myComponents.SoftwareLocker\bin\Debug\myComponents.Components.Forms.pdb
+C:\Users\Yannick.ADN-SYSTEMES\Projets\Visual Studio\myComponents\myComponents.SoftwareLocker\bin\Debug\myComponents.Crypto.pdb
+C:\Users\Yannick.ADN-SYSTEMES\Projets\Visual Studio\myComponents\myComponents.SoftwareLocker\obj\Debug\myComponents.SoftwareLocker.csprojResolveAssemblyReference.cache
+C:\Users\Yannick.ADN-SYSTEMES\Projets\Visual Studio\myComponents\myComponents.SoftwareLocker\obj\Debug\myComponents.SoftwareLocker.Interfaces.frm.frmCompany.resources
+C:\Users\Yannick.ADN-SYSTEMES\Projets\Visual Studio\myComponents\myComponents.SoftwareLocker\obj\Debug\myComponents.SoftwareLocker.Interfaces.frm.org_frmDialog.resources
+C:\Users\Yannick.ADN-SYSTEMES\Projets\Visual Studio\myComponents\myComponents.SoftwareLocker\obj\Debug\myComponents.SoftwareLocker.Interfaces.frm.frmDialog.resources
+C:\Users\Yannick.ADN-SYSTEMES\Projets\Visual Studio\myComponents\myComponents.SoftwareLocker\obj\Debug\myComponents.SoftwareLocker.csproj.GenerateResource.Cache
+C:\Users\Yannick.ADN-SYSTEMES\Projets\Visual Studio\myComponents\myComponents.SoftwareLocker\obj\Debug\myComponents.SoftwareLocker.dll
+C:\Users\Yannick.ADN-SYSTEMES\Projets\Visual Studio\myComponents\myComponents.SoftwareLocker\obj\Debug\myComponents.SoftwareLocker.pdb

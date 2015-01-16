@@ -11,3 +11,7 @@ C:\Projets\Visual Studio\myComponents\myComponents.Encryption\bin\Debug\myCompon
 C:\Projets\Visual Studio\myComponents\myComponents.Encryption\bin\Debug\myComponents.Crypto.pdb
 C:\Projets\Visual Studio\myComponents\myComponents.Encryption\obj\Debug\myComponents.Crypto.dll
 C:\Projets\Visual Studio\myComponents\myComponents.Encryption\obj\Debug\myComponents.Crypto.pdb
+C:\Users\Yannick.ADN-SYSTEMES\Projets\Visual Studio\myComponents\myComponents.Encryption\bin\Debug\myComponents.Crypto.dll
+C:\Users\Yannick.ADN-SYSTEMES\Projets\Visual Studio\myComponents\myComponents.Encryption\bin\Debug\myComponents.Crypto.pdb
+C:\Users\Yannick.ADN-SYSTEMES\Projets\Visual Studio\myComponents\myComponents.Encryption\obj\Debug\myComponents.Crypto.dll
+C:\Users\Yannick.ADN-SYSTEMES\Projets\Visual Studio\myComponents\myComponents.Encryption\obj\Debug\myComponents.Crypto.pdb

@@ -16,3 +16,7 @@ C:\Projets\Visual Studio\myComponents\myComponents.Object\bin\Debug\myComponents
 C:\Projets\Visual Studio\myComponents\myComponents.Object\bin\Debug\myComponents.Object.pdb
 C:\Projets\Visual Studio\myComponents\myComponents.Object\obj\Debug\myComponents.Object.dll
 C:\Projets\Visual Studio\myComponents\myComponents.Object\obj\Debug\myComponents.Object.pdb
+C:\Users\Yannick.ADN-SYSTEMES\Projets\Visual Studio\myComponents\myComponents.Object\bin\Debug\myComponents.Object.dll
+C:\Users\Yannick.ADN-SYSTEMES\Projets\Visual Studio\myComponents\myComponents.Object\bin\Debug\myComponents.Object.pdb
+C:\Users\Yannick.ADN-SYSTEMES\Projets\Visual Studio\myComponents\myComponents.Object\obj\Debug\myComponents.Object.dll
+C:\Users\Yannick.ADN-SYSTEMES\Projets\Visual Studio\myComponents\myComponents.Object\obj\Debug\myComponents.Object.pdb

@@ -40,3 +40,13 @@ C:\Projets\Visual Studio\myComponents\myServices\obj\x86\Debug\myServices.Proper
 C:\Projets\Visual Studio\myComponents\myServices\obj\x86\Debug\myServices.csproj.GenerateResource.Cache
 C:\Projets\Visual Studio\myComponents\myServices\obj\x86\Debug\myServices.exe
 C:\Projets\Visual Studio\myComponents\myServices\obj\x86\Debug\myServices.pdb
+C:\Users\Yannick.ADN-SYSTEMES\Projets\Visual Studio\myComponents\myServices\obj\x86\Debug\myServices.exe
+C:\Users\Yannick.ADN-SYSTEMES\Projets\Visual Studio\myComponents\myServices\obj\x86\Debug\myServices.pdb
+C:\Users\Yannick.ADN-SYSTEMES\Projets\Visual Studio\myComponents\myServices\bin\Debug\myServices.exe
+C:\Users\Yannick.ADN-SYSTEMES\Projets\Visual Studio\myComponents\myServices\bin\Debug\myServices.pdb
+C:\Users\Yannick.ADN-SYSTEMES\Projets\Visual Studio\myComponents\myServices\bin\Debug\myComponents.Object.dll
+C:\Users\Yannick.ADN-SYSTEMES\Projets\Visual Studio\myComponents\myServices\bin\Debug\myComponents.Object.pdb
+C:\Users\Yannick.ADN-SYSTEMES\Projets\Visual Studio\myComponents\myServices\obj\x86\Debug\myServices.csprojResolveAssemblyReference.cache
+C:\Users\Yannick.ADN-SYSTEMES\Projets\Visual Studio\myComponents\myServices\obj\x86\Debug\myServices.ConfigForm.resources
+C:\Users\Yannick.ADN-SYSTEMES\Projets\Visual Studio\myComponents\myServices\obj\x86\Debug\myServices.Properties.Resources.resources
+C:\Users\Yannick.ADN-SYSTEMES\Projets\Visual Studio\myComponents\myServices\obj\x86\Debug\myServices.csproj.GenerateResource.Cache

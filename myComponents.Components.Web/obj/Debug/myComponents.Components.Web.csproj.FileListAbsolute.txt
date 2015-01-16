@@ -24,3 +24,9 @@ C:\Projets\Visual Studio\myComponents\myComponents.Components.Web\bin\Debug\Gaia
 C:\Projets\Visual Studio\myComponents\myComponents.Components.Web\obj\Debug\myComponents.Components.Web.csprojResolveAssemblyReference.cache
 C:\Projets\Visual Studio\myComponents\myComponents.Components.Web\obj\Debug\myComponents.Components.Web.dll
 C:\Projets\Visual Studio\myComponents\myComponents.Components.Web\obj\Debug\myComponents.Components.Web.pdb
+C:\Users\Yannick.ADN-SYSTEMES\Projets\Visual Studio\myComponents\myComponents.Components.Web\bin\Debug\myComponents.Components.Web.dll
+C:\Users\Yannick.ADN-SYSTEMES\Projets\Visual Studio\myComponents\myComponents.Components.Web\bin\Debug\myComponents.Components.Web.pdb
+C:\Users\Yannick.ADN-SYSTEMES\Projets\Visual Studio\myComponents\myComponents.Components.Web\bin\Debug\Gaia.WebWidgets.dll
+C:\Users\Yannick.ADN-SYSTEMES\Projets\Visual Studio\myComponents\myComponents.Components.Web\obj\Debug\myComponents.Components.Web.csprojResolveAssemblyReference.cache
+C:\Users\Yannick.ADN-SYSTEMES\Projets\Visual Studio\myComponents\myComponents.Components.Web\obj\Debug\myComponents.Components.Web.dll
+C:\Users\Yannick.ADN-SYSTEMES\Projets\Visual Studio\myComponents\myComponents.Components.Web\obj\Debug\myComponents.Components.Web.pdb
