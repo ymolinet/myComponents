@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Directories>
+	<Directories>
+		<Directory Name="RequiredFieldValidator" Title="RequiredField Validator"/>
+		<Directory Name="CompareValidator" Title="Compare Validator"/>
+		<Directory Name="CustomValidator" Title="Custom Validator"/>
+		<Directory Name="RangeValidator" Title="Range Validator"/>
+		<Directory Name="RegularExpressionValidator" Title="Regex Validator"/>
+		<Directory Name="ValidationSummary" Title="Validation Summary"/>
+	</Directories>
+</Directories>

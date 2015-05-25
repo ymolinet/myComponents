@@ -1,0 +1,19 @@
+.validation-row
+{
+    overflow:auto;
+    margin-top: 10px;
+    width:100%;
+}
+
+.validation-col-first
+{
+    display:inline;
+    width: 120px;
+    float:left;
+}
+
+.validation-col-second
+{
+    display:inline;
+    float:left;
+}

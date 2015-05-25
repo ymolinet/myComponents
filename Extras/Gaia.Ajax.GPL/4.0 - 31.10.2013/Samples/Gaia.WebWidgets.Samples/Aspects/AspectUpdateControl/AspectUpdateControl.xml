@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Directories>
+  <Directory Name="Overview" />
+  <Directory Name="Modal" Title="Modal UpdateControl" />
+  <Directory Name="Multiple" Title="Multiple UpdateControls" />
+</Directories>

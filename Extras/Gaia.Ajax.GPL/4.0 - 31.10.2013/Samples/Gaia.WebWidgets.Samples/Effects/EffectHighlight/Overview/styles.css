@@ -1,0 +1,5 @@
+.table td div
+{
+    width: 128px; height:128px;
+    border: 1px outset blue;
+}

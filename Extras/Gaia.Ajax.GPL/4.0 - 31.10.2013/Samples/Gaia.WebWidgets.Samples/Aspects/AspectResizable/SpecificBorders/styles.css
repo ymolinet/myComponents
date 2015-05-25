@@ -1,0 +1,13 @@
+.sample-container {
+    min-height: 200px;
+} 
+
+.panel 
+ { 
+	border: 2px solid black; 
+	width:100px;  
+	height: 100px;
+	top: 50px;
+	left: 50px;
+	background-color: #eee;
+}

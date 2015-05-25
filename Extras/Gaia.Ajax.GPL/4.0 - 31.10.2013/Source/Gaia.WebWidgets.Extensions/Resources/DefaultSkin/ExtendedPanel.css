@@ -1,0 +1,58 @@
+﻿/*******************************************************************
+ * Gaia Ajax - Ajax Control Library for ASP.NET  
+ * Copyright (C) 2008 - 2011 Gaiaware AS
+ * All rights reserved. 
+ * This program is distributed under either GPL version 3 
+ * as published by the Free Software Foundation or the
+ * Gaia Commercial License version 1 as published by Gaiaware AS
+ * read the details at http://gaiaware.net/product/dual-licensing 
+ ******************************************************************/
+
+.gaiax-extendedpanel
+{
+	zoom: 1;
+}
+
+.gaiax-extendedpanel-top
+{
+	-x-system-font-: none;
+	background: transparent url(panel-gradient.png) repeat-x 0pt 0pt;
+	border: 1px solid #6593cf;
+	color: #15428b;
+	font-size: 12px;
+	font-family: Arial,Helvetica,Tahoma,Sans-Serif, Monospace;
+	font-weight: bold;
+	padding: 3px 5px 3px 5px;
+	position: relative;
+	
+}
+
+.gaiax-extendedpanel-contentwrapper
+{
+	
+}
+
+.gaiax-extendedpanel-content
+{
+	background: white none repeat scroll 0% 0%;
+	border-color: #6593cf;
+	border-style: none solid solid;
+	border-width: 0pt 1px 1px;
+	position: relative;
+	zoom: 1;
+}
+
+.gaiax-extendedpanel-top-text 
+{
+    width:100%;
+	text-decoration: none;
+	color: #15428b;
+	display: block;
+}
+
+.gaiax-extendedpanel-icon
+{
+	background-position: 0pt 4pt;
+	background-repeat: no-repeat;
+	padding-left: 25px;
+}

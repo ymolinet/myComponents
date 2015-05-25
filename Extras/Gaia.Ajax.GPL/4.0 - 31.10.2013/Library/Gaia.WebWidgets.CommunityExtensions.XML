@@ -1,0 +1,346 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Gaia.WebWidgets.CommunityExtensions</name>
+    </assembly>
+    <members>
+        <member name="T:Gaia.WebWidgets.CommunityExtensions.GMap">
+            <summary>
+            GMap is an example on how you can extend Gaia Ajax by creating your own custom extension. 
+            </summary>
+        </member>
+        <member name="M:Gaia.WebWidgets.CommunityExtensions.GMap.GetCenter">
+            <summary>
+            Returns the geographical coordinates of the center point of the map view
+            </summary>
+            <returns>Return the center of the map view</returns>
+        </member>
+        <member name="M:Gaia.WebWidgets.CommunityExtensions.GMap.GetZoomLevel">
+            <summary>
+            Return the zoom level of the map view
+            </summary>
+            <returns>The zoom level</returns>
+        </member>
+        <member name="M:Gaia.WebWidgets.CommunityExtensions.GMap.SetZoomLevel(System.Int32)">
+            <summary>
+            Sets a new zoomlevel
+            </summary>
+            <param name="zoomLevel">New zoomlevel</param>
+        </member>
+        <member name="M:Gaia.WebWidgets.CommunityExtensions.GMap.SetCenter(Gaia.WebWidgets.CommunityExtensions.GMap.LatLng)">
+            <summary>
+            Sets a new center of the map
+            </summary>
+            <param name="latLng">The coordinates for the center</param>
+        </member>
+        <member name="M:Gaia.WebWidgets.CommunityExtensions.GMap.SetCenter(Gaia.WebWidgets.CommunityExtensions.GMap.LatLng,System.Int32)">
+            <summary>
+            Sets a new center of the map
+            </summary>
+            <param name="latLng">The coordinates to move to</param>
+            <param name="zoomLevel">The zoom level to set</param>
+        </member>
+        <member name="M:Gaia.WebWidgets.CommunityExtensions.GMap.PanTo(Gaia.WebWidgets.CommunityExtensions.GMap.LatLng)">
+            <summary>
+            Pan to a new position on the map
+            </summary>
+            <param name="gLatLng">The coordinate to pan to</param>
+        </member>
+        <member name="M:Gaia.WebWidgets.CommunityExtensions.GMap.OpenInfoWindow(System.String)">
+            <summary>
+            Open an infowindow with Html on the current position
+            </summary>
+            <param name="html">Html to display in the infowindow</param>
+        </member>
+        <member name="M:Gaia.WebWidgets.CommunityExtensions.GMap.OpenInfoWindow(Gaia.WebWidgets.CommunityExtensions.GMap.LatLng,System.String)">
+            <summary>
+            Open an infowindow with Html on specified position
+            </summary>
+            <param name="gLatLng">Coordinate to show the infowindow</param>
+            <param name="html">Html to display in the infowindow</param>
+        </member>
+        <member name="M:Gaia.WebWidgets.CommunityExtensions.GMap.CloseInfoWindow">
+            <summary>
+            Close current open infowindow
+            </summary>
+        </member>
+        <member name="M:Gaia.WebWidgets.CommunityExtensions.GMap.RenderControlHtml(Gaia.WebWidgets.HtmlFormatting.XhtmlTagFactory)">
+            <summary>
+            Render GMap control
+            </summary>
+            <param name="create"></param>
+        </member>
+        <member name="M:Gaia.WebWidgets.CommunityExtensions.GMap.IncludeScriptFiles">
+            <summary>
+            Include required javascript files
+            </summary>
+        </member>
+        <member name="P:Gaia.WebWidgets.CommunityExtensions.GMap.IsDraggable">
+            <summary>
+            True if it should be possible to drag the map
+            </summary>
+        </member>
+        <member name="P:Gaia.WebWidgets.CommunityExtensions.GMap.ShowZoomPanControls">
+            <summary>
+            True if you want to display the zoom pan control
+            </summary>
+        </member>
+        <member name="P:Gaia.WebWidgets.CommunityExtensions.GMap.ShowMapTypeControls">
+            <summary>
+            True if you want to display the standard map type control
+            </summary>
+        </member>
+        <member name="P:Gaia.WebWidgets.CommunityExtensions.GMap.MapType">
+            <summary>
+            Set the map type
+            </summary>
+        </member>
+        <member name="P:Gaia.WebWidgets.CommunityExtensions.GMap.GoogleMapsApiKey">
+            <summary>
+            The Google Maps API key assigned from Google. Must be configured in web.config
+            of your web application.
+            If you want to deploy this application outside of localhost, you must obtain a 
+            Google Maps API key at: http://www.google.com/apis/maps/signup.html 
+            </summary>
+        </member>
+        <member name="E:Gaia.WebWidgets.CommunityExtensions.GMap.MapTypeChanged">
+            <summary>
+            This Event is fired when the Map Type has been changed
+            </summary>
+        </member>
+        <member name="E:Gaia.WebWidgets.CommunityExtensions.GMap.Click">
+            <summary>
+            This event is fired when the user clicks on the map with the mouse. 
+            A click event passes different arguments based on the context of the click, 
+            and whether or not the click occured on a clickable overlay. If the click 
+            does not occur on a clickable overlay, the overlay argument is null and the 
+            latlng argument contains the geographical coordinates of the point that was 
+            clicked. If the user clicks on an overlay that is clickable (such as a GMarker, 
+            GPolygon, GPolyline, or GInfoWindow), the overlay argument contains the overlay 
+            object, while the overlaylatlng argument contains the coordinates of the clicked 
+            overlay. In addition, a click event is then also fired on the overlay itself.
+            </summary>
+        </member>
+        <member name="E:Gaia.WebWidgets.CommunityExtensions.GMap.MoveStart">
+            <summary>
+            This event is fired when the map view starts changing. 
+            </summary>
+        </member>
+        <member name="E:Gaia.WebWidgets.CommunityExtensions.GMap.MoveEnd">
+            <summary>
+            This event is fired when the change of the map view ends.
+            </summary>
+        </member>
+        <member name="E:Gaia.WebWidgets.CommunityExtensions.GMap.Zoom">
+            <summary>
+            This event is fired when the map reaches a new zoom level. 
+            The event handler receives the previous and the new zoom level as arguments.
+            </summary>
+        </member>
+        <member name="T:Gaia.WebWidgets.CommunityExtensions.GMap.MapTypeChangedEventArgs">
+            <summary>
+            EventArgs for the MapTypeChanged event. 
+            </summary>
+        </member>
+        <member name="T:Gaia.WebWidgets.CommunityExtensions.GMap.MovedEventArgs">
+            <summary>
+            Event args for the MoveEnd event.
+            </summary>
+        </member>
+        <member name="T:Gaia.WebWidgets.CommunityExtensions.GMap.ZoomEventArgs">
+            <summary>
+            Event args for Zoom event.
+            </summary>
+        </member>
+        <member name="T:Gaia.WebWidgets.CommunityExtensions.GMap.Point">
+            <summary>
+            A Point represents a point on the map by its pixel coordinates
+            </summary>
+        </member>
+        <member name="T:Gaia.WebWidgets.CommunityExtensions.GMap.LatLng">
+            <summary>
+            LatLng is a point in geographical coordinates longitude and latitude.
+            </summary>
+        </member>
+        <member name="T:Gaia.WebWidgets.CommunityExtensions.FileUpload">
+            <summary>
+            Ajax FileUpload control that allows you to upload many files with ajax technology. The Control
+            was created by community member Pavol. 
+            </summary>
+        </member>
+        <member name="M:Gaia.WebWidgets.CommunityExtensions.FileUpload.BtnCallbackClick(System.Object,System.EventArgs)">
+            <summary>
+            After all files has been uploaded you can catch UploadFinished event
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="P:Gaia.WebWidgets.CommunityExtensions.FileUpload.TextUploading">
+            <summary>
+            Display text while uploading files
+            </summary>
+        </member>
+        <member name="P:Gaia.WebWidgets.CommunityExtensions.FileUpload.TextUploaded">
+            <summary>
+            Display text when file has been successfully uploaded
+            </summary>
+        </member>
+        <member name="P:Gaia.WebWidgets.CommunityExtensions.FileUpload.TextError">
+            <summary>
+            Display text when some error on the server occured.
+            </summary>
+        </member>
+        <member name="P:Gaia.WebWidgets.CommunityExtensions.FileUpload.TextSizeError">
+            <summary>
+            Display text when file size has exceeded
+            </summary>
+        </member>
+        <member name="P:Gaia.WebWidgets.CommunityExtensions.FileUpload.TextHeader">
+            <summary>
+            Display text for header
+            </summary>
+        </member>
+        <member name="P:Gaia.WebWidgets.CommunityExtensions.FileUpload.TextBtnUpload">
+            <summary>
+            Save Button Text
+            </summary>
+        </member>
+        <member name="P:Gaia.WebWidgets.CommunityExtensions.FileUpload.TextDelete">
+            <summary>
+            Delete Button Text
+            </summary>
+        </member>
+        <member name="P:Gaia.WebWidgets.CommunityExtensions.FileUpload.MaxFiles">
+            <summary>
+            How many files possible to upload at one moment
+            </summary>
+        </member>
+        <member name="P:Gaia.WebWidgets.CommunityExtensions.FileUpload.UploadOnce">
+            <summary>
+            Set to true if you want the files only once and then the control becomes disabled
+            </summary>
+        </member>
+        <member name="P:Gaia.WebWidgets.CommunityExtensions.FileUpload.MakeCallback">
+            <summary>
+            Set to true if you want a callback after all files has been uploaded to the server.
+            </summary>
+        </member>
+        <member name="P:Gaia.WebWidgets.CommunityExtensions.FileUpload.ImgLoadingSrc">
+            <summary>
+            Source of the image loading.
+            </summary>
+        </member>
+        <member name="P:Gaia.WebWidgets.CommunityExtensions.FileUpload.Enabled">
+            <summary>
+            Enabled overridden property
+            </summary>
+        </member>
+        <member name="E:Gaia.WebWidgets.CommunityExtensions.FileUpload.FileUploaded">
+            <summary>
+            This Event is fired when the file file has been uploaded
+            </summary>
+        </member>
+        <member name="E:Gaia.WebWidgets.CommunityExtensions.FileUpload.UploadFinished">
+            <summary>
+            This Event is fired when all files are completely uploaded. You need to set the
+            MakeCallback property to true for this event to fire. 
+            </summary>
+        </member>
+        <member name="T:Gaia.WebWidgets.CommunityExtensions.FileUpload.FileUploadEventArgs">
+            <summary>
+            EventArgs used for the FileUploaded Event. 
+            </summary>
+        </member>
+        <member name="P:Gaia.WebWidgets.CommunityExtensions.FileUpload.FileUploadEventArgs.PostedFile">
+            <summary>
+            The Posted File
+            </summary>
+        </member>
+        <member name="P:Gaia.WebWidgets.CommunityExtensions.FileUpload.FileUploadEventArgs.InfoText">
+            <summary>
+            Info Text
+            </summary>
+        </member>
+        <member name="T:Gaia.WebWidgets.CommunityExtensions.SpeedDetector">
+            <summary>
+            SpeedDetector is an example on how you can extend Gaia Ajax with your own custom Extension. The SpeedDetector
+            detects your network connection by downloading dummy data and by performing some simple calculation on the time
+            spent we can try som approximate meassure of the bandwith. 
+            </summary>
+        </member>
+        <member name="M:Gaia.WebWidgets.CommunityExtensions.SpeedDetector.WriteLoremIpsum">
+            <summary>
+            This function is used to generate lorem ipsum text that will be sent over the wire. 
+            </summary>
+        </member>
+        <member name="M:Gaia.WebWidgets.CommunityExtensions.SpeedDetector.OnInit(System.EventArgs)">
+            <summary>
+            Core Control Initialization
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:Gaia.WebWidgets.CommunityExtensions.SpeedDetector.RenderControlHtml(Gaia.WebWidgets.HtmlFormatting.XhtmlTagFactory)">
+            <summary>
+            Renders a simple tag that acts as a placeholder for the control.
+            </summary>
+            <param name="create">XhtmlTagFactory</param>
+        </member>
+        <member name="P:Gaia.WebWidgets.CommunityExtensions.SpeedDetector.DownloadFile">
+            <summary>
+            Specify a url to a file that will be downloaded using HTTP GET. Specify this option if you have an existing 
+            File that the client will download. If you set this property, you cannot set the DownloadSize property
+            </summary>
+        </member>
+        <member name="P:Gaia.WebWidgets.CommunityExtensions.SpeedDetector.DownloadSize">
+            <summary>
+            Specify a size (in bytes) of how much lorem ipsum text you want generated over the wire. The SpeedDetector control
+            will render the content for you. 
+            </summary>
+        </member>
+        <member name="E:Gaia.WebWidgets.CommunityExtensions.SpeedDetector.SpeedDetectionComplete">
+            <summary>
+            This event is fired when the SpeedDetector has downloaded the specified content
+            </summary>
+        </member>
+        <member name="T:Gaia.WebWidgets.CommunityExtensions.SpeedDetector.DetectionCompleteEventArgs">
+            <summary>
+            Custom Event class forwarded to the client once the SpeedDetector has downloaded the content. The time it took
+            is specified in the TimeSpent property
+            </summary>
+        </member>
+        <member name="P:Gaia.WebWidgets.CommunityExtensions.SpeedDetector.DetectionCompleteEventArgs.TimeSpent">
+            <summary>
+            Specifies the time it took to download the file as a timespan
+            </summary>
+        </member>
+        <member name="T:Gaia.WebWidgets.CommunityExtensions.FishEyeMenu">
+            <summary>
+            The Gaia Ajax FishEyeMenu is like the dock menu of Mac OS X.
+            The Gaia Ajax FishEyeMenu is just a normal panel that will find all image elements within it during initialization 
+            and add up logic to zoom into them as you hover over them. To use it just add up any widget (or HTML elements) that 
+            renders "img" elements and set your properties. You can easily combine it together with a Repeater, add up 
+            ImageButtons (if you want to trap clicks of elements in it). You can create Ajax FishEye Menus containing anything you want.
+            </summary>
+        </member>
+        <member name="M:Gaia.WebWidgets.CommunityExtensions.FishEyeMenu.IncludeScriptFiles">
+            <summary>
+            Include FishEyeMenu Javascript files
+            </summary>
+        </member>
+        <member name="P:Gaia.WebWidgets.CommunityExtensions.FishEyeMenu.StartSize">
+            <summary>
+            What size the images are at default when not hovered over
+            </summary>
+        </member>
+        <member name="P:Gaia.WebWidgets.CommunityExtensions.FishEyeMenu.EndSize">
+            <summary>
+            Maximum size the images will resize to
+            </summary>
+        </member>
+        <member name="P:Gaia.WebWidgets.CommunityExtensions.FishEyeMenu.Threshold">
+            <summary>
+            At what distance the images will start blowing up in size
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,138 @@
+div.gaiax-window-content {
+    background-color: white;
+    padding: 15px;
+}
+
+.top-nav {
+    overflow: auto;
+}
+
+.top-nav span {
+    padding: 5px 0;
+}
+
+.btn {
+    padding: 5px 8px;
+    text-decoration: none;
+    border: solid 1px #cacaca;
+    background-color: #e9e9e9;
+}
+
+.btn.left {
+     margin-right: 5px;
+}
+
+.td-dtp table {
+    display: inline-table;
+}
+
+/* Styles for CalendarSample */
+.gv-calendar {
+    width: 100%;
+    border: none;
+    font-size: 12px;
+}
+
+    .gv-calendar th {
+        color: #999999;
+        font-weight: normal;
+        border: none;
+        text-align: left;
+        height: 20px;
+    }
+
+    .gv-calendar td {
+        border: 1px solid #cacaca;
+        color: #707070;
+    }
+
+    .gv-calendar .itemOdd {
+        background-color: #fff;
+    }
+
+    .gv-calendar .itemEven {
+        background-color: #eee;
+    }
+
+    .gv-calendar .itemOdd td, .gv-calendar .itemEven td {
+        padding: 5px;
+    }
+
+    .gv-calendar a {
+        text-decoration: none;
+    }
+
+/* Scheduler month-view */
+.scheduler-outofrangecell,
+.scheduler-monthcell
+{
+    border: 1px solid #cacaca;
+    width: 14%;
+}
+
+.scheduler-headercell
+{
+    color: #999999;
+    height: 20px;
+}
+
+.scheduler-container {
+    height: 65px;
+    position: relative;
+}
+
+    .scheduler-container .day {
+        position: absolute;
+        margin-left: 2px;
+        color: #888888;
+        z-index: 100;
+    }
+
+    .scheduler-container .other-month.day {
+        color: #d7d7d7;
+    }
+
+    .scheduler-container .day-container {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+
+    .scheduler-container .app-count {
+        color: #707070;
+        text-decoration: none;
+        font-size: 30px;
+        width: 35px;
+        margin: 0 auto;
+        text-align: center;
+        position: absolute;
+        top: 25%;
+        left: 20%;
+    }
+
+.drop-hover {
+    background-color: #e6e6e6;
+}
+
+.row-drag, .gv-calendar tr:hover {
+    cursor: move;
+}
+
+.selected {
+    background-color: #f3f3f3;
+}
+
+.note-box {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 420px;
+    height: 150px;
+}
+.note-box ul {
+    margin-top: 5px;
+    
+}
+.note-box li {
+    font-size: 12px;
+}

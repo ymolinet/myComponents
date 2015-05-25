@@ -1,0 +1,31 @@
+.gaiax-gv-row .customer-cell
+{
+    width: 125px;
+    font-size:12px;
+    font-weight:bold;
+}
+
+.gaiax-gv-row .right-aligned
+{
+    text-align:right;
+}
+
+.gaiax-gv-row .order-cell
+{
+    width: 125px;
+}
+
+.gaiax-gv-row .product-cell
+{
+    width: 125px;
+}
+
+.gaiax-gv-row .quantity-cell
+{
+    width: 30px;
+}
+
+.gaiax-gv-row .price-cell
+{
+    width: 65px;
+}

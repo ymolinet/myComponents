@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Directories>
+  <Directory Name="GMap" Title="Google Maps" />
+  <Directory Name="FileUpload" Title="Multiple File Upload" />
+  <Directory Name="SpeedDetector" Title="Speed Detector" />
+</Directories>

@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Directories>
+  <Directory Name="OnClosing" Title="Event: OnClosing" />
+  <Directory Name="Nested" Title="Nested Windows" />
+</Directories>

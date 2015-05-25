@@ -1,0 +1,53 @@
+.container-right, .container-left
+{
+    width:49%;
+    height:250px;
+    overflow:auto;
+    float:left;
+}
+
+.container-left
+{
+    border-right: solid 1px gray; 
+    margin-right: 10px;
+}
+
+/* this class is applied when the element is dragged around. it will be removed immediately on drop 
+   and can be quite useful to setup your own behavior for drag and drop scenarios ... 
+*/
+.gaiax-drag 
+{
+	z-index:12000;
+	overflow:hidden;
+	position:absolute;
+	left:0;top:0;
+	
+	/* some opacity for different browsers*/
+	opacity:.8;
+	-moz-opacity:.8;
+	filter:alpha(opacity=80);
+
+    /* a nice box around the dragged item */
+	background-color:#F0F0F0;
+	border:2px solid #CCCCCC;
+	padding:5px;
+	
+	/* let's try some nice rounded corners if you got the right browser */
+	border-radius: 15px;
+	
+	/* we also add this information because we will drag the item at the document level */
+	text-decoration:none;
+	color:#005AA9;
+	font-size:11px;
+} 
+
+.gaiax-hover-drop
+{
+	border: 1px solid #666;
+}
+
+.gaiax-dragcontainer
+{
+    cursor: move;
+    z-Index: 1000;
+}

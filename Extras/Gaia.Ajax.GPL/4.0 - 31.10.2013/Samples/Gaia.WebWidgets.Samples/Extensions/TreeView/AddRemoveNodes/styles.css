@@ -1,0 +1,10 @@
+.tree-play-icon
+{
+	background: transparent url(play.png) no-repeat 0 0;
+	width: 16px;
+	height: 16px;
+	display:block;
+	padding: 0;
+	vertical-align: sub;
+	float:left;
+}

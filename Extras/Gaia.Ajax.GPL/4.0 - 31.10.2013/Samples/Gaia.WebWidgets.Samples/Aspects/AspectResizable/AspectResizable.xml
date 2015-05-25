@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Directories>
+  <Directory Name="MaxHeightWidth" Title="Setting Max Height Width" />
+  <Directory Name="ResizableChart" Title="Resizable Chart" />
+  <Directory Name="SpecificBorders" Title="Set Specific Borders" />
+</Directories>

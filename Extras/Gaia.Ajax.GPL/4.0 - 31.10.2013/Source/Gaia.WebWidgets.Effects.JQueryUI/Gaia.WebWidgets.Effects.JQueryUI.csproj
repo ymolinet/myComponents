@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <UsingTask TaskName="AjaxMin" AssemblyFile="../SolutionReferences/AjaxMinTask.dll" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DA96882F-4428-4044-918D-8F65E5F8CD2B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Gaia.WebWidgets.Effects.JQueryUI</RootNamespace>
+    <AssemblyName>Gaia.WebWidgets.Effects.JQueryUI</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Easing.cs" />
+    <Compile Include="EffectAppear.cs" />
+    <Compile Include="EffectBlind.cs" />
+    <Compile Include="EffectBlindDown.cs" />
+    <Compile Include="EffectBlindUp.cs" />
+    <Compile Include="EffectBounce.cs" />
+    <Compile Include="EffectClip.cs" />
+    <Compile Include="JQueryEffectContainerBase.cs" />
+    <Compile Include="EffectDropOut.cs" />
+    <Compile Include="EffectExplode.cs" />
+    <Compile Include="EffectFade.cs" />
+    <Compile Include="EffectFold.cs" />
+    <Compile Include="EffectGrow.cs" />
+    <Compile Include="EffectHighlight.cs" />
+    <Compile Include="EffectMethod.cs" />
+    <Compile Include="EffectMorph.cs" />
+    <Compile Include="EffectMove.cs" />
+    <Compile Include="EffectOpacity.cs" />
+    <Compile Include="EffectParallel.cs" />
+    <Compile Include="EffectPuff.cs" />
+    <Compile Include="EffectPulsate.cs" />
+    <Compile Include="EffectQueue.cs" />
+    <Compile Include="EffectScale.cs" />
+    <Compile Include="EffectScrollTo.cs" />
+    <Compile Include="EffectShake.cs" />
+    <Compile Include="EffectShrink.cs" />
+    <Compile Include="EffectSize.cs" />
+    <Compile Include="EffectSlide.cs" />
+    <Compile Include="EffectSlideDown.cs" />
+    <Compile Include="EffectSlideUp.cs" />
+    <Compile Include="EffectSquish.cs" />
+    <Compile Include="EffectSwitchOff.cs" />
+    <Compile Include="EffectTransfer.cs" />
+    <Compile Include="IJQueryEffect.cs" />
+    <Compile Include="JQueryQueueDetails.cs" />
+    <Compile Include="JQueryUIEffectBase.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Gaia.WebWidgets\Gaia.WebWidgets.csproj">
+      <Project>{3821f9a8-7513-4987-a796-189cbfbfae7c}</Project>
+      <Name>Gaia.WebWidgets</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Scripts\jquery.scrollTo.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Scripts\jquery-ui.effects.js" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets. -->
+  <Target Name="BeforeBuild">
+	<ItemGroup Condition="'$(Configuration)' == 'Release'">
+		<ScriptFiles Include="$(MSBuildProjectDirectory)/Scripts/**/*.*" />
+	</ItemGroup>
+	
+	<Copy SourceFiles="@(ScriptFiles)" 
+		  DestinationFiles="@(ScriptFiles->'$(MSBuildProjectDirectory)/Scripts/Backup/%(RecursiveDir)%(Filename)%(Extension)')"
+		  Condition="'$(Configuration)' == 'Release'" />
+	
+	<AjaxMin JsKnownGlobalNames="$" JsEvalTreatment="MakeImmediateSafe" JsSourceFiles="@(ScriptFiles)"
+			 Switches="-comments:none"
+			 JsSourceExtensionPattern="\.js$" JsTargetExtension=".js" Condition="'$(Configuration)' == 'Release'" />
+  </Target>
+  <Target Name="AfterBuild">
+	<ItemGroup Condition="'$(Configuration)' == 'Release'">
+		<BackupScriptFiles Include="$(MSBuildProjectDirectory)/Scripts/Backup/**/*.*" />
+	</ItemGroup>
+	
+	<Move SourceFiles="@(BackupScriptFiles)" 
+		  DestinationFiles="@(BackupScriptFiles->'$(MSBuildProjectDirectory)/Scripts/%(RecursiveDir)%(Filename)%(Extension)')" 
+		  Condition="'$(Configuration)' == 'Release'" />
+	
+	<RemoveDir Directories="$(MSBuildProjectDirectory)/Scripts/Backup" Condition="'$(Configuration)' == 'Release'" />
+  </Target>
+</Project>

@@ -1,0 +1,38 @@
+.span-red
+{
+    color: #ff0000;
+}
+
+.span-blue
+{
+    color: #0000ff;
+}
+
+.span-green
+{
+    color: #228b22;
+}
+
+.property-container
+{
+    overflow:auto;
+}
+
+.property-name
+{
+    width: 100px;
+    margin: 5px;
+    float:left;
+    font-weight: bold;
+}
+
+.property-controlpanel
+{
+    float:left;
+}
+
+.stack-horizontal
+{
+    float:left;
+    margin-right: 5px;
+}

@@ -1,0 +1,13 @@
+﻿.move-content
+{
+    height:100%;
+    position:relative;
+    text-align:center;
+}
+
+.move-label
+{
+    font-size:60px;
+    position:relative;
+    top:50px;
+}

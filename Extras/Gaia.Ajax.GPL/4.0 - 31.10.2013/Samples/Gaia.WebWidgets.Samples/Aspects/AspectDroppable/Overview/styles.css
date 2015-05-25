@@ -1,0 +1,31 @@
+.panel-drag,
+.panel-drop
+{
+    position: absolute;
+    border: 1px solid black;
+    top: 50px;
+}
+
+.panel-drag
+{
+	width:50px; 
+    height: 50px;
+    left: 25px;
+    background-color: red; 
+    border-color: black;
+}
+
+.panel-drop
+{
+    left: 250px;
+    background-color: blue;
+    border-color: yellow;
+    width: 100px;
+    height: 100px;
+}
+
+.panel-hover
+{
+    border: 1px dotted silver;
+    background-color: #333;
+}

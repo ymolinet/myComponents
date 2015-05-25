@@ -1,0 +1,29 @@
+/* Styles for TreeView sample */
+.tv-item-unclicked
+{
+	color: Green;
+	text-decoration: none;
+}
+
+.tv-item-clicked
+{
+	color: Black;
+	text-decoration: none;
+}
+
+.tv-item-background-image
+{
+	width: 13px;
+	height: 15px;
+	vertical-align: sub;
+	background: transparent url(../../../media/icons/star.png) no-repeat 0 0;
+	display: block;
+	float: left;
+	padding: 0;
+}
+
+.windowIcon
+{
+	background:transparent url(../../../media/contentImages/tree-icon.png) no-repeat 0 0;
+	padding-left: 20px;
+}

@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Directories>
+  <Directory Name="BasicControls" Url="~/BasicControls/Button/Overview/" Title="Basic Controls" />
+  <Directory Name="Extensions" Url="~/Extensions/Accordion/Overview/" Title="Extension Controls" />
+  <Directory Name="Core" Url="~/Core/Manager/Overview/" Title="Core" />
+  <Directory Name="Aspects" Url="~/Aspects/AspectClickable/Overview/" />
+  <Directory Name="Effects" Url="~/Effects/EffectAppear/Overview/" />
+  <Directory Name="Combinations" Url="~/Combinations/WebApps/SimpleCalendarApplication/" Title="Combinations" />
+  <Directory Name="CommunityExtensions" Url="~/CommunityExtensions/GMap/Overview/" Title="Community Extensions" />
+</Directories>

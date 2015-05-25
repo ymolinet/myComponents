@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Directories>
+  <Directory Name="DoubleClick" />
+  <Directory Name="RelativeCoordinates" Title="Relative Coordinates" />
+  <Directory Name="ShortHandSyntax" Title="ShortHand Syntax" />
+  <Directory Name="ToggleCssClass" Title="Toggle CssClass" />
+</Directories>

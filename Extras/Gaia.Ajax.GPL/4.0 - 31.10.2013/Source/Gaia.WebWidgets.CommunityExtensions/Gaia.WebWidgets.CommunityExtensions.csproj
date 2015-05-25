@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <UsingTask TaskName="AjaxMin" AssemblyFile="../SolutionReferences/AjaxMinTask.dll" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{270BB47F-B199-4A87-9E48-FA54AA89B537}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Gaia.WebWidgets.CommunityExtensions</RootNamespace>
+    <AssemblyName>Gaia.WebWidgets.CommunityExtensions</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Release\Gaia.WebWidgets.CommunityExtensions.XML</DocumentationFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Widgets\ColorPicker.cs" />
+    <Compile Include="Widgets\FishEyeMenu.cs" />
+    <Compile Include="Widgets\FileUpload.cs" />
+    <Compile Include="Widgets\GMap.cs" />
+    <Compile Include="Widgets\SpeedDetector.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Gaia.WebWidgets.Extensions\Gaia.WebWidgets.Extensions.csproj">
+      <Project>{52408663-5069-49EC-9A47-8ADC8204F108}</Project>
+      <Name>Gaia.WebWidgets.Extensions</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gaia.WebWidgets\Gaia.WebWidgets.csproj">
+      <Project>{3821F9A8-7513-4987-A796-189CBFBFAE7C}</Project>
+      <Name>Gaia.WebWidgets</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Scripts\FishEyeMenu.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Gaia.WebWidgets.CommunityExtensions.FishEye.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Scripts\SpeedDetector.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\blank.htm" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Scripts\FileUpload.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Gaia.WebWidgets.CommunityExtensions.FileUpload.bmp" />
+    <EmbeddedResource Include="Resources\Gaia.WebWidgets.CommunityExtensions.SpeedDetector.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Gaia.WebWidgets.CommunityExtensions.GMap.bmp" />
+    <EmbeddedResource Include="Scripts\GMap.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\ColorPicker\Style\color_bg.png" />
+    <EmbeddedResource Include="Resources\ColorPicker\Style\picker_handle.png" />
+    <EmbeddedResource Include="Resources\ColorPicker\Style\picker_mask.png" />
+    <EmbeddedResource Include="Resources\ColorPicker\Style\styles.css" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Scripts\prototype.js" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  -->
+  <Target Name="BeforeBuild">
+	<ItemGroup Condition="'$(Configuration)' == 'Release'">
+		<CoreFiles Include="$(MSBuildProjectDirectory)/Scripts/prototype.js" />
+		<ScriptFilesNoCore Include="$(MSBuildProjectDirectory)/Scripts/**/*.*" Exclude="@(CoreFiles)" />
+		<ScriptFiles Include="@(CoreFiles);@(ScriptFilesNoCore)" />
+	</ItemGroup>
+	
+	<Copy SourceFiles="@(ScriptFiles)" 
+		  DestinationFiles="@(ScriptFiles->'$(MSBuildProjectDirectory)/Scripts/Backup/%(RecursiveDir)%(Filename)%(Extension)')"
+		  Condition="'$(Configuration)' == 'Release'" />
+	
+	<AjaxMin JsKnownGlobalNames="$" JsEvalTreatment="MakeImmediateSafe" JsSourceFiles="@(ScriptFiles)"
+			 Switches="-comments:none"
+			 JsSourceExtensionPattern="\.js$" JsTargetExtension=".js" Condition="'$(Configuration)' == 'Release'" />
+  </Target>
+  <Target Name="AfterBuild">
+	<ItemGroup Condition="'$(Configuration)' == 'Release'">
+		<BackupScriptFiles Include="$(MSBuildProjectDirectory)/Scripts/Backup/**/*.*" />
+	</ItemGroup>
+	
+	<Move SourceFiles="@(BackupScriptFiles)" 
+		  DestinationFiles="@(BackupScriptFiles->'$(MSBuildProjectDirectory)/Scripts/%(RecursiveDir)%(Filename)%(Extension)')" 
+		  Condition="'$(Configuration)' == 'Release'" />
+	
+	<RemoveDir Directories="$(MSBuildProjectDirectory)/Scripts/Backup" Condition="'$(Configuration)' == 'Release'" />
+  </Target>
+</Project>

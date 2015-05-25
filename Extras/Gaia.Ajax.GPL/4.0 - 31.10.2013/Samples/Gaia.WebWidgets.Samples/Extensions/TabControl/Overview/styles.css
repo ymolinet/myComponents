@@ -1,0 +1,10 @@
+.tabexample-container
+{   
+    width: 600px; 
+    margin: 10px;
+}
+
+.tabexample-container p
+{
+    padding: 10px;
+}

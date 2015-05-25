@@ -1,0 +1,21 @@
+ .panel, .panelContainer, .panelBound
+ { 
+	border: 2px solid black; 
+	width:100px;  
+	height: 100px;
+	background-color: #eee; 
+}
+
+.panelBound
+{
+	top: 50px;
+	left: 50px;
+	position: relative;
+	background-color: #aaa;
+}
+
+.panelContainer
+{
+	width: 200px;
+	height: 200px;
+}

@@ -1,0 +1,248 @@
+﻿/*******************************************************************
+ * Gaia Ajax - Ajax Control Library for ASP.NET  
+ * Copyright (C) 2008 - 2011 Gaiaware AS
+ * All rights reserved. 
+ * This program is distributed under either GPL version 3 
+ * as published by the Free Software Foundation or the
+ * Gaia Commercial License version 1 as published by Gaiaware AS
+ * read the details at http://gaiaware.net/product/dual-licensing 
+ ******************************************************************/
+
+.gaiax-tabcontrol-top
+{
+	background: transparent;
+	font-size: 16px;
+	overflow: hidden;
+	margin: 0pt;
+	padding: 0pt;
+	zoom: 1;
+}
+
+.gaiax-tabstrip-spacer
+{
+    border:1px solid #8db2e3;
+    border-top:none;
+    height:2px;
+    background:#deecfd;
+    font-size:1px;
+    line-height:1px;
+}
+
+.gaiax-tabstrip-wrapper
+{
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+	zoom: 1;
+}
+
+.gaiax-tabstrip
+{
+	zoom: 1;	
+}
+
+ul.gaiax-tabstrip
+{
+	display:block;
+    width:5000px;
+    zoom:1;
+}
+
+ul.gaiax-tabstrip-top
+{
+	border-bottom:1px solid #8DB2E3;
+	padding-top: 1px;
+	height: 18px;
+}
+
+.gaiax-tabstrip {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	border:0;
+}
+
+.gaiax-tabstrip li
+{
+	float: left;
+	margin-left: 2px;
+}
+
+.gaiax-tabstrip-active
+{
+	cursor: default;
+}
+
+.gaiax-tabstrip-top .gaiax-tabstrip-active .gaiax-tab-right
+{
+	margin-bottom: -1px;
+}
+
+.gaiax-tabstrip-active .gaiax-tab-right
+{
+	background-position: 0pt 0pt;
+}
+
+.gaiax-tabstrip-active .gaiax-tab-right,
+.gaiax-tabstrip-active .gaiax-tab-left
+{
+	height: 20px;
+}
+
+.gaiax-tabstrip-content
+{
+	height: 100%;
+}
+
+
+.gaiax-tabstrip-top .gaiax-tab-right
+{
+	background-repeat: no-repeat;
+	padding-left: 5px;
+}
+
+.gaiax-tabstrip-top .gaiax-tab-right, 
+.gaiax-tabstrip-top .gaiax-tab-left, 
+.gaiax-tabstrip-top .gaiax-tabstrip-content 
+{
+	background-image:url(tabs-sprite.png);
+	background-color:Transparent;
+}
+
+.gaiax-tabstrip em, 
+.gaiax-tabstrip span,
+.gaiax-tabstrip a
+{
+	
+	display: block;
+}
+
+.gaiax-tabstrip a
+{
+	text-decoration:none !important;
+	-moz-outline: none;
+	outline: none;
+	cursor:pointer;
+}
+
+.gaiax-tabstrip-active .gaiax-tab-left
+{
+	background-position: right -300px;
+}
+
+.gaiax-tabstrip-top .gaiax-tab-left
+{
+	background-position: right -300px;
+	background-repeat: no-repeat;
+	padding-right: 5px;
+}
+
+.gaiax-tabstrip-active .gaiax-tabstrip-content
+{
+	background-position: 0pt -150px;
+}
+
+.gaiax-tabstrip-top .gaiax-tabstrip-content
+{
+	background-position: right -200px;
+	background-repeat: repeat-x;
+}
+
+.gaiax-tabstrip-content
+{
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.gaiax-tabstrip-top .gaiax-tabstrip-active .gaiax-tab-right .gaiax-tabstrip-text
+{
+	padding-bottom:5px;
+}
+
+.gaiax-tabstrip-text
+{
+	-moz-user-select: none;
+	font-family:Arial,Helvetica,Tahoma,Sans-Serif;
+	font-size: 11px;
+	height: 12px;
+	margin: 2px 0pt 0pt;
+	white-space: nowrap;
+	padding: 4px 0pt 0pt 5px;
+	line-height: 12px;
+}
+
+.gaiax-tabstrip-active .gaiax-tabstrip-text
+{
+	color: #1C57B9;
+	font-weight: bold;
+}
+
+.gaiax-tabstrip .gaiax-tabstrip-text
+{
+	color: #15428B;
+	font-style:normal;
+}
+
+.gaiax-item-disabled
+{
+	vertical-align:top;
+}
+
+.gaiax-item-disabled .gaiax-tabstrip-text
+{
+	color:#ccc;
+	cursor:default;
+	height:12px;
+}
+
+.gaiax-tabcontrol-body-wrapper 
+{
+	overflow: hidden;
+	left: 0;
+	top: 0;
+	zoom: 1;
+}
+
+.gaiax-tabcontrol-body
+{
+	background:#FFFFFF none repeat scroll 0% 0%;
+	border:1px solid #89AFDF;
+}
+
+.gaiax-tabcontrol-body-content
+{
+	background:white none repeat scroll 0% 0%;
+	border-color:#9BE rgb(153, 187, 232);
+	border-style:none solid solid;
+	border-width:0pt 1px 1px;
+	zoom: 1;
+}
+
+.gaiax-tabstrip-inactive:hover .gaiax-tab-right
+{
+	 background-position:0 -100px;
+}
+
+.gaiax-tabstrip-inactive:hover .gaiax-tab-left
+{
+	 background-position:right -400px;
+}
+
+.gaiax-tabstrip-inactive:hover .gaiax-tabstrip-content
+{
+	 background-position:0 -250px;
+}
+
+.gaiax-clear
+{
+	float:left;
+	margin:0!important;
+	padding:0!important;
+	border:0 none!important;
+	font-size:1px!important;
+	line-height:1px!important;
+	overflow:hidden;
+	zoom:1;
+	background:transparent!important;
+	width:1px;
+}

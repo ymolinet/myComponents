@@ -1,0 +1,43 @@
+/* File Upload Control Styles  */
+.gaiax-fileupload { border: solid 1px #627BAD; }
+.gaiax-fileupload-inner { background-color:#D8DBED; }
+
+.gaiax-fileupload-inner-header
+{
+    color:#232A44;
+    display:block;
+    padding:5px;
+}
+
+.gaiax-fileupload-file-text
+{
+    display: inline-block;
+    width:50%;
+    margin: 0 5px 0 5px;
+    color:#455A85;
+    font-weight:bold;
+}
+
+.gaiax-fileupload-info-text 
+{
+	color:#232A44;
+}
+
+.gaiax-fileupload-img-loading
+{
+    vertical-align:middle;
+    margin: 0 5px 0 5px;    
+}
+
+.results
+{
+	margin: 15px 5px 5px 5px;
+	border: 1px solid #aaa;
+}
+
+.results img
+{
+	margin: 5px;
+	border: 1px solid #aaa;
+	vertical-align: top;
+} 

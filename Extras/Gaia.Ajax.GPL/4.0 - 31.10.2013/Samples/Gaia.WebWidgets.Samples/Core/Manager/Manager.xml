@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Directories>
+  <Directory Name="CustomErrors" Title="Custom Errors" />
+  <Directory Name="GlobalUpdateControl" Title="Global UpdateControl" />
+  <Directory Name="IncludeFiles" Title="Include Files" />
+  <Directory Name="PageMethods" Title="Page Methods" />
+</Directories>

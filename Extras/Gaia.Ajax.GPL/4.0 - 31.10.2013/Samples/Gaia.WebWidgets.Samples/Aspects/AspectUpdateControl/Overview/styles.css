@@ -1,0 +1,32 @@
+.ajax-half-circle-blue
+{
+	width: 32px;
+	height: 32px;
+	background: transparent url(img/ajax-half-circle-blue.gif) 0 0;
+	float:right;
+}
+
+.ajax-flowerish-blue
+{
+	width: 35px;
+	height: 35px;
+	background: transparent url(img/ajax-flowerish-blue.gif) 0 0;
+	float:right;
+}
+
+.ajax-tiny-circle-red
+{
+	width: 10px;
+	height: 10px;
+	background: transparent url(img/ajax-tiny-circle-red.gif) 0 0;
+	float:right;
+}
+
+.content-action
+{
+    margin: 5px;
+    padding: 10px;
+    height: 50px;
+    width: 200px;
+    border: #c0c0c0 1px solid;
+}

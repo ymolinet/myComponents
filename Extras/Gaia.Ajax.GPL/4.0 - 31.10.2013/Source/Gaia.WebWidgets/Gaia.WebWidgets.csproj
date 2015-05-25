@@ -1,0 +1,382 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <UsingTask TaskName="AjaxMin" AssemblyFile="../SolutionReferences/AjaxMinTask.dll" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3821F9A8-7513-4987-A796-189CBFBFAE7C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Gaia.WebWidgets</RootNamespace>
+    <AssemblyName>Gaia.WebWidgets</AssemblyName>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Debug\Gaia.WebWidgets.XML</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Release\Gaia.WebWidgets.XML</DocumentationFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AjaxModule.cs" />
+    <Compile Include="Aspects\Aspect.cs" />
+    <Compile Include="Aspects\AspectClickable.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Aspects\AspectDraggable.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Aspects\AspectDroppable.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Aspects\AspectGeneric.cs" />
+    <Compile Include="Aspects\AspectHoverable.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Aspects\AspectKey.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Aspects\AspectMouseMove.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Aspects\AspectModal.cs" />
+    <Compile Include="Aspects\AspectResizable.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Aspects\AspectScrollable.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Aspects\AspectUpdateControl.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Aspects\MouseEventArgs.cs" />
+    <Compile Include="Aspects\SnapConfigurationBase.cs" />
+    <Compile Include="Constants.cs" />
+    <Compile Include="Core\AjaxContainerControl.cs" />
+    <Compile Include="Core\AjaxEffectEventFactory.cs" />
+    <Compile Include="Core\AjaxSerializableAttributeBase.cs" />
+    <Compile Include="Core\AjaxSerializableUrlAttribute.cs" />
+    <Compile Include="Core\AspectableAjaxControl.cs" />
+    <Compile Include="Core\AtomicInvoker.cs" />
+    <Compile Include="Core\ClientScriptManager.cs" />
+    <Compile Include="Core\Collections\AspectCollection.cs" />
+    <Compile Include="Core\Collections\ControlCollectionWrapperCached.cs" />
+    <Compile Include="Core\Collections\ControlCollectionWrapper.cs" />
+    <Compile Include="Core\Collections\ControlCollectionExcept.cs" />
+    <Compile Include="Core\Collections\ControlCollectionOf.cs" />
+    <Compile Include="Core\Collections\ControlListOf.cs" />
+    <Compile Include="Core\Collections\ControlCollectionContainerAware.cs" />
+    <Compile Include="Core\Collections\GenericControlCollection.cs" />
+    <Compile Include="Core\Collections\GenericControlList.cs" />
+    <Compile Include="Core\Collections\HybridControlCollection.cs" />
+    <Compile Include="Core\Configuration\GaiaAjaxConfiguration.cs" />
+    <Compile Include="Core\Configuration\GaiaAjaxConfigurationSection.cs" />
+    <Compile Include="Core\AjaxControl.cs" />
+    <Compile Include="Core\EffectControl.cs" />
+    <Compile Include="Core\HttpResponseFilter.cs" />
+    <Compile Include="Core\IAjaxContainerControl.cs" />
+    <Compile Include="Core\IAjaxControl.cs" />
+    <Compile Include="Core\IAjaxControlNoRoot.cs" />
+    <Compile Include="Core\Licensing\GaiaLicenseValidator.GPL.cs" />
+    <Compile Include="Core\Manager.Response.cs" />
+    <Compile Include="Helpers\ButtonControlWriter.cs" />
+    <Compile Include="Helpers\ContainerHtmlTextWriterBase.cs" />
+    <Compile Include="Helpers\IAjaxValidator.cs" />
+    <Compile Include="Core\IAspect.cs" />
+    <Compile Include="Core\IAspectableAjaxControl.cs" />
+    <Compile Include="Core\AjaxEffectEvent.cs" />
+    <Compile Include="Core\IExtensionDesignerAccessor.cs" />
+    <Compile Include="Core\ISkinControl.cs" />
+    <Compile Include="Core\Licensing\GaiaLicenseProvider.cs" />
+    <Compile Include="Core\Manager.Debug.cs" />
+    <Compile Include="Core\Manager.Release.cs" />
+    <Compile Include="Core\RegisterControl.cs" />
+    <Compile Include="Core\AjaxSerializableAttribute.cs" />
+    <Compile Include="Core\Effect.cs" />
+    <Compile Include="Core\Collections\EffectCollection.cs" />
+    <Compile Include="Core\IEffectContainer.cs" />
+    <Compile Include="Core\RegisterObject.cs" />
+    <Compile Include="Effects\EffectHide.cs" />
+    <Compile Include="Effects\EffectShow.cs" />
+    <Compile Include="Effects\EffectToggle.cs" />
+    <Compile Include="Effects\CoreLibraryEffectBase.cs" />
+    <Compile Include="Helpers\CallbackWriter.cs" />
+    <Compile Include="Helpers\CancellableEventArgs.cs" />
+    <Compile Include="Helpers\CancellablePositionEventArgs.cs" />
+    <Compile Include="Helpers\DesignTimeHtmlTextWriter.cs" />
+    <Compile Include="Helpers\EffectUtils.cs" />
+    <Compile Include="Core\IEffect.cs" />
+    <Compile Include="Core\RegisterEffect.cs" />
+    <Compile Include="Helpers\CheckBoxHtmlTextWriter.cs" />
+    <Compile Include="Helpers\ContainerHtmlTextWriterPartialForce.cs" />
+    <Compile Include="Helpers\EffectUtilsInternal.cs" />
+    <Compile Include="Helpers\IAjaxBoundField.cs" />
+    <Compile Include="Helpers\IAjaxButtonControl.cs" />
+    <Compile Include="Helpers\IAjaxDataControlField.cs" />
+    <Compile Include="Helpers\IAjaxRadioCheckListControl.cs" />
+    <Compile Include="Helpers\IMayRequireRerendering.cs" />
+    <Compile Include="Helpers\MovedContainerHtmlTextWriter.cs" />
+    <Compile Include="Helpers\PropertyStateManagerButtonControl.cs" />
+    <Compile Include="Helpers\PropertyStateManagerRadioCheckList.cs" />
+    <Compile Include="SimpleJson.cs" />
+    <Compile Include="Validators\BaseValidator.cs" />
+    <Compile Include="Validators\CompareValidator.cs" />
+    <Compile Include="Validators\CustomValidator.cs" />
+    <Compile Include="Validators\PropertyStateManagerBaseCompareValidator.cs" />
+    <Compile Include="Validators\PropertyStateManagerBaseValidator.cs" />
+    <Compile Include="Validators\RangeValidator.cs" />
+    <Compile Include="Validators\RegularExpressionValidator.cs" />
+    <Compile Include="Validators\RequiredFieldValidator.cs" />
+    <Compile Include="Validators\ValidationSummary.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Widgets\ControlCollector.cs" />
+    <Compile Include="Widgets\DataControlFieldHeaderCell.cs" />
+    <Compile Include="Helpers\ImageMapHtmlWriter.cs" />
+    <Compile Include="Helpers\MethodDispatcher.cs" />
+    <Compile Include="Helpers\PropertyStateManagerListControl.cs" />
+    <Compile Include="Helpers\Reflection.cs" />
+    <Compile Include="Core\RegisterAspect.cs" />
+    <Compile Include="Helpers\StateUtil.cs" />
+    <Compile Include="Helpers\Utilities.cs" />
+    <Compile Include="Helpers\PropertyStateManagerControl.cs" />
+    <Compile Include="Helpers\HtmlFormatter.cs" />
+    <Compile Include="Core\IExtraPropertyCallbackRenderer.cs" />
+    <Compile Include="Core\MethodAttribute.cs" />
+    <Compile Include="Helpers\PropertyStateManagerWebControl.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="HtmlFormatting\Unmanaged.cs" />
+    <Compile Include="HtmlFormatting\XhtmlTagFactory.cs" />
+    <Compile Include="HtmlFormatting\Tag.cs" />
+    <Compile Include="HtmlFormatting\XhtmlAttribute.cs" />
+    <Compile Include="HtmlFormatting\XhtmlTextWriter.cs" />
+    <Compile Include="HtmlFormatting\XhtmlTextWriterTag.cs" />
+    <Compile Include="Helpers\ContainerHtmlTextWriter.cs" />
+    <Compile Include="Core\Manager.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Widgets\AutoGeneratedField.cs" />
+    <Compile Include="Widgets\BoundField.cs" />
+    <Compile Include="Widgets\BoundFieldImpl.cs" />
+    <Compile Include="Widgets\BrowserHistory.cs" />
+    <Compile Include="Widgets\Button.cs" />
+    <Compile Include="Widgets\ButtonField.cs" />
+    <Compile Include="Widgets\CheckBox.cs" />
+    <Compile Include="Widgets\CheckBoxField.cs" />
+    <Compile Include="Widgets\CheckBoxList.cs" />
+    <Compile Include="Widgets\ClientUtils.cs" />
+    <Compile Include="Widgets\CommandField.cs" />
+    <Compile Include="Widgets\DataControls\DataControlFactory.cs" />
+    <Compile Include="Widgets\DataControlFieldCell.cs" />
+    <Compile Include="Widgets\DataControlFieldImpl.cs" />
+    <Compile Include="Widgets\DataControls\DataControlButton.cs" />
+    <Compile Include="Widgets\DataControls\DataControlImageButton.cs" />
+    <Compile Include="Widgets\DataControls\DataControlLinkButton.cs" />
+    <Compile Include="Widgets\DataControls\DataControlPagerLinkButton.cs" />
+    <Compile Include="Widgets\DropDownList.cs" />
+    <Compile Include="Widgets\DynamicImage.cs" />
+    <Compile Include="Widgets\Effect.cs" />
+    <Compile Include="Widgets\GaiaControl.cs" />
+    <Compile Include="Widgets\GaiaWebControl.cs" />
+    <Compile Include="Widgets\GridView.cs" />
+    <Compile Include="Widgets\GridViewRow.cs" />
+    <Compile Include="Widgets\HiddenField.cs" />
+    <Compile Include="Widgets\HybridPanelBase.cs" />
+    <Compile Include="Widgets\Image.cs" />
+    <Compile Include="Widgets\ImageButton.cs" />
+    <Compile Include="Widgets\ImageField.cs" />
+    <Compile Include="Widgets\ImageMap.cs" />
+    <Compile Include="Widgets\Label.cs" />
+    <Compile Include="Widgets\LinkButton.cs" />
+    <Compile Include="Widgets\ListBox.cs" />
+    <Compile Include="Widgets\MultiView.cs" />
+    <Compile Include="Widgets\Panel.cs" />
+    <Compile Include="Widgets\RadioButton.cs" />
+    <Compile Include="Widgets\RadioButtonList.cs" />
+    <Compile Include="Widgets\TableCell.cs" />
+    <Compile Include="Widgets\TemplateField.cs" />
+    <Compile Include="Widgets\TextBox.cs" />
+    <Compile Include="Widgets\Timer.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Scripts\Button.js" />
+    <EmbeddedResource Include="Scripts\Label.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Scripts\CheckBox.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Scripts\DropDownList.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Scripts\WebControl.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Scripts\Control.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Scripts\HiddenField.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Scripts\Image.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Scripts\ImageButton.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Scripts\LinkButton.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Scripts\ListBox.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Scripts\RadioButtonList.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Scripts\TextBox.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Scripts\Panel.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Scripts\MultiView.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Scripts\Timer.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Scripts\DynamicImage.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Scripts\ClientUtils.js" />
+    <EmbeddedResource Include="Scripts\ListControl.js" />
+    <EmbeddedResource Include="Scripts\AspectModal.js" />
+    <EmbeddedResource Include="Scripts\AspectGeneric.js" />
+    <EmbeddedResource Include="Scripts\AspectUpdateControl.js" />
+    <EmbeddedResource Include="Scripts\AspectScrollable.js" />
+    <EmbeddedResource Include="Resources\Gaia.WebWidgets.CheckBoxList.bmp" />
+    <EmbeddedResource Include="Scripts\AspectResizable.js" />
+    <EmbeddedResource Include="Scripts\AspectKey.js" />
+    <EmbeddedResource Include="Scripts\AspectDroppable.js" />
+    <EmbeddedResource Include="Scripts\AspectMouseMove.js" />
+    <EmbeddedResource Include="Scripts\AspectHoverable.js" />
+    <EmbeddedResource Include="Scripts\AspectClickable.js" />
+    <EmbeddedResource Include="Scripts\Aspect.js" />
+    <EmbeddedResource Include="Scripts\AspectDraggable.js" />
+    <EmbeddedResource Include="Scripts\CheckBoxList.js" />
+    <EmbeddedResource Include="Scripts\RadioButton.js" />
+    <EmbeddedResource Include="Scripts\Container.js" />
+    <EmbeddedResource Include="Resources\Gaia.WebWidgets.DynamicImage.bmp" />
+    <EmbeddedResource Include="Resources\Gaia.WebWidgets.Timer.bmp" />
+    <EmbeddedResource Include="Resources\Gaia.WebWidgets.HiddenField.bmp" />
+    <EmbeddedResource Include="Resources\Gaia.WebWidgets.Button.bmp" />
+    <EmbeddedResource Include="Resources\Gaia.WebWidgets.CheckBox.bmp" />
+    <EmbeddedResource Include="Resources\Gaia.WebWidgets.DropDownList.bmp" />
+    <EmbeddedResource Include="Resources\Gaia.WebWidgets.Image.bmp" />
+    <EmbeddedResource Include="Resources\Gaia.WebWidgets.ImageButton.bmp" />
+    <EmbeddedResource Include="Resources\Gaia.WebWidgets.Label.bmp" />
+    <EmbeddedResource Include="Resources\Gaia.WebWidgets.LinkButton.bmp" />
+    <EmbeddedResource Include="Resources\Gaia.WebWidgets.ListBox.bmp" />
+    <EmbeddedResource Include="Resources\Gaia.WebWidgets.MultiView.bmp" />
+    <EmbeddedResource Include="Resources\Gaia.WebWidgets.Panel.bmp" />
+    <EmbeddedResource Include="Resources\Gaia.WebWidgets.RadioButton.bmp" />
+    <EmbeddedResource Include="Resources\Gaia.WebWidgets.RadioButtonList.bmp" />
+    <EmbeddedResource Include="Resources\Gaia.WebWidgets.TextBox.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Scripts\ImageMap.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Scripts\BrowserHistory.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\blank.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Scripts\GridView.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Scripts\TableCell.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Scripts\ButtonControl.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Gaia.WebWidgets.CompareValidator.bmp" />
+    <EmbeddedResource Include="Resources\Gaia.WebWidgets.CustomValidator.bmp" />
+    <EmbeddedResource Include="Resources\Gaia.WebWidgets.GridView.bmp" />
+    <EmbeddedResource Include="Resources\Gaia.WebWidgets.RangeValidator.bmp" />
+    <EmbeddedResource Include="Resources\Gaia.WebWidgets.RegularExpressionValidator.bmp" />
+    <EmbeddedResource Include="Resources\Gaia.WebWidgets.RequiredFieldValidator.bmp" />
+    <EmbeddedResource Include="Resources\Gaia.WebWidgets.ValidationSummary.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Scripts\ControlCollector.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="LibraryScripts\jquery.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="LibraryScripts\jsface.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="LibraryScripts\jquery-ui.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\jquery.ui.resizable.css" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="LibraryScripts\jquery.history.js" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.  -->
+  <Target Name="BeforeBuild">
+    <Delete Files="$(MSBuildProjectDirectory)/LibraryScripts/common.js;$(MSBuildProjectDirectory)/LibraryScripts/all.js" Condition="'$(Configuration)' == 'Release'" ContinueOnError="True" />
+    <ItemGroup Condition="'$(Configuration)' == 'Release'">
+      <CoreFiles Include="$(MSBuildProjectDirectory)/LibraryScripts/jquery.js;&#xD;&#xA;							$(MSBuildProjectDirectory)/LibraryScripts/jsface.js;&#xD;&#xA;							$(MSBuildProjectDirectory)/Scripts/Control.js;&#xD;&#xA;							$(MSBuildProjectDirectory)/Scripts/WebControl.js;" />
+      <OrderedScriptFiles Include="$(MSBuildProjectDirectory)/LibraryScripts/jquery-ui.js;&#xD;&#xA;									 $(MSBuildProjectDirectory)/LibraryScripts/jquery.history.js;&#xD;&#xA;									 $(MSBuildProjectDirectory)/Scripts/Container.js;&#xD;&#xA;									 $(MSBuildProjectDirectory)/Scripts/ButtonControl.js;&#xD;&#xA;									 $(MSBuildProjectDirectory)/Scripts/ListControl.js;&#xD;&#xA;									 $(MSBuildProjectDirectory)/Scripts/TableCell.js;" />
+      <ScriptFilesNoCore Include="$(MSBuildProjectDirectory)/LibraryScripts/**/*.*;$(MSBuildProjectDirectory)/Scripts/**/*.*;" Exclude="@(CoreFiles);@(OrderedScriptFiles)" />
+      <ScriptFiles Include="@(CoreFiles);@(OrderedScriptFiles);@(ScriptFilesNoCore);" />
+    </ItemGroup>
+    <AjaxMin JsKnownGlobalNames="jQuery,$,jsface" JsEvalTreatment="MakeImmediateSafe" JsSourceFiles="@(CoreFiles)" Switches="-comments:none" JsCombinedFileName="$(MSBuildProjectDirectory)/LibraryScripts/common.js" Condition="'$(Configuration)' == 'Release'" />
+    <AjaxMin JsKnownGlobalNames="jQuery,$,jsface" JsEvalTreatment="MakeImmediateSafe" JsSourceFiles="@(ScriptFiles)" Switches="-comments:none" JsCombinedFileName="$(MSBuildProjectDirectory)/LibraryScripts/all.js" Condition="'$(Configuration)' == 'Release'" />
+    <ItemGroup Condition="'$(Configuration)' == 'Release'">
+      <EmbeddedResource Include="LibraryScripts/all.js" />
+      <EmbeddedResource Include="LibraryScripts/common.js" />
+    </ItemGroup>
+  </Target>
+  <Target Name="AfterBuild">
+    <Delete Files="$(MSBuildProjectDirectory)/LibraryScripts/common.js;$(MSBuildProjectDirectory)/LibraryScripts/all.js" Condition="'$(Configuration)' == 'Release'" />
+  </Target>
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+  </PropertyGroup>
+</Project>

@@ -1,0 +1,9 @@
+.container-inplaceedit div
+{
+    padding: 4px;
+}
+.control-inplaceedit span, 
+.control-inplaceedit input[type="text"]
+{
+    border: #c0c0c0 1px solid;
+}

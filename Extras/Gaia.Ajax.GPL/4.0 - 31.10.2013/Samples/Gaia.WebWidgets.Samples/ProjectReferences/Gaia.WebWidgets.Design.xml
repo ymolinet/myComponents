@@ -1,0 +1,1480 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Gaia.WebWidgets.Design</name>
+    </assembly>
+    <members>
+        <member name="T:Gaia.WebWidgets.Extensions.Design.TabControlDesigner">
+            <summary>
+            Specialized <see cref="T:System.Web.UI.Design.ControlDesigner"/> for the <see cref="T:Gaia.WebWidgets.Extensions.TabControl"/> control.
+            </summary>
+        </member>
+        <member name="T:Gaia.WebWidgets.Extensions.Design.Core.ExtensionControlDesigner`1">
+            <summary>
+            Specialized base <see cref="T:System.Web.UI.Design.ControlDesigner"/> for extension control designers.
+            </summary>
+            <remarks>
+            One of the responsibilities is handling of <see cref="P:System.Web.UI.Page.StyleSheetTheme"/>.
+            </remarks>
+        </member>
+        <member name="M:Gaia.WebWidgets.Extensions.Design.Core.ExtensionControlDesigner`1.Initialize(System.ComponentModel.IComponent)">
+            <summary>
+            Initializes the Extension Control Designer
+            </summary>
+            <param name="component">Component to create Designer for</param>
+        </member>
+        <member name="M:Gaia.WebWidgets.Extensions.Design.Core.ExtensionControlDesigner`1.CreateViewControl">
+            <summary>
+            Returns a copy of the associated control for viewing or rendering on the design surface.
+            </summary>
+            <returns>
+            A Web server control.
+            </returns>
+        </member>
+        <member name="M:Gaia.WebWidgets.Extensions.Design.Core.ExtensionControlDesigner`1.GetService``1">
+            <summary>
+            Returns service of type <typeparamref name="TService"/>.
+            </summary>
+            <typeparam name="TService">Requested service type.</typeparam>
+            <returns>Service of the requested type or null if not found or not the requested type.</returns>
+        </member>
+        <member name="M:Gaia.WebWidgets.Extensions.Design.Core.ExtensionControlDesigner`1.GetPersistenceContent">
+            <summary>
+            Retrieves the persistable inner HTML markup of the control at design time.
+            </summary>
+            <returns>
+            A string representing the persistable inner HTML markup for the associated control. The default is null.
+            </returns>
+        </member>
+        <member name="M:Gaia.WebWidgets.Extensions.Design.Core.ExtensionControlDesigner`1.GetLocalizedInnerContent">
+            <summary>
+            Returns Localized inner content for persistence.
+            </summary>
+            <returns>Localized inner content for persistence.</returns>
+        </member>
+        <member name="M:Gaia.WebWidgets.Extensions.Design.Core.ExtensionControlDesigner`1.CreateContentRegion">
+            <summary>
+            Creates <see cref="T:System.Web.UI.Design.DesignerRegion"/> for the content area.
+            </summary>
+        </member>
+        <member name="M:Gaia.WebWidgets.Extensions.Design.Core.ExtensionControlDesigner`1.VerifyComponent(System.ComponentModel.IComponent)">
+            <summary>
+            Verifies that <paramref name="component"/> is of type <typeparamref name="T"/>.
+            </summary>
+        </member>
+        <member name="P:Gaia.WebWidgets.Extensions.Design.Core.ExtensionControlDesigner`1.DesignTimeControl">
+            <summary>
+            Returns strong-typed <see cref="P:System.Web.UI.Design.ControlDesigner.ViewControl"/>.
+            </summary>
+        </member>
+        <member name="P:Gaia.WebWidgets.Extensions.Design.Core.ExtensionControlDesigner`1.Control">
+            <summary>
+            Returns strongly-typed version of the <see cref="T:System.ComponentModel.Component"/>.
+            </summary>
+        </member>
+        <member name="P:Gaia.WebWidgets.Extensions.Design.Core.ExtensionControlDesigner`1.UsePreviewControl">
+            <summary>
+            Gets a value indicating whether the control designer uses a temporary preview control to generate the design-time HTML markup.
+            </summary>
+            <returns>
+            True, if the control designer uses a temporary copy of the control for design-time preview;
+            otherwise, false, if the control designer uses the <see cref="P:System.ComponentModel.Design.ComponentDesigner.Component"/> property 
+            for the control contained in the control designer.
+            </returns>
+        </member>
+        <member name="P:Gaia.WebWidgets.Extensions.Design.Core.ExtensionControlDesigner`1.FormattedComponentName">
+            <summary>
+            Returns formatted name of the <see cref="T:System.ComponentModel.Component"/>.
+            </summary>
+        </member>
+        <member name="P:Gaia.WebWidgets.Extensions.Design.Core.ExtensionControlDesigner`1.PersistLocalizedInnerContent">
+            <summary>
+            True if <see cref="M:Gaia.WebWidgets.Extensions.Design.Core.ExtensionControlDesigner`1.GetPersistenceContent"/> should return localized inner content.
+            Otherwise, false (reverts to default behaviour).
+            </summary>
+        </member>
+        <member name="M:Gaia.WebWidgets.Extensions.Design.TabControlDesigner.GetDesignTimeHtml(System.Web.UI.Design.DesignerRegionCollection)">
+            <summary>
+            Retrieves the HTML markup to display the control and populates the collection with the current control designer regions.
+            </summary>
+            <returns>
+            The design-time HTML markup for the associated control, including all control designer regions.
+            </returns>
+            <param name="regions">A collection of control designer regions for the associated control.</param>
+        </member>
+        <member name="M:Gaia.WebWidgets.Extensions.Design.TabControlDesigner.GetEditableDesignerRegionContent(System.Web.UI.Design.EditableDesignerRegion)">
+            <summary>
+            Creates and returns HTML markup for all child controls.
+            </summary>
+            <param name="region">The Editable region for which the markup was requested</param>
+            <returns>HTML Markup for specified Editable Region</returns>
+        </member>
+        <member name="M:Gaia.WebWidgets.Extensions.Design.TabControlDesigner.SetEditableDesignerRegionContent(System.Web.UI.Design.EditableDesignerRegion,System.String)">
+            <summary>
+            Specifies the content for an editable region of the control at design time. 
+            </summary>
+            <param name="region">An editable design region contained within the control.</param>
+            <param name="content">The content to assign for the editable design region.</param>
+        </member>
+        <member name="M:Gaia.WebWidgets.Extensions.Design.TabControlDesigner.OnClick(System.Web.UI.Design.DesignerRegionMouseEventArgs)">
+            <summary>
+            Called by the design host when the user clicks the associated control at design time.
+            </summary>
+            <param name="e">
+            A <see cref="T:System.Web.UI.Design.DesignerRegionMouseEventArgs"/> object that specifies the location and, possibly, the control designer region that the user clicked.
+            </param>
+        </member>
+        <member name="M:Gaia.WebWidgets.Extensions.Design.TabControlDesigner.OnComponentChanged(System.Object,System.ComponentModel.Design.ComponentChangedEventArgs)">
+            <summary>
+            Called when the associated control changes.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="ce">A <see cref="T:System.ComponentModel.Design.ComponentChangedEventArgs"/> object that contains the event data.</param>
+        </member>
+        <member name="M:Gaia.WebWidgets.Extensions.Design.TabControlDesigner.GetPersistenceContent">
+            <summary>
+            Retrieves the persistable inner HTML markup of the control at design time.
+            </summary>
+            <returns>
+            A string representing the persistable inner HTML markup for the associated control. The default is null.
+            </returns>
+        </member>
+        <member name="M:Gaia.WebWidgets.Extensions.Design.TabControlDesigner.ChangeActiveViewIndex(System.Int32)">
+            <summary>
+            Changes <see cref="P:Gaia.WebWidgets.Extensions.TabControl.ActiveTabViewIndex"/> to the specified <paramref name="newIndex"/>.
+            </summary>
+        </member>
+        <member name="M:Gaia.WebWidgets.Extensions.Design.TabControlDesigner.OnActiveViewIndexChange(System.Object)">
+            <summary>
+            Called when clicking on the <see cref="T:Gaia.WebWidgets.Extensions.TabView"/> header.
+            </summary>
+            <param name="context">
+            A <see cref="T:System.Web.UI.Pair"/> containing the <see cref="T:System.ComponentModel.PropertyDescriptor"/> for the <see cref="P:Gaia.WebWidgets.Extensions.TabControl.ActiveTabViewIndex"/> property and
+            the index of the header of the <see cref="T:Gaia.WebWidgets.Extensions.TabView"/> which was clicked.
+            </param>
+            <returns></returns>
+        </member>
+        <member name="M:Gaia.WebWidgets.Extensions.Design.TabControlDesigner.OnTagRender(Gaia.WebWidgets.HtmlFormatting.Tag,System.Int32)">
+            <summary>
+            Called when specified <paramref name="tag"/> is being rendered.
+            </summary>
+        </member>
+        <member name="P:Gaia.WebWidgets.Extensions.Design.TabControlDesigner.CollectionControlDesigner">
+            <summary>
+            The implementation supporting collection editing.
+            </summary>
+        </member>
+        <member name="P:Gaia.WebWidgets.Extensions.Design.TabControlDesigner.ActionLists">
+            <summary>
+            Gets the action list collection for the control designer.
+            </summary>
+            <returns>
+            A <see cref="T:System.ComponentModel.Design.DesignerActionListCollection"/> object that contains 
+            the <see cref="T:System.ComponentModel.Design.DesignerActionList"/> items for the control designer.
+            </returns>
+        </member>
+        <member name="P:Gaia.WebWidgets.Extensions.Design.TabControlDesigner.PersistLocalizedInnerContent">
+            <summary>
+            True if <see cref="M:Gaia.WebWidgets.Extensions.Design.Core.ExtensionControlDesigner`1.GetPersistenceContent"/> should return localized inner content.
+            Otherwise, false (reverts to default behaviour).
+            </summary>
+        </member>
+        <member name="T:Gaia.WebWidgets.Extensions.Design.TabControlDesigner.TabViewHeaderRegion">
+            <summary>
+            Specialized <see cref="T:System.Web.UI.Design.DesignerRegion"/> for the header of the <see cref="T:Gaia.WebWidgets.Extensions.TabView"/>.
+            </summary>
+        </member>
+        <member name="M:Gaia.WebWidgets.Extensions.Design.TabControlDesigner.TabViewHeaderRegion.#ctor(System.Web.UI.Design.ControlDesigner,System.String,System.Int32)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Gaia.WebWidgets.Extensions.Design.TabControlDesigner.TabViewHeaderRegion"/> class with the specified name for a control designer.
+            </summary>
+            <param name="designer">The control designer that contains this designer region.</param>
+            <param name="name">The name of this designer region.</param>
+            <param name="index">Index of the <see cref="T:Gaia.WebWidgets.Extensions.TabView"/> in the owner <see cref="T:Gaia.WebWidgets.Extensions.TabControl"/>.</param>
+            <exception cref="T:System.ArgumentNullException">
+            <paramref name="designer"/> is null.
+            -or-
+            <paramref name="designer"/> is an empty string ("").
+            -or-
+            <paramref name="name"/> is null.
+            -or-
+            <paramref name="name"/> is an empty string ("").
+            </exception>
+        </member>
+        <member name="P:Gaia.WebWidgets.Extensions.Design.TabControlDesigner.TabViewHeaderRegion.Index">
+            <summary>
+            Index of the <see cref="T:Gaia.WebWidgets.Extensions.TabView"/> in the owner <see cref="T:Gaia.WebWidgets.Extensions.TabControl"/>.
+            </summary>
+        </member>
+        <member name="T:Gaia.WebWidgets.Extensions.Design.TabControlDesigner.TabControlEditableRegion">
+            <summary>
+            Specialized <see cref="T:System.Web.UI.Design.EditableDesignerRegion"/> for the <see cref="T:Gaia.WebWidgets.Extensions.TabControl"/>.
+            </summary>
+        </member>
+        <member name="M:Gaia.WebWidgets.Extensions.Design.TabControlDesigner.TabControlEditableRegion.#ctor(Gaia.WebWidgets.Extensions.Design.TabControlDesigner,System.String,Gaia.WebWidgets.Extensions.TabView)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Gaia.WebWidgets.Extensions.Design.TabControlDesigner.TabControlEditableRegion"/> class using the given owner and name.
+            </summary>
+            <param name="owner">
+            A <see cref="T:System.Web.UI.Design.ControlDesigner"/> object, or a designer that derives from <see cref="T:System.Web.UI.Design.ControlDesigner"/>.
+            </param>
+            <param name="name">The name of the region.</param>
+            <param name="tabView">Associated <see cref="P:Gaia.WebWidgets.Extensions.Design.TabControlDesigner.TabControlEditableRegion.TabView"/>.</param>
+        </member>
+        <member name="P:Gaia.WebWidgets.Extensions.Design.TabControlDesigner.TabControlEditableRegion.TabView">
+            <summary>
+            Returns the associated <see cref="P:Gaia.WebWidgets.Extensions.Design.TabControlDesigner.TabControlEditableRegion.TabView"/>.
+            </summary>
+        </member>
+        <member name="T:Gaia.WebWidgets.Extensions.Design.TreeViewDesigner">
+            <summary>
+            Specialized <see cref="T:System.Web.UI.Design.ControlDesigner"/> for the <see cref="T:Gaia.WebWidgets.Extensions.TreeView"/> control.
+            </summary>
+        </member>
+        <member name="M:Gaia.WebWidgets.Extensions.Design.TreeViewDesigner.GetPersistenceContent">
+            <summary>
+            Retrieves the persistable inner HTML markup of the control at design time.
+            </summary>
+            <returns>
+            A string representing the persistable inner HTML markup for the associated control. The default is null.
+            </returns>
+        </member>
+        <member name="M:Gaia.WebWidgets.Extensions.Design.TreeViewDesigner.OnComponentChanged(System.Object,System.ComponentModel.Design.ComponentChangedEventArgs)">
+            <summary>
+            Called when the associated control changes.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="ce">A <see cref="T:System.ComponentModel.Design.ComponentChangedEventArgs"/> object that contains the event data.</param>
+        </member>
+        <member name="M:Gaia.WebWidgets.Extensions.Design.TreeViewDesigner.GetDesignTimeHtml(System.Web.UI.Design.DesignerRegionCollection)">
+            <summary>
+            Retrieves the HTML markup to display the control and populates the collection with the current control designer regions.
+            </summary>
+            <returns>
+            The design-time HTML markup for the associated control, including all control designer regions.
+            </returns>
+            <param name="regions">A collection of control designer regions for the associated control.</param>
+        </member>
+        <member name="M:Gaia.WebWidgets.Extensions.Design.TreeViewDesigner.GetEditableDesignerRegionContent(System.Web.UI.Design.EditableDesignerRegion)">
+            <summary>
+            Returns the content for an editable region of the design-time view of the associated control.
+            </summary>
+            <returns>
+            The persisted content for the region, if the control designer supports editable regions; otherwise, an empty string ("").
+            </returns>
+            <param name="region">The <see cref="T:System.Web.UI.Design.EditableDesignerRegion"/> object to get content for.</param>
+        </member>
+        <member name="M:Gaia.WebWidgets.Extensions.Design.TreeViewDesigner.SetEditableDesignerRegionContent(System.Web.UI.Design.EditableDesignerRegion,System.String)">
+            <summary>
+            Specifies the content for an editable region of the control at design time. 
+            </summary>
+            <param name="region">An editable design region contained within the control.</param>
+            <param name="content">The content to assign for the editable design region.</param>
+        </member>
+        <member name="M:Gaia.WebWidgets.Extensions.Design.TreeViewDesigner.OnClick(System.Web.UI.Design.DesignerRegionMouseEventArgs)">
+            <summary>
+            Called by the design host when the user clicks the associated control at design time.
+            </summary>
+            <param name="e">
+            A <see cref="T:System.Web.UI.Design.DesignerRegionMouseEventArgs"/> object that specifies the location 
+            and, possibly, the control designer region that the user clicked.
+            </param>
+        </member>
+        <member name="M:Gaia.WebWidgets.Extensions.Design.TreeViewDesigner.ToggleNode(System.Collections.Generic.IEnumerable{System.Int32})">
+            <summary>
+            Toggles the <see cref="P:Gaia.WebWidgets.Extensions.TreeViewItem.Collapsed"/> property of the <see cref="T:Gaia.WebWidgets.Extensions.TreeViewItem"/>
+            having the specified <paramref name="position"/>.
+            </summary>
+        </member>
+        <member name="M:Gaia.WebWidgets.Extensions.Design.TreeViewDesigner.OnToggleNode(Gaia.WebWidgets.Extensions.TreeViewItem)">
+            <summary>
+            Called when the <see cref="P:Gaia.WebWidgets.Extensions.TreeViewItem.Collapsed"/> proeprty is toggled.
+            </summary>
+        </member>
+        <member name="M:Gaia.WebWidgets.Extensions.Design.TreeViewDesigner.GetNodeByPosition(System.Collections.Generic.IEnumerable{System.Int32})">
+            <summary>
+            Returns the <see cref="T:Gaia.WebWidgets.Extensions.TreeViewItem"/> having the specified <paramref name="position"/>.
+            </summary>
+        </member>
+        <member name="M:Gaia.WebWidgets.Extensions.Design.TreeViewDesigner.AddDesignerRegions(System.Web.UI.Design.DesignerRegionCollection)">
+            <summary>
+            Creates and adds <see cref="T:System.Web.UI.Design.DesignerRegion"/> objects to the <paramref name="regions"/> collection.
+            </summary>
+        </member>
+        <member name="M:Gaia.WebWidgets.Extensions.Design.TreeViewDesigner.WalkTreeView">
+            <summary>
+            Walks down entire <see cref="T:Gaia.WebWidgets.Extensions.TreeView"/>.
+            </summary>
+        </member>
+        <member name="M:Gaia.WebWidgets.Extensions.Design.TreeViewDesigner.DenoteSamePosition(System.Collections.Generic.IList{System.Int32},System.Collections.Generic.IList{System.Int32})">
+            <summary>
+            Returns true if the <paramref name="first"/> and <paramref name="second"/> denote same position.
+            </summary>
+        </member>
+        <member name="M:Gaia.WebWidgets.Extensions.Design.TreeViewDesigner.RenderDesignTimeHtml(Gaia.WebWidgets.HtmlFormatting.XhtmlTagFactory,System.Web.UI.Design.DesignerRegionCollection)">
+            <summary>
+            Renders design time html using the specified <see cref="T:Gaia.WebWidgets.HtmlFormatting.XhtmlTagFactory"/>.
+            </summary>
+        </member>
+        <member name="M:Gaia.WebWidgets.Extensions.Design.TreeViewDesigner.OnTagRender(Gaia.WebWidgets.HtmlFormatting.Tag,System.Int32)">
+            <summary>
+            Called when the expander or child container tags are rendered.
+            </summary>
+        </member>
+        <member name="P:Gaia.WebWidgets.Extensions.Design.TreeViewDesigner.CollectionControlDesigner">
+            <summary>
+            Instance of <see cref="T:Gaia.WebWidgets.Extensions.Design.Core.CollectionControlDesignerImpl"/>.
+            </summary>
+        </member>
+        <member name="P:Gaia.WebWidgets.Extensions.Design.TreeViewDesigner.ActionLists">
+            <summary>
+            Gets the action list collection for the control designer.
+            </summary>
+            <returns>
+            A <see cref="T:System.ComponentModel.Design.DesignerActionListCollection"/> object 
+            that contains the <see cref="T:System.ComponentModel.Design.DesignerActionList"/> items for the control designer.
+            </returns>
+        </member>
+        <member name="P:Gaia.WebWidgets.Extensions.Design.TreeViewDesigner.PersistLocalizedInnerContent">
+            <summary>
+            True if <see cref="M:Gaia.WebWidgets.Extensions.Design.Core.ExtensionControlDesigner`1.GetPersistenceContent"/> should return localized inner content.
+            Otherwise, false (reverts to default behaviour).
+            </summary>
+        </member>
+        <member name="P:Gaia.WebWidgets.Extensions.Design.TreeViewDesigner.SelectedNodePosition">
+            <summary>
+            Gets or sets the position of the selected <see cref="T:Gaia.WebWidgets.Extensions.TreeViewItem"/>.
+            </summary>
+        </member>
+        <member name="P:Gaia.WebWidgets.Extensions.Design.TreeViewDesigner.SelectedNode">
+            <summary>
+            Returns the <see cref="T:Gaia.WebWidgets.Extensions.TreeViewItem"/> having <see cref="P:Gaia.WebWidgets.Extensions.Design.TreeViewDesigner.SelectedNodePosition"/>.
+            </summary>
+        </member>
+        <member name="T:Gaia.WebWidgets.Extensions.Design.TreeViewDesigner.TreeViewNodeToggleRegion">
+            <summary>
+            Specialized <see cref="T:System.Web.UI.Design.DesignerRegion"/> for toggling <see cref="T:Gaia.WebWidgets.Extensions.TreeViewItem"/>.
+            </summary>
+        </member>
+        <member name="M:Gaia.WebWidgets.Extensions.Design.TreeViewDesigner.TreeViewNodeToggleRegion.#ctor(System.Web.UI.Design.ControlDesigner,System.String,System.Collections.Generic.IEnumerable{System.Int32})">
+            <summary>
+            Initializes a new instance of the <see cref="T:System.Web.UI.Design.DesignerRegion"/> class with the specified name for a control designer.
+            </summary>
+            <param name="designer">The control designer that contains this designer region.</param>
+            <param name="name">The name of this designer region.</param>
+            <param name="position">Associated <see cref="T:Gaia.WebWidgets.Extensions.TreeViewItem"/> position.</param>
+            <exception cref="T:System.ArgumentNullException"><paramref name="designer"/> is null.
+            -or-
+            <paramref name="designer"/> is an empty string ("").
+            -or-
+            <paramref name="name"/> is null.
+            -or-
+            <paramref name="name"/> is an empty string ("").
+            </exception>
+        </member>
+        <member name="P:Gaia.WebWidgets.Extensions.Design.TreeViewDesigner.TreeViewNodeToggleRegion.Position">
+            <summary>
+            Returns associated <see cref="T:Gaia.WebWidgets.Extensions.TreeViewItem"/> to toggle.
+            </summary>
+        </member>
+        <member name="T:Gaia.WebWidgets.Extensions.Design.TreeViewDesigner.TreeViewNodeSelectionRegion">
+            <summary>
+            Specialized <see cref="T:System.Web.UI.Design.DesignerRegion"/> for selecting <see cref="T:Gaia.WebWidgets.Extensions.TreeViewItem"/> for editing.
+            </summary>
+        </member>
+        <member name="M:Gaia.WebWidgets.Extensions.Design.TreeViewDesigner.TreeViewNodeSelectionRegion.#ctor(System.Web.UI.Design.ControlDesigner,System.String,System.Collections.Generic.IEnumerable{System.Int32})">
+            <summary>
+            Initializes a new instance of the <see cref="T:System.Web.UI.Design.DesignerRegion"/> class with the specified name for a control designer.
+            </summary>
+            <param name="designer">The control designer that contains this designer region.</param>
+            <param name="name">The name of this designer region.</param>
+            <param name="position">Associated <see cref="T:Gaia.WebWidgets.Extensions.TreeViewItem"/> position.</param>
+            <exception cref="T:System.ArgumentNullException"><paramref name="designer"/> is null.
+            -or-
+            <paramref name="designer"/> is an empty string ("").
+            -or-
+            <paramref name="name"/> is null.
+            -or-
+            <paramref name="name"/> is an empty string ("").
+            </exception>
+        </member>
+        <member name="P:Gaia.WebWidgets.Extensions.Design.TreeViewDesigner.TreeViewNodeSelectionRegion.Position">
+            <summary>
+            Returns associated <see cref="T:Gaia.WebWidgets.Extensions.TreeViewItem"/> to toggle.
+            </summary>
+        </member>
+        <member name="T:Gaia.WebWidgets.Extensions.Design.TreeViewDesigner.NodeTraverseInfo">
+            <summary>
+            Denotes required information about <see cref="T:Gaia.WebWidgets.Extensions.TreeViewItem"/> during <see cref="T:Gaia.WebWidgets.Extensions.TreeView"/> traversal.
+            </summary>
+        </member>
+        <member name="M:Gaia.WebWidgets.Extensions.Design.TreeViewDesigner.NodeTraverseInfo.#ctor(Gaia.WebWidgets.Extensions.TreeViewItem,System.Boolean,System.Collections.Generic.IList{System.Int32})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Gaia.WebWidgets.Extensions.Design.TreeViewDesigner.NodeTraverseInfo"/> class.
+            </summary>
+        </member>
+        <member name="P:Gaia.WebWidgets.Extensions.Design.TreeViewDesigner.NodeTraverseInfo.Node">
+            <summary>
+            The associated <see cref="T:Gaia.WebWidgets.Extensions.TreeViewItem"/>.
+            </summary>
+        </member>
+        <member name="P:Gaia.WebWidgets.Extensions.Design.TreeViewDesigner.NodeTraverseInfo.ParentCollapsed">
+            <summary>
+            Returns true if the parent <see cref="T:Gaia.WebWidgets.Extensions.TreeViewItem"/> is collapsed.
+            </summary>
+        </member>
+        <member name="P:Gaia.WebWidgets.Extensions.Design.TreeViewDesigner.NodeTraverseInfo.Position">
+            <summary>
+            Position of the <see cref="P:Gaia.WebWidgets.Extensions.Design.TreeViewDesigner.NodeTraverseInfo.Node"/> relative to the root <see cref="T:Gaia.WebWidgets.Extensions.TreeViewItem"/>.
+            </summary>
+        </member>
+        <member name="T:Gaia.WebWidgets.Extensions.Design.ToolbarItemCollectionEditor">
+            <summary>
+            Specialized <see cref="T:System.Drawing.Design.UITypeEditor"/> for the <see cref="T:Gaia.WebWidgets.Extensions.ToolbarItemCollection"/>.
+            </summary>
+        </member>
+        <member name="T:Gaia.WebWidgets.Extensions.Design.Core.GenericCollectionEditor`1">
+            <summary>
+            Specialized base <see cref="T:System.ComponentModel.Design.CollectionEditor"/> for the <see cref="T:Gaia.WebWidgets.GenericControlCollection`1"/>.
+            </summary>
+            <typeparam name="T">The collection item type.</typeparam>
+        </member>
+        <member name="M:Gaia.WebWidgets.Extensions.Design.Core.GenericCollectionEditor`1.#ctor(System.Type)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Gaia.WebWidgets.Extensions.Design.Core.GenericCollectionEditor`1"/> class using the specified collection type.
+            </summary>
+            <param name="type">The type of the collection for this editor to edit.</param>
+        </member>
+        <member name="M:Gaia.WebWidgets.Extensions.Design.Core.GenericCollectionEditor`1.CreateCollectionItemType">
+            <summary>
+            Gets the data type that this collection contains.
+            </summary>
+            <returns>
+            The data type of the items in the collection, or an <see cref="T:System.Object"/> if no Item property can be located on the collection.
+            </returns>
+        </member>
+        <member name="M:Gaia.WebWidgets.Extensions.Design.Core.GenericCollectionEditor`1.GetItems(System.Object)">
+            <summary>
+            Gets an array of objects containing the specified collection.
+            </summary>
+            <returns>
+            An array containing the collection objects, or an empty object array if the specified collection does not inherit from <see cref="T:System.Collections.ICollection"/>.
+            </returns>
+            <param name="editValue">The collection to edit.</param>
+        </member>
+        <member name="M:Gaia.WebWidgets.Extensions.Design.Core.GenericCollectionEditor`1.SetItems(System.Object,System.Object[])">
+            <summary>
+            Sets the specified array as the items of the collection.
+            </summary>
+            <returns>
+            The newly created collection object or, otherwise, the collection indicated by the <paramref name="editValue"/> parameter.
+            </returns>
+            <param name="editValue">The collection to edit.</param>
+            <param name="value">An array of objects to set as the collection items.</param>
+        </member>
+        <member name="M:Gaia.WebWidgets.Extensions.Design.Core.GenericCollectionEditor`1.CreateInstance(System.Type)">
+            <summary>
+            Creates a new instance of the specified collection item type.
+            </summary>
+            <returns>A new instance of the specified object.</returns>
+            <param name="itemType">The type of item to create.</param>
+        </member>
+        <member name="M:Gaia.WebWidgets.Extensions.Design.Core.GenericCollectionEditor`1.CanSelectMultipleInstances">
+            <summary>
+            Indicates whether multiple collection items can be selected at once.
+            </summary>
+            <returns>
+            true if it multiple collection members can be selected at the same time; otherwise, false. By default, this returns true.
+            </returns>
+        </member>
+        <member name="M:Gaia.WebWidgets.Extensions.Design.ToolbarItemCollectionEditor.#ctor(System.Type)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Gaia.WebWidgets.Extensions.Design.ToolbarItemCollectionEditor"/> class using the specified collection type.
+            </summary>
+            <param name="type">The type of the collection for this editor to edit.</param>
+        </member>
+        <member name="M:Gaia.WebWidgets.Extensions.Design.ToolbarItemCollectionEditor.MapCollectionType(System.Type)">
+            <summary>
+            Maps specified <paramref name="type"/> to a more specific type for the <see cref="T:System.Drawing.Design.UITypeEditor"/> constructor.
+            </summary>
+        </member>
+        <member name="T:Gaia.WebWidgets.Extensions.Design.InPlaceEditDesigner">
+            <summary>
+            Specialized <see cref="T:System.Web.UI.Design.ControlDesigner"/> for the <see cref="T:Gaia.WebWidgets.Extensions.InPlaceEdit"/> control.
+            </summary>
+        </member>
+        <member name="M:Gaia.WebWidgets.Extensions.Design.InPlaceEditDesigner.GetDesignTimeHtml">
+            <summary>
+            Retrieves the HTML markup that is used to represent the control at design time.
+            </summary>
+            <returns>
+            The HTML markup used to represent the control at design time.
+            </returns>
+        </member>
+        <member name="T:Gaia.WebWidgets.Extensions.Design.Core.ContainerExtensionControlDesigner`1">
+            <summary>
+            Base class with common functionality for Extension controls, which are Containers.
+            </summary>
+        </member>
+        <member name="M:Gaia.WebWidgets.Extensions.Design.Core.ContainerExtensionControlDesigner`1.GetDesignTimeHtml(System.Web.UI.Design.DesignerRegionCollection)">
+            <summary>
+            Retrieves the HTML markup to display the control and populates the collection with the current control designer regions.
+            </summary>
+            <returns>
+            The design-time HTML markup for the associated control, including all control designer regions.
+            </returns>
+            <param name="regions">A collection of control designer regions for the associated control.</param>
+        </member>
+        <member name="M:Gaia.WebWidgets.Extensions.Design.Core.ContainerExtensionControlDesigner`1.GetEditableDesignerRegionContent(System.Web.UI.Design.EditableDesignerRegion)">
+            <summary>
+            Creates and returns HTML markup for all child controls.
+            </summary>
+            <param name="region">The Editable region for which the markup was requested</param>
+            <returns>HTML Markup for specified Editable Region</returns>
+        </member>
+        <member name="M:Gaia.WebWidgets.Extensions.Design.Core.ContainerExtensionControlDesigner`1.SetEditableDesignerRegionContent(System.Web.UI.Design.EditableDesignerRegion,System.String)">
+            <summary>
+            Persists Editable region content
+            </summary>
+            <param name="region">Editable region the content of which should be persisted</param>
+            <param name="content">New markup, which should be persisted</param>
+        </member>
+        <member name="P:Gaia.WebWidgets.Extensions.Design.Core.ContainerExtensionControlDesigner`1.PersistLocalizedInnerContent">
+            <summary>
+            True if <see cref="M:Gaia.WebWidgets.Extensions.Design.Core.ExtensionControlDesigner`1.GetPersistenceContent"/> should return localized inner content.
+            Otherwise, false (reverts to default behaviour).
+            </summary>
+        </member>
+        <member name="T:Gaia.WebWidgets.Extensions.Design.Core.CollectionControlDesignerImpl">
+            <summary>
+            Implementation for the extension control <see cref="T:System.Web.UI.Design.ControlDesigner"/> which support collection editing.
+            </summary>
+        </member>
+        <member name="M:Gaia.WebWidgets.Extensions.Design.Core.CollectionControlDesignerImpl.#ctor(System.Web.UI.Design.ControlDesigner,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Gaia.WebWidgets.Extensions.Design.Core.CollectionControlDesignerImpl"/> class.
+            </summary>
+        </member>
+        <member name="M:Gaia.WebWidgets.Extensions.Design.Core.CollectionControlDesignerImpl.BeforeOnComponentChanged(System.Object,System.ComponentModel.Design.ComponentChangedEventArgs)">
+            <summary>
+            Called when the associated control changes.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="ce">A <see cref="T:System.ComponentModel.Design.ComponentChangedEventArgs"/> object that contains the event data.</param>
+        </member>
+        <member name="M:Gaia.WebWidgets.Extensions.Design.Core.CollectionControlDesignerImpl.AfterGetPersistenceContent">
+            <summary>
+            Retrieves the persistable inner HTML markup of the control at design time.
+            </summary>
+            <returns>
+            A string representing the persistable inner HTML markup for the associated control. The default is null.
+            </returns>
+        </member>
+        <member name="M:Gaia.WebWidgets.Extensions.Design.Core.CollectionControlDesignerImpl.EditCollection">
+            <summary>
+            Starts <see cref="T:System.Drawing.Design.UITypeEditor"/> for the associated collection.
+            </summary>
+        </member>
+        <member name="M:Gaia.WebWidgets.Extensions.Design.Core.CollectionControlDesignerImpl.EditCollectionCallback(System.Object)">
+            <summary>
+            Callback invoked in a <see cref="T:System.ComponentModel.Design.DesignerTransaction"/>.
+            </summary>
+            <param name="context">Context of the callback.</param>
+            <returns>True if the transaction completed successfully; false if the transaction should be rolled back.</returns>
+        </member>
+        <member name="P:Gaia.WebWidgets.Extensions.Design.Core.CollectionControlDesignerImpl.CollectionChanged">
+            <summary>
+            Gets or sets if the associated collection was modified.
+            </summary>
+        </member>
+        <member name="P:Gaia.WebWidgets.Extensions.Design.Core.CollectionControlDesignerImpl.ActionLists">
+            <summary>
+            Gets the action list collection for the control designer.
+            </summary>
+            <returns>
+            A <see cref="T:System.ComponentModel.Design.DesignerActionListCollection"/> object that contains 
+            the <see cref="T:System.ComponentModel.Design.DesignerActionList"/> items for the control designer.
+            </returns>
+        </member>
+        <member name="P:Gaia.WebWidgets.Extensions.Design.Core.CollectionControlDesignerImpl.PersistLocalizedInnerContent">
+            <summary>
+            True if <see cref="M:Gaia.WebWidgets.Extensions.Design.Core.ExtensionControlDesigner`1.GetPersistenceContent"/> should return localized inner content.
+            Otherwise, false (reverts to default behaviour).
+            </summary>
+        </member>
+        <member name="T:Gaia.WebWidgets.Extensions.Design.Core.CollectionControlDesignerImpl.CollectionEditorDesignerActionList">
+            <summary>
+            Specialized <see cref="T:System.ComponentModel.Design.DesignerActionList"/> for the <see cref="T:Gaia.WebWidgets.Extensions.Design.Core.CollectionControlDesignerImpl.CollectionEditorDesignerActionList"/>.
+            </summary>
+        </member>
+        <member name="M:Gaia.WebWidgets.Extensions.Design.Core.CollectionControlDesignerImpl.CollectionEditorDesignerActionList.#ctor(Gaia.WebWidgets.Extensions.Design.Core.CollectionControlDesignerImpl)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Gaia.WebWidgets.Extensions.Design.Core.CollectionControlDesignerImpl.CollectionEditorDesignerActionList"/> class.
+            </summary>
+            <param name="impl">Owner Control Designer Implementation.</param>
+        </member>
+        <member name="M:Gaia.WebWidgets.Extensions.Design.Core.CollectionControlDesignerImpl.CollectionEditorDesignerActionList.GetSortedActionItems">
+            <summary>
+            Returns the collection of <see cref="T:System.ComponentModel.Design.DesignerActionItem"/> objects contained in the list.
+            </summary>
+            <returns>
+            A <see cref="T:System.ComponentModel.Design.DesignerActionItem"/> array that contains the items in this list.
+            </returns>
+        </member>
+        <member name="M:Gaia.WebWidgets.Extensions.Design.Core.CollectionControlDesignerImpl.CollectionEditorDesignerActionList.EditCollection">
+            <summary>
+            Late-bound method used by reflection 
+            </summary>
+        </member>
+        <member name="T:Gaia.WebWidgets.Design.CommandFieldDesigner">
+            <summary>
+            Specialized <see cref="T:System.Web.UI.Design.WebControls.DataControlFieldDesigner"/> for the <see cref="T:Gaia.WebWidgets.CommandField"/>.
+            </summary>
+        </member>
+        <member name="M:Gaia.WebWidgets.Design.CommandFieldDesigner.CreateField">
+            <summary>
+            Creates an empty <see cref="T:Gaia.WebWidgets.CommandField"/> object.
+            </summary>
+            <returns>Empty <see cref="T:Gaia.WebWidgets.CommandField"/>.</returns>
+        </member>
+        <member name="M:Gaia.WebWidgets.Design.CommandFieldDesigner.CreateField(System.Web.UI.Design.IDataSourceFieldSchema)">
+            <summary>
+            When overridden in a derived class, creates a new field object using the specified data field information.
+            </summary>
+            <returns>
+            A new field object.
+            </returns>
+            <param name="fieldSchema">Schema information that contains the structure of a data field.</param>
+        </member>
+        <member name="M:Gaia.WebWidgets.Design.CommandFieldDesigner.CreateTemplateField(System.Web.UI.WebControls.DataControlField,System.Web.UI.WebControls.DataBoundControl)">
+            <summary>
+            Creates a <see cref="T:System.Web.UI.WebControls.TemplateField"/> field for the specified <paramref name="dataControlField"/>.
+            </summary>
+        </member>
+        <member name="M:Gaia.WebWidgets.Design.CommandFieldDesigner.GetNodeText(System.Web.UI.WebControls.DataControlField)">
+            <summary>
+            Gets the name that is displayed for the specified <paramref name="dataControlField"/> in the fields editor.
+            </summary>
+        </member>
+        <member name="M:Gaia.WebWidgets.Design.CommandFieldDesigner.IsEnabled(System.Web.UI.WebControls.DataBoundControl)">
+            <summary>
+            When overridden in a derived class, gets a value that indicates whether the data field is enabled in the fields editor.
+            </summary>
+            <returns>
+            A value that indicates whether the data field is enabled in the fields editor.
+            </returns>
+            <param name="parent">The data-bound control that contains the data field.</param>
+        </member>
+        <member name="M:Gaia.WebWidgets.Design.CommandFieldDesigner.GetTemplateContent(System.Web.UI.WebControls.CommandField,System.Web.UI.WebControls.DataBoundControlMode)">
+            <summary>
+            Returns template content for the specified <paramref name="commandField"/>.
+            </summary>
+        </member>
+        <member name="M:Gaia.WebWidgets.Design.CommandFieldDesigner.BuildButton(Gaia.WebWidgets.Design.TemplateContentBuilder,System.Type,System.String,System.String,System.String,System.Boolean,System.Web.UI.WebControls.DataBoundControlMode)">
+            <summary>
+            Builds a command button using the specified <paramref name="builder"/> and having the specified properties.
+            </summary>
+        </member>
+        <member name="P:Gaia.WebWidgets.Design.CommandFieldDesigner.DefaultNodeText">
+            <summary>
+            Gets the default text that is displayed for the data field in the fields editor.
+            </summary>
+        </member>
+        <member name="P:Gaia.WebWidgets.Design.CommandFieldDesigner.UsesSchema">
+            <summary>
+            Gets a value that indicates whether schema information is used to load the data fields.
+            </summary>
+        </member>
+        <member name="T:Gaia.WebWidgets.Design.CheckBoxFieldDesigner">
+            <summary>
+            Specialized <see cref="T:System.Web.UI.Design.WebControls.DataControlFieldDesigner"/> for the <see cref="T:Gaia.WebWidgets.CheckBoxField"/>.
+            </summary>
+        </member>
+        <member name="M:Gaia.WebWidgets.Design.CheckBoxFieldDesigner.CreateField">
+            <summary>
+            Creates an empty <see cref="T:Gaia.WebWidgets.CheckBoxField"/> object.
+            </summary>
+            <returns>Empty <see cref="T:Gaia.WebWidgets.CheckBoxField"/>.</returns>
+        </member>
+        <member name="M:Gaia.WebWidgets.Design.CheckBoxFieldDesigner.CreateField(System.Web.UI.Design.IDataSourceFieldSchema)">
+            <summary>
+            Creates a new <see cref="T:Gaia.WebWidgets.CheckBoxField"/> object by using the specified <paramref name="fieldSchema"/> information.
+            </summary>
+            <param name="fieldSchema">Data field information.</param>
+            <returns>New <see cref="T:Gaia.WebWidgets.CheckBoxField"/>.</returns>
+        </member>
+        <member name="M:Gaia.WebWidgets.Design.CheckBoxFieldDesigner.CreateTemplateField(System.Web.UI.WebControls.DataControlField,System.Web.UI.WebControls.DataBoundControl)">
+            <summary>
+            Creates a <see cref="T:System.Web.UI.WebControls.TemplateField"/> field for the specified <paramref name="dataControlField"/>.
+            </summary>
+        </member>
+        <member name="M:Gaia.WebWidgets.Design.CheckBoxFieldDesigner.GetNodeText(System.Web.UI.WebControls.DataControlField)">
+            <summary>
+            Gets the name that is displayed for the specified <paramref name="dataControlField"/> in the fields editor.
+            </summary>
+        </member>
+        <member name="M:Gaia.WebWidgets.Design.CheckBoxFieldDesigner.IsEnabled(System.Web.UI.WebControls.DataBoundControl)">
+            <summary>
+            Gets a value that indicates whether the data field is enabled in the fields editor.
+            </summary>
+        </member>
+        <member name="M:Gaia.WebWidgets.Design.CheckBoxFieldDesigner.GetTemplateContent(System.Web.UI.WebControls.BoundField,System.Web.UI.WebControls.DataBoundControlMode)">
+            <summary>
+            Returns template content for the specified <paramref name="field"/>.
+            </summary>
+        </member>
+        <member name="P:Gaia.WebWidgets.Design.CheckBoxFieldDesigner.DefaultNodeText">
+            <summary>
+            Gets the default text that is displayed for the data field in the fields editor.
+            </summary>
+        </member>
+        <member name="P:Gaia.WebWidgets.Design.CheckBoxFieldDesigner.UsesSchema">
+            <summary>
+            Gets a value that indicates whether schema information is used to load the data fields.
+            </summary>
+        </member>
+        <member name="T:Gaia.WebWidgets.Design.ButtonFieldDesigner">
+            <summary>
+            Specialized <see cref="T:System.Web.UI.Design.WebControls.DataControlFieldDesigner"/> for the <see cref="T:Gaia.WebWidgets.BoundField"/>.
+            </summary>
+        </member>
+        <member name="M:Gaia.WebWidgets.Design.ButtonFieldDesigner.CreateField">
+            <summary>
+            Creates an empty <see cref="T:Gaia.WebWidgets.ButtonField"/> object.
+            </summary>
+            <returns>Empty <see cref="T:Gaia.WebWidgets.ButtonField"/>.</returns>
+        </member>
+        <member name="M:Gaia.WebWidgets.Design.ButtonFieldDesigner.CreateField(System.Web.UI.Design.IDataSourceFieldSchema)">
+            <summary>
+            When overridden in a derived class, creates a new field object using the specified data field information.
+            </summary>
+            <returns>
+            A new field object.
+            </returns>
+            <param name="fieldSchema">Schema information that contains the structure of a data field.</param>
+        </member>
+        <member name="M:Gaia.WebWidgets.Design.ButtonFieldDesigner.CreateTemplateField(System.Web.UI.WebControls.DataControlField,System.Web.UI.WebControls.DataBoundControl)">
+            <summary>
+            Creates a <see cref="T:System.Web.UI.WebControls.TemplateField"/> field for the specified <paramref name="dataControlField"/>.
+            </summary>
+        </member>
+        <member name="M:Gaia.WebWidgets.Design.ButtonFieldDesigner.GetNodeText(System.Web.UI.WebControls.DataControlField)">
+            <summary>
+            Gets the name that is displayed for the specified <paramref name="dataControlField"/> in the fields editor.
+            </summary>
+        </member>
+        <member name="M:Gaia.WebWidgets.Design.ButtonFieldDesigner.IsEnabled(System.Web.UI.WebControls.DataBoundControl)">
+            <summary>
+            When overridden in a derived class, gets a value that indicates whether the data field is enabled in the fields editor.
+            </summary>
+            <returns>
+            A value that indicates whether the data field is enabled in the fields editor.
+            </returns>
+            <param name="parent">The data-bound control that contains the data field.</param>
+        </member>
+        <member name="M:Gaia.WebWidgets.Design.ButtonFieldDesigner.GetTemplateContent(System.Web.UI.WebControls.ButtonField)">
+            <summary>
+            Returns template content for the specified <paramref name="buttonField"/>.
+            </summary>
+        </member>
+        <member name="P:Gaia.WebWidgets.Design.ButtonFieldDesigner.DefaultNodeText">
+            <summary>
+            Gets the default text that is displayed for the data field in the fields editor.
+            </summary>
+        </member>
+        <member name="P:Gaia.WebWidgets.Design.ButtonFieldDesigner.UsesSchema">
+            <summary>
+            Gets a value that indicates whether schema information is used to load the data fields.
+            </summary>
+        </member>
+        <member name="T:Gaia.WebWidgets.Extensions.Design.TreeViewItemCollectionEditor">
+            <summary>
+            Specialized <see cref="T:System.Drawing.Design.UITypeEditor"/> for the <see cref="T:Gaia.WebWidgets.Extensions.TreeViewItemCollection"/>.
+            </summary>
+        </member>
+        <member name="M:Gaia.WebWidgets.Extensions.Design.TreeViewItemCollectionEditor.#ctor(System.Type)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Gaia.WebWidgets.Extensions.Design.TreeViewItemCollectionEditor"/> class using the specified collection type.
+            </summary>
+            <param name="type">The type of the collection for this editor to edit.</param>
+        </member>
+        <member name="M:Gaia.WebWidgets.Extensions.Design.TreeViewItemCollectionEditor.MapCollectionType(System.Type)">
+            <summary>
+            Maps specified <paramref name="type"/> to a more specific type for the <see cref="T:System.Drawing.Design.UITypeEditor"/> constructor.
+            </summary>
+        </member>
+        <member name="T:Gaia.WebWidgets.Extensions.Design.ToolbarDesigner">
+            <summary>
+            Specialized <see cref="T:System.Web.UI.Design.ControlDesigner"/> for the <see cref="T:Gaia.WebWidgets.Extensions.Toolbar"/> control.
+            </summary>
+        </member>
+        <member name="M:Gaia.WebWidgets.Extensions.Design.ToolbarDesigner.GetPersistenceContent">
+            <summary>
+            Retrieves the persistable inner HTML markup of the control at design time.
+            </summary>
+            <returns>
+            A string representing the persistable inner HTML markup for the associated control. The default is null.
+            </returns>
+        </member>
+        <member name="M:Gaia.WebWidgets.Extensions.Design.ToolbarDesigner.OnComponentChanged(System.Object,System.ComponentModel.Design.ComponentChangedEventArgs)">
+            <summary>
+            Called when the associated control changes.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="ce">A <see cref="T:System.ComponentModel.Design.ComponentChangedEventArgs"/> object that contains the event data.</param>
+        </member>
+        <member name="M:Gaia.WebWidgets.Extensions.Design.ToolbarDesigner.GetDesignTimeHtml">
+            <summary>
+            Retrieves the HTML markup that is used to represent the control at design time.
+            </summary>
+            <returns>
+            The HTML markup used to represent the control at design time.
+            </returns>
+        </member>
+        <member name="P:Gaia.WebWidgets.Extensions.Design.ToolbarDesigner.CollectionControlDesigner">
+            <summary>
+            Instance of <see cref="T:Gaia.WebWidgets.Extensions.Design.Core.CollectionControlDesignerImpl"/>.
+            </summary>
+        </member>
+        <member name="P:Gaia.WebWidgets.Extensions.Design.ToolbarDesigner.ActionLists">
+            <summary>
+            Gets the action list collection for the control designer.
+            </summary>
+            <returns>
+            A <see cref="T:System.ComponentModel.Design.DesignerActionListCollection"/> object 
+            that contains the <see cref="T:System.ComponentModel.Design.DesignerActionList"/> items for the control designer.
+            </returns>
+        </member>
+        <member name="P:Gaia.WebWidgets.Extensions.Design.ToolbarDesigner.PersistLocalizedInnerContent">
+            <summary>
+            True if <see cref="M:Gaia.WebWidgets.Extensions.Design.Core.ExtensionControlDesigner`1.GetPersistenceContent"/> should return localized inner content.
+            Otherwise, false (reverts to default behaviour).
+            </summary>
+        </member>
+        <member name="T:Gaia.WebWidgets.Extensions.Design.AccordionDesigner">
+            <summary>
+            Specialized <see cref="T:System.Web.UI.Design.ControlDesigner"/> for the <see cref="T:Gaia.WebWidgets.Extensions.Accordion"/> control.
+            </summary>
+        </member>
+        <member name="M:Gaia.WebWidgets.Extensions.Design.AccordionDesigner.GetDesignTimeHtml(System.Web.UI.Design.DesignerRegionCollection)">
+            <summary>
+            Retrieves the HTML markup to display the control and populates the collection with the current control designer regions.
+            </summary>
+            <returns>
+            The design-time HTML markup for the associated control, including all control designer regions.
+            </returns>
+            <param name="regions">A collection of control designer regions for the associated control.</param>
+        </member>
+        <member name="M:Gaia.WebWidgets.Extensions.Design.AccordionDesigner.OnComponentChanged(System.Object,System.ComponentModel.Design.ComponentChangedEventArgs)">
+            <summary>
+            Called when the associated control changes.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="ce">A <see cref="T:System.ComponentModel.Design.ComponentChangedEventArgs"/> object that contains the event data.</param>
+        </member>
+        <member name="M:Gaia.WebWidgets.Extensions.Design.AccordionDesigner.GetPersistenceContent">
+            <summary>
+            Retrieves the persistable inner HTML markup of the control at design time.
+            </summary>
+            <returns>
+            A string representing the persistable inner HTML markup for the associated control. The default is null.
+            </returns>
+        </member>
+        <member name="P:Gaia.WebWidgets.Extensions.Design.AccordionDesigner.CollectionControlDesigner">
+            <summary>
+            The implementation supporting collection editing.
+            </summary>
+        </member>
+        <member name="P:Gaia.WebWidgets.Extensions.Design.AccordionDesigner.ActionLists">
+            <summary>
+            Gets the action list collection for the control designer.
+            </summary>
+            <returns>
+            A <see cref="T:System.ComponentModel.Design.DesignerActionListCollection"/> object that contains 
+            the <see cref="T:System.ComponentModel.Design.DesignerActionList"/> items for the control designer.
+            </returns>
+        </member>
+        <member name="P:Gaia.WebWidgets.Extensions.Design.AccordionDesigner.PersistLocalizedInnerContent">
+            <summary>
+            True if <see cref="M:Gaia.WebWidgets.Extensions.Design.Core.ExtensionControlDesigner`1.GetPersistenceContent"/> should return localized inner content.
+            Otherwise, false (reverts to default behaviour).
+            </summary>
+        </member>
+        <member name="T:Gaia.WebWidgets.Design.TimerDesigner">
+            <summary>
+            Specialized <see cref="T:System.Web.UI.Design.ControlDesigner"/> for the <see cref="T:Gaia.WebWidgets.Timer"/> control.
+            </summary>
+        </member>
+        <member name="M:Gaia.WebWidgets.Design.TimerDesigner.GetDesignTimeHtml">
+            <summary>
+            Retrieves the HTML markup that is used to represent the control at design time.
+            </summary>
+            <returns>
+            The HTML markup used to represent the control at design time.
+            </returns>
+        </member>
+        <member name="T:Gaia.WebWidgets.Design.TemplateFieldDesigner">
+            <summary>
+            Specialized <see cref="T:System.Web.UI.Design.WebControls.DataControlFieldDesigner"/> for the <see cref="T:Gaia.WebWidgets.TemplateField"/>.
+            </summary>
+        </member>
+        <member name="M:Gaia.WebWidgets.Design.TemplateFieldDesigner.CreateField">
+            <summary>
+            Creates an empty <see cref="T:Gaia.WebWidgets.TemplateField"/> object.
+            </summary>
+            <returns>Empty <see cref="T:Gaia.WebWidgets.TemplateField"/>.</returns>
+        </member>
+        <member name="M:Gaia.WebWidgets.Design.TemplateFieldDesigner.CreateField(System.Web.UI.Design.IDataSourceFieldSchema)">
+            <summary>
+            When overridden in a derived class, creates a new field object using the specified data field information.
+            </summary>
+            <returns>
+            A new field object.
+            </returns>
+            <param name="fieldSchema">Schema information that contains the structure of a data field.</param>
+        </member>
+        <member name="M:Gaia.WebWidgets.Design.TemplateFieldDesigner.CreateTemplateField(System.Web.UI.WebControls.DataControlField,System.Web.UI.WebControls.DataBoundControl)">
+            <summary>
+            Creates a <see cref="T:System.Web.UI.WebControls.TemplateField"/> field for the specified <paramref name="dataControlField"/>.
+            </summary>
+        </member>
+        <member name="M:Gaia.WebWidgets.Design.TemplateFieldDesigner.GetNodeText(System.Web.UI.WebControls.DataControlField)">
+            <summary>
+            Gets the name that is displayed for the specified <paramref name="dataControlField"/> in the fields editor.
+            </summary>
+        </member>
+        <member name="M:Gaia.WebWidgets.Design.TemplateFieldDesigner.IsEnabled(System.Web.UI.WebControls.DataBoundControl)">
+            <summary>
+            When overridden in a derived class, gets a value that indicates whether the data field is enabled in the fields editor.
+            </summary>
+            <returns>
+            A value that indicates whether the data field is enabled in the fields editor.
+            </returns>
+            <param name="parent">The data-bound control that contains the data field.</param>
+        </member>
+        <member name="P:Gaia.WebWidgets.Design.TemplateFieldDesigner.DefaultNodeText">
+            <summary>
+            Gets the default text that is displayed for the data field in the fields editor.
+            </summary>
+        </member>
+        <member name="P:Gaia.WebWidgets.Design.TemplateFieldDesigner.UsesSchema">
+            <summary>
+            Gets a value that indicates whether schema information is used to load the data fields.
+            </summary>
+        </member>
+        <member name="T:Gaia.WebWidgets.Extensions.Design.TabViewCollectionEditor">
+            <summary>
+            Specialized <see cref="T:System.ComponentModel.Design.CollectionEditor"/> for the <see cref="T:Gaia.WebWidgets.Extensions.TabViewCollection"/> in the <see cref="T:Gaia.WebWidgets.Extensions.TabControl"/>.
+            </summary>
+        </member>
+        <member name="M:Gaia.WebWidgets.Extensions.Design.TabViewCollectionEditor.#ctor(System.Type)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Gaia.WebWidgets.Extensions.Design.TabViewCollectionEditor"/> class using the specified collection type.
+            </summary>
+            <param name="type">The type of the collection for this editor to edit.</param>
+        </member>
+        <member name="T:Gaia.WebWidgets.Extensions.Design.CalendarDesigner">
+            <summary>
+            Specialized <see cref="T:System.Web.UI.Design.ControlDesigner"/> for the <see cref="T:Gaia.WebWidgets.Extensions.Calendar"/> control.
+            </summary>
+        </member>
+        <member name="T:Gaia.WebWidgets.Extensions.Design.SliderDesigner">
+            <summary>
+            Specialized <see cref="T:System.Web.UI.Design.ControlDesigner"/> for the <see cref="T:Gaia.WebWidgets.Extensions.Slider"/>.
+            </summary>
+        </member>
+        <member name="T:Gaia.WebWidgets.Extensions.Design.ExtendedPanelDesigner">
+            <summary>
+            Speciazlized <see cref="T:System.Web.UI.Design.ControlDesigner"/> for the <see cref="T:Gaia.WebWidgets.Extensions.ExtendedPanel"/>.
+            </summary>
+        </member>
+        <member name="M:Gaia.WebWidgets.Extensions.Design.ExtendedPanelDesigner.OnSetParent">
+            <summary>
+            Provides a way to perform additional processing when the associated control is attached to a parent control.
+            </summary>
+        </member>
+        <member name="M:Gaia.WebWidgets.Extensions.Design.ExtendedPanelDesigner.CreateViewControl">
+            <summary>
+            Returns a copy of the associated control for viewing or rendering on the design surface.
+            </summary>
+            <returns>
+            A Web server control.
+            </returns>
+        </member>
+        <member name="M:Gaia.WebWidgets.Extensions.Design.ExtendedPanelDesigner.GetDesignTimeHtml(System.Web.UI.Design.DesignerRegionCollection)">
+            <summary>
+            Retrieves the HTML markup to display the control and populates the collection with the current control designer regions.
+            </summary>
+            <returns>
+            The design-time HTML markup for the associated control, including all control designer regions.
+            </returns>
+            <param name="regions">A collection of control designer regions for the associated control.</param>
+        </member>
+        <member name="M:Gaia.WebWidgets.Extensions.Design.ExtendedPanelDesigner.OnClick(System.Web.UI.Design.DesignerRegionMouseEventArgs)">
+            <summary>
+            Called by the design host when the user clicks the associated control at design time.
+            </summary>
+            <param name="e">
+            A <see cref="T:System.Web.UI.Design.DesignerRegionMouseEventArgs"/> object that specifies the location and, possibly, the control designer region that the user clicked.
+            </param>
+        </member>
+        <member name="M:Gaia.WebWidgets.Extensions.Design.ExtendedPanelDesigner.OnWebControlCreated(System.Web.UI.WebControls.WebControl,System.Int32)">
+            <summary>
+            Called when caption, content or toggle tool control is created.
+            </summary>
+        </member>
+        <member name="M:Gaia.WebWidgets.Extensions.Design.ExtendedPanelDesigner.OnToggle(System.Object)">
+            <summary>
+            Called when the <see cref="T:Gaia.WebWidgets.Extensions.ExtendedPanel"/> is toggled.
+            </summary>
+            <param name="context">PropertyDescriptor of the <see cref="P:Gaia.WebWidgets.Extensions.ExtendedPanel.Collapsed"/> property.</param>
+            <returns>True if toggling succeeded.</returns>
+        </member>
+        <member name="P:Gaia.WebWidgets.Extensions.Design.ExtendedPanelDesigner.Collapsed">
+            <summary>
+            Shadows <see cref="P:Gaia.WebWidgets.Extensions.ExtendedPanel.Collapsed"/> property.
+            </summary>
+        </member>
+        <member name="T:Gaia.WebWidgets.Extensions.Design.AutoCompleterDesigner">
+            <summary>
+            Specialized <see cref="T:System.Web.UI.Design.ControlDesigner"/> for the <see cref="T:Gaia.WebWidgets.Extensions.AutoCompleter"/> control.
+            </summary>
+        </member>
+        <member name="T:Gaia.WebWidgets.Extensions.Design.DateTimePickerDesigner">
+            <summary>
+            Specialized <see cref="T:System.Web.UI.Design.ControlDesigner"/> for the <see cref="T:Gaia.WebWidgets.Extensions.DateTimePicker"/> control.
+            </summary>
+        </member>
+        <member name="M:Gaia.WebWidgets.Extensions.Design.DateTimePickerDesigner.GetDesignTimeHtml(System.Web.UI.Design.DesignerRegionCollection)">
+            <summary>
+            Retrieves the HTML markup to display the control and populates the collection with the current control designer regions.
+            </summary>
+            <returns>
+            The design-time HTML markup for the associated control, including all control designer regions.
+            </returns>
+            <param name="regions">A collection of control designer regions for the associated control.</param>
+        </member>
+        <member name="M:Gaia.WebWidgets.Extensions.Design.DateTimePickerDesigner.OnClick(System.Web.UI.Design.DesignerRegionMouseEventArgs)">
+            <summary>
+            Called by the design host when the user clicks the associated control at design time.
+            </summary>
+            <param name="e">
+            A <see cref="T:System.Web.UI.Design.DesignerRegionMouseEventArgs"/> object that specifies the location and, possibly, the control designer region that the user clicked.
+            </param>
+        </member>
+        <member name="M:Gaia.WebWidgets.Extensions.Design.DateTimePickerDesigner.TogglePicker">
+            <summary>
+            Toggles visibility of the <see cref="T:Gaia.WebWidgets.Extensions.Calendar"/> inside the <see cref="T:Gaia.WebWidgets.Extensions.DateTimePicker"/>.
+            </summary>
+        </member>
+        <member name="M:Gaia.WebWidgets.Extensions.Design.DateTimePickerDesigner.OnToggle(System.Object)">
+            <summary>
+            Called when the <see cref="T:Gaia.WebWidgets.Extensions.DateTimePicker"/> is toggled.
+            </summary>
+        </member>
+        <member name="P:Gaia.WebWidgets.Extensions.Design.DateTimePickerDesigner.ActionLists">
+            <summary>
+            Gets the action list collection for the control designer.
+            </summary>
+            <returns>
+            A <see cref="T:System.ComponentModel.Design.DesignerActionListCollection"/> object that contains the <see cref="T:System.ComponentModel.Design.DesignerActionList"/> items 
+            for the control designer.
+            </returns>
+        </member>
+        <member name="P:Gaia.WebWidgets.Extensions.Design.DateTimePickerDesigner.CalendarVisible">
+            <summary>
+            Gets or sets if the <see cref="T:Gaia.WebWidgets.Extensions.Calendar"/> inside the <see cref="T:Gaia.WebWidgets.Extensions.DateTimePicker"/> is visible.
+            </summary>
+        </member>
+        <member name="T:Gaia.WebWidgets.Extensions.Design.DateTimePickerDesigner.DateTimePickerDesignerActionList">
+            <summary>
+            Specialized <see cref="T:System.ComponentModel.Design.DesignerActionList"/> with supported smart actions for the <see cref="T:Gaia.WebWidgets.Extensions.DateTimePicker"/>.
+            </summary>
+        </member>
+        <member name="M:Gaia.WebWidgets.Extensions.Design.DateTimePickerDesigner.DateTimePickerDesignerActionList.#ctor(Gaia.WebWidgets.Extensions.Design.DateTimePickerDesigner)">
+            <summary>
+            Initializes a new instance of the <see cref="T:System.ComponentModel.Design.DesignerActionList"/> class.
+            </summary>
+            <param name="designer">Owner designer.</param>
+        </member>
+        <member name="M:Gaia.WebWidgets.Extensions.Design.DateTimePickerDesigner.DateTimePickerDesignerActionList.GetSortedActionItems">
+            <summary>
+            Returns the collection of <see cref="T:System.ComponentModel.Design.DesignerActionItem"/> objects contained in the list.
+            </summary>
+            <returns>
+            A <see cref="T:System.ComponentModel.Design.DesignerActionItem"/> array that contains the items in this list.
+            </returns>
+        </member>
+        <member name="M:Gaia.WebWidgets.Extensions.Design.DateTimePickerDesigner.DateTimePickerDesignerActionList.TogglePicker">
+            <summary>
+            Toggles visibility of the <see cref="T:Gaia.WebWidgets.Extensions.Calendar"/> inside the <see cref="T:Gaia.WebWidgets.Extensions.DateTimePicker"/>.
+            </summary>
+        </member>
+        <member name="T:Gaia.WebWidgets.Design.TemplateContentBuilder">
+            <summary>
+            Defines method for building template content for the <see cref="T:System.Web.UI.Design.WebControls.DataControlFieldDesigner"/>.
+            </summary>
+        </member>
+        <member name="M:Gaia.WebWidgets.Design.TemplateContentBuilder.BuildNonBreakingSpace">
+            <summary>
+            Builds non breaking space.
+            </summary>
+        </member>
+        <member name="M:Gaia.WebWidgets.Design.TemplateContentBuilder.BuildBeginTag(System.Type)">
+            <summary>
+            Builds the begin tag for the specified <paramref name="controlType"/>.
+            </summary>
+        </member>
+        <member name="M:Gaia.WebWidgets.Design.TemplateContentBuilder.BuildAttribute(System.String,System.String,Gaia.WebWidgets.Design.TemplateContentBuilder.AttributeValueEspaceMode)">
+            <summary>
+            Builds attribute having specified <paramref name="name"/> and <paramref name="value"/>.
+            </summary>
+        </member>
+        <member name="M:Gaia.WebWidgets.Design.TemplateContentBuilder.BuildDataExpressionAttribute(Gaia.WebWidgets.Design.TemplateContentBuilder.DataExpressionKind,System.String,System.String,System.String)">
+            <summary>
+            Builds data expression attribute with the specified <paramref name="name"/> of the specified <paramref name="kind"/>.
+            </summary>
+        </member>
+        <member name="M:Gaia.WebWidgets.Design.TemplateContentBuilder.BuildEndTag(System.Type)">
+            <summary>
+            Builds the end tag for the specified <paramref name="controlType"/>.
+            </summary>
+        </member>
+        <member name="M:Gaia.WebWidgets.Design.TemplateContentBuilder.ToString">
+            <summary>
+            Returns a <see cref="T:System.String"/> that represents the current <see cref="T:System.Object"/>.
+            </summary>
+            <returns>
+            A <see cref="T:System.String"/> that represents the current <see cref="T:System.Object"/>.
+            </returns>
+        </member>
+        <member name="M:Gaia.WebWidgets.Design.TemplateContentBuilder.CreateExpression(System.String,System.String,System.String)">
+            <summary>
+            Creates eval or bind expression for the specified <paramref name="dataField"/>.
+            </summary>
+        </member>
+        <member name="P:Gaia.WebWidgets.Design.TemplateContentBuilder.Builder">
+            <summary>
+            Buffer for writing.
+            </summary>
+        </member>
+        <member name="T:Gaia.WebWidgets.Design.TemplateContentBuilder.AttributeValueEspaceMode">
+            <summary>
+            Defines attribute value escape mode.
+            </summary>
+        </member>
+        <member name="F:Gaia.WebWidgets.Design.TemplateContentBuilder.AttributeValueEspaceMode.None">
+            <summary>
+            Attribute value is written as is.
+            </summary>
+        </member>
+        <member name="F:Gaia.WebWidgets.Design.TemplateContentBuilder.AttributeValueEspaceMode.SingleQuote">
+            <summary>
+            Attribute value is wrapped with single (') quotes
+            </summary>
+        </member>
+        <member name="F:Gaia.WebWidgets.Design.TemplateContentBuilder.AttributeValueEspaceMode.DoubleQuote">
+            <summary>
+            Attribute value is wrapped with double (") quotes;
+            </summary>
+        </member>
+        <member name="T:Gaia.WebWidgets.Design.TemplateContentBuilder.DataExpressionKind">
+            <summary>
+            Defines supported data expressions.
+            </summary>
+        </member>
+        <member name="F:Gaia.WebWidgets.Design.TemplateContentBuilder.DataExpressionKind.Eval">
+            <summary>
+            Eval expression.
+            </summary>
+        </member>
+        <member name="F:Gaia.WebWidgets.Design.TemplateContentBuilder.DataExpressionKind.Bind">
+            <summary>
+            Bind expression.
+            </summary>
+        </member>
+        <member name="T:Gaia.WebWidgets.Design.BoundFieldDesigner">
+            <summary>
+            Specialized <see cref="T:System.Web.UI.Design.WebControls.DataControlFieldDesigner"/> for the <see cref="T:Gaia.WebWidgets.BoundField"/>.
+            </summary>
+        </member>
+        <member name="M:Gaia.WebWidgets.Design.BoundFieldDesigner.CreateField">
+            <summary>
+            Creates an empty <see cref="T:Gaia.WebWidgets.BoundField"/> object.
+            </summary>
+            <returns>Empty <see cref="T:Gaia.WebWidgets.BoundField"/>.</returns>
+        </member>
+        <member name="M:Gaia.WebWidgets.Design.BoundFieldDesigner.CreateField(System.Web.UI.Design.IDataSourceFieldSchema)">
+            <summary>
+            Creates a new <see cref="T:Gaia.WebWidgets.BoundField"/> object by using the specified <paramref name="fieldSchema"/> information.
+            </summary>
+            <param name="fieldSchema">Data field information.</param>
+            <returns>New <see cref="T:Gaia.WebWidgets.BoundField"/>.</returns>
+        </member>
+        <member name="M:Gaia.WebWidgets.Design.BoundFieldDesigner.CreateTemplateField(System.Web.UI.WebControls.DataControlField,System.Web.UI.WebControls.DataBoundControl)">
+            <summary>
+            Creates a <see cref="T:System.Web.UI.WebControls.TemplateField"/> field for the specified <paramref name="dataControlField"/>.
+            </summary>
+        </member>
+        <member name="M:Gaia.WebWidgets.Design.BoundFieldDesigner.GetNodeText(System.Web.UI.WebControls.DataControlField)">
+            <summary>
+            Gets the name that is displayed for the specified <paramref name="dataControlField"/> in the fields editor.
+            </summary>
+        </member>
+        <member name="M:Gaia.WebWidgets.Design.BoundFieldDesigner.IsEnabled(System.Web.UI.WebControls.DataBoundControl)">
+            <summary>
+            Gets a value that indicates whether the data field is enabled in the fields editor.
+            </summary>
+        </member>
+        <member name="M:Gaia.WebWidgets.Design.BoundFieldDesigner.GetTemplateContent(System.Web.UI.WebControls.BoundField,System.Web.UI.WebControls.DataControlRowState,System.Boolean)">
+            <summary>
+            Returns template content for the specified <paramref name="field"/>.
+            </summary>
+        </member>
+        <member name="P:Gaia.WebWidgets.Design.BoundFieldDesigner.DefaultNodeText">
+            <summary>
+            Gets the default text that is displayed for the data field in the fields editor.
+            </summary>
+        </member>
+        <member name="P:Gaia.WebWidgets.Design.BoundFieldDesigner.UsesSchema">
+            <summary>
+            Gets a value that indicates whether schema information is used to load the data fields.
+            </summary>
+        </member>
+        <member name="T:Gaia.WebWidgets.Extensions.Design.ExtendedButtonDesigner">
+            <summary>
+            Specialized <see cref="T:System.Web.UI.Design.ControlDesigner"/> for the <see cref="T:Gaia.WebWidgets.Extensions.ExtendedButton"/> control.
+            </summary>
+        </member>
+        <member name="M:Gaia.WebWidgets.Extensions.Design.ExtendedButtonDesigner.GetDesignTimeHtml">
+            <summary>
+            Retrieves the HTML markup that is used to represent the control at design time.
+            </summary>
+            <returns>
+            The HTML markup used to represent the control at design time.
+            </returns>
+        </member>
+        <member name="T:Gaia.WebWidgets.Extensions.Design.Core.EditorService">
+            <summary>
+            Specialized <see cref="T:System.Windows.Forms.Design.IWindowsFormsEditorService"/>.
+            </summary>
+        </member>
+        <member name="M:Gaia.WebWidgets.Extensions.Design.Core.EditorService.#ctor(System.ComponentModel.Design.ComponentDesigner)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="designer"><see cref="T:System.ComponentModel.Design.ComponentDesigner"/> which uses the service.</param>
+        </member>
+        <member name="M:Gaia.WebWidgets.Extensions.Design.Core.EditorService.CloseDropDown">
+            <summary>
+            Closes any previously opened drop down control area.
+            </summary>
+        </member>
+        <member name="M:Gaia.WebWidgets.Extensions.Design.Core.EditorService.DropDownControl(System.Windows.Forms.Control)">
+            <summary>
+            Displays the specified control in a drop down area below a value field of the property grid that provides this service.
+            </summary>
+            <param name="control">The drop down list <see cref="T:System.Windows.Forms.Control"/> to open. </param>
+        </member>
+        <member name="M:Gaia.WebWidgets.Extensions.Design.Core.EditorService.ShowDialog(System.Windows.Forms.Form)">
+            <summary>
+            Shows the specified <see cref="T:System.Windows.Forms.Form"/>.
+            </summary>
+            <returns>
+            A <see cref="T:System.Windows.Forms.DialogResult"/> indicating the result code returned by the <see cref="T:System.Windows.Forms.Form"/>.
+            </returns>
+            <param name="dialog">The <see cref="T:System.Windows.Forms.Form"/> to display.</param>
+        </member>
+        <member name="M:Gaia.WebWidgets.Extensions.Design.Core.EditorService.GetService(System.Type)">
+            <summary>
+            Gets the service object of the specified type.
+            </summary>
+            <returns>
+            A service object of type <paramref name="serviceType"/>.
+            -or- 
+            null if there is no service object of type <paramref name="serviceType"/>.
+            </returns>
+            <param name="serviceType">An object that specifies the type of service object to get. </param>
+        </member>
+        <member name="T:Gaia.WebWidgets.Extensions.Design.WindowDesigner">
+            <summary>
+            Specialized <see cref="T:System.Web.UI.Design.ControlDesigner"/> for the <see cref="T:Gaia.WebWidgets.Extensions.Window"/> control.
+            </summary>
+        </member>
+        <member name="M:Gaia.WebWidgets.Extensions.Design.WindowDesigner.GetDesignTimeHtml(System.Web.UI.Design.DesignerRegionCollection)">
+            <summary>
+            Retrieves the HTML markup to display the control and populates the collection with the current control designer regions.
+            </summary>
+            <returns>
+            The design-time HTML markup for the associated control, including all control designer regions.
+            </returns>
+            <param name="regions">A collection of control designer regions for the associated control.</param>
+        </member>
+        <member name="M:Gaia.WebWidgets.Extensions.Design.WindowDesigner.OnClick(System.Web.UI.Design.DesignerRegionMouseEventArgs)">
+            <summary>
+            Called by the design host when the user clicks the associated control at design time.
+            </summary>
+            <param name="e">
+            A <see cref="T:System.Web.UI.Design.DesignerRegionMouseEventArgs"/> object that specifies the location and, possibly, the control designer region that the user clicked.
+            </param>
+        </member>
+        <member name="M:Gaia.WebWidgets.Extensions.Design.WindowDesigner.Minimize">
+            <summary>
+            Minimizes the <see cref="T:Gaia.WebWidgets.Extensions.Window"/>.
+            </summary>
+        </member>
+        <member name="M:Gaia.WebWidgets.Extensions.Design.WindowDesigner.Maximize">
+            <summary>
+            Maximizes the <see cref="T:Gaia.WebWidgets.Extensions.Window"/>.
+            </summary>
+        </member>
+        <member name="M:Gaia.WebWidgets.Extensions.Design.WindowDesigner.OnMinimize(System.Object)">
+            <summary>
+            Called when the <see cref="T:Gaia.WebWidgets.Extensions.Window"/> is being minimized.
+            </summary>
+        </member>
+        <member name="M:Gaia.WebWidgets.Extensions.Design.WindowDesigner.OnMaximize(System.Object)">
+            <summary>
+            Called when the <see cref="T:Gaia.WebWidgets.Extensions.Window"/> is being maximized.
+            </summary>
+        </member>
+        <member name="M:Gaia.WebWidgets.Extensions.Design.WindowDesigner.OnContentRender(Gaia.WebWidgets.HtmlFormatting.Tag)">
+            <summary>
+            Called when rendering the content.
+            </summary>
+        </member>
+        <member name="M:Gaia.WebWidgets.Extensions.Design.WindowDesigner.OnWebControlCreated(System.Web.UI.WebControls.WebControl,System.Int32)">
+            <summary>
+            Called when creating the specified <paramref name="webControl"/>.
+            </summary>
+        </member>
+        <member name="T:Gaia.WebWidgets.Extensions.Design.Core.TypeDescriptorContext">
+            <summary>
+            Specialized <see cref="T:System.ComponentModel.ITypeDescriptorContext"/>.
+            </summary>
+        </member>
+        <member name="M:Gaia.WebWidgets.Extensions.Design.Core.TypeDescriptorContext.#ctor(System.ComponentModel.Design.IDesignerHost,System.ComponentModel.PropertyDescriptor,System.Object)">
+            <summary>
+            Constructor
+            </summary>
+        </member>
+        <member name="M:Gaia.WebWidgets.Extensions.Design.Core.TypeDescriptorContext.GetService(System.Type)">
+            <summary>
+            Gets the service object of the specified type.
+            </summary>
+            <returns>
+            A service object of type <paramref name="serviceType"/>.
+            -or- 
+            null if there is no service object of type <paramref name="serviceType"/>.
+            </returns>
+            <param name="serviceType">An object that specifies the type of service object to get. </param>
+        </member>
+        <member name="M:Gaia.WebWidgets.Extensions.Design.Core.TypeDescriptorContext.OnComponentChanging">
+            <summary>
+            Raises the <see cref="E:System.ComponentModel.Design.IComponentChangeService.ComponentChanging"/> event.
+            </summary>
+            <returns>
+            true if this object can be changed; otherwise, false.
+            </returns>
+        </member>
+        <member name="M:Gaia.WebWidgets.Extensions.Design.Core.TypeDescriptorContext.OnComponentChanged">
+            <summary>
+            Raises the <see cref="E:System.ComponentModel.Design.IComponentChangeService.ComponentChanged"/> event.
+            </summary>
+        </member>
+        <member name="P:Gaia.WebWidgets.Extensions.Design.Core.TypeDescriptorContext.Container">
+            <summary>
+            Gets the container representing this <see cref="T:System.ComponentModel.TypeDescriptor"/> request.
+            </summary>
+            <returns>
+            An <see cref="T:System.ComponentModel.IContainer"/> with the set of objects for this <see cref="T:System.ComponentModel.TypeDescriptor"/>; otherwise, null if there is no container or if the <see cref="T:System.ComponentModel.TypeDescriptor"/> does not use outside objects.
+            </returns>
+        </member>
+        <member name="P:Gaia.WebWidgets.Extensions.Design.Core.TypeDescriptorContext.Instance">
+            <summary>
+            Gets the object that is connected with this type descriptor request.
+            </summary>
+            <returns>
+            The object that invokes the method on the <see cref="T:System.ComponentModel.TypeDescriptor"/>; otherwise, null if there is no object responsible for the call.
+            </returns>
+        </member>
+        <member name="P:Gaia.WebWidgets.Extensions.Design.Core.TypeDescriptorContext.PropertyDescriptor">
+            <summary>
+            Gets the <see cref="T:System.ComponentModel.PropertyDescriptor"/> that is associated with the given context item.
+            </summary>
+            <returns>
+            The <see cref="T:System.ComponentModel.PropertyDescriptor"/> that describes the given context item; otherwise, null if there is no <see cref="T:System.ComponentModel.PropertyDescriptor"/> responsible for the call.
+            </returns>
+        </member>
+        <member name="T:Gaia.WebWidgets.Extensions.Design.AccordionViewCollectionEditor">
+            <summary>
+            Specialized <see cref="T:System.ComponentModel.Design.CollectionEditor"/> for <see cref="T:Gaia.WebWidgets.Extensions.ExtendedPanelCollection"/> in the <see cref="T:Gaia.WebWidgets.Extensions.Accordion"/>.
+            </summary>
+        </member>
+        <member name="M:Gaia.WebWidgets.Extensions.Design.AccordionViewCollectionEditor.#ctor(System.Type)">
+            <summary>
+            Initializes a new instance of the <see cref="T:System.ComponentModel.Design.CollectionEditor"/> class using the specified collection type.
+            </summary>
+            <param name="type">The type of the collection for this editor to edit.</param>
+        </member>
+        <member name="T:Gaia.WebWidgets.Design.ImageFieldDesigner">
+            <summary>
+            Specialized <see cref="T:System.Web.UI.Design.WebControls.DataControlFieldDesigner"/> for the <see cref="T:Gaia.WebWidgets.ImageField"/>.
+            </summary>
+        </member>
+        <member name="M:Gaia.WebWidgets.Design.ImageFieldDesigner.CreateField">
+            <summary>
+            Creates an empty <see cref="T:Gaia.WebWidgets.ImageField"/> object.
+            </summary>
+            <returns>Empty <see cref="T:Gaia.WebWidgets.ImageField"/>.</returns>
+        </member>
+        <member name="M:Gaia.WebWidgets.Design.ImageFieldDesigner.CreateField(System.Web.UI.Design.IDataSourceFieldSchema)">
+            <summary>
+            When overridden in a derived class, creates a new field object using the specified data field information.
+            </summary>
+            <returns>
+            A new field object.
+            </returns>
+            <param name="fieldSchema">Schema information that contains the structure of a data field.</param>
+        </member>
+        <member name="M:Gaia.WebWidgets.Design.ImageFieldDesigner.CreateTemplateField(System.Web.UI.WebControls.DataControlField,System.Web.UI.WebControls.DataBoundControl)">
+            <summary>
+            Creates a <see cref="T:System.Web.UI.WebControls.TemplateField"/> field for the specified <paramref name="dataControlField"/>.
+            </summary>
+        </member>
+        <member name="M:Gaia.WebWidgets.Design.ImageFieldDesigner.GetNodeText(System.Web.UI.WebControls.DataControlField)">
+            <summary>
+            Gets the name that is displayed for the specified <paramref name="dataControlField"/> in the fields editor.
+            </summary>
+        </member>
+        <member name="M:Gaia.WebWidgets.Design.ImageFieldDesigner.IsEnabled(System.Web.UI.WebControls.DataBoundControl)">
+            <summary>
+            When overridden in a derived class, gets a value that indicates whether the data field is enabled in the fields editor.
+            </summary>
+            <returns>
+            A value that indicates whether the data field is enabled in the fields editor.
+            </returns>
+            <param name="parent">The data-bound control that contains the data field.</param>
+        </member>
+        <member name="M:Gaia.WebWidgets.Design.ImageFieldDesigner.GetTemplateContent(System.Web.UI.WebControls.ImageField,System.Web.UI.WebControls.DataBoundControlMode)">
+            <summary>
+            Returns template content for the specified <paramref name="imageField"/>.
+            </summary>
+        </member>
+        <member name="M:Gaia.WebWidgets.Design.ImageFieldDesigner.PrepareFormatString(System.String)">
+            <summary>
+            Formats the specified <paramref name="format"/> string.
+            </summary>
+        </member>
+        <member name="P:Gaia.WebWidgets.Design.ImageFieldDesigner.DefaultNodeText">
+            <summary>
+            Gets the default text that is displayed for the data field in the fields editor.
+            </summary>
+        </member>
+        <member name="P:Gaia.WebWidgets.Design.ImageFieldDesigner.UsesSchema">
+            <summary>
+            Gets a value that indicates whether schema information is used to load the data fields.
+            </summary>
+        </member>
+    </members>
+</doc>

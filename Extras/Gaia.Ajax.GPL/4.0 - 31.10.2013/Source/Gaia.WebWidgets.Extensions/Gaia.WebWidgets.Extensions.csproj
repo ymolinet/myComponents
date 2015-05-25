@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <UsingTask TaskName="AjaxMin" AssemblyFile="../SolutionReferences/AjaxMinTask.dll" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{52408663-5069-49EC-9A47-8ADC8204F108}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Gaia.WebWidgets.Extensions</RootNamespace>
+    <AssemblyName>Gaia.WebWidgets.Extensions</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Debug\Gaia.WebWidgets.Extensions.XML</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Release\Gaia.WebWidgets.Extensions.XML</DocumentationFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Constants.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Widgets\Accordion.cs" />
+    <Compile Include="Widgets\AutoCompleter.cs" />
+    <Compile Include="Widgets\Calendar.cs" />
+    <Compile Include="Widgets\CalendarWithTimePart.cs" />
+    <Compile Include="Widgets\ControlPicker.cs" />
+    <Compile Include="Widgets\DateTimePicker.cs" />
+    <Compile Include="Widgets\ExtendedButton.cs" />
+    <Compile Include="Widgets\ExtendedPanel.cs" />
+    <Compile Include="Widgets\ExtendedPanelCollection.cs" />
+    <Compile Include="Widgets\InPlaceEdit.cs" />
+    <Compile Include="Widgets\Scheduler\IPositioner.cs" />
+    <Compile Include="Widgets\Scheduler\MinimalAreaPositioner.cs" />
+    <Compile Include="Widgets\Scheduler\Scheduler.cs" />
+    <Compile Include="Widgets\Scheduler\SchedulerCell.cs" />
+    <Compile Include="Widgets\Scheduler\SchedulerRow.cs" />
+    <Compile Include="Widgets\Scheduler\SchedulerTask.cs" />
+    <Compile Include="Widgets\Slider.cs" />
+    <Compile Include="Widgets\TabControl.cs" />
+    <Compile Include="Widgets\TabView.cs" />
+    <Compile Include="Widgets\TabViewCollection.cs" />
+    <Compile Include="Widgets\Toolbar.cs" />
+    <Compile Include="Widgets\ToolbarItem.cs" />
+    <Compile Include="Widgets\ToolbarItemCollection.cs" />
+    <Compile Include="Widgets\TreeView.cs" />
+    <Compile Include="Widgets\TreeViewItem.cs" />
+    <Compile Include="Widgets\TreeViewItemCollection.cs" />
+    <Compile Include="Widgets\Window.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Gaia.WebWidgets.Extensions.TabControl.bmp" />
+    <EmbeddedResource Include="Resources\Gaia.WebWidgets.Extensions.TabView.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Scripts\ToolbarItem.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Scripts\TreeViewItem.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Scripts\Window.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Scripts\ExtendedButton.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Gaia.WebWidgets.Extensions.Window.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Gaia.WebWidgets.Extensions.TreeView.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Gaia.WebWidgets.Extensions.DateTimePicker.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Gaia.WebWidgets.Extensions.Calendar.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Gaia.WebWidgets.Extensions.AutoCompleter.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Gaia.WebWidgets.Extensions.Accordion.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Scripts\ControlPicker.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Gaia.WebWidgets.Effects.JQueryUI\Gaia.WebWidgets.Effects.JQueryUI.csproj">
+      <Project>{da96882f-4428-4044-918d-8f65e5f8cd2b}</Project>
+      <Name>Gaia.WebWidgets.Effects.JQueryUI</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gaia.WebWidgets\Gaia.WebWidgets.csproj">
+      <Project>{3821F9A8-7513-4987-A796-189CBFBFAE7C}</Project>
+      <Name>Gaia.WebWidgets</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Scripts\TabControl.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Calendar.resx">
+      <SubType>Designer</SubType>
+      <LastGenOutput>Calendar.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Gaia.WebWidgets.Extensions.ExtendedButton.bmp" />
+    <EmbeddedResource Include="Resources\Gaia.WebWidgets.Extensions.ExtendedPanel.bmp" />
+    <EmbeddedResource Include="Resources\Gaia.WebWidgets.Extensions.InPlaceEdit.bmp" />
+    <EmbeddedResource Include="Resources\Gaia.WebWidgets.Extensions.Slider.bmp" />
+    <EmbeddedResource Include="Resources\Gaia.WebWidgets.Extensions.Toolbar.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Gaia.WebWidgets.Extensions.ToolbarItem.bmp" />
+    <EmbeddedResource Include="Resources\Gaia.WebWidgets.Extensions.TreeViewItem.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Scripts\AspectResizableTask.js" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="EmbedSkin.targets" />
+  <Target Name="BeforeBuild">
+    <CallTarget Targets="EmbedSkin" />
+	
+	<Delete Files="$(MSBuildProjectDirectory)/Scripts/extensions.js"
+			Condition="'$(Configuration)' == 'Release'" ContinueOnError="True" />
+    
+	<ItemGroup Condition="'$(Configuration)' == 'Release'">
+		<ScriptFiles Include="$(MSBuildProjectDirectory)/Scripts/**/*.js" />
+	</ItemGroup>
+	
+	<AjaxMin JsKnownGlobalNames="jQuery,$,jsface" JsEvalTreatment="MakeImmediateSafe" JsSourceFiles="@(ScriptFiles)"
+			 Switches="-comments:none"
+			 JsCombinedFileName="$(MSBuildProjectDirectory)/Scripts/extensions.js" Condition="'$(Configuration)' == 'Release'" />
+    
+	<ItemGroup Condition="'$(Configuration)' == 'Release'">
+      <EmbeddedResource Include="Scripts/extensions.js" />
+    </ItemGroup>
+  </Target>
+  <Target Name="AfterBuild">
+    <Delete Files="$(MSBuildProjectDirectory)/Scripts/extensions.js" Condition="'$(Configuration)' == 'Release'" />
+  </Target>
+</Project>

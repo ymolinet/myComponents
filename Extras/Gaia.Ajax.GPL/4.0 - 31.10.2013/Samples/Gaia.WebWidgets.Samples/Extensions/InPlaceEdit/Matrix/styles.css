@@ -1,0 +1,35 @@
+.matrix td
+{
+    border: 1px solid grey;
+}
+
+.editor span,
+.editor input
+{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.editor span
+{
+	cursor: pointer;
+    font-size: 1.2em;
+    width: 25px;
+    height: 25px;
+    display:block;
+    text-align: center;
+}
+
+.editor input
+{
+    width: 23px;
+    height: 23px;
+    display:block;
+    text-align: center;
+}
+
+h2
+{
+	margin-bottom: 10px;
+}

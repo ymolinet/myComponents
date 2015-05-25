@@ -1,0 +1,17 @@
+.container-updatecontrol
+{
+    z-index:1000;
+    position:relative;
+}
+
+.container-updatecontrol img
+{
+    float:right;
+}
+
+ol 
+{
+    list-style-position:outside;
+    list-style-type:upper-alpha;
+    padding-left: 25px;
+}

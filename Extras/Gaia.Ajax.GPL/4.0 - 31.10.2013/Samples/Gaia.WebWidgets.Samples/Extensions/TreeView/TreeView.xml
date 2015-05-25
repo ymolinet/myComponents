@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Directories>
+  <Directory Name="AddRemoveNodes" Title="Add and Remove Nodes" />
+  <Directory Name="DataBinding" Title="Data Binding" />
+  <Directory Name="DragAndDrop" Title="Drag and Drop" />
+  <Directory Name="GetChildrenEvent" />
+  <Directory Name="MediaLibrary" Title="Media Library" />
+</Directories>

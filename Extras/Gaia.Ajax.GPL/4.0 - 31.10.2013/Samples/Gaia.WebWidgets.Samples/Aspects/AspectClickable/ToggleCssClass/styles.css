@@ -1,0 +1,19 @@
+.panel,
+.panel-selected
+{
+    border: 1px solid black;
+    width:200px; 
+    height: 200px;
+}
+
+.panel 
+{
+    background-color: red; 
+    border-color: black;   
+}
+
+.panel-selected
+{
+    background-color: blue;
+    border-color: yellow;
+}

@@ -1,0 +1,23 @@
+.window-container
+{
+    margin: 10px;
+}
+
+#squares-container span
+{
+    border: solid 2px black;
+    height: 50px;
+    width: 50px;
+    display:inline-block;
+    cursor:pointer;
+}
+
+#squares-container span:hover
+{
+    border: #dcdcdc 2px solid;
+}
+
+.clicked
+{
+    background-color: #ffffcc;
+}

@@ -1,0 +1,176 @@
+﻿/* Scheduler month-view Sample styles */
+
+.resource {
+}
+
+.resource-collected {
+    background-color: yellow;
+}
+
+.month-cell-collected {
+    background-color: yellow !important;
+}
+
+.scheduler-monthcell:hover {
+    background-color: #fafad2
+}
+
+.header-step {
+    margin: 5px;
+    text-decoration: underline;
+    color: #416982;
+}
+
+/* Icons */
+.ico {
+    width: 16px; 
+    height: 16px;
+}
+
+a.ico, span.ico {
+    text-decoration: none !important;
+    display: block;
+    float: left;
+    opacity: 0.75;
+    -moz-opacity: 0.75;
+    filter: alpha(opacity=75);
+}
+
+a.ico:hover, span.ico:hover
+{
+    opacity:1;
+    -moz-opacity: 1;
+    filter: alpha(opacity=100);
+}
+
+.user-blue {
+    background: url(i/user-blue.png) no-repeat top left;
+}
+
+.user-female {
+    background: url(i/user_female.png) no-repeat top left;
+}
+
+.user-green {
+    background: url(i/user_green.png) no-repeat top left;
+}
+
+.user-orange {
+    background: url(i/user_orange.png) no-repeat top left;
+}
+
+.user-red {
+    background: url(i/user_red.png) no-repeat top left;
+}
+
+.user-suit {
+    background: url(i/user_suit.png) no-repeat top left;
+}
+
+.monthview-task {
+    display: block;
+    margin-left: 5px;
+}
+
+.clear-resources {
+    
+    background-image: url('../Overview/delete.png');
+	background-repeat: no-repeat;
+    display: block;
+    height: 16px;
+    width: 16px;
+    text-decoration: none;
+    position: absolute; 
+    bottom: 5px; 
+    right : 2px;
+}
+
+.monthview-new:hover {
+    text-decoration: underline;
+}
+
+/* Scheduler month-view */
+.scheduler-outofrangecell,
+.scheduler-monthcell
+{
+    width: 14%;
+}
+
+.scheduler-monthcell
+{
+    background-color: #f5faff;
+    border: 1px solid silver;
+}
+
+.scheduler-outofrangecell,
+.scheduler-headercell
+{
+    background-color: #fff;
+}
+
+.scheduler-headercell
+{
+    font-weight: bold;
+    background-color: #006699;
+    color: #fff;
+}
+
+.scheduler-container
+{
+    height: 75px;
+    position:relative;
+}
+
+.scheduler-container .day
+{
+    display: block;
+    font-style: italic;
+    text-align: right;
+}
+
+.scheduler-outofrangecell .day
+{
+    color: Gray;
+}
+
+.scheduler-container .report
+{
+    display: block;
+    top:50%;
+    left: 10%;
+    right: 10%;
+    position:absolute;
+    text-align: center;
+    color: White;
+    padding: 5px;
+    background-color: Teal;
+}
+
+.scheduler-outofrangecell .report
+{
+    color: Gray;
+    background-color: transparent;
+}
+
+.i-view-cell
+{
+    width: 75px;
+    font-weight:bold;
+}
+
+
+/* scheduler styles */
+
+.scheduler
+{
+    clear: both;
+}
+.scheduler-defaultcellstyle
+{
+    
+}
+
+.scheduler-headercellstyle
+{
+	text-align: center;	
+}

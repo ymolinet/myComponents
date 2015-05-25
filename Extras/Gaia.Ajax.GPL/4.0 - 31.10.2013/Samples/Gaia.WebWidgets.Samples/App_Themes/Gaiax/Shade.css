@@ -1,0 +1,125 @@
+﻿ 
+ /*******************************************************************
+ * Gaia Ajax - Ajax Control Library for ASP.NET  
+ * Copyright (C) 2008 - 2011 Gaiaware AS
+ * All rights reserved. 
+ * This program is distributed under either GPL version 3 
+ * as published by the Free Software Foundation or the
+ * Gaia Commercial License version 1 as published by Gaiaware AS
+ * read the details at http://gaiaware.net/product/dual-licensing 
+ ******************************************************************/
+   
+.gaiax-shade 
+{
+	position:absolute;
+	overflow:hidden;
+	left:0;
+	top:0;
+}
+
+.gaiax-ie-shade
+{
+    background-color: #000;
+    position: absolute;
+    overflow:hidden;
+    zoom:1;
+}
+
+.gaiax-shade *
+{
+	overflow:hidden;
+}
+
+.gaiax-shade *
+{
+	padding:0;
+	border:0;
+	margin:0;
+	clear:none;
+	zoom:1;
+}
+
+.gaiax-shade .gstc, 
+.gaiax-shade .gsbc
+{
+	height:7px;
+	float:left;
+}
+
+.gaiax-shade .gstl,
+.gaiax-shade .gstr,
+.gaiax-shade .gsbl,
+.gaiax-shade .gsbr
+{
+	width:7px;
+	height:7px;
+	float:left;
+}
+
+.gaiax-shade .gsc
+{
+	width:100%;
+}
+
+.gaiax-shade .gsml,
+.gaiax-shade .gsmr
+{
+	height:100%;
+	float:left;
+	width:7px;
+}
+
+.gaiax-shade .gsmc
+{
+	float:left;
+	height:100%; 
+	background:transparent url( shade-center.png ); 
+}
+
+.gaiax-shade .gst,
+.gaiax-shade .gsb
+{
+	overflow:hidden;
+	height:7px;
+	width:100%;
+}
+
+.gaiax-shade .gsml
+{
+	background:transparent url( shade-leftright.png ) repeat-y 0 0;
+}
+
+.gaiax-shade .gsmr
+{
+	background:transparent url( shade-leftright.png ) repeat-y -7px 0px;
+}
+
+.gaiax-shade .gstl
+{
+	background:transparent url( shade-sprite.png ) no-repeat 0px -50px;
+}
+
+.gaiax-shade .gstc
+{
+	background:transparent url( shade-sprite.png ) repeat-x 0 -1px;
+}
+
+.gaiax-shade .gstr
+{
+	background:transparent url( shade-sprite.png ) no-repeat 0 -8px;
+}
+
+.gaiax-shade .gsbl
+{
+	background:transparent url( shade-sprite.png ) no-repeat 0 -36px;
+}
+
+.gaiax-shade .gsbc
+{
+	background:transparent url( shade-sprite.png ) repeat-x 0 -29px;
+}
+
+.gaiax-shade .gsbr
+{
+	background:transparent url( shade-sprite.png ) no-repeat 0 -22px;
+}

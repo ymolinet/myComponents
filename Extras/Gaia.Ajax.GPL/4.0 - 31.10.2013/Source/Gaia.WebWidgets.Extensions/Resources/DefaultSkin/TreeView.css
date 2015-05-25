@@ -1,0 +1,185 @@
+﻿/*******************************************************************
+ * Gaia Ajax - Ajax Control Library for ASP.NET  
+ * Copyright (C) 2008 - 2011 Gaiaware AS
+ * All rights reserved. 
+ * This program is distributed under either GPL version 3 
+ * as published by the Free Software Foundation or the
+ * Gaia Commercial License version 1 as published by Gaiaware AS
+ * read the details at http://gaiaware.net/product/dual-licensing 
+ ******************************************************************/
+
+.gaiax-treeview
+{
+	background-color: #fff;
+	list-style-type: none;
+	margin: 0pt;
+	overflow: hidden;
+	padding: 0pt;
+	position: relative;
+}
+
+.gaiax-treeview ul
+{
+	list-style-type: none;
+}
+
+.gaiax-treeview-root-ct
+{
+	  zoom:1;
+}
+
+.gaiax-treeview-item-ct
+{
+    margin: 0;
+    padding: 0;
+	position:static;
+	left:auto;
+	top:auto;
+	z-index:auto;
+}
+
+.gaiax-treeview-item
+{
+	color: #111;
+	font-family: Arial,Helvetica,Tahoma,Sans-Serif, Monospace;
+	font-size: 12px;
+	overflow: hidden;
+}
+
+.gaiax-treeview-item-el
+{
+	cursor: pointer;
+	line-height: 18px;
+}
+
+.gaiax-treeview-icon,
+.gaiax-treeview-ec-icon,
+.gaiax-treeview-branch-line,
+.gaiax-treeview-branch,
+.gaiax-treeview-branch-last,
+.gaiax-treeview-branch-expanded,
+.gaiax-treeview-branch-collapsed,
+.gaiax-treeview-branch-last-expanded,
+.gaiax-treeview-branch-last-collapsed
+{
+	background-repeat: no-repeat;
+	border: 0px;
+	height: 18px;
+	vertical-align: top;
+	width: 16px;
+}
+
+.gaiax-treeview-item-icon
+{
+	background: transparent url(treeview-sprite.png) no-repeat scroll -256px 0pt;
+}
+
+
+.gaiax-treeview-item-collapsed .gaiax-treeview-item-icon,
+.gaiax-treeview-item-expanded .gaiax-treeview-item-icon,
+.gaiax-treeview-item-leaf .gaiax-treeview-item-icon
+{
+	background-position: center center;
+	background-repeat: no-repeat;
+	border: 0pt none;
+	height: 18px;
+	vertical-align: top;
+	width: 16px;
+}
+
+.gaiax-treeview-item-anchor
+{
+	-moz-user-focus: normal;
+	-moz-user-select: none;
+	color: #111;
+	text-decoration: none;
+}
+
+.gaiax-treeview-item-anchor span
+{
+	color: Black;
+	padding: 1px 3px 1px 2px;
+	text-decoration: none;
+}
+
+
+.gaiax-treeview .file .gaiax-treeview-item-icon,
+.gaiax-treeview-item-leaf .gaiax-treeview-item-icon
+{
+	background:url(treeview-sprite.png) no-repeat -203px 0;
+	width:15px;
+}
+
+.gaiax-treeview .noicon .gaiax-treeview-item-icon
+{
+	width:0;
+}
+
+.gaiax-treeview-item-collapsed .gaiax-treeview-item-icon
+{
+	background:url(treeview-sprite.png) no-repeat -171px 0px;
+}
+
+.gaiax-treeview-item-expanded .gaiax-treeview-item-icon
+{
+	background:url(treeview-sprite.png) no-repeat -187px 0;
+}
+
+.gaiax-treeview-lines .gaiax-treeview-branch
+{
+	background:url(treeview-sprite.png) no-repeat 0px 0;
+}
+.gaiax-treeview-lines .gaiax-treeview-branch-expanded
+{
+	background:url(treeview-sprite.png) no-repeat -144px 0;
+}
+.gaiax-treeview-lines .gaiax-treeview-branch-collapsed
+{
+	background:url(treeview-sprite.png) no-repeat -112px 0;
+}
+
+.gaiax-treeview-lines .gaiax-treeview-branch-last
+{
+	background:url(treeview-sprite.png) no-repeat -16px 0;
+}
+
+.gaiax-treeview-lines .gaiax-treeview-branch-last-expanded
+{
+	background:url(treeview-sprite.png) no-repeat -64px 0;
+}
+
+.gaiax-treeview-lines .gaiax-treeview-branch-last-collapsed
+{
+	background:url(treeview-sprite.png) no-repeat -32px 0;
+}
+
+.gaiax-treeview-lines .gaiax-treeview-branch-line
+{
+	background:url(treeview-sprite.png) no-repeat -96px 0;
+}
+
+.gaiax-treeview-item .gaiax-treeview-drag-append
+{
+	 background:#efe;
+}
+
+.gaiax-treeview-item ul
+{
+    padding: 0;
+	list-style-type: none;
+}
+
+.gaiax-treeview-item-el:hover
+{
+	background-color: #eee;
+}
+
+.gaiax-treeview-item .gaiax-treeview-selected
+{
+	background-color: #d7dbff;
+}
+
+.gaiax-treeview-item-indent
+{
+	
+}

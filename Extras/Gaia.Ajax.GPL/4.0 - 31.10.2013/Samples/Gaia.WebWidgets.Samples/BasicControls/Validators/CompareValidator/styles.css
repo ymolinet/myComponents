@@ -1,0 +1,25 @@
+.verticalStack
+{
+    float:left;
+    display:inline;
+    margin-right: 10px;
+    height: 50px;
+}
+
+.input-text
+{
+    width: 70px;
+}
+
+.input-submit
+{
+    margin-top: 15px;
+}
+
+.resultSpan
+{
+    font-weight: bold;
+    font-size: 1.3em;
+    position:relative;
+    top:16px;
+}

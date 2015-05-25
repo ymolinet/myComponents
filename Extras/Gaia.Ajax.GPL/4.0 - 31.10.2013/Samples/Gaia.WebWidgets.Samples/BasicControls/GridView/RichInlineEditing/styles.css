@@ -1,0 +1,71 @@
+.container-feedback
+{
+    height:65px;
+    position:relative;
+    margin-bottom:10px;
+}
+
+.container-feedback-area
+{
+    float: right;
+    position:absolute;
+    bottom:0;
+    right:0;
+}
+
+.container-feedback-area-tag
+{
+    float:left;
+    position:relative;
+    z-index:500;
+    top:63px;
+    left:70px;
+}
+
+.container-feedback-area-status
+{
+    width: 280px;
+    height:50px;
+    color:#9a9a52;
+    font-weight:bold;
+    display:block;
+    border:2px solid #cccc6c;
+    padding:5px;
+    background:lightyellow;
+}
+
+.container-updatecontrol
+{
+    z-index:1000;
+    position:absolute;
+    top:50px;
+    right:15px;
+}
+
+.sampleAspx
+{
+    overflow: visible;
+}
+
+.itemCenter
+{
+    text-align:center;
+}
+
+.itemCenterDate div table
+{
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.inplaceedit
+{
+    font-size:11px;
+    font-style:normal;
+    font-variant:normal;
+    font-weight:normal;
+    line-height:normal;
+    background-color:Transparent;
+    border:none 0;
+    cursor:text;
+}

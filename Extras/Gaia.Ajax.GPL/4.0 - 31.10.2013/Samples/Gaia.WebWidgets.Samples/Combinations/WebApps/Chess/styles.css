@@ -1,0 +1,38 @@
+/* Chess Sample Styles */
+
+.sample-container {
+    position: relative;
+}
+
+.current-player {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 75px;
+    margin: 10px;
+    text-align: center;
+    border: 1px solid #eee;
+}
+
+.chess-black-square {
+    background-color: #d18b47;
+    width: 55px;
+    height: 55px;
+    padding: 5px;
+    float: left;
+    text-align: center;
+}
+
+.chess-white-square {
+    background-color: #ffce9e;
+    width: 55px;
+    height: 55px;
+    padding: 5px;
+    float: left;
+    text-align: center;
+}
+
+.chess-board div img {
+    cursor: move;
+    z-index: 1000;
+}

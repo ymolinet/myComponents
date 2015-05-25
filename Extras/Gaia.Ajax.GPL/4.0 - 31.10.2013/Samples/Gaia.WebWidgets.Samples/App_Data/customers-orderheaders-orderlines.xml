@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Customers>
+  <Customer Name="Yellow Company Inc" No="1000">
+    <Order>
+      <OrderId>50000</OrderId>
+        <OrderLine>
+          <ProductName>Anchor Winch</ProductName>
+          <Price>4000.00</Price>
+          <Quantity>1.00</Quantity>
+        </OrderLine>
+        <OrderLine>
+          <ProductName>Anchor Chain</ProductName>
+          <Price>2000.00</Price>
+          <Quantity>5.00</Quantity>
+        </OrderLine>
+    </Order>
+    
+  </Customer>
+  <Customer Name="Blue Company Inc" No="1001">
+    <Order>
+      <OrderId>50001</OrderId>
+        <OrderLine>
+          <ProductName>Anchor Winch</ProductName>
+          <Price>4000.00</Price>
+          <Quantity>1.00</Quantity>
+        </OrderLine>
+        <OrderLine>
+          <ProductName>Anchor Chain</ProductName>
+          <Price>2000.00</Price>
+          <Quantity>10.00</Quantity>
+        </OrderLine>
+        <OrderLine>
+          <ProductName>Water Pump</ProductName>
+          <Price>20000.00</Price>
+          <Quantity>2.00</Quantity>
+        </OrderLine>
+    </Order>
+    <Order>
+      <OrderId>50002</OrderId>
+      <OrderLine>
+        <ProductName>Anchor Winch</ProductName>
+        <Price>4000.00</Price>
+        <Quantity>4.00</Quantity>
+      </OrderLine>
+      <OrderLine>
+        <ProductName>Anchor Chain</ProductName>
+        <Price>2000.00</Price>
+        <Quantity>10.00</Quantity>
+      </OrderLine>
+      <OrderLine>
+        <ProductName>Water Pump</ProductName>
+        <Price>20000.00</Price>
+        <Quantity>1.00</Quantity>
+      </OrderLine>
+    </Order>
+    <Order>
+      <OrderId>50003</OrderId>
+      <OrderLine>
+        <ProductName>Balanced Sterndrive Cylinder</ProductName>
+        <Price>2000.00</Price>
+        <Quantity>5.00</Quantity>
+      </OrderLine>
+      <OrderLine>
+        <ProductName>Point Set</ProductName>
+        <Price>100.00</Price>
+        <Quantity>5.00</Quantity>
+      </OrderLine>
+      <OrderLine>
+        <ProductName>Front Mount Helm Pump</ProductName>
+        <Price>350000.00</Price>
+        <Quantity>1.00</Quantity>
+      </OrderLine>
+    </Order>
+  </Customer>
+</Customers>

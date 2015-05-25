@@ -1,0 +1,61 @@
+﻿/*******************************************************************
+ * Gaia Ajax - Ajax Control Library for ASP.NET  
+ * Copyright (C) 2008 - 2011 Gaiaware AS
+ * All rights reserved. 
+ * This program is distributed under either GPL version 3 
+ * as published by the Free Software Foundation or the
+ * Gaia Commercial License version 1 as published by Gaiaware AS
+ * read the details at http://gaiaware.net/product/dual-licensing 
+ ******************************************************************/
+
+.gaiax-layer
+{
+	visibility:hidden;
+}
+
+.gaiax-controlpicker
+{
+	border:1px solid #8DB2E3;
+	background:#ddecfe;
+	overflow:hidden;
+	visibility: visible;
+}
+
+.gaiax-controlpicker-wrapper
+{
+	background:white;
+	position:relative; 
+	overflow-x:hidden;
+	overflow-y:auto;
+	overflow: auto;
+}
+
+.gaiax-controlpicker-item
+{
+	font-family: Arial, Helvetica, Tahoma, Sans-Serif;
+	font-size:12px;
+    padding:2px;
+    border:1px solid #fff;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
+
+.gaiax-controlpicker .gaiax-controlpicker-hover
+{
+	border:1px dotted #7DA7DF;
+    background:#dfe8f6;
+    cursor:pointer;
+}
+
+.gaiax-controlpicker .gaiax-controlpicker-selected
+{
+	border:1px solid #f00;
+    background:#fff;
+    cursor:pointer;
+}
+
+.gaiax-controlpicker .gaiax-controlpicker-selected.gaiax-controlpicker-hover
+{
+    background:#dfe8f6;
+}

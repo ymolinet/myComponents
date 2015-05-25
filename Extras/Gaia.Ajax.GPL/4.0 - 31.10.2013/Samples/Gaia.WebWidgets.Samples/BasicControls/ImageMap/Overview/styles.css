@@ -1,0 +1,37 @@
+.container-sample
+{
+    overflow: auto;
+}
+
+.container-imagemap
+{
+    float:left;
+}
+
+
+.answer-box
+{
+    width: 100px;
+    height: 30px;
+    margin-bottom: 5px;
+    padding: 2px;
+    color: #ffffff;
+}
+
+.answer-box-negative
+{
+    background-color: #ff0000;
+}
+
+.answer-box-positive
+{
+    background-color: #33cc33;
+}
+
+.container-todays-task
+{
+     float:left;
+     width: 300px;
+     margin: 10px;
+}
+

@@ -1,0 +1,111 @@
+****************************************************
+*
+*   Changelog for Gaia Ajax
+*
+*   Updated on: 2013-10-31
+*   Build: 4.0.31.10.2013
+*
+****************************************************
+
+====================================================
+Gaia Ajax - Library
+====================================================
+
+
+============== FEATURES / ENHANCEMENTS =============
+
+* [GAIA-538][Complete] Port client-side scripts to jQuery
+  Details: http://tracker.gaiaware.net/Default.aspx?p=1&i=538
+  Affected component(s): Accordion,AutoCompleter,BrowserHistory,Button,Calendar,CheckBox,CheckBoxList,ClientScripts,CompareValidator,ControlPicker,CustomValidator,DateTimePicker,DropDownList,DynamicImage,Effect,ExtendedButton,ExtendedPanel,FileUpload,Gaia.Ajax.CommunityExtensions,Gaia.Ajax.Core,Gaia.Ajax.UI.Aspects,Gaia.Ajax.UI.Effects,Gaia.Ajax.UI.WebControls,GMap,GridView,HiddenField,Image,ImageButton,ImageMap,InPlaceEdit,Label,License Validator,LinkButton,ListBox,MultiView,Panel,RadioButton,RadioButtonList,RangeValidator,RegularExpressionValidator,RequiredFieldValidator,Slider,TabControl,TextBox,Timer,Toolbar,TreeView,ValidationSummary,Window
+
+* [GAIA-77][Complete] Encapsulate Gaia in its own namespace on the client
+  Details: http://tracker.gaiaware.net/Default.aspx?p=1&i=77
+  Affected component(s): ClientScripts
+
+* [GAIA-362][Complete] Event management enhancements
+  Details: http://tracker.gaiaware.net/Default.aspx?p=1&i=362
+  Affected component(s): Gaia.Ajax.Core
+
+* [GAIA-208][Complete] When window is maxmized, track the browser window resize/change events
+  Details: http://tracker.gaiaware.net/Default.aspx?p=1&i=208
+  Affected component(s): Window
+
+* [GAIA-531][Complete] Create Scheduler component
+  Details: http://tracker.gaiaware.net/Default.aspx?p=1&i=531
+  Affected component(s): Gaia.Ajax.UI.WebControls
+
+* [GAIA-78][Complete] Eval / script block evaluation benchmarking
+  Details: http://tracker.gaiaware.net/Default.aspx?p=1&i=78
+  Affected component(s): ClientScripts
+
+
+======================== BUGS ======================
+
+* [GAIA-500][Complete] Effect.BlindUp doesn't work when setting duration or delay
+  Details: http://tracker.gaiaware.net/Default.aspx?p=1&i=500
+  Affected component(s): Effect
+  Affected version(s): 
+
+* [GAIA-509][Complete] Rendering issue with mix of Maximized true|false on Window
+  Details: http://tracker.gaiaware.net/Default.aspx?p=1&i=509
+  Affected component(s): Window
+  Affected version(s): 
+
+* [GAIA-511][Complete] Bug in AutoCompler and/or Label when using special characters like > in Text property
+  Details: http://tracker.gaiaware.net/Default.aspx?p=1&i=511
+  Affected component(s): AutoCompleter,Label
+  Affected version(s): 
+
+* [GAIA-512][Complete] Toggle TabView when TabView to the left is Visible=false gives JavaScript error
+  Details: http://tracker.gaiaware.net/Default.aspx?p=1&i=512
+  Affected component(s): TabControl
+  Affected version(s): 
+
+* [GAIA-515][Complete] Invalid rendering when changing CssClass in AutoCompleter in callback
+  Details: http://tracker.gaiaware.net/Default.aspx?p=1&i=515
+  Affected component(s): AutoCompleter
+  Affected version(s): 
+
+* [GAIA-516][Complete] Input button with runat="server" causes Gaia Ajax events not to fire
+  Details: http://tracker.gaiaware.net/Default.aspx?p=1&i=516
+  Affected component(s): Gaia.Ajax.Core
+  Affected version(s): 
+
+* [GAIA-517][Complete] TabIndex is not applied to AutoCompleter
+  Details: http://tracker.gaiaware.net/Default.aspx?p=1&i=517
+  Affected component(s): AutoCompleter
+  Affected version(s): 
+
+* [GAIA-519][Complete] MouseOut event triggers first a mouse click event and then the mouse out event
+  Details: http://tracker.gaiaware.net/Default.aspx?p=1&i=519
+  Affected component(s): Button,ExtendedButton
+  Affected version(s): 
+
+* [GAIA-521][Complete] Disabled RadioButtonList reenabling fails
+  Details: http://tracker.gaiaware.net/Default.aspx?p=1&i=521
+  Affected component(s): CheckBoxList,RadioButtonList
+  Affected version(s): 
+
+* [GAIA-536][Complete] Window keeps its actual height when minimized
+  Details: http://tracker.gaiaware.net/Default.aspx?p=1&i=536
+  Affected component(s): Window
+  Affected version(s): 
+
+* [GAIA-537][Complete] UseDocumentBody = true in AspectDraggable gives JavaScript error with IE7 + IE8
+  Details: http://tracker.gaiaware.net/Default.aspx?p=1&i=537
+  Affected component(s): Gaia.Ajax.UI.Aspects
+  Affected version(s): 
+
+
+====================================================
+Gaia Ajax - Visual Studio Support
+====================================================
+
+No changes
+
+====================================================
+Gaia Ajax - Websites
+====================================================
+
+No changes
+

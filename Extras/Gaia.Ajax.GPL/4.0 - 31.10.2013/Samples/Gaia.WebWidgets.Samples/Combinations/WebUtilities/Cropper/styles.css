@@ -1,0 +1,25 @@
+#inner
+{
+	position: relative;
+	height: 421px; 
+	width:650px;
+	overflow: hidden;
+}
+
+.crop-tool
+{
+	background-color: Gray;
+	border: 2px solid white;
+	opacity:0.4; 
+	position: absolute;
+	z-index: 1000;
+	filter: alpha(opacity=40);
+}
+
+.crop-handle
+{
+	cursor:move;
+	opacity:0.4;
+	background-color: Black;
+	filter: alpha(opacity=40);
+}

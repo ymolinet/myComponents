@@ -1,0 +1,12 @@
+.spacer
+{
+	margin: 10px;
+}
+
+.extbutton-icon
+{
+	background:transparent url(arrow.png) no-repeat 0 0;
+	width:100%;
+	border:solid 1px #328fd0;
+	cursor:pointer;
+}

@@ -1,0 +1,103 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" Inherits="Gaia.WebWidgets.Samples.GaiaCoreMaster" Codebehind="Core.master.cs" %>
+<%@ Register src="~/UI/SampleSearch.ascx" tagname="SampleSearch" tagprefix="uc1" %>
+<!DOCTYPE HTML>
+<html lang="en">
+<head runat="server">
+<meta charset="utf-8">
+<link runat="server" rel="stylesheet" href="~/media/css/gaia-ajax-samples-4-0.min.css" type="text/css" />
+<title>Gaia Demo</title>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="container">
+            <div class="navbar-top">
+                <a
+                    runat="server" 
+                    href="~/">
+                    <img
+                        runat="server"
+                        src="~/media/contentImages/samples_header.png" 
+                        alt="Gaia Ajax Samples"
+                        class="header-logo" />
+                </a>
+                <span class="version-box">
+                    <a
+                        runat="server"
+                        href="~/">4.0 <span>BETA</span></a>
+                </span>
+                <div class="search">
+                    <uc1:SampleSearch ID="s" runat="server" />
+                </div>
+            </div>
+                        
+            <div class="body-content">
+                <div class="column-left">
+                    <asp:Panel 
+                        runat="server" 
+                        ID="pS"
+                        CssClass="section-menu" />
+                    <br />
+                    <p class="advertise">
+                        Get sample code when you
+                        <strong><a href="http://gaiaware.net/download" title="download Gaia">
+                            download Gaia Ajax &gt;&gt;</a></strong><br /><br />
+                    </p>
+                </div>
+                <div class="column-main-right">
+                    <asp:contentplaceholder 
+                        id="ContentPlaceHolder1"
+                        runat="server" />
+                    <div runat="server" id="zCodeContainer" class="sample-container">
+                        <asp:ContentPlaceHolder ID="p" runat="server" />
+                    </div>
+                    <br style="clear: both;" />
+                    <asp:contentplaceholder 
+                        id="ContentPlaceHolder2"
+                        runat="server" />
+                    <gaia:TabControl 
+                        runat="server" 
+                        ActiveTabViewIndex="0"
+                        OnActiveTabViewIndexChanged="ActiveCodeViewChanged"
+                        ID="tabCntrlCode">
+
+                        <gaia:TabView 
+                            ID="tabAspx" 
+                            Caption="ASPX Markup" 
+                            CaptionImageCssClass="aspxTabControlIcon"
+                            runat="server">
+                            <gaia:Panel 
+                                runat="server" 
+                                CssClass="code-panel"
+                                ID="aspxcodebehind" />
+                        </gaia:TabView>
+
+                        <gaia:TabView 
+                            ID="tabCSharp" 
+                            Caption="C# code"
+                            CaptionImageCssClass="csharpTabControlIcon"
+                            runat="server">
+                            <gaia:Panel
+                                runat="server" 
+                                CssClass="code-panel"
+                                ID="cscodebehind" />
+                        </gaia:TabView>
+
+                        <gaia:TabView 
+                            ID="tabVBNet" 
+                            Caption="VB.NET"
+                            CaptionImageCssClass="vbTabControlIcon"
+                            runat="server">
+                            <gaia:Panel 
+                                runat="server" 
+                                CssClass="code-panel"
+                                ID="vbcodebehind" />
+                        </gaia:TabView>
+                    </gaia:TabControl>
+        
+                    <asp:Label runat="server" ID="zVersion" CssClass="version-hidden" EnableViewState="False" />
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

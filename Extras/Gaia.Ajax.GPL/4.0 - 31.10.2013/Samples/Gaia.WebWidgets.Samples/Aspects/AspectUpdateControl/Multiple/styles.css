@@ -1,0 +1,7 @@
+.ajax-loader
+{
+	width: 10px;
+	height: 10px;
+	background: transparent url(ajax-tiny-circle-red.gif) 0 0;
+	display: inline-block;
+}

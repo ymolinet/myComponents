@@ -1,0 +1,118 @@
+﻿/*******************************************************************
+ * Gaia Ajax - Ajax Control Library for ASP.NET  
+ * Copyright (C) 2008 - 2013 Gaiaware AS
+ * All rights reserved. 
+ * This program is distributed under either GPL version 3 
+ * as published by the Free Software Foundation or the
+ * Gaia Commercial License version 1 as published by Gaiaware AS
+ * read the details at http://gaiaware.net/product/dual-licensing 
+ ******************************************************************/
+
+.gaiax-window 
+{
+	margin: 0pt;
+	padding:0pt;
+}
+
+.gaiax-window-draggable
+{
+	cursor: move;
+}
+
+.gaiax-window-tl
+{
+	background: transparent url(window-corners.png) no-repeat scroll 0pt 0pt;
+	padding-left: 6px;
+	position: relative;
+}
+
+.gaiax-window-tr
+{
+	background: transparent url(window-corners.png) no-repeat scroll right 0pt;
+	padding-right: 6px;
+}
+
+.gaiax-window-tc
+{
+	background: transparent url(window-tb.png) repeat-x 0pt 0pt;
+	overflow: hidden;
+}
+
+/* this is the content header for the window */
+.gaiax-window-top,
+.gaiax-window-top-text 
+{
+	color:#15428B;
+	font-family:Arial,Helvetica,Tahoma,Sans-Serif, Monospace;
+	font-size:12px;
+	font-weight:700;
+	height:18px;
+	padding:2px; 
+	margin-top:3px;
+}
+
+.gaiax-window-icon
+{
+	background-position: 0pt 4pt;
+	background-repeat: no-repeat;
+	padding-left: 25px;
+}
+
+.gaiax-window-contentwrapper 
+{
+	position: relative;
+}
+
+.gaiax-window-ml 
+{
+	background: transparent url(window-lr.png) repeat-y scroll 0pt 0pt;
+	padding-left: 5px;
+}
+.gaiax-window-mr 
+{
+	background: transparent url(window-lr.png) repeat-y scroll right 0pt;
+	padding-right: 5px;
+}
+.gaiax-window-mc 
+{
+	background: #E6F0FF none repeat scroll 0% 0%;
+	border-color: #6593cf;
+	border-style: solid none none solid;
+	border-width: 1px 0px 0px 1px;
+}
+
+.gaiax-window-content
+{
+	background: transparent none repeat scroll 0% 0%;
+	border-color: #6593cf;
+	border-style: none solid solid none;
+	border-width: 0px 1px 1px 0px;
+}
+
+.gaiax-window-bl
+{
+	background: transparent url(window-corners.png) no-repeat scroll 0pt bottom;
+	padding-left: 6px;	
+}
+
+.gaiax-window-br
+{
+	background: transparent url(window-corners.png) no-repeat scroll right bottom;
+	padding-right: 6px;
+}
+
+.gaiax-window-bc
+{
+	height: 6px;
+	background: transparent url(window-tb.png) repeat-x scroll 0pt bottom;
+}
+
+.gaiax-window .ui-resizable-e
+{
+    right: 0;
+}
+
+.gaiax-window .ui-resizable-s 
+{
+    bottom: 0;
+}

@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Directories>
+  <Directory Name="SimpleCalendarApplication" Title="Calendar Application" />
+  <Directory Name="DashboardWithWebParts" Title="Dashboard: Web Parts" />
+  <Directory Name="Chess" Title="Chess Game" />
+  <Directory Name="ChatControl" Title="Chat Control" />
+</Directories>

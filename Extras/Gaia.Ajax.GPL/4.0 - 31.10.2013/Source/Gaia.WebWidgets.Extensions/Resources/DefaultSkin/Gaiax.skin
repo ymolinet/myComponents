@@ -1,0 +1,67 @@
+<gaia:Accordion 
+	runat="server" 
+	CssClass="gaiax" />
+
+<gaia:AutoCompleter 
+	runat="server" 
+	CssClass="gaiax" />
+
+<gaia:Calendar 
+	runat="server" 
+	CssClass="gaiax" />
+
+<gaia:DateTimePicker 
+	runat="server" 
+	CssClass="gaiax" />
+
+<gaia:ExtendedButton 
+	runat="server" 
+	CssClass="gaiax" />
+
+<gaia:ExtendedPanel 
+    runat="server" 
+    Caption="ExtendedPanel" 
+    CssClass="gaiax" />
+    
+<gaia:GridView 
+    runat="server"
+    CssClass="gaiax-gv">
+    <HeaderStyle CssClass="gaiax-gv-hd-row" />
+    <RowStyle CssClass="gaiax-gv-row" />
+    <EditRowStyle CssClass="gaiax-gv-row-edit" />
+    <SelectedRowStyle CssClass="gaiax-gv-row-selected" />
+    <FooterStyle CssClass="gaiax-gv-footer" />
+    <PagerStyle CssClass="gaiax-gv-pager" />
+    <Columns>
+        
+    </Columns>
+</gaia:GridView>
+
+<gaia:Slider 
+	runat="server" 
+	CssClass="gaiax" />
+
+<gaia:TabControl 
+	runat="server" 
+	CssClass="gaiax" />
+
+<gaia:Toolbar 
+	runat="server" 
+	CssClass="gaiax" />
+
+<gaia:ToolbarItem
+	runat="server" 
+	CssClass="gaiax" />
+
+<gaia:TreeView 
+	runat="server" 
+	CssClass="gaiax" />
+
+<gaia:TreeViewItem 
+	runat="server" 
+	CssClass="gaiax" />
+
+<gaia:Window 
+    runat="server" 
+    Caption="Window" 
+    CssClass="gaiax" />

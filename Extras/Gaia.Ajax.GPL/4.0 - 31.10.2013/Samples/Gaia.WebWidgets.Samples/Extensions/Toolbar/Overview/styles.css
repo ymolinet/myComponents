@@ -1,0 +1,62 @@
+/* Toolbar menu items icons*/
+
+.gaiax-icon-house
+{
+	background:Transparent url(../../../media/icons/sprite_icons.png) no-repeat 0 0;
+}
+.gaiax-icon-computer
+{
+	background:Transparent url(../../../media/icons/sprite_icons.png) no-repeat -39px 0;
+}
+.gaiax-icon-nofolder
+{
+	background:Transparent url(../../../media/icons/sprite_icons.png) no-repeat -78px 0;
+}
+.gaiax-icon-musicfolder
+{
+	background:Transparent url(../../../media/icons/sprite_icons.png) no-repeat -117px 0;
+}
+.gaiax-icon-folder
+{
+	background:Transparent url(../../../media/icons/sprite_icons.png) no-repeat -156px 0;
+}
+.gaiax-icon-trashcan
+{
+	background:Transparent url(../../../media/icons/sprite_icons.png) no-repeat -195px 0;
+}
+.gaiax-icon-writer
+{
+	background:Transparent url(../../../media/icons/sprite_icons.png) no-repeat 0 -41px;
+}
+.gaiax-icon-refresh
+{
+	background:Transparent url(../../../media/icons/sprite_icons.png) no-repeat -39px -41px;
+}
+.gaiax-icon-drivers
+{
+	background:Transparent url(../../../media/icons/sprite_icons.png) no-repeat -78px -41px;
+}
+.gaiax-icon-package
+{
+	background:Transparent url(../../../media/icons/sprite_icons.png) no-repeat -117px -41px;
+}
+.gaiax-icon-mouse
+{
+	background:Transparent url(../../../media/icons/sprite_icons.png) no-repeat -156px -41px;
+}
+.gaiax-icon-cd
+{
+	background:Transparent url(../../../media/icons/sprite_icons.png) no-repeat -195px -41px;
+}
+.gaiax-icon-flower
+{
+	background:Transparent url(../../../media/icons/sprite_icons.png) no-repeat 0 -82px;
+}
+.gaiax-icon-warning
+{
+	background:Transparent url(../../../media/icons/sprite_icons.png) no-repeat -39px -82px;
+}
+.gaiax-icon-package
+{
+	background:Transparent url(../../../media/icons/sprite_icons.png) no-repeat -78px -82px;
+}

@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <SkinPath>Resources/DefaultSkin</SkinPath>
+    <SkinCss>Resources/default.css</SkinCss>
+    <EmbeddedSkinCodeFile>EmbeddedSkin.cs</EmbeddedSkinCodeFile>
+    <SkinSourcePath>../../samples/Gaia.WebWidgets.Samples/App_Themes/Gaiax</SkinSourcePath>
+  </PropertyGroup>
+  <ItemGroup>
+    <SkinSourceFiles Include="$(SkinSourcePath)/**/*.*" />
+  </ItemGroup>
+  <Target Name="EmbedSkin" Outputs="$(SkinCss);$(EmbeddedSkinCodeFile)" >
+    <!-- Copy skin from its source -->
+    <RemoveDir Directories="$(SkinPath)" />
+    <Copy SourceFiles="@(SkinSourceFiles)" DestinationFiles="@(SkinSourceFiles->'$(SkinPath)\%(RecursiveDir)%(Filename)%(Extension)')" />
+
+    <ItemGroup>
+      <SkinImages Include="$(SkinPath)/*.png" />
+      <SkinCssFiles Include="$(SkinPath)/*.css" />
+    </ItemGroup>
+    
+    <PropertyGroup>
+      <SkinResourcePrefix>$(SkinPath.Replace('/','.').Replace('\','.'))</SkinResourcePrefix>
+    </PropertyGroup>
+    
+    <!-- Concatenate skin css files into one and -->
+    <!-- Replace image file references to WebResources in the skin file -->
+    <ReadLinesFromFile File="%(SkinCssFiles.Identity)">
+      <Output ItemName="ConcatenatedLines" TaskParameter="Lines" />
+    </ReadLinesFromFile>
+    <PropertyGroup>
+      <SkinFileContent>@(ConcatenatedLines-> '%(Identity)', '%0d')</SkinFileContent>
+    </PropertyGroup>
+    <WriteLinesToFile File="$(SkinCss)" Overwrite="true"
+                      Lines="$([System.Text.RegularExpressions.Regex]::Replace($(SkinFileContent), '([a-zA-Z0-9_-]+\.png)', '%3C%25=WebResource(&quot;$(RootNamespace).$(SkinResourcePrefix).$1&quot;)%25%3E'))" />
+    
+    <!-- Create a set of embedded resources -->
+    <ItemGroup>
+      <SkinResources Include="$(SkinCss)">
+        <ContentType>text/css</ContentType>
+      </SkinResources>
+      <SkinResources Include="%(SkinImages.Identity)">
+        <ContentType>image/png</ContentType>
+      </SkinResources>
+    </ItemGroup>
+    
+    <!-- Declare embedded resources for the compilation -->
+    <ItemGroup>
+      <EmbeddedResource Include="%(SkinResources.Identity)" />
+    </ItemGroup>
+
+    <!-- Create a CSharp file which will containt WebResourceAttributes for embedded resources -->
+    <ItemGroup>
+      <WebResourceDefinitionLines Include="[assembly:System.Web.UI.WebResource(&quot;$([System.String]::Concat($(RootNamespace)., %(SkinResources.Identity)).Replace('/','.').Replace('..','.'))&quot;,&quot;%(SkinResources.ContentType)&quot;)]" Condition="%(SkinResources.ContentType) != 'text/css'" />
+      <WebResourceDefinitionLines Include="[assembly:System.Web.UI.WebResource(&quot;$([System.String]::Concat($(RootNamespace)., %(SkinResources.Identity)).Replace('/','.').Replace('..','.'))&quot;,&quot;%(SkinResources.ContentType)&quot;, PerformSubstitution = true)]" Condition="%(SkinResources.ContentType) == 'text/css'" />
+    </ItemGroup>
+    <WriteLinesToFile File="$(EmbeddedSkinCodeFile)" Lines="@(WebResourceDefinitionLines)" Overwrite="true" />
+    
+    <!-- Include the newly created CSharp file for compilation -->
+    <ItemGroup>
+      <Compile Include="$(EmbeddedSkinCodeFile)" />
+    </ItemGroup>
+  </Target>
+
+  <Target Name="CleanEmbedSkinOutput">
+    <Delete Files="$(EmbeddedSkinCodeFile);$(SkinCss)" />
+  </Target>
+</Project>

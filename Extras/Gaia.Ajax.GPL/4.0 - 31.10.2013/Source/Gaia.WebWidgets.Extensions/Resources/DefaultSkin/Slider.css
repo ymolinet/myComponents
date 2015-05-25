@@ -1,0 +1,95 @@
+﻿/*******************************************************************
+ * Gaia Ajax - Ajax Control Library for ASP.NET  
+ * Copyright (C) 2008 - 2011 Gaiaware AS
+ * All rights reserved. 
+ * This program is distributed under either GPL version 3 
+ * as published by the Free Software Foundation or the
+ * Gaia Commercial License version 1 as published by Gaiaware AS
+ * read the details at http://gaiaware.net/product/dual-licensing 
+ ******************************************************************/
+
+.gaiax-slider
+{ }
+
+.gaiax-slider-horizontal .gaiax-slider-wrapper
+{
+	
+	background:transparent url(slider_sprite_horizontal.png) repeat-x scroll 0 -45px;
+	height: 14px;
+}
+
+.gaiax-slider-horizontal .gaiax-slider-closer
+{
+	background:transparent url(slider_sprite_horizontal.png) no-repeat scroll right -28px;
+	padding-right: 3px;
+}
+
+.gaiax-slider-horizontal .gaiax-slider-handle
+{
+	background:transparent url(slider-handle-horizontal.png) no-repeat scroll 0 0;
+	height:14px;
+	position:absolute;
+	width:7px;
+	cursor:move;
+}
+
+.gaiax-slider-horizontal
+{
+	background:transparent url(slider_sprite_horizontal.png) no-repeat scroll 0 -14px;
+	padding-left:3px;
+}
+
+
+.gaiax-slider-horizontal .gaiax-slider-disabled
+{
+	background:transparent url(slider-handle-horizontal-disabled.png) no-repeat scroll 0 0;
+	height:14px;
+	position:absolute;
+	width:7px;
+	cursor:auto;
+}
+
+.gaiax-slider-wrapper
+{
+	overflow:visible;
+	position:relative;
+}
+
+.gaiax-slider-vertical
+{
+	background:transparent url(slider_sprite_vertical.png) no-repeat scroll -39px 0;
+	padding-top:7px;
+	width:14px;
+}
+
+.gaiax-slider-vertical .gaiax-slider-closer
+{
+    height:100%;
+	background:transparent url(slider_sprite_vertical.png) no-repeat scroll -21px bottom;
+	padding-bottom:7px;
+}
+
+.gaiax-slider-vertical .gaiax-slider-wrapper
+{
+	width:15px;
+	height:100%;
+	background:transparent url(slider_sprite_vertical.png) repeat-y scroll -57px 0px;
+}
+
+.gaiax-slider-vertical .gaiax-slider-handle
+{
+	background:transparent url(slider-handle-vertical.png) no-repeat scroll 0 0;
+	height:7px;
+	position:absolute;
+	width:15px;
+	cursor:move;
+}
+
+.gaiax-slider-vertical .gaiax-slider-disabled
+{
+	background:transparent url(slider-handle-vertical-disabled.png) no-repeat scroll 0 0;
+	height:7px;
+	position:absolute;
+	width:14px;
+	cursor:default;
+}

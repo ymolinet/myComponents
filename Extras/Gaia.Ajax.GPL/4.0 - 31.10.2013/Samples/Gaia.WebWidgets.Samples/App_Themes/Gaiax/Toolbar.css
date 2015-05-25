@@ -1,0 +1,118 @@
+﻿/*******************************************************************
+ * Gaia Ajax - Ajax Control Library for ASP.NET  
+ * Copyright (C) 2008 - 2011 Gaiaware AS
+ * All rights reserved. 
+ * This program is distributed under either GPL version 3 
+ * as published by the Free Software Foundation or the
+ * Gaia Commercial License version 1 as published by Gaiaware AS
+ * read the details at http://gaiaware.net/product/dual-licensing 
+ ******************************************************************/
+
+.gaiax-toolbar
+{
+	background: transparent url(toolbar-top-bottom.png) repeat-x 0 -1px;
+    width:100%;
+    display:block;
+    position:relative;
+    list-style-type:none;
+    border:0;
+	height:24px;
+	margin:0;
+	padding:0;
+	zoom:1;
+}
+.gaiax-toolbar:hover
+{
+	background: transparent url(toolbar-white-top-bottom-hover.png) repeat-x 0 -1px;
+}
+.gaiax-toolbar-item
+{
+    font-family: Arial, Helvetica, Tahoma, Sans-Serif;
+    font-size:11px;
+    font-weight:bold;
+    -moz-user-select:none;
+    cursor:pointer;
+	color:#15428b;
+}
+.gaiax-toolbar-item:hover
+{
+	color:#00f;
+}
+
+
+.gaiax-toolbar-item-content a
+{
+	text-decoration:none;
+}
+
+
+.gaiax-toolbar-top-item
+{
+	display:inline;
+	margin-right:5px;
+	padding-left:15px;
+	line-height:25px;
+}
+
+
+.gaiax-toolbar-top-item .gaiax-toolbar-item-el
+{
+	display:inline;
+}
+
+.gaiax-toolbar-top-item .gaiax-toolbar-item-icon
+{
+	display:none;
+}
+
+.gaiax-toolbar-top-item .gaiax-toolbar-item-content
+{
+	display:inline;
+}
+
+.gaiax-toolbar-child-item
+{
+	display:block;
+	width:150px;
+}
+
+.gaiax-toolbar-child-item:hover
+{
+	background:Transparent url(toolbar-hover-child.png) repeat-x 0 -1px;
+}
+
+.gaiax-toolbar-child-item .gaiax-toolbar-item-el
+{
+	display:block;
+	width:100%;
+	padding-left:2px;
+	height:28px;
+}
+
+.gaiax-toolbar-child-item .gaiax-toolbar-item-icon
+{
+	width:25px;
+	height:100%;
+	vertical-align:middle;
+	display:inline;
+	margin:0 10px 0 2px;
+	height:25px;
+	vertical-align:middle;
+}
+
+.gaiax-toolbar-child-item .gaiax-toolbar-item-content
+{
+	display:inline;
+}
+
+.gaiax-toolbar-child-container
+{
+	display:block;
+	background:white url(toolbar-child-bg.png) repeat-y 0 0;
+	position:absolute;
+	margin-left:-1px;
+	border:1px solid #99bbe8;
+	padding:10px 0 10px 0;
+	width:150px;
+	z-index: 1;
+}

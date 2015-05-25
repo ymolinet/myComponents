@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <UsingTask TaskName="AjaxMin" AssemblyFile="../SolutionReferences/AjaxMinTask.dll" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E0F878F7-E59F-4526-ACA0-DBC1C8B6F849}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Gaia.WebWidgets.Effects</RootNamespace>
+    <AssemblyName>Gaia.WebWidgets.Effects</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Debug\Gaia.WebWidgets.Effects.XML</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Release\Gaia.WebWidgets.Effects.XML</DocumentationFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="EffectAppear.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ScriptaculousEffectSlideAndBlindBase.cs" />
+    <Compile Include="EffectBlindDown.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EffectBlindUp.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EffectDropOut.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EffectFade.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EffectFold.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EffectGrow.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EffectHighlight.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EffectMorph.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EffectMove.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EffectOpacity.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EffectParallel.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EffectPuff.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EffectPulsate.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EffectQueue.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EffectScale.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EffectScrollTo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EffectShake.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EffectShrink.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EffectSlideDown.cs" />
+    <Compile Include="EffectSlideUp.cs" />
+    <Compile Include="EffectSquish.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EffectSwitchOff.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IScriptaculousEffect.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ScriptaculousDirections.cs" />
+    <Compile Include="ScriptaculousEffectBase.cs" />
+    <Compile Include="ScriptaculousEffectContainer.cs" />
+    <Compile Include="ScriptaculousEffectWithIntervalBase.cs" />
+    <Compile Include="ScriptaculousEffectWithScaleBase.cs" />
+    <Compile Include="ScriptaculousQueueDetails.cs" />
+    <Compile Include="ScriptaculousTransitions.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Gaia.WebWidgets\Gaia.WebWidgets.csproj">
+      <Project>{3821F9A8-7513-4987-A796-189CBFBFAE7C}</Project>
+      <Name>Gaia.WebWidgets</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Scripts\effects.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Scripts\prototype.js" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Target Name="BeforeBuild">
+	<Delete Files="$(MSBuildProjectDirectory)/Scripts/effects.bundle.js"
+			Condition="'$(Configuration)' == 'Release'" ContinueOnError="True" />
+    
+	<ItemGroup Condition="'$(Configuration)' == 'Release'">
+		<CoreFiles Include="$(MSBuildProjectDirectory)/Scripts/prototype.js" />
+		<ScriptFilesNoCore Include="$(MSBuildProjectDirectory)/Scripts/**/*.*" Exclude="@(CoreFiles)" />
+		<ScriptFiles Include="@(CoreFiles);@(ScriptFilesNoCore)" />
+	</ItemGroup>
+	
+	<AjaxMin JsKnownGlobalNames="$" JsEvalTreatment="MakeImmediateSafe" JsSourceFiles="@(ScriptFiles)"
+			 Switches="-comments:none"
+			 JsCombinedFileName="$(MSBuildProjectDirectory)/Scripts/effects.bundle.js" Condition="'$(Configuration)' == 'Release'" />
+  </Target>
+  <Target Name="AfterBuild">
+	<Delete Files="$(MSBuildProjectDirectory)/Scripts/effects.bundle.js" Condition="'$(Configuration)' == 'Release'" />
+  </Target>
+</Project>

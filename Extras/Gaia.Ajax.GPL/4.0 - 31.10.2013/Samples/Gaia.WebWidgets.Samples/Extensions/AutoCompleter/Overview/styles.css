@@ -1,0 +1,17 @@
+.container-status
+{
+    width: 300px;
+    float:right;
+}
+
+span.highlight
+{
+	background-color: #36c;
+	color: yellow;
+}
+
+.auto-item
+{
+	float:left;
+	padding-right:5px;
+}

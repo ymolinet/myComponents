@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Directories>
+  <Directory Name="NestedGridView" Title="Nested GridView" />
+  <Directory Name="RichInlineEditing" Title="Rich Inline Editing" />
+  <Directory Name="SelectRows" Title="Select Rows" />
+  <Directory Name="DragGridViewRow" Title="Drag GridViewRow" />
+</Directories>

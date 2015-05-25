@@ -1,0 +1,26 @@
+.async-grid th
+{
+    padding:5px;
+    text-align:left;
+}
+
+.async-grid .itemOdd
+{
+	background-color:#fff;
+}
+
+.async-grid .itemEven
+{
+	background-color:#eee;
+}
+
+.async-grid .itemOdd td
+{
+	padding:5px;
+}
+
+.async-grid .itemEven td
+{
+	padding:5px;
+}
+

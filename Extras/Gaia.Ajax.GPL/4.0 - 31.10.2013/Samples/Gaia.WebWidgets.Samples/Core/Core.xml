@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Directories>
+  <Directory Name="Manager" />
+  <Directory Name="Events" Title="Built-In Events in Controls" />
+  <Directory Name="DynamicControls" Title="Using Dynamic Controls" />
+  <Directory Name="BrowserHistory" Title="Browser History" />
+  <Directory Name="StateManagers" Title="State Managers" />
+  <Directory Name="XhtmlTagFactory" Title="Using XhtmlTagFactory" />
+</Directories>

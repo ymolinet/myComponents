@@ -1,0 +1,375 @@
+﻿/*******************************************************************
+ * Gaia Ajax - Ajax Control Library for ASP.NET  
+ * Copyright (C) 2008 - 2011 Gaiaware AS
+ * All rights reserved. 
+ * This program is distributed under either GPL version 3 
+ * as published by the Free Software Foundation or the
+ * Gaia Commercial License version 1 as published by Gaiaware AS
+ * read the details at http://gaiaware.net/product/dual-licensing 
+ ******************************************************************/
+
+.gaiax-calendar-container
+{
+	background: #fff none repeat scroll 0 0;
+	border: 1px solid #1b376c;
+	padding:0;
+	position: relative;
+	overflow: hidden;
+}
+
+.gaiax-calendar-container table,
+.gaiax-calendar-container caption,
+.gaiax-calendar-container tbody,
+.gaiax-calendar-container tfoot,
+.gaiax-calendar-container thead,
+.gaiax-calendar-container tr,
+.gaiax-calendar-container th,
+.gaiax-calendar-container td
+{
+    padding:0;
+}
+
+.gaiax-calendar-container a
+{
+    -moz-outline:0;
+    outline:0;
+    outline-style: none;
+}
+
+.gaiax-calendar-input-text
+{
+	font-size:11px;
+	width:80px;
+}
+
+.gaiax-calendar-previous-year,
+.gaiax-calendar-previous-month,
+.gaiax-calendar-current-month,
+.gaiax-calendar-next-month,
+.gaiax-calendar-next-year
+{
+	background: #cde none repeat scroll 0 0;
+	color: #fff;
+	font-family: Arial,Helvetica,Tahoma,Sans-Serif, Monospace;
+	font-size: 11px;
+	font-weight: bold;
+	overflow: hidden;
+	vertical-align: middle;
+}
+
+.gaiax-calendar-previous-year,
+.gaiax-calendar-previous-month,
+.gaiax-calendar-next-month,
+.gaiax-calendar-next-year
+{
+	width: 18px;
+	height: 19px;
+}
+
+.gaiax-calendar-next-month 
+{
+	text-align: right;
+}
+
+.gaiax-calendar-previous-year a,
+.gaiax-calendar-previous-month a, 
+.gaiax-calendar-next-month a,
+.gaiax-calendar-next-year a
+{
+	background: transparent url(cal-buttons.png) no-repeat scroll 0 0;
+	height: 15px;
+	width: 15px;
+	cursor: pointer;
+	display: block;
+    opacity:.75;
+    -moz-opacity: 0.75;
+    filter: alpha(opacity=75);
+}
+
+.gaiax-calendar-previous-year a:hover,
+.gaiax-calendar-previous-month a:hover, 
+.gaiax-calendar-next-month a:hover,
+.gaiax-calendar-next-year a:hover
+{
+    opacity:1;
+    -moz-opacity: 1;
+    filter: alpha(opacity=100);
+}
+
+.gaiax-calendar-previous-year a
+{
+	background-position: 0px -60px;
+	margin-left: 5px;
+}
+
+.gaiax-calendar-previous-month a
+{
+	background-position: 0px -15px;
+	margin-left: 5px;
+}
+
+td.gaiax-calendar-current-month 
+{
+	padding: 2px 0;	
+	width: 60%;
+}
+
+.gaiax-calendar-current-month a.gaiax-calendar-month
+{
+	color: #666;
+	text-decoration: none;
+}
+
+.gaiax-calendar-next-month a
+{
+	text-align: right;
+	background-position: 0px -30px;
+	margin-right: 5px;
+	text-decoration:none !important;
+}
+
+.gaiax-calendar-next-year a
+{
+	text-align: right;
+	background-position: 0px -75px;
+	margin-right: 5px;
+	text-decoration:none !important;
+}
+
+/* END TOP DIV */
+
+table.gaiax-calendar-daywrapper
+{
+	table-layout: fixed;
+	width: 100%;
+}
+
+.gaiax-calendar-daywrapper,
+.gaiax-calendar-daywrapper td,
+.gaiax-calendar-daywrapper th
+{
+	border-collapse: separate;
+	height: 20px;
+}
+
+.gaiax-calendar-daywrapper th
+{
+	background: transparent url(cal-gradient.png) repeat-x scroll left top;
+	border-bottom: 1px solid #727272;
+	color: #2D2D2D;
+	cursor: default;
+	font-family: Arial,Helvetica,Tahoma,Sans-Serif, Monospace;
+	font-size: 10px;
+	font-weight: normal;
+	text-align: center;
+	vertical-align: middle;
+	width: 25px;
+    height: 18px;
+}
+
+.gaiax-calendar-daywrapper td span
+{
+	font-style: normal;
+}
+
+.gaiax-calendar-daywrapper th span
+{
+	display: block;
+}
+
+.gaiax-calendar-active 
+{
+	color: #2E2E2E;
+}
+
+.gaiax-calendar-day
+{
+	color: #333;
+	display: block;
+	font-family: Arial,Helvetica,Tahoma,Sans-Serif, Monospace;
+	font-size: 12px;
+	padding: 1px 4px 2px 3px;
+	text-align: center;
+	font-style: normal;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.gaiax-calendar-daywrapper a
+{
+	border: 1px solid white;
+}
+
+.gaiax-calendar-daywrapper a:hover, 
+.gaiax-calendar-ympicker-month a:hover,
+.gaiax-calendar-ympicker-year a:hover
+{
+    text-decoration:none;
+    color: black;
+    background-color: #eee;
+    border: solid 1px #abc0e5;
+}
+
+.gaiax-calendar-selected a
+{
+	background: transparent url(cal-gradient.png) repeat-x scroll left top;
+	border: 1px solid #333;
+	font-weight: bold;
+}
+
+.gaiax-calendar-selected span
+{
+	font-weight: bold;
+}
+
+.gaiax-calendar-next-day a,
+.gaiax-calendar-previous-day a
+{
+	color: #777;
+	text-decoration: none;
+}
+
+.gaiax-calendar-bottom
+{
+	background: #ddd url(cal-gradient.png) repeat-x scroll left top;
+	border-top: 1px solid #aaa;
+	padding: 2px;
+	height: 30px;
+    vertical-align: middle;
+}
+
+/* YEAR/MONTH PICKER HERE  */
+
+.gaiax-calendar-ympicker
+{
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: auto;
+	background: white none repeat scroll 0% 0%;
+	position: absolute; 
+}
+
+.gaiax-calendar-ympicker td
+{
+    font-family: Arial,Helvetica,Tahoma,Sans-Serif, Monospace;
+	font-size: 11px;
+	font-weight: normal;
+}
+
+.gaiax-calendar-ympicker-month,
+.gaiax-calendar-ympicker-year,
+.gaiax-calendar-ympicker-yearbutton
+{
+    border: 0pt none;
+	text-align: center;
+	vertical-align: middle;
+	width: 25%;
+	cursor: pointer;
+}
+
+.gaiax-calendar-ympicker-month a,
+.gaiax-calendar-ympicker-year a
+{
+	color: #154154;
+	display: block;
+    padding: 4px 4px;
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	border: 1px solid #FFFFFF;
+	font-family: Arial,Helvetica,Tahoma,Sans-Serif, Monospace;
+	font-size: 11px;
+	font-weight: normal;
+}
+
+.gaiax-calendar-ympicker-yearbutton a
+{
+	background: transparent url(cal-buttons.png) no-repeat scroll 0% 0%;
+	cursor: pointer;
+	display: block;
+	height: 15px;
+	width: 15px;
+	opacity:.75;
+    -moz-opacity: 0.75;
+    filter: alpha(opacity=75);
+}
+
+.gaiax-calendar-ympicker-yearbutton a:hover
+{
+	opacity:1;
+    -moz-opacity: 1;
+    filter: alpha(opacity=100);
+}
+
+.gaiax-calendar-ympicker-yearbutton a.gaiax-calendar-ympicker-next
+{
+	background-position: 0px -30px;	
+	float:right;
+	margin-right:10px;
+}
+
+.gaiax-calendar-ympicker-yearbutton a.gaiax-calendar-ympicker-previous
+{
+	float:left;
+	margin-left: 10px;
+	background-position: 0px -15px;
+}
+
+td.gaiax-calendar-ympicker-selected a
+{
+	background: transparent url(cal-gradient.png) repeat-x scroll left top;
+	border: 1px solid #888;
+}
+
+input.gaiax-calendar-withtime-part
+{
+	width:22px;
+	height:14px;
+	font-size:12px;
+	font-family: Arial, Helvetica, Tahoma, Sans-Serif;
+	text-align:center;
+	border:none;
+}
+
+.gaiax-calendar-withtime-nav
+{
+    width:20px;
+    text-align:center;
+}
+
+.gaiax-calendar-withtime-nav a,
+.gaiax-calendar-withtime-nav span
+{
+    width: 15px;
+    color:#666;
+    font-size:12px;
+    text-decoration:none;
+    height: 14px;
+    padding-top: 2px;
+    font-weight:normal;
+}
+
+.gaiax-calendar-withtime-part input
+{
+    font-size:12px;
+    width: 15px;
+    height: 14px;
+    border: 0;
+    padding: 0;
+}
+
+/* styles for inner extended button */
+.gaiax-datetimepicker-button span,
+.gaiax-calendar-bottom span
+{
+	height: 24px;
+}
+
+.gaiax-datetimepicker-button button span,
+.gaiax-calendar-bottom button span
+{
+	font-size:12px;
+	font-family: Arial, Helvetica, Tahoma, Sans-Serif;	
+}

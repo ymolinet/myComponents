@@ -1,0 +1,93 @@
+﻿/*******************************************************************
+ * Gaia Ajax - Ajax Control Library for ASP.NET  
+ * Copyright (C) 2008 - 2011 Gaiaware AS
+ * All rights reserved. 
+ * This program is distributed under either GPL version 3 
+ * as published by the Free Software Foundation or the
+ * Gaia Commercial License version 1 as published by Gaiaware AS
+ * read the details at http://gaiaware.net/product/dual-licensing 
+ ******************************************************************/
+
+.gaiax-item
+{
+	background: transparent url(tools-sprite.png) no-repeat scroll 0pt 0pt;
+	cursor: pointer;
+	height: 17px;
+	width: 19px;
+	margin-left: 2px; 
+	overflow: hidden;
+	position: absolute;
+}
+
+.gaiax-item-close
+{
+	background-position: -19px 0pt;
+	right: 8px;
+	top : 3px;
+}
+
+.gaiax-item-close:hover
+{
+	background-position: 0px 0px;
+}
+
+.gaiax-item-maximize 
+{
+	background-position: -19px -34px;
+	right: 28px;
+	top : 3px;
+}
+
+.gaiax-item-maximize:hover
+{
+	background-position: 0px -34px;
+}
+
+.gaiax-item-minimize 
+{
+	background-position: -19px -17px;
+	right: 48px;
+	top: 3px;
+}
+
+.gaiax-item-minimize:hover
+{
+	background-position: 0px -17px;
+}
+
+
+.gaiax-item-restore 
+{
+	background-position: -19px -51px;
+	right: 28px;
+	top : 3px;
+}
+
+.gaiax-item-restore:hover
+{
+	background-position: 0px -51px;
+}
+
+.gaiax-item-collapsed
+{
+	background-position: -19px -68px;
+	right: 5px;
+	top: 2px;
+}
+
+.gaiax-item-collapsed:hover
+{
+	background-position: 0pt -68px;
+}
+
+.gaiax-item-expanded
+{
+	background-position: -19px -85px;
+	right: 5px;
+	top: 2px;
+}
+
+.gaiax-item-expanded:hover
+{
+	background-position: 0pt -85px;
+}

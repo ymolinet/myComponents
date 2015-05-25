@@ -1,0 +1,11 @@
+.panel-drag
+{
+	position: absolute;
+    border: 1px solid black;
+    width:100px; 
+    height: 100px;
+    top: 50px;
+    left: 25px;
+    background-color: red; 
+    border-color: black;
+}

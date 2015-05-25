@@ -1,0 +1,90 @@
+.gaia-chat-aroundall
+{
+    border: 2px solid #d6eefa;
+    height:250px;overflow:auto;
+    padding: 4px;
+}
+
+.gaia-chat-headeritem-container
+{
+    padding: 2px;
+    color: gray;
+}
+
+.human-span
+{
+    float: right; 
+    color: gray;
+}
+
+.gaia-chat-item-container
+{
+    display: block;
+    border-bottom: 1px solid whitesmoke; 
+    padding: 8px; 
+    padding-left: 20px;
+    font-size: 1.1em; 
+    color: black;
+}
+
+.user-span-color-darkgreen
+{
+    color:darkgreen;
+}
+
+.user-span-color-green
+{
+    color:green;
+}
+
+.user-span-color-darkred
+{
+    color:darkred;
+}
+
+.user-span-color-red
+{
+    color:red;
+}
+
+.user-span-color-orange
+{
+    color:orange;
+}
+
+.user-span-color-brown
+{
+    color:brown;
+}
+
+.user-span-color-blue
+{
+    color:blue;
+}
+
+.user-span-color-navy
+{
+    color:navy;
+}
+
+.user-span-color-gray
+{
+    color:gray;
+}
+
+.user-span-color-black
+{
+    color:black;
+}
+
+.user-span-color-red
+{
+    color:red;
+}
+
+.user-span-color-pink
+{
+    color:pink;
+}
+
+

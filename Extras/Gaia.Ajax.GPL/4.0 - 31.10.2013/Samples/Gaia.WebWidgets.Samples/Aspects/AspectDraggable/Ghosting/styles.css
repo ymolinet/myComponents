@@ -1,0 +1,19 @@
+/* this class is applied when the element is dragged around. it will be removed immediately on drop 
+   and can be quite useful to setup your own behavior for drag and drop scenarios ... 
+*/
+.img-drag 
+{
+	z-index:12000;
+	overflow:hidden;
+	position:absolute;
+	left:0;top:0;
+	
+	/* some opacity for different browsers*/
+	opacity:.8;
+	-moz-opacity:.8;
+	filter:alpha(opacity=80);
+	
+	border: 1px solid #49c; 
+	background-color: #f0f0f0;
+
+} 

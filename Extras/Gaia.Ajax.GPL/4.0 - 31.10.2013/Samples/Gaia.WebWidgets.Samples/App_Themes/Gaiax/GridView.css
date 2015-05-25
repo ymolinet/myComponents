@@ -1,0 +1,139 @@
+/*******************************************************************
+ * Gaia Ajax - Ajax Control Library for ASP.NET  
+ * Copyright (C) 2008 - 2011 Gaiaware AS
+ * All rights reserved. 
+ * This program is distributed under either GPL version 3 
+ * as published by the Free Software Foundation or the
+ * Gaia Commercial License version 1 as published by Gaiaware AS
+ * read the details at http://gaiaware.net/product/dual-licensing 
+ ******************************************************************/
+
+.gaiax-gv table,
+.gaiax-gv tr,
+.gaiax-gv th,
+.gaiax-gv td
+{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    border-spacing: 0;
+}
+
+.gaiax-gv
+{
+    border: #9dc9f1 1px solid;
+}
+    
+.gaiax-gv-hd-row th, 
+.gaiax-gv-row td, 
+.gaiax-gv-row-selected td, 
+.gaiax-gv-row-alt td, 
+.gaiax-gv-row-edit td,
+.gaiax-gv-footer td,
+.gaiax-gv-pager td
+{
+    font-family: Arial,Helvetica,Tahoma,Sans-Serif, Monospace;
+	font-size: 11px;
+    font-style:normal;
+    font-variant:normal;
+    font-weight:normal;
+    line-height:normal;
+    cursor:default;
+}
+
+.gaiax-gv-hd-row th 
+{
+    background: url(extended-button.png) repeat-x;
+    border-right-style:solid;
+	border-right-width:1px;
+	border-right-color:#6593CF;
+	border-bottom-style:solid;
+	border-bottom-width:2px;
+	border-bottom-color:#6593CF;
+    height:20px;
+    padding:0 8px;
+    color:#15428B;
+    font-weight:bold;
+    text-align:center;
+}
+
+.gaiax-gv-hd-row a
+{
+    font-size: 12px;
+    display:block;
+}
+
+.gaiax-gv-hd-row a, .gaiax-gv-row a, .gaiax-gv-pager a
+{
+    text-decoration: none;
+}
+
+.gaiax-gv-hd-row a:hover, .gaiax-gv-row a:hover, .gaiax-gv-pager a:hover
+{
+    text-decoration: underline;
+}
+
+.gaiax-gv-row > td, 
+.gaiax-gv-row-alt > td, 
+.gaiax-gv-row-selected > td, 
+.gaiax-gv-row-edit > td, 
+.gaiax-gv-footer > td
+{
+    color:#000;
+	padding:1px 8px;
+    border-right-style:solid;
+	border-right-width:1px;
+	border-right-color:#E5ECF9;
+	border-bottom-style:solid;
+	border-bottom-width:1px;
+	border-bottom-color:#E5ECF9;
+}
+
+.gaiax-gv-row:hover, .gaiax-gv-row-alt:hover
+{
+    background: url(gridview-gradient.png) repeat-x;
+}
+
+.gaiax-gv-row-alt
+{
+    background-color: #f5f5f5;
+}
+
+.gaiax-gv-row-selected
+{
+    background-color: #fafad2;
+}
+
+.gaiax-gv-row-edit td
+{
+    background-color:#E5ECF9;
+}
+
+.gaiax-gv-pager table td
+{
+    border-right-style:solid;
+	border-right-width:1px;
+	border-right-color:#E5ECF9;
+	border-bottom-style:solid;
+	border-bottom-width:1px;
+	border-bottom-color:#E5ECF9;
+}
+
+.gaiax-gv-pager table
+{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.gaiax-gv-pager table td a, 
+.gaiax-gv-pager table td span
+{
+    display:block;
+    padding: 2px 5px;
+    font-weight:bold;
+}
+
+.gaiax-gv-pager table td a:hover
+{
+    background-color: #E5ECF9;
+}

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Directories>
+  <Directory Name="AspectClickable" Title="Clickable" />
+  <Directory Name="AspectDraggable" Title="Draggable" />
+  <Directory Name="AspectDroppable" Title="Droppable" />
+  <Directory Name="AspectHoverable" Title="Hoverable" />
+  <Directory Name="AspectKey" Title="Key" />
+  <Directory Name="AspectModal" Title="Modal" />
+  <Directory Name="AspectMouseMove" Title="MouseMove" />
+  <Directory Name="AspectResizable" Title="Resizable" />
+  <Directory Name="AspectScrollable" Title="Scrollable" />
+  <Directory Name="AspectUpdateControl" Title="UpdateControl" />
+</Directories>

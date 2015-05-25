@@ -1,0 +1,17 @@
+.panel,
+.panel-hovered
+{
+    border: 1px solid black;
+    width:200px; 
+    height: 200px;
+}
+
+.panel 
+{
+    background-color: red;    
+}
+
+.panel-hovered
+{
+    background-color: #cde;
+}

@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Directories>
+  <Directory Name="EffectAppear" />
+  <Directory Name="EffectBlindDown" />
+  <Directory Name="EffectBlindUp" />
+  <Directory Name="EffectDropOut" />
+  <Directory Name="EffectFade" />
+  <Directory Name="EffectFold" />
+  <Directory Name="EffectGrow" />
+  <Directory Name="EffectHighlight" />
+  <Directory Name="EffectMorph" />
+  <Directory Name="EffectMove" />
+  <Directory Name="EffectMove" />
+  <Directory Name="EffectOpacity" />
+  <Directory Name="EffectPuff" />
+  <Directory Name="EffectPulsate" />
+  <Directory Name="EffectScale" />
+  <Directory Name="EffectScrollTo" />
+  <Directory Name="EffectShake" />
+  <Directory Name="EffectShrink" />
+  <Directory Name="EffectSlideDown" />
+  <Directory Name="EffectSlideUp" />
+  <Directory Name="EffectSquish" />
+  <Directory Name="EffectSwitchOff" />
+  <Directory Name="EffectContainers" Title="Effects in Parallel and Queue" />
+  <Directory Name="Aspects" Title="Combine With Aspects" />
+  <Directory Name="Various" Title="Extended Usage" />
+</Directories>

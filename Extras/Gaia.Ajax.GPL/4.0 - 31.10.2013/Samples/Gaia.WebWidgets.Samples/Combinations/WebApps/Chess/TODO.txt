@@ -1,0 +1,27 @@
+Remaining Work
+==========================
+- Many of the moves doesn't work
+	- Pawns capture pieces in front on a direct move
+	- When king is threatened nothing works
+	- Pawns cannot seize pieces in required directions ...
+- Castling doesn't work ( this is due to inproper detection and forceupdate doesn't update 
+  the rook container. More forceupdates are required for this to work ...
+  
+- Some special moves are not implemented
+	- En passant
+	- Promotion
+	- http://en.wikipedia.org/wiki/Chess#Special_moves
+
+- Write unit tests for moves ... 
+- Refactor the rules to simplify what is valid and not ... 
+- Reimplement reversed table structure ... 
+- Deal with Session expiration and re-init the game
+- Examine the object model and it's memory footprint 
+- Examine the server response / viewstate footprint
+- Captured Pieces are not found ... 
+- Wrap up project and write a codeproject or similar article about it
+
+Other features
+- real multiplayer capabilites
+- Show captured pieces 
+- feedback on invalid moves ...

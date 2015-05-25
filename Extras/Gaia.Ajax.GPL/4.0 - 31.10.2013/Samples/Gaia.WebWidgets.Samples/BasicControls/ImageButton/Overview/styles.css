@@ -1,0 +1,16 @@
+.play-buttons-container
+{
+    padding:10px;
+    text-align:center;
+    width:120px;
+    height:15px;
+    background-color: #5A5758;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border: #dcdcdc 2px solid;
+}
+
+.play-buttons-container input
+{
+    margin: 0 5px 0 5px;
+}
