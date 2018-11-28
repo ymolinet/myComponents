@@ -25,3 +25,11 @@ C:\Users\Yannick.ADN-SYSTEMES\Projets\Visual Studio\myComponents\myComponents.Co
 C:\Users\Yannick.ADN-SYSTEMES\Projets\Visual Studio\myComponents\myComponents.Components.Form\obj\Debug\myComponents.Components.Forms.csproj.GenerateResource.Cache
 C:\Users\Yannick.ADN-SYSTEMES\Projets\Visual Studio\myComponents\myComponents.Components.Form\obj\Debug\myComponents.Components.Forms.dll
 C:\Users\Yannick.ADN-SYSTEMES\Projets\Visual Studio\myComponents\myComponents.Components.Form\obj\Debug\myComponents.Components.Forms.pdb
+D:\Projets\myComponents\myComponents.Components.Form\bin\Debug\myComponents.Components.Forms.dll
+D:\Projets\myComponents\myComponents.Components.Form\bin\Debug\myComponents.Components.Forms.pdb
+D:\Projets\myComponents\myComponents.Components.Form\obj\Debug\myComponents.Components.Forms.csprojAssemblyReference.cache
+D:\Projets\myComponents\myComponents.Components.Form\obj\Debug\myComponents.Components.Forms.SerialBox.resources
+D:\Projets\myComponents\myComponents.Components.Form\obj\Debug\myComponents.Components.Forms.csproj.GenerateResource.cache
+D:\Projets\myComponents\myComponents.Components.Form\obj\Debug\myComponents.Components.Forms.csproj.CoreCompileInputs.cache
+D:\Projets\myComponents\myComponents.Components.Form\obj\Debug\myComponents.Components.Forms.dll
+D:\Projets\myComponents\myComponents.Components.Form\obj\Debug\myComponents.Components.Forms.pdb

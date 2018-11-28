@@ -20,3 +20,9 @@ C:\Users\Yannick.ADN-SYSTEMES\Projets\Visual Studio\myComponents\myComponents.Ob
 C:\Users\Yannick.ADN-SYSTEMES\Projets\Visual Studio\myComponents\myComponents.Object\bin\Debug\myComponents.Object.pdb
 C:\Users\Yannick.ADN-SYSTEMES\Projets\Visual Studio\myComponents\myComponents.Object\obj\Debug\myComponents.Object.dll
 C:\Users\Yannick.ADN-SYSTEMES\Projets\Visual Studio\myComponents\myComponents.Object\obj\Debug\myComponents.Object.pdb
+D:\Projets\myComponents\myComponents.Object\bin\Debug\myComponents.Object.dll
+D:\Projets\myComponents\myComponents.Object\bin\Debug\myComponents.Object.pdb
+D:\Projets\myComponents\myComponents.Object\obj\Debug\myComponents.Object.csprojAssemblyReference.cache
+D:\Projets\myComponents\myComponents.Object\obj\Debug\myComponents.Object.csproj.CoreCompileInputs.cache
+D:\Projets\myComponents\myComponents.Object\obj\Debug\myComponents.Object.dll
+D:\Projets\myComponents\myComponents.Object\obj\Debug\myComponents.Object.pdb

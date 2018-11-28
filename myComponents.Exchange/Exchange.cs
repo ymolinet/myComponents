@@ -1,14 +1,10 @@
 ﻿using System;
-using System.Security;
-using System.Collections;
-using System.Collections.Generic;
 using System.Collections.ObjectModel;
-using System.Text;
 using System.Linq;
-using System.Linq.Expressions;
 using System.Management.Automation;
-using System.Management.Automation.Remoting;
 using System.Management.Automation.Runspaces;
+using System.Security;
+using System.Text;
 
 namespace myComponents.Exchange
 {
@@ -217,7 +213,7 @@ namespace myComponents.Exchange
         }
 
         public static void ClearSession(Runspace runspace)
-        { 
+        {
             // if (runspace.RunspaceStateInfo.State != RunspaceState.Opened) runspace.Open();
 
             Pipeline pipeLine = runspace.CreatePipeline();

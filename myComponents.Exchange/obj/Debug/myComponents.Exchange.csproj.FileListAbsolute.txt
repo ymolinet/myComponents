@@ -37,3 +37,7 @@ C:\Users\Yannick.ADN-SYSTEMES\Projets\Visual Studio\myComponents\myComponents.Ex
 C:\Users\Yannick.ADN-SYSTEMES\Projets\Visual Studio\myComponents\myComponents.Exchange\obj\Debug\myComponents.Exchange.csprojResolveAssemblyReference.cache
 C:\Users\Yannick.ADN-SYSTEMES\Projets\Visual Studio\myComponents\myComponents.Exchange\obj\Debug\myComponents.Exchange.dll
 C:\Users\Yannick.ADN-SYSTEMES\Projets\Visual Studio\myComponents\myComponents.Exchange\obj\Debug\myComponents.Exchange.pdb
+D:\Projets\myComponents\myComponents.Exchange\obj\Debug\myComponents.Exchange.csprojAssemblyReference.cache
+D:\Projets\myComponents\myComponents.Exchange\obj\Debug\myComponents.Exchange.csproj.CoreCompileInputs.cache
+D:\Projets\myComponents\myComponents.Exchange\obj\Debug\myComponents.Exchange.dll
+D:\Projets\myComponents\myComponents.Exchange\obj\Debug\myComponents.Exchange.pdb

@@ -1,6 +1,8 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2046
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "myServices", "myServices\myServices.csproj", "{FFF2626D-6776-4EA7-AE67-1A376782FAF8}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "myComponents.Object", "myComponents.Object\myComponents.Object.csproj", "{2045676C-E6CB-4F08-AFDD-F573D1DC3B8D}"
@@ -20,6 +22,10 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "myComponents.ActivationWebService", "myComponents.ActivationWebService\myComponents.ActivationWebService.csproj", "{22B88136-CE73-4FD5-9DEF-E357D88DB716}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "myComponents.Utilities", "myComponents.Utilities\myComponents.Utilities.csproj", "{BFAF733E-F91C-42A6-B226-A1C4C2EEBB47}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "myComponents.DatatablesDotNet", "myComponents.DatatablesDotNet\myComponents.DatatablesDotNet.csproj", "{86E0F418-8A47-43E8-B349-BF4C098DC1A2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "myComponents.OpenERP7", "myComponents.OpenERP7\myComponents.OpenERP7.csproj", "{36598A77-D0EF-4CA1-87BF-E3E858B8281D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -131,8 +137,35 @@ Global
 		{BFAF733E-F91C-42A6-B226-A1C4C2EEBB47}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{BFAF733E-F91C-42A6-B226-A1C4C2EEBB47}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{BFAF733E-F91C-42A6-B226-A1C4C2EEBB47}.Release|x86.ActiveCfg = Release|Any CPU
+		{86E0F418-8A47-43E8-B349-BF4C098DC1A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86E0F418-8A47-43E8-B349-BF4C098DC1A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86E0F418-8A47-43E8-B349-BF4C098DC1A2}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{86E0F418-8A47-43E8-B349-BF4C098DC1A2}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{86E0F418-8A47-43E8-B349-BF4C098DC1A2}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{86E0F418-8A47-43E8-B349-BF4C098DC1A2}.Debug|x86.Build.0 = Debug|Any CPU
+		{86E0F418-8A47-43E8-B349-BF4C098DC1A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86E0F418-8A47-43E8-B349-BF4C098DC1A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{86E0F418-8A47-43E8-B349-BF4C098DC1A2}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{86E0F418-8A47-43E8-B349-BF4C098DC1A2}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{86E0F418-8A47-43E8-B349-BF4C098DC1A2}.Release|x86.ActiveCfg = Release|Any CPU
+		{86E0F418-8A47-43E8-B349-BF4C098DC1A2}.Release|x86.Build.0 = Release|Any CPU
+		{36598A77-D0EF-4CA1-87BF-E3E858B8281D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36598A77-D0EF-4CA1-87BF-E3E858B8281D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36598A77-D0EF-4CA1-87BF-E3E858B8281D}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{36598A77-D0EF-4CA1-87BF-E3E858B8281D}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{36598A77-D0EF-4CA1-87BF-E3E858B8281D}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{36598A77-D0EF-4CA1-87BF-E3E858B8281D}.Debug|x86.Build.0 = Debug|Any CPU
+		{36598A77-D0EF-4CA1-87BF-E3E858B8281D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36598A77-D0EF-4CA1-87BF-E3E858B8281D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36598A77-D0EF-4CA1-87BF-E3E858B8281D}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{36598A77-D0EF-4CA1-87BF-E3E858B8281D}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{36598A77-D0EF-4CA1-87BF-E3E858B8281D}.Release|x86.ActiveCfg = Release|Any CPU
+		{36598A77-D0EF-4CA1-87BF-E3E858B8281D}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B4695F4C-37CA-4E3A-A869-2F168CDA530B}
 	EndGlobalSection
 EndGlobal

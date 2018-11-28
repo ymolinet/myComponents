@@ -15,3 +15,9 @@ C:\Users\Yannick.ADN-SYSTEMES\Projets\Visual Studio\myComponents\myComponents.En
 C:\Users\Yannick.ADN-SYSTEMES\Projets\Visual Studio\myComponents\myComponents.Encryption\bin\Debug\myComponents.Crypto.pdb
 C:\Users\Yannick.ADN-SYSTEMES\Projets\Visual Studio\myComponents\myComponents.Encryption\obj\Debug\myComponents.Crypto.dll
 C:\Users\Yannick.ADN-SYSTEMES\Projets\Visual Studio\myComponents\myComponents.Encryption\obj\Debug\myComponents.Crypto.pdb
+D:\Projets\myComponents\myComponents.Encryption\bin\Debug\myComponents.Crypto.dll
+D:\Projets\myComponents\myComponents.Encryption\bin\Debug\myComponents.Crypto.pdb
+D:\Projets\myComponents\myComponents.Encryption\obj\Debug\myComponents.Crypto.csprojAssemblyReference.cache
+D:\Projets\myComponents\myComponents.Encryption\obj\Debug\myComponents.Crypto.csproj.CoreCompileInputs.cache
+D:\Projets\myComponents\myComponents.Encryption\obj\Debug\myComponents.Crypto.dll
+D:\Projets\myComponents\myComponents.Encryption\obj\Debug\myComponents.Crypto.pdb

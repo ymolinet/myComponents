@@ -46,3 +46,13 @@ C:\Users\Yannick.ADN-SYSTEMES\Projets\Visual Studio\myComponents\myComponents.Ac
 C:\Users\Yannick.ADN-SYSTEMES\Projets\Visual Studio\myComponents\myComponents.ActivationWebService\obj\Debug\myComponents.ActivationWebService.csprojResolveAssemblyReference.cache
 C:\Users\Yannick.ADN-SYSTEMES\Projets\Visual Studio\myComponents\myComponents.ActivationWebService\obj\Debug\myComponents.ActivationWebService.dll
 C:\Users\Yannick.ADN-SYSTEMES\Projets\Visual Studio\myComponents\myComponents.ActivationWebService\obj\Debug\myComponents.ActivationWebService.pdb
+D:\Projets\myComponents\myComponents.ActivationWebService\bin\myComponents.ActivationWebService.dll.config
+D:\Projets\myComponents\myComponents.ActivationWebService\bin\myComponents.ActivationWebService.dll
+D:\Projets\myComponents\myComponents.ActivationWebService\bin\myComponents.ActivationWebService.pdb
+D:\Projets\myComponents\myComponents.ActivationWebService\bin\myComponents.Crypto.dll
+D:\Projets\myComponents\myComponents.ActivationWebService\bin\myComponents.Crypto.pdb
+D:\Projets\myComponents\myComponents.ActivationWebService\obj\Debug\myComponents.ActivationWebService.csprojAssemblyReference.cache
+D:\Projets\myComponents\myComponents.ActivationWebService\obj\Debug\myComponents.ActivationWebService.csproj.CoreCompileInputs.cache
+D:\Projets\myComponents\myComponents.ActivationWebService\obj\Debug\myComponents.ActivationWebService.csproj.CopyComplete
+D:\Projets\myComponents\myComponents.ActivationWebService\obj\Debug\myComponents.ActivationWebService.dll
+D:\Projets\myComponents\myComponents.ActivationWebService\obj\Debug\myComponents.ActivationWebService.pdb

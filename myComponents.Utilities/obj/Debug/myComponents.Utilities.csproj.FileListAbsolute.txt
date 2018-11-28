@@ -33,3 +33,10 @@ C:\Users\Yannick.ADN-SYSTEMES\Projets\Visual Studio\myComponents\myComponents.Ut
 C:\Users\Yannick.ADN-SYSTEMES\Projets\Visual Studio\myComponents\myComponents.Utilities\bin\Debug\myComponents.Utilities.pdb
 C:\Users\Yannick.ADN-SYSTEMES\Projets\Visual Studio\myComponents\myComponents.Utilities\obj\Debug\myComponents.Utilities.dll
 C:\Users\Yannick.ADN-SYSTEMES\Projets\Visual Studio\myComponents\myComponents.Utilities\obj\Debug\myComponents.Utilities.pdb
+D:\Projets\myComponents\myComponents.Utilities\bin\Debug\myComponents.Utilities.dll
+D:\Projets\myComponents\myComponents.Utilities\bin\Debug\myComponents.Utilities.pdb
+D:\Projets\myComponents\myComponents.Utilities\obj\Debug\myComponents.Utilities.csprojAssemblyReference.cache
+D:\Projets\myComponents\myComponents.Utilities\obj\Debug\myComponents.Utilities.csproj.CoreCompileInputs.cache
+D:\Projets\myComponents\myComponents.Utilities\obj\Debug\myComponents.Utilities.csproj.CopyComplete
+D:\Projets\myComponents\myComponents.Utilities\obj\Debug\myComponents.Utilities.dll
+D:\Projets\myComponents\myComponents.Utilities\obj\Debug\myComponents.Utilities.pdb

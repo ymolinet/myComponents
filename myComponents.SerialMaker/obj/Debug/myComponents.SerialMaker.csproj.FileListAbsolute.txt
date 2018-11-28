@@ -43,3 +43,16 @@ C:\Users\Yannick.ADN-SYSTEMES\Projets\Visual Studio\myComponents\myComponents.Se
 C:\Users\Yannick.ADN-SYSTEMES\Projets\Visual Studio\myComponents\myComponents.SerialMaker\obj\Debug\myComponents.SerialMaker.csproj.GenerateResource.Cache
 C:\Users\Yannick.ADN-SYSTEMES\Projets\Visual Studio\myComponents\myComponents.SerialMaker\obj\Debug\Serial Maker.exe
 C:\Users\Yannick.ADN-SYSTEMES\Projets\Visual Studio\myComponents\myComponents.SerialMaker\obj\Debug\Serial Maker.pdb
+D:\Projets\myComponents\myComponents.SerialMaker\bin\Debug\Serial Maker.exe
+D:\Projets\myComponents\myComponents.SerialMaker\bin\Debug\Serial Maker.pdb
+D:\Projets\myComponents\myComponents.SerialMaker\bin\Debug\myComponents.Components.Forms.dll
+D:\Projets\myComponents\myComponents.SerialMaker\bin\Debug\myComponents.Crypto.dll
+D:\Projets\myComponents\myComponents.SerialMaker\bin\Debug\myComponents.Components.Forms.pdb
+D:\Projets\myComponents\myComponents.SerialMaker\bin\Debug\myComponents.Crypto.pdb
+D:\Projets\myComponents\myComponents.SerialMaker\obj\Debug\myComponents.SerialMaker.csprojAssemblyReference.cache
+D:\Projets\myComponents\myComponents.SerialMaker\obj\Debug\myComponents.SerialMaker.frmMain.resources
+D:\Projets\myComponents\myComponents.SerialMaker\obj\Debug\myComponents.SerialMaker.csproj.GenerateResource.cache
+D:\Projets\myComponents\myComponents.SerialMaker\obj\Debug\myComponents.SerialMaker.csproj.CoreCompileInputs.cache
+D:\Projets\myComponents\myComponents.SerialMaker\obj\Debug\myComponents.SerialMaker.csproj.CopyComplete
+D:\Projets\myComponents\myComponents.SerialMaker\obj\Debug\Serial Maker.exe
+D:\Projets\myComponents\myComponents.SerialMaker\obj\Debug\Serial Maker.pdb

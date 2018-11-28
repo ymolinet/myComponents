@@ -55,3 +55,19 @@ C:\Users\Yannick.ADN-SYSTEMES\Projets\Visual Studio\myComponents\myComponents.So
 C:\Users\Yannick.ADN-SYSTEMES\Projets\Visual Studio\myComponents\myComponents.SoftwareLocker\obj\Debug\myComponents.SoftwareLocker.csproj.GenerateResource.Cache
 C:\Users\Yannick.ADN-SYSTEMES\Projets\Visual Studio\myComponents\myComponents.SoftwareLocker\obj\Debug\myComponents.SoftwareLocker.dll
 C:\Users\Yannick.ADN-SYSTEMES\Projets\Visual Studio\myComponents\myComponents.SoftwareLocker\obj\Debug\myComponents.SoftwareLocker.pdb
+D:\Projets\myComponents\myComponents.SoftwareLocker\bin\Debug\myComponents.SoftwareLocker.dll.config
+D:\Projets\myComponents\myComponents.SoftwareLocker\bin\Debug\myComponents.SoftwareLocker.dll
+D:\Projets\myComponents\myComponents.SoftwareLocker\bin\Debug\myComponents.SoftwareLocker.pdb
+D:\Projets\myComponents\myComponents.SoftwareLocker\bin\Debug\myComponents.Components.Forms.dll
+D:\Projets\myComponents\myComponents.SoftwareLocker\bin\Debug\myComponents.Crypto.dll
+D:\Projets\myComponents\myComponents.SoftwareLocker\bin\Debug\myComponents.Components.Forms.pdb
+D:\Projets\myComponents\myComponents.SoftwareLocker\bin\Debug\myComponents.Crypto.pdb
+D:\Projets\myComponents\myComponents.SoftwareLocker\obj\Debug\myComponents.SoftwareLocker.csprojAssemblyReference.cache
+D:\Projets\myComponents\myComponents.SoftwareLocker\obj\Debug\myComponents.SoftwareLocker.Interfaces.frm.frmCompany.resources
+D:\Projets\myComponents\myComponents.SoftwareLocker\obj\Debug\myComponents.SoftwareLocker.Interfaces.frm.org_frmDialog.resources
+D:\Projets\myComponents\myComponents.SoftwareLocker\obj\Debug\myComponents.SoftwareLocker.Interfaces.frm.frmDialog.resources
+D:\Projets\myComponents\myComponents.SoftwareLocker\obj\Debug\myComponents.SoftwareLocker.csproj.GenerateResource.cache
+D:\Projets\myComponents\myComponents.SoftwareLocker\obj\Debug\myComponents.SoftwareLocker.csproj.CoreCompileInputs.cache
+D:\Projets\myComponents\myComponents.SoftwareLocker\obj\Debug\myComponents.SoftwareLocker.csproj.CopyComplete
+D:\Projets\myComponents\myComponents.SoftwareLocker\obj\Debug\myComponents.SoftwareLocker.dll
+D:\Projets\myComponents\myComponents.SoftwareLocker\obj\Debug\myComponents.SoftwareLocker.pdb

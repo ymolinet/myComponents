@@ -30,3 +30,11 @@ C:\Users\Yannick.ADN-SYSTEMES\Projets\Visual Studio\myComponents\myComponents.Co
 C:\Users\Yannick.ADN-SYSTEMES\Projets\Visual Studio\myComponents\myComponents.Components.Web\obj\Debug\myComponents.Components.Web.csprojResolveAssemblyReference.cache
 C:\Users\Yannick.ADN-SYSTEMES\Projets\Visual Studio\myComponents\myComponents.Components.Web\obj\Debug\myComponents.Components.Web.dll
 C:\Users\Yannick.ADN-SYSTEMES\Projets\Visual Studio\myComponents\myComponents.Components.Web\obj\Debug\myComponents.Components.Web.pdb
+D:\Projets\myComponents\myComponents.Components.Web\bin\Debug\myComponents.Components.Web.dll
+D:\Projets\myComponents\myComponents.Components.Web\bin\Debug\myComponents.Components.Web.pdb
+D:\Projets\myComponents\myComponents.Components.Web\bin\Debug\Gaia.WebWidgets.dll
+D:\Projets\myComponents\myComponents.Components.Web\obj\Debug\myComponents.Components.Web.csprojAssemblyReference.cache
+D:\Projets\myComponents\myComponents.Components.Web\obj\Debug\myComponents.Components.Web.csproj.CoreCompileInputs.cache
+D:\Projets\myComponents\myComponents.Components.Web\obj\Debug\myComponents.Components.Web.csproj.CopyComplete
+D:\Projets\myComponents\myComponents.Components.Web\obj\Debug\myComponents.Components.Web.dll
+D:\Projets\myComponents\myComponents.Components.Web\obj\Debug\myComponents.Components.Web.pdb

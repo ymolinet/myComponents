@@ -1,0 +1,10 @@
+D:\Projets\myComponents\myComponents.DatatablesDotNet\bin\Debug\myComponents.DatatablesDotNet.dll
+D:\Projets\myComponents\myComponents.DatatablesDotNet\bin\Debug\myComponents.DatatablesDotNet.pdb
+D:\Projets\myComponents\myComponents.DatatablesDotNet\bin\Debug\Newtonsoft.Json.dll
+D:\Projets\myComponents\myComponents.DatatablesDotNet\bin\Debug\System.Web.Mvc.dll
+D:\Projets\myComponents\myComponents.DatatablesDotNet\bin\Debug\Newtonsoft.Json.xml
+D:\Projets\myComponents\myComponents.DatatablesDotNet\obj\Debug\myComponents.DatatablesDotNet.csproj.CoreCompileInputs.cache
+D:\Projets\myComponents\myComponents.DatatablesDotNet\obj\Debug\myComponents.DatatablesDotNet.csproj.CopyComplete
+D:\Projets\myComponents\myComponents.DatatablesDotNet\obj\Debug\myComponents.DatatablesDotNet.dll
+D:\Projets\myComponents\myComponents.DatatablesDotNet\obj\Debug\myComponents.DatatablesDotNet.pdb
+D:\Projets\myComponents\myComponents.DatatablesDotNet\obj\Debug\myComponents.DatatablesDotNet.csprojAssemblyReference.cache

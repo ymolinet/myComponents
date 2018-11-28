@@ -50,3 +50,15 @@ C:\Users\Yannick.ADN-SYSTEMES\Projets\Visual Studio\myComponents\myServices\obj\
 C:\Users\Yannick.ADN-SYSTEMES\Projets\Visual Studio\myComponents\myServices\obj\x86\Debug\myServices.ConfigForm.resources
 C:\Users\Yannick.ADN-SYSTEMES\Projets\Visual Studio\myComponents\myServices\obj\x86\Debug\myServices.Properties.Resources.resources
 C:\Users\Yannick.ADN-SYSTEMES\Projets\Visual Studio\myComponents\myServices\obj\x86\Debug\myServices.csproj.GenerateResource.Cache
+D:\Projets\myComponents\myServices\obj\x86\Debug\myServices.exe
+D:\Projets\myComponents\myServices\obj\x86\Debug\myServices.pdb
+D:\Projets\myComponents\myServices\bin\Debug\myServices.exe
+D:\Projets\myComponents\myServices\bin\Debug\myServices.pdb
+D:\Projets\myComponents\myServices\bin\Debug\myComponents.Object.dll
+D:\Projets\myComponents\myServices\bin\Debug\myComponents.Object.pdb
+D:\Projets\myComponents\myServices\obj\x86\Debug\myServices.csprojAssemblyReference.cache
+D:\Projets\myComponents\myServices\obj\x86\Debug\myServices.ConfigForm.resources
+D:\Projets\myComponents\myServices\obj\x86\Debug\myServices.Properties.Resources.resources
+D:\Projets\myComponents\myServices\obj\x86\Debug\myServices.csproj.GenerateResource.cache
+D:\Projets\myComponents\myServices\obj\x86\Debug\myServices.csproj.CoreCompileInputs.cache
+D:\Projets\myComponents\myServices\obj\x86\Debug\myServices.csproj.CopyComplete
