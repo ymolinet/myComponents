@@ -90,9 +90,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\myComponents.Object\myComponents.Object.csproj">
+    <ProjectReference Include="..\myComponents.Object\myComponents.BaseObject.csproj">
       <Project>{2045676C-E6CB-4F08-AFDD-F573D1DC3B8D}</Project>
-      <Name>myComponents.Object</Name>
+      <Name>myComponents.BaseObject</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

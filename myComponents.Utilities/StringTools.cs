@@ -1,8 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
+using System.Globalization;
+using System.Security.Cryptography;
 using System.Text;
 using System.Text.RegularExpressions;
-using System.Globalization;
 
 namespace myComponents.Utilities
 {
@@ -63,5 +63,72 @@ namespace myComponents.Utilities
             }
         }
 
+        public static string RandomStringWithRandom(int length, string alphabet = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890")
+        {
+            StringBuilder res = new StringBuilder();
+            Random rnd = new Random();
+            while (0 < length--)
+            {
+                res.Append(alphabet[rnd.Next(alphabet.Length)]);
+            }
+            return res.ToString();
+        }
+
+        public static string RandomStringWithRNGCrypto(int length, string alphabet = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890")
+        {
+            StringBuilder res = new StringBuilder();
+            RNGCryptoServiceProvider rng = new RNGCryptoServiceProvider();
+            byte[] uintBuffer = new byte[sizeof(uint)];
+
+            while (length-- > 0)
+            {
+                rng.GetBytes(uintBuffer);
+                uint num = BitConverter.ToUInt32(uintBuffer, 0);
+                res.Append(alphabet[(int)(num % (uint)alphabet.Length)]);
+            }
+
+            return res.ToString();
+        }
+
+        public static string Base64SHA1Hash(string input)
+        {
+            byte[] DataBytes = System.Text.Encoding.UTF8.GetBytes(input);
+
+            //Hasher le message
+            SHA1Managed sha1 = new SHA1Managed();
+            byte[] hash = sha1.ComputeHash(DataBytes);
+
+            return Convert.ToBase64String(hash);
+
+        }
+
+        public static string SHA1Hash(string input)
+        {
+            using (SHA1Managed sha1 = new SHA1Managed())
+            {
+                var hash = sha1.ComputeHash(Encoding.UTF8.GetBytes(input));
+                var sb = new StringBuilder(hash.Length * 2);
+
+                foreach (byte b in hash)
+                {
+                    // can be "x2" if you want lowercase
+                    sb.Append(b.ToString("X2"));
+                }
+
+                return sb.ToString();
+            }
+        }
+
+        public static string Base64Encode(string plainText)
+        {
+            var plainTextBytes = System.Text.Encoding.UTF8.GetBytes(plainText);
+            return System.Convert.ToBase64String(plainTextBytes);
+        }
+
+        public static string Base64Decode(string base64EncodedData)
+        {
+            var base64EncodedBytes = System.Convert.FromBase64String(base64EncodedData);
+            return System.Text.Encoding.UTF8.GetString(base64EncodedBytes);
+        }
     }
 }

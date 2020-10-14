@@ -1,0 +1,6 @@
+D:\Projets\myComponents\myComponents.Object\bin\Debug\myComponents.Object.dll
+D:\Projets\myComponents\myComponents.Object\bin\Debug\myComponents.Object.pdb
+D:\Projets\myComponents\myComponents.Object\obj\Debug\myComponents.BaseObject.csproj.CoreCompileInputs.cache
+D:\Projets\myComponents\myComponents.Object\obj\Debug\myComponents.Object.dll
+D:\Projets\myComponents\myComponents.Object\obj\Debug\myComponents.Object.pdb
+D:\Projets\myComponents\myComponents.Object\obj\Debug\myComponents.BaseObject.csprojAssemblyReference.cache

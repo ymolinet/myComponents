@@ -1,0 +1,6 @@
+D:\Projets\myComponents\myComponents.ExpanderApp\bin\Debug\myComponents.ExpanderApp.dll
+D:\Projets\myComponents\myComponents.ExpanderApp\bin\Debug\myComponents.ExpanderApp.pdb
+D:\Projets\myComponents\myComponents.ExpanderApp\obj\Debug\myComponents.ExpanderApp.csproj.CoreCompileInputs.cache
+D:\Projets\myComponents\myComponents.ExpanderApp\obj\Debug\myComponents.ExpanderApp.dll
+D:\Projets\myComponents\myComponents.ExpanderApp\obj\Debug\myComponents.ExpanderApp.pdb
+D:\Projets\myComponents\myComponents.ExpanderApp\obj\Debug\myComponents.ExpanderApp.csprojAssemblyReference.cache

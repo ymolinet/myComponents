@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 
 namespace myComponents.DatatablesDotNet
@@ -28,14 +29,28 @@ namespace myComponents.DatatablesDotNet
 
         public DTDNParameter GetParameter(string key)
         {
-            return AdditionalParameters.Where(a => a.key == key).FirstOrDefault();
+            return AdditionalParameters.FirstOrDefault(a => a.key == key);
         }
 
-        public string GetParameterValue(string key)
+        public string GetParameterValueAsString(string key)
         {
             DTDNParameter aParam = GetParameter(key);
             if (aParam != null) return aParam.value;
             else return null;
+        }
+
+        public long GetParameterValueAsLong(string key)
+        {
+            DTDNParameter aParam = GetParameter(key);
+            if (aParam != null) return String.IsNullOrEmpty(aParam.value) ? -1 : Convert.ToInt64(aParam.value);
+            else return -1;
+        }
+
+        public bool GetParameterValueAsBool(string key)
+        {
+            DTDNParameter aParam = GetParameter(key);
+            if (aParam != null) return String.IsNullOrEmpty(aParam.value) ? false : Convert.ToBoolean(aParam.value);
+            else return false;
         }
     }
 }

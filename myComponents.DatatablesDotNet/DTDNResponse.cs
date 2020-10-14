@@ -22,6 +22,14 @@ namespace myComponents.DatatablesDotNet
             _data = data;
         }
 
+        //public static DTDNResponse Create<T>(IQueryable<T> data, DTDNRequest request)
+        //{
+        //    int filteredResultsCount = 0;
+        //    var dataPage = data.Compute(request, out filteredResultsCount);
+        //    return new DTDNResponse(request.Draw, data.Count(), filteredResultsCount, dataPage);
+
+        //}
+
         public static DTDNResponse Create<T>(IEnumerable<T> data, DTDNRequest request)
         {
             int filteredResultsCount = 0;
