@@ -8,3 +8,4 @@ D:\Projets\myComponents\myComponents.DatatablesDotNet\obj\Debug\myComponents.Dat
 D:\Projets\myComponents\myComponents.DatatablesDotNet\obj\Debug\myComponents.DatatablesDotNet.csproj.CopyComplete
 D:\Projets\myComponents\myComponents.DatatablesDotNet\obj\Debug\myComponents.DatatablesDotNet.dll
 D:\Projets\myComponents\myComponents.DatatablesDotNet\obj\Debug\myComponents.DatatablesDotNet.pdb
+D:\Projets\myComponents\myComponents.DatatablesDotNet\obj\Debug\myComponents.DatatablesDotNet.csprojAssemblyReference.cache

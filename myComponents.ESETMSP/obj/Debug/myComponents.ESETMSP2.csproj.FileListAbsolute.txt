@@ -9,3 +9,4 @@ D:\Projets\myComponents\myComponents.ESETMSP\obj\Debug\myComponents.ESETMSP2.csp
 D:\Projets\myComponents\myComponents.ESETMSP\obj\Debug\myComponents.ESETMSP2.csproj.CopyComplete
 D:\Projets\myComponents\myComponents.ESETMSP\obj\Debug\myComponents.ESETMSP.dll
 D:\Projets\myComponents\myComponents.ESETMSP\obj\Debug\myComponents.ESETMSP.pdb
+D:\Projets\myComponents\myComponents.ESETMSP\bin\Debug\myComponents.ESETMSP.dll.config

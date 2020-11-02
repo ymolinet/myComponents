@@ -1,0 +1,6 @@
+D:\Projets\myComponents\myComponents.ISPConfig\bin\Debug\myComponents.ISPConfig.dll
+D:\Projets\myComponents\myComponents.ISPConfig\bin\Debug\myComponents.ISPConfig.pdb
+D:\Projets\myComponents\myComponents.ISPConfig\obj\Debug\myComponents.ISPConfig.csproj.CoreCompileInputs.cache
+D:\Projets\myComponents\myComponents.ISPConfig\obj\Debug\myComponents.ISPConfig.dll
+D:\Projets\myComponents\myComponents.ISPConfig\obj\Debug\myComponents.ISPConfig.pdb
+D:\Projets\myComponents\myComponents.ISPConfig\obj\Debug\myComponents.ISPConfig.csprojAssemblyReference.cache

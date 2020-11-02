@@ -15,34 +15,35 @@ namespace myComponents.ESETMSP2
     // https://help.eset.com/ema/2/api/en-US/
     public class EsetHelper
     {
-        private static HttpClient client = new HttpClient();
+        private HttpClient _client;
         private static string BaseURL = "https://mspapi.eset.com/";
         private AuthenticationData _auth;
         public EsetHelper(string Username, string Password)
         {
+            _client =  new HttpClient();
             _auth = new AuthenticationData() { Username = Username, Password = Password };
-            client.BaseAddress = new Uri(BaseURL);
+            _client.BaseAddress = new Uri(BaseURL);
             ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls |
                                        SecurityProtocolType.Tls11 |
                                        SecurityProtocolType.Tls12;
             ServicePointManager.ServerCertificateValidationCallback += (sender, cert, chain, sslPolicyErrors) => true;
-            client.DefaultRequestHeaders.Accept.Clear();
-            client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+            _client.DefaultRequestHeaders.Accept.Clear();
+            _client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
             AuthenticationResponse authenticationResponse = Login();
             if (authenticationResponse != null)
             {
-                client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", authenticationResponse.AccessToken);
+                _client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", authenticationResponse.AccessToken);
             }
         }
 
         public void Dispose()
         {
-            client.Dispose();
+            _client.Dispose();
         }
 
         private AuthenticationResponse Login()
         {
-            HttpResponseMessage response = client.PostAsJsonAsync("/api/Token/Get", _auth).Result;
+            HttpResponseMessage response = _client.PostAsJsonAsync("/api/Token/Get", _auth).Result;
             if (response.IsSuccessStatusCode)
                 return response.Content.ReadAsAsync<AuthenticationResponse>().Result;
             else
@@ -53,7 +54,7 @@ namespace myComponents.ESETMSP2
 
         public UserDetailsReponse GetCurrentUserDetails()
         {
-            var response = client.GetAsync("/api/User/Current").Result;
+            var response = _client.GetAsync("/api/User/Current").Result;
             if (response.IsSuccessStatusCode)
                 return response.Content.ReadAsAsync<UserDetailsReponse>().Result;
             else
@@ -66,7 +67,7 @@ namespace myComponents.ESETMSP2
             string strTo = to.ToString("yyyy-MM-dd");
 
             var usagereportRequest = new UsageReportRequest { From = strFrom, To = strTo, Skip = skip, Take = take };
-            var response = client.PostAsJsonAsync("/api/UsageReport/AllCompanies/products", usagereportRequest).Result;
+            var response = _client.PostAsJsonAsync("/api/UsageReport/AllCompanies/products", usagereportRequest).Result;
             if (response.IsSuccessStatusCode)
                 return response.Content.ReadAsAsync<UsageReportResponse>().Result;
             else return null;
@@ -82,7 +83,7 @@ namespace myComponents.ESETMSP2
             };
             searchRequest.search.Add(value, new int[] { 0 });
 
-            var response = client.PostAsJsonAsync("/api/Search/Companies", searchRequest).Result;
+            var response = _client.PostAsJsonAsync("/api/Search/Companies", searchRequest).Result;
             if (response.IsSuccessStatusCode)
             {
                 var result = response.Content.ReadAsAsync<SearchCompaniesResponse>().Result;
@@ -99,7 +100,7 @@ namespace myComponents.ESETMSP2
             string strTo = to.ToString("yyyy-MM-dd");
 
             var request = new SelectCompaniesRequest { companyIds = CompanyIds, from = strFrom, to = strTo, skip = skip, take = take };
-            var response = client.PostAsJsonAsync("/api/UsageReport/SelectedCompanies/products", request).Result;
+            var response = _client.PostAsJsonAsync("/api/UsageReport/SelectedCompanies/products", request).Result;
             if (response.IsSuccessStatusCode)
                 return response.Content.ReadAsAsync<SelectedCompaniesReportResponse>().Result;
             else return null;

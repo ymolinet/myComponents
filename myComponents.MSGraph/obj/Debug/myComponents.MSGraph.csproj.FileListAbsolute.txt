@@ -27,3 +27,4 @@ D:\Projets\myComponents\myComponents.MSGraph\obj\Debug\myComponents.MSGraph.cspr
 D:\Projets\myComponents\myComponents.MSGraph\obj\Debug\myComponents.MSGraph.csproj.CopyComplete
 D:\Projets\myComponents\myComponents.MSGraph\obj\Debug\myComponents.MSGraph.dll
 D:\Projets\myComponents\myComponents.MSGraph\obj\Debug\myComponents.MSGraph.pdb
+D:\Projets\myComponents\myComponents.MSGraph\obj\Debug\myComponents.MSGraph.csprojAssemblyReference.cache
