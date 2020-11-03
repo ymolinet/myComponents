@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.Specialized;
 using System.Linq;
 using System.Resources;
 using System.Text;
@@ -15,6 +16,13 @@ namespace myComponents.ISPConfig
         private string _session_id;
         private ISPConfigWS ISPConfigAPI;
 
+        public Exception LastWSError
+        {
+            get
+            {
+                return ISPConfigAPI.LastException;
+            }
+        }
         public ISPConfigHelper(string ISPConfigAPIURL)
         {
             ISPConfigAPI = new ISPConfigWS(ISPConfigAPIURL);
@@ -22,7 +30,7 @@ namespace myComponents.ISPConfig
 
         public bool login(string username, string password)
         {
-            Dictionary<string, string> parameters = new Dictionary<string, string>();
+            ListDictionary parameters = new ListDictionary();
             parameters.Add("username", username);
             parameters.Add("password", password);
 
@@ -38,7 +46,7 @@ namespace myComponents.ISPConfig
         {
             if (_session_id != null)
             {
-                Dictionary<string, string> parameters = new Dictionary<string, string>();
+                ListDictionary parameters = new ListDictionary();
                 parameters.Add("session_id", _session_id);
                 ISPConfigAPI.Invoke("logout", parameters);
                 return ISPConfigAPI.RequestSuccess;
@@ -51,7 +59,7 @@ namespace myComponents.ISPConfig
             if (client_id == "-1") throw new Exception("-1 return an array not a single object, use clients_getall() instead");
             if (_session_id != null)
             {
-                Dictionary<string, string> parameters = new Dictionary<string, string>();
+                ListDictionary parameters = new ListDictionary();
                 parameters.Add("session_id", _session_id);
                 parameters.Add("client_id", client_id);
                 ISPConfigAPI.Invoke("client_get", parameters);
@@ -68,14 +76,14 @@ namespace myComponents.ISPConfig
             List<ISPConfigClientDetails> result = new List<ISPConfigClientDetails>();
             if (_session_id != null)
             {
-                Dictionary<string, string> parameters = new Dictionary<string, string>();
+                ListDictionary parameters = new ListDictionary();
                 parameters.Add("session_id", _session_id);
                 parameters.Add("client_id", "-1");
                 ISPConfigAPI.Invoke("client_get", parameters);
 
                 if (ISPConfigAPI.RequestSuccess)
                 {
-                    foreach(XElement item in ISPConfigAPI.XmlResult.Elements())
+                    foreach (XElement item in ISPConfigAPI.XmlResult.Elements())
                     {
                         result.Add(new ISPConfigClientDetails(item));
                     }
@@ -91,7 +99,7 @@ namespace myComponents.ISPConfig
             if (primary_id == "-1") throw new Exception("-1 return an array not a single object, use mail_domains_getall() instead");
             if (_session_id != null)
             {
-                Dictionary<string, string> parameters = new Dictionary<string, string>();
+                ListDictionary parameters = new ListDictionary();
                 parameters.Add("session_id", _session_id);
                 parameters.Add("primary_id", primary_id);
                 ISPConfigAPI.Invoke("mail_domain_get", parameters);
@@ -107,7 +115,7 @@ namespace myComponents.ISPConfig
             List<ISPConfigMailDomainDetails> result = new List<ISPConfigMailDomainDetails>();
             if (_session_id != null)
             {
-                Dictionary<string, string> parameters = new Dictionary<string, string>();
+                ListDictionary parameters = new ListDictionary();
                 parameters.Add("session_id", _session_id);
                 parameters.Add("primary_id", "-1");
                 ISPConfigAPI.Invoke("mail_domain_get", parameters);
@@ -128,7 +136,7 @@ namespace myComponents.ISPConfig
         {
             if (_session_id != null)
             {
-                Dictionary<string, string> parameters = new Dictionary<string, string>();
+                ListDictionary parameters = new ListDictionary();
                 parameters.Add("session_id", _session_id);
                 parameters.Add("domain", domain);
                 ISPConfigAPI.Invoke("mail_domain_get_by_domain", parameters);
@@ -144,7 +152,7 @@ namespace myComponents.ISPConfig
             if (primary_id == "-1") throw new Exception("-1 return an array not a single object, use mail_users_getall() instead");
             if (_session_id != null)
             {
-                Dictionary<string, string> parameters = new Dictionary<string, string>();
+                ListDictionary parameters = new ListDictionary();
                 parameters.Add("session_id", _session_id);
                 parameters.Add("primary_id", primary_id);
                 ISPConfigAPI.Invoke("mail_user_get", parameters);
@@ -160,7 +168,7 @@ namespace myComponents.ISPConfig
             List<ISPConfigMailUserDetails> result = new List<ISPConfigMailUserDetails>();
             if (_session_id != null)
             {
-                Dictionary<string, string> parameters = new Dictionary<string, string>();
+                ListDictionary parameters = new ListDictionary();
                 parameters.Add("session_id", _session_id);
                 parameters.Add("primary_id", "-1");
                 ISPConfigAPI.Invoke("mail_user_get", parameters);
@@ -177,19 +185,28 @@ namespace myComponents.ISPConfig
             else return result;
         }
 
-        //public List<ISPConfigMailUserDetails> mail_users_get(string domain)
-        //{
-        //    if (_session_id != null)
-        //    {
-        //        Dictionary<string, string> parameters = new Dictionary<string, string>();
-        //        parameters.Add("session_id", _session_id);
-        //        parameters.Add("primary_id",  });
-        //        ISPConfigAPI.Invoke("mail_user_get", parameters);
-        //        if (ISPConfigAPI.RequestSuccess)
-        //            return new ISPConfigMailUserDetails(ISPConfigAPI.XmlResult);
-        //        else return null;
-        //    }
-        //    else return null;
-        //}
+        public List<ISPConfigMailUserDetails> mail_users_get_by_domain(string domain)
+        {
+            List<ISPConfigMailUserDetails> result = new List<ISPConfigMailUserDetails>();
+            if (_session_id != null)
+            {
+                ListDictionary parameters = new ListDictionary();
+                parameters.Add("session_id", _session_id);
+                ListDictionary primary_id = new ListDictionary();
+                primary_id.Add("email", domain);
+                parameters.Add("primary_id", primary_id);
+                ISPConfigAPI.Invoke("mail_user_get", parameters);
+                if (ISPConfigAPI.RequestSuccess)
+                { 
+                    foreach(XElement item in ISPConfigAPI.XmlResult.Elements())
+                    {
+                        result.Add(new ISPConfigMailUserDetails(item));
+                    }
+                    return result;
+                }
+                else return result;
+            }
+            else return result;
+        }
     }
 }

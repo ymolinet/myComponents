@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.Specialized;
 using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
@@ -11,7 +12,7 @@ using System.Xml.XPath;
 
 namespace myComponents.ISPConfig
 {
-    public class ISPConfigWS : WebService
+    public class ISPConfigWS : SOAPWebService
     {
         public XElement XmlResult;
         public string StringResult;
@@ -20,7 +21,7 @@ namespace myComponents.ISPConfig
 
         public ISPConfigWS(string ISPConfigURL) : base(ISPConfigURL) { }
 
-        public new void Invoke(string methodName, Dictionary<string, string> parameters)
+        public new void Invoke(string methodName, ListDictionary parameters)
         {
             try
             {

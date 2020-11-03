@@ -1413,8 +1413,6 @@ namespace myComponents.ISPConfig
                 SetValue(System.Reflection.MethodBase.GetCurrentMethod().Name, value);
             }
         }
-
-
         public string server_id
         {
             get

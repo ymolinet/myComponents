@@ -1,5 +1,7 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
+using System.Collections.Specialized;
 using System.IO;
 using System.Linq;
 using System.Net;
@@ -18,18 +20,18 @@ namespace myComponents.ISPConfig
     /// This class is an alternative when you can't use Service References. It allows you to invoke Web Methods on a given Web Service URL.
     /// Based on the code from http://stackoverflow.com/questions/9482773/web-service-without-adding-a-reference
     /// </summary>
-    public class WebService
+    public class SOAPWebService
     {
         public string Url { get; private set; }
         public XDocument SOAPResponse;
 
         private Cursor InitialCursorState;
 
-        public WebService()
+        public SOAPWebService()
         {
             Url = String.Empty;
         }
-        public WebService(string baseUrl)
+        public SOAPWebService(string baseUrl)
         {
             Url = baseUrl;
         }
@@ -39,7 +41,7 @@ namespace myComponents.ISPConfig
         /// Using the base url, invokes the WebMethod with the given name
         /// </summary>
         /// <param name="methodName">Web Method name</param>
-        public void Invoke(string methodName, Dictionary<string,string> parameters)
+        public void Invoke(string methodName, ListDictionary parameters)
         {
             PreInvoke();
             Invoke(methodName, parameters, true);
@@ -72,7 +74,7 @@ namespace myComponents.ISPConfig
         /// </summary>
         /// <param name="methodName">Name of the web method you want to call (case sensitive)</param>
         /// <param name="encode">Do you want to encode your parameters? (default: true)</param>
-        private void Invoke(string methodName, Dictionary<string,string> parameters, bool encode)
+        private void Invoke(string methodName, ListDictionary parameters, bool encode)
         {
             AssertCanInvoke(methodName);
             string soapStr =
@@ -95,14 +97,9 @@ namespace myComponents.ISPConfig
 
             using (Stream stm = req.GetRequestStream())
             {
-                string postValues = "";
-                foreach (var param in parameters)
-                {
-                    if (encode) postValues += string.Format("<{0}>{1}</{0}>", HttpUtility.HtmlEncode(param.Key), HttpUtility.HtmlEncode(param.Value));
-                    else postValues += string.Format("<{0}>{1}</{0}>", param.Key, param.Value);
-                }
+                string methodParameters = FormatParameters(parameters, encode);
 
-                soapStr = string.Format(soapStr, methodName, postValues);
+                soapStr = string.Format(soapStr, methodName, methodParameters);
                 using (StreamWriter stmw = new StreamWriter(stm))
                 {
                     stmw.Write(soapStr);
@@ -121,6 +118,29 @@ namespace myComponents.ISPConfig
             {
                 SOAPResponse = XDocument.Parse("<error>" + we.Message + "</error>");
             }
+        }
+
+        internal string FormatParameters(ListDictionary parameters, bool encode)
+        {
+            string methodParameters = "";
+            foreach (var param in parameters)
+            {
+                DictionaryEntry entry = (DictionaryEntry)param;
+
+                String valueTypeName = entry.Value.GetType().FullName;
+                if (entry.Value.GetType().FullName == "System.String")
+                {
+                    if (encode) methodParameters += string.Format("<{0}>{1}</{0}>", HttpUtility.HtmlEncode(entry.Key), HttpUtility.HtmlEncode(entry.Value));
+                    else methodParameters += string.Format("<{0}>{1}</{0}>", entry.Key, entry.Value);
+                } 
+                if (entry.Value.GetType().FullName == "System.Collections.Specialized.ListDictionary")
+                {
+                    string subParameters = FormatParameters(entry.Value as ListDictionary, encode);
+                    if (encode) methodParameters += string.Format("<{0}>{1}</{0}>", HttpUtility.HtmlEncode(entry.Key), subParameters);
+                    else methodParameters += string.Format("<{0}>{1}</{0}>", entry.Key, subParameters);
+                }
+            }
+            return methodParameters;
         }
 
         /// <summary>
