@@ -1,0 +1,24 @@
+{
+  "version": 2,
+  "dgSpecHash": "O8FofTLWDVWV1YjmAdDhkI7z7MTpmmdng7zhSHspAM8h5+aU14M22P4Kd8lsCQgBR8FXOAgcOg9cKjnoxyCorA==",
+  "success": true,
+  "projectFilePath": "D:\\Projets\\myComponents\\myComponents.MSGraph\\myComponents.MSGraph.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Yannick\\.nuget\\packages\\microsoft.graph\\3.21.0\\microsoft.graph.3.21.0.nupkg.sha512",
+    "C:\\Users\\Yannick\\.nuget\\packages\\microsoft.graph.auth\\1.0.0-preview.6\\microsoft.graph.auth.1.0.0-preview.6.nupkg.sha512",
+    "C:\\Users\\Yannick\\.nuget\\packages\\microsoft.graph.core\\1.23.0\\microsoft.graph.core.1.23.0.nupkg.sha512",
+    "C:\\Users\\Yannick\\.nuget\\packages\\microsoft.identity.client\\4.24.0\\microsoft.identity.client.4.24.0.nupkg.sha512",
+    "C:\\Users\\Yannick\\.nuget\\packages\\microsoft.windows.sdk.contracts\\10.0.19041.1\\microsoft.windows.sdk.contracts.10.0.19041.1.nupkg.sha512",
+    "C:\\Users\\Yannick\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
+    "C:\\Users\\Yannick\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
+    "C:\\Users\\Yannick\\.nuget\\packages\\system.diagnostics.diagnosticsource\\5.0.0\\system.diagnostics.diagnosticsource.5.0.0.nupkg.sha512",
+    "C:\\Users\\Yannick\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",
+    "C:\\Users\\Yannick\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\Yannick\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\5.0.0\\system.runtime.compilerservices.unsafe.5.0.0.nupkg.sha512",
+    "C:\\Users\\Yannick\\.nuget\\packages\\system.runtime.windowsruntime\\4.7.0\\system.runtime.windowsruntime.4.7.0.nupkg.sha512",
+    "C:\\Users\\Yannick\\.nuget\\packages\\system.runtime.windowsruntime.ui.xaml\\4.7.0\\system.runtime.windowsruntime.ui.xaml.4.7.0.nupkg.sha512",
+    "C:\\Users\\Yannick\\.nuget\\packages\\system.security.principal\\4.3.0\\system.security.principal.4.3.0.nupkg.sha512",
+    "C:\\Users\\Yannick\\.nuget\\packages\\system.valuetuple\\4.5.0\\system.valuetuple.4.5.0.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -149,7 +149,7 @@
         </member>
         <member name="P:Google.Protobuf.ByteString.Item(System.Int32)">
             <summary>
-            Retuns the byte at the given index.
+            Returns the byte at the given index.
             </summary>
         </member>
         <member name="M:Google.Protobuf.ByteString.ToString(System.Text.Encoding)">
@@ -610,7 +610,7 @@
         <member name="M:Google.Protobuf.CodedInputStream.RefillBuffer(System.Boolean)">
             <summary>
             Called when buffer is empty to read more bytes from the
-            input.  If <paramref name="mustSucceed"/> is true, RefillBuffer() gurantees that
+            input.  If <paramref name="mustSucceed"/> is true, RefillBuffer() guarantees that
             either there will be at least one byte in the buffer when it returns
             or it will throw an exception.  If <paramref name="mustSucceed"/> is false,
             RefillBuffer() returns false if no more bytes were available.
@@ -7362,7 +7362,7 @@
             <summary>
             Returns a new list containing all of the given specified values from
             both the <paramref name="current"/> and <paramref name="extras"/> lists.
-            If <paramref name="current" /> is null and <paramref name="extras"/> is empty,
+            If <paramref name="current" /> is null and <paramref name="extras"/> is null or empty,
             null is returned. Otherwise, either a new list is created (if <paramref name="current" />
             is null) or the elements of <paramref name="extras"/> are added to <paramref name="current" />.
             </summary>
@@ -7548,10 +7548,13 @@
               Example 4: Pack and unpack a message in Go
             
                   foo := &amp;pb.Foo{...}
-                  any, err := ptypes.MarshalAny(foo)
+                  any, err := anypb.New(foo)
+                  if err != nil {
+                    ...
+                  }
                   ...
                   foo := &amp;pb.Foo{}
-                  if err := ptypes.UnmarshalAny(any, foo); err != nil {
+                  if err := any.UnmarshalTo(foo); err != nil {
                     ...
                   }
             
@@ -7895,7 +7898,7 @@
              The mixin construct implies that all methods in `AccessControl` are
              also declared with same name and request/response types in
              `Storage`. A documentation generator or annotation processor will
-             see the effective `Storage.GetAcl` method after inherting
+             see the effective `Storage.GetAcl` method after inheriting
              documentation and annotations as follows:
             
                  service Storage {
@@ -8781,7 +8784,15 @@
                  Timestamp timestamp = Timestamp.newBuilder().setSeconds(millis / 1000)
                      .setNanos((int) ((millis % 1000) * 1000000)).build();
             
-             Example 5: Compute Timestamp from current time in Python.
+             Example 5: Compute Timestamp from Java `Instant.now()`.
+            
+                 Instant now = Instant.now();
+            
+                 Timestamp timestamp =
+                     Timestamp.newBuilder().setSeconds(now.getEpochSecond())
+                         .setNanos(now.getNano()).build();
+            
+             Example 6: Compute Timestamp from current time in Python.
             
                  timestamp = Timestamp()
                  timestamp.GetCurrentTime()

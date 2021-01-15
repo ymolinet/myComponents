@@ -7,6 +7,7 @@ D:\Projets\myComponents\myComponents.MySqlDataReaderExtensions\bin\Debug\K4os.Co
 D:\Projets\myComponents\myComponents.MySqlDataReaderExtensions\bin\Debug\K4os.Compression.LZ4.Streams.dll
 D:\Projets\myComponents\myComponents.MySqlDataReaderExtensions\bin\Debug\K4os.Hash.xxHash.dll
 D:\Projets\myComponents\myComponents.MySqlDataReaderExtensions\bin\Debug\MySql.Data.dll
+D:\Projets\myComponents\myComponents.MySqlDataReaderExtensions\bin\Debug\Renci.SshNet.dll
 D:\Projets\myComponents\myComponents.MySqlDataReaderExtensions\bin\Debug\System.Buffers.dll
 D:\Projets\myComponents\myComponents.MySqlDataReaderExtensions\bin\Debug\System.Memory.dll
 D:\Projets\myComponents\myComponents.MySqlDataReaderExtensions\bin\Debug\System.Numerics.Vectors.dll
@@ -19,6 +20,7 @@ D:\Projets\myComponents\myComponents.MySqlDataReaderExtensions\bin\Debug\K4os.Co
 D:\Projets\myComponents\myComponents.MySqlDataReaderExtensions\bin\Debug\K4os.Compression.LZ4.Streams.xml
 D:\Projets\myComponents\myComponents.MySqlDataReaderExtensions\bin\Debug\K4os.Hash.xxHash.xml
 D:\Projets\myComponents\myComponents.MySqlDataReaderExtensions\bin\Debug\MySql.Data.xml
+D:\Projets\myComponents\myComponents.MySqlDataReaderExtensions\bin\Debug\Renci.SshNet.xml
 D:\Projets\myComponents\myComponents.MySqlDataReaderExtensions\bin\Debug\System.Buffers.xml
 D:\Projets\myComponents\myComponents.MySqlDataReaderExtensions\bin\Debug\System.Memory.xml
 D:\Projets\myComponents\myComponents.MySqlDataReaderExtensions\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
@@ -26,4 +28,3 @@ D:\Projets\myComponents\myComponents.MySqlDataReaderExtensions\obj\Debug\myCompo
 D:\Projets\myComponents\myComponents.MySqlDataReaderExtensions\obj\Debug\myComponents.MySqlDataReaderExtensions.csproj.CopyComplete
 D:\Projets\myComponents\myComponents.MySqlDataReaderExtensions\obj\Debug\myComponents.MySqlDataReaderExtensions.dll
 D:\Projets\myComponents\myComponents.MySqlDataReaderExtensions\obj\Debug\myComponents.MySqlDataReaderExtensions.pdb
-D:\Projets\myComponents\myComponents.MySqlDataReaderExtensions\obj\Debug\myComponents.MySqlDataReaderExtensions.csprojAssemblyReference.cache

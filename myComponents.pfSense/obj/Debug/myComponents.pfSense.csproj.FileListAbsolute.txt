@@ -3,4 +3,3 @@ D:\Projets\myComponents\myComponents.pfSense\bin\Debug\myComponents.pfSense.pdb
 D:\Projets\myComponents\myComponents.pfSense\obj\Debug\myComponents.pfSense.csproj.CoreCompileInputs.cache
 D:\Projets\myComponents\myComponents.pfSense\obj\Debug\myComponents.pfSense.dll
 D:\Projets\myComponents\myComponents.pfSense\obj\Debug\myComponents.pfSense.pdb
-D:\Projets\myComponents\myComponents.pfSense\obj\Debug\myComponents.pfSense.csprojAssemblyReference.cache

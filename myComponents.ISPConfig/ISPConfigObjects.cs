@@ -97,15 +97,17 @@ namespace myComponents.ISPConfig
     {
         public ISPConfigClientDetails(XElement xml) : base(xml) { }
 
-        public string client_id
+        public Int32 client_id
         {
             get
             {
-                return GetValue(System.Reflection.MethodBase.GetCurrentMethod().Name);
+                Int32 result = -1;
+                Int32.TryParse(GetValue(System.Reflection.MethodBase.GetCurrentMethod().Name), out result);
+                return result;
             }
             set
             {
-                SetValue(System.Reflection.MethodBase.GetCurrentMethod().Name, value);
+                SetValue(System.Reflection.MethodBase.GetCurrentMethod().Name, value.ToString());
             }
         }
 
@@ -1606,15 +1608,17 @@ namespace myComponents.ISPConfig
                 SetValue(System.Reflection.MethodBase.GetCurrentMethod().Name, value);
             }
         }
-        public string quota
+        public Int32 quota
         {
             get
             {
-                return GetValue(System.Reflection.MethodBase.GetCurrentMethod().Name);
+                Int32 result = -1;
+                Int32.TryParse(GetValue(System.Reflection.MethodBase.GetCurrentMethod().Name), out result);
+                return result;
             }
             set
             {
-                SetValue(System.Reflection.MethodBase.GetCurrentMethod().Name, value);
+                SetValue(System.Reflection.MethodBase.GetCurrentMethod().Name, value.ToString());
             }
         }
         public string cc

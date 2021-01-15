@@ -51,6 +51,8 @@ namespace myComponents.ISPConfig
             namespMan.AddNamespace("ns1", "/remote/index.php");
 
             XElement webMethodResult = SOAPResponse.XPathSelectElement("//ns1:" + methodName + "Response", namespMan);
+            if (webMethodResult != null)
+            { 
             // If the result is an XML, return it and convert it to string
             if (webMethodResult.FirstNode.NodeType == XmlNodeType.Element)
             {
@@ -86,6 +88,12 @@ namespace myComponents.ISPConfig
             {
                 StringResult = webMethodResult.FirstNode.ToString();
                 XmlResult = null;
+            }
+            } else
+            {
+                XmlResult = null;
+                StringResult = null;
+                LastException = new Exception("Response is not a SOAP Response");
             }
         }
 

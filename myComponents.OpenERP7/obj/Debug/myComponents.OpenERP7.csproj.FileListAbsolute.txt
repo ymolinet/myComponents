@@ -5,4 +5,3 @@ D:\Projets\myComponents\myComponents.OpenERP7\obj\Debug\myComponents.OpenERP7.cs
 D:\Projets\myComponents\myComponents.OpenERP7\obj\Debug\myComponents.OpenERP7.csproj.CopyComplete
 D:\Projets\myComponents\myComponents.OpenERP7\obj\Debug\myComponents.OpenERP7.dll
 D:\Projets\myComponents\myComponents.OpenERP7\obj\Debug\myComponents.OpenERP7.pdb
-D:\Projets\myComponents\myComponents.OpenERP7\obj\Debug\myComponents.OpenERP7.csprojAssemblyReference.cache

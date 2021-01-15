@@ -39,4 +39,3 @@ D:\Projets\myComponents\myComponents.Utilities\obj\Debug\myComponents.Utilities.
 D:\Projets\myComponents\myComponents.Utilities\obj\Debug\myComponents.Utilities.csproj.CopyComplete
 D:\Projets\myComponents\myComponents.Utilities\obj\Debug\myComponents.Utilities.dll
 D:\Projets\myComponents\myComponents.Utilities\obj\Debug\myComponents.Utilities.pdb
-D:\Projets\myComponents\myComponents.Utilities\obj\Debug\myComponents.Utilities.csprojAssemblyReference.cache

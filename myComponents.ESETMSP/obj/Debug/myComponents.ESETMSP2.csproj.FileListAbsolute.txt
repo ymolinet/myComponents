@@ -1,12 +1,11 @@
+D:\Projets\myComponents\myComponents.ESETMSP\bin\Debug\myComponents.ESETMSP.dll.config
 D:\Projets\myComponents\myComponents.ESETMSP\bin\Debug\myComponents.ESETMSP.dll
 D:\Projets\myComponents\myComponents.ESETMSP\bin\Debug\myComponents.ESETMSP.pdb
 D:\Projets\myComponents\myComponents.ESETMSP\bin\Debug\Newtonsoft.Json.dll
 D:\Projets\myComponents\myComponents.ESETMSP\bin\Debug\System.Net.Http.Formatting.dll
 D:\Projets\myComponents\myComponents.ESETMSP\bin\Debug\Newtonsoft.Json.xml
 D:\Projets\myComponents\myComponents.ESETMSP\bin\Debug\System.Net.Http.Formatting.xml
-D:\Projets\myComponents\myComponents.ESETMSP\obj\Debug\myComponents.ESETMSP2.csprojAssemblyReference.cache
 D:\Projets\myComponents\myComponents.ESETMSP\obj\Debug\myComponents.ESETMSP2.csproj.CoreCompileInputs.cache
 D:\Projets\myComponents\myComponents.ESETMSP\obj\Debug\myComponents.ESETMSP2.csproj.CopyComplete
 D:\Projets\myComponents\myComponents.ESETMSP\obj\Debug\myComponents.ESETMSP.dll
 D:\Projets\myComponents\myComponents.ESETMSP\obj\Debug\myComponents.ESETMSP.pdb
-D:\Projets\myComponents\myComponents.ESETMSP\bin\Debug\myComponents.ESETMSP.dll.config

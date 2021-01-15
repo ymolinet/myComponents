@@ -33,7 +33,7 @@ namespace myComponents.MSGraph
             userId = user.Id;
             userPrincipalName = user.UserPrincipalName;
             Department = user.Department;
-            
+
             if (licenseDetails != null)
             {
                 foreach (Microsoft.Graph.LicenseDetails licenceDetail in licenseDetails)
