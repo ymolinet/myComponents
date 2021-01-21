@@ -39,3 +39,11 @@ D:\Projets\myComponents\myComponents.Utilities\obj\Debug\myComponents.Utilities.
 D:\Projets\myComponents\myComponents.Utilities\obj\Debug\myComponents.Utilities.csproj.CopyComplete
 D:\Projets\myComponents\myComponents.Utilities\obj\Debug\myComponents.Utilities.dll
 D:\Projets\myComponents\myComponents.Utilities\obj\Debug\myComponents.Utilities.pdb
+C:\Users\Yannick\source\repos\myComponents\myComponents.Utilities\bin\Debug\myComponents.Utilities.dll
+C:\Users\Yannick\source\repos\myComponents\myComponents.Utilities\bin\Debug\myComponents.Utilities.pdb
+C:\Users\Yannick\source\repos\myComponents\myComponents.Utilities\bin\Debug\Ionic.Zip.dll
+C:\Users\Yannick\source\repos\myComponents\myComponents.Utilities\obj\Debug\myComponents.Utilities.csproj.CoreCompileInputs.cache
+C:\Users\Yannick\source\repos\myComponents\myComponents.Utilities\obj\Debug\myComponents.Utilities.csproj.CopyComplete
+C:\Users\Yannick\source\repos\myComponents\myComponents.Utilities\obj\Debug\myComponents.Utilities.dll
+C:\Users\Yannick\source\repos\myComponents\myComponents.Utilities\obj\Debug\myComponents.Utilities.pdb
+C:\Users\Yannick\source\repos\myComponents\myComponents.Utilities\obj\Debug\myComponents.Utilities.csprojAssemblyReference.cache

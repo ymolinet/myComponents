@@ -32,7 +32,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="CookComputing.XmlRpcV2, Version=2.5.0.0, Culture=neutral, PublicKeyToken=a7d6e17aa302004d, processorArchitecture=MSIL">
-      <HintPath>..\..\Leonis\packages\CookComputing.XmlRPCv2.2.5.0\lib\CookComputing.XmlRpcV2.dll</HintPath>
+      <HintPath>..\..\leonis\packages\CookComputing.XmlRPCv2.2.5.0\lib\CookComputing.XmlRpcV2.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Projets\\myComponents\\myComponents.MSGraph\\myComponents.MSGraph.csproj": {}
+    "C:\\Users\\Yannick\\source\\repos\\myComponents\\myComponents.MSGraph\\myComponents.MSGraph.csproj": {}
   },
   "projects": {
-    "D:\\Projets\\myComponents\\myComponents.MSGraph\\myComponents.MSGraph.csproj": {
+    "C:\\Users\\Yannick\\source\\repos\\myComponents\\myComponents.MSGraph\\myComponents.MSGraph.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projets\\myComponents\\myComponents.MSGraph\\myComponents.MSGraph.csproj",
+        "projectUniqueName": "C:\\Users\\Yannick\\source\\repos\\myComponents\\myComponents.MSGraph\\myComponents.MSGraph.csproj",
         "projectName": "myComponents.MSGraph",
-        "projectPath": "D:\\Projets\\myComponents\\myComponents.MSGraph\\myComponents.MSGraph.csproj",
+        "projectPath": "C:\\Users\\Yannick\\source\\repos\\myComponents\\myComponents.MSGraph\\myComponents.MSGraph.csproj",
         "packagesPath": "C:\\Users\\Yannick\\.nuget\\packages\\",
-        "outputPath": "D:\\Projets\\myComponents\\myComponents.MSGraph\\obj\\",
+        "outputPath": "C:\\Users\\Yannick\\source\\repos\\myComponents\\myComponents.MSGraph\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
@@ -68,7 +68,7 @@
             },
             "System.Diagnostics.DiagnosticSource": {
               "target": "Package",
-              "version": "[5.0.0, )"
+              "version": "[5.0.1, )"
             },
             "System.Memory": {
               "target": "Package",

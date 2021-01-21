@@ -128,6 +128,44 @@
             Allows connections to a user account set with the authentication_ldap_sasl authentication plugin.
             </summary>
         </member>
+        <member name="M:MySql.Data.MySqlClient.Authentication.MySqlSASLPlugin.IsNonAsciiSpace(System.Char)">
+            <summary>
+            Determines if the character is a non-ASCII space.
+            </summary>
+            <remarks>
+            This list was obtained from http://tools.ietf.org/html/rfc3454#appendix-C.1.2
+            </remarks>
+            <returns><c>true</c> if the character is a non-ASCII space; otherwise, <c>false</c>.</returns>
+            <param name="c">The character.</param>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Authentication.MySqlSASLPlugin.IsCommonlyMappedToNothing(System.Char)">
+            <summary>
+            Determines if the character is commonly mapped to nothing.
+            </summary>
+            <remarks>
+            This list was obtained from http://tools.ietf.org/html/rfc3454#appendix-B.1
+            </remarks>
+            <returns><c>true</c> if the character is commonly mapped to nothing; otherwise, <c>false</c>.</returns>
+            <param name="c">The character.</param>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Authentication.MySqlSASLPlugin.IsProhibited(System.String,System.Int32)">
+            <summary>
+            Determines if the character is prohibited.
+            </summary>
+            <remarks>
+            This list was obtained from http://tools.ietf.org/html/rfc3454#appendix-C.3
+            </remarks>
+            <returns><c>true</c> if the character is prohibited; otherwise, <c>false</c>.</returns>
+            <param name="s">The string.</param>
+            <param name="index">The character index.</param>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Authentication.MySqlSASLPlugin.SaslPrep(System.String)">
+            <summary>
+            Prepares the user name or password string.
+            </summary>
+            <param name="s">The string to prepare.</param>
+            <returns>The prepared string.</returns>
+        </member>
         <member name="T:MySql.Data.MySqlClient.Authentication.MySqlNativePasswordPlugin">
             <summary>
             Allows connections to a user account set with the mysql_native_password authentication plugin.
@@ -142,13 +180,34 @@
             <param name="seedBytes"></param>
             <returns></returns>
         </member>
-        <member name="M:MySql.Data.MySqlClient.Authentication.ScramMethod.ClientInitial">
+        <member name="T:MySql.Data.MySqlClient.Authentication.ScramBase">
+            <summary>
+            Base class to handle SCRAM authentication methods
+            </summary>
+        </member>
+        <member name="T:MySql.Data.MySqlClient.Authentication.ScramBase.AuthState">
+            <summary>
+            Defines the state of the authentication process.
+            </summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Authentication.ScramBase.MethodName">
+            <summary>
+            Gets the name of the method.
+            </summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Authentication.ScramBase.Challenge(System.Byte[])">
+            <summary>
+            Parses the server's challenge token and returns the next challenge response.
+            </summary>
+            <returns>The next challenge response.</returns>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Authentication.ScramBase.ClientInitial">
             <summary>
             Builds up the client-first message.
             </summary>
             <returns>An array of bytes containig the client-first message.</returns>
         </member>
-        <member name="M:MySql.Data.MySqlClient.Authentication.ScramMethod.ProcessServerResponse(System.Byte[])">
+        <member name="M:MySql.Data.MySqlClient.Authentication.ScramBase.ProcessServerResponse(System.Byte[])">
             <summary>
             Processes the server response from the client-first message and 
             builds up the client-final message.
@@ -156,65 +215,20 @@
             <param name="data">Response from the server.</param>
             <returns>An array of bytes containing the client-final message.</returns>
         </member>
-        <member name="M:MySql.Data.MySqlClient.Authentication.ScramMethod.ValidateAuth(System.Byte[])">
+        <member name="M:MySql.Data.MySqlClient.Authentication.ScramBase.ValidateAuth(System.Byte[])">
             <summary>
             Validates the server response.
             </summary>
             <param name="data">Server-final message</param>
         </member>
-        <member name="M:MySql.Data.MySqlClient.Authentication.ScramMethod.SaslPrep(System.String)">
-            <summary>
-            Prepares the user name or password string.
-            </summary>
-            <param name="s">The string to prepare.</param>
-            <returns>The prepared string.</returns>
-        </member>
-        <member name="M:MySql.Data.MySqlClient.Authentication.ScramMethod.IsNonAsciiSpace(System.Char)">
-            <summary>
-            Determines if the character is a non-ASCII space.
-            </summary>
-            <remarks>
-            This list was obtained from http://tools.ietf.org/html/rfc3454#appendix-C.1.2
-            </remarks>
-            <returns><c>true</c> if the character is a non-ASCII space; otherwise, <c>false</c>.</returns>
-            <param name="c">The character.</param>
-        </member>
-        <member name="M:MySql.Data.MySqlClient.Authentication.ScramMethod.IsCommonlyMappedToNothing(System.Char)">
-            <summary>
-            Determines if the character is commonly mapped to nothing.
-            </summary>
-            <remarks>
-            This list was obtained from http://tools.ietf.org/html/rfc3454#appendix-B.1
-            </remarks>
-            <returns><c>true</c> if the character is commonly mapped to nothing; otherwise, <c>false</c>.</returns>
-            <param name="c">The character.</param>
-        </member>
-        <member name="M:MySql.Data.MySqlClient.Authentication.ScramMethod.IsProhibited(System.String,System.Int32)">
-            <summary>
-            Determines if the character is prohibited.
-            </summary>
-            <remarks>
-            This list was obtained from http://tools.ietf.org/html/rfc3454#appendix-C.3
-            </remarks>
-            <returns><c>true</c> if the character is prohibited; otherwise, <c>false</c>.</returns>
-            <param name="s">The string.</param>
-            <param name="index">The character index.</param>
-        </member>
-        <member name="M:MySql.Data.MySqlClient.Authentication.ScramMethod.CreateHMACSHA1(System.Byte[])">
+        <member name="M:MySql.Data.MySqlClient.Authentication.ScramBase.CreateHMAC(System.Byte[])">
             <summary>
             Creates the HMAC SHA1 context.
             </summary>
             <returns>The HMAC context.</returns>
             <param name="key">The secret key.</param>
         </member>
-        <member name="M:MySql.Data.MySqlClient.Authentication.ScramMethod.Xor(System.Byte[],System.Byte[])">
-            <summary>
-            Applies the exclusive-or operation to combine two octet strings.
-            </summary>
-            <param name="a">The alpha component.</param>
-            <param name="b">The blue component.</param>
-        </member>
-        <member name="M:MySql.Data.MySqlClient.Authentication.ScramMethod.HMAC(System.Byte[],System.Byte[])">
+        <member name="M:MySql.Data.MySqlClient.Authentication.ScramBase.HMAC(System.Byte[],System.Byte[])">
             <summary>
             Apply the HMAC keyed algorithm.
             </summary>
@@ -222,16 +236,66 @@
             <param name="key">The key.</param>
             <param name="str">The string.</param>
         </member>
-        <member name="M:MySql.Data.MySqlClient.Authentication.ScramMethod.Hash(System.Byte[])">
+        <member name="M:MySql.Data.MySqlClient.Authentication.ScramBase.Hash(System.Byte[])">
             <summary>
             Applies the cryptographic hash function.
             </summary>
             <returns>The results of the hash.</returns>
             <param name="str">The string.</param>
         </member>
-        <member name="T:MySql.Data.MySqlClient.Authentication.AuthState">
+        <member name="M:MySql.Data.MySqlClient.Authentication.ScramBase.Xor(System.Byte[],System.Byte[])">
             <summary>
-            Defines the state of the authentication process.
+            Applies the exclusive-or operation to combine two octet strings.
+            </summary>
+            <param name="a">The alpha component.</param>
+            <param name="b">The blue component.</param>
+        </member>
+        <member name="T:MySql.Data.MySqlClient.Authentication.ScramSha1Method">
+            <summary>
+            The SCRAM-SHA-1 SASL mechanism.
+            </summary>
+            <remarks>
+            A salted challenge/response SASL mechanism that uses the HMAC SHA-1 algorithm.
+            </remarks>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Authentication.ScramSha1Method.#ctor(System.String,System.String,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:MySql.Data.MySqlClient.Authentication.ScramSha1Method"/> class.
+            </summary>
+            <remarks>
+            Creates a new SCRAM-SHA-1 SASL context.
+            </remarks>
+            <param name="username">The user name.</param>
+            <param name="password">The password.</param>
+            <param name="host">The host.</param>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Authentication.ScramSha1Method.MethodName">
+            <summary>
+            Gets the name of the method.
+            </summary>
+        </member>
+        <member name="T:MySql.Data.MySqlClient.Authentication.ScramSha256Method">
+            <summary>
+            The SCRAM-SHA-256 SASL mechanism.
+            </summary>
+            <remarks>
+            A salted challenge/response SASL mechanism that uses the HMAC SHA-256 algorithm.
+            </remarks>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Authentication.ScramSha256Method.#ctor(System.String,System.String,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:MySql.Data.MySqlClient.Authentication.ScramSha256Method"/> class.
+            </summary>
+            <remarks>
+            Creates a new SCRAM-SHA-256 SASL context.
+            </remarks>
+            <param name="username">The user name.</param>
+            <param name="password">The password.</param>
+            <param name="host">The host.</param>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Authentication.ScramSha256Method.MethodName">
+            <summary>
+            Gets the name of the method.
             </summary>
         </member>
         <member name="T:MySql.Data.MySqlClient.Authentication.Sha256AuthenticationPlugin">
@@ -1685,7 +1749,6 @@
     </remarks><example>
     </example><param name="connectionString">
       The connection properties used to open the MySQL database.
-      <para>The aliases 'address', 'addr' and 'network address' are deprecated as valid server synonyms.</para>
     </param>
         </member>
         <member name="P:MySql.Data.MySqlClient.MySqlConnection.IsClone">
@@ -1956,7 +2019,6 @@
                 In Unix environment with Mono, this can be a fully qualified path to MySQL socket filename. With this configuration, the Unix socket will be used instead of TCP/IP socket.
                 Currently only a single socket name can be given so accessing MySQL in a replicated environment using Unix sockets is not currently supported.
               </para>
-              <para>The aliases 'address', 'addr' and 'network address' are deprecated as valid server synonyms.</para>
             </td>
           </tr>
           <tr>
@@ -2097,9 +2159,9 @@
             <td>
               Ignore Prepare
             </td>
-            <td>true</td>
+            <td>false</td>
             <td>
-              Instructs the provider to ignore any attempts to prepare commands.  This option
+              [This option has been deprecated since version 8.0.23.] Instructs the provider to ignore any attempts to prepare commands.  This option
               was added to allow a user to disable prepared statements in an entire application
               without modifying the code.  A user might want to do this if errors or bugs are
               encountered with MySQL prepared statements.
@@ -6227,7 +6289,6 @@
         <member name="P:MySql.Data.MySqlClient.MySqlBaseConnectionStringBuilder.Server">
             <summary>
             Gets or sets the name of the server.
-            <para>The aliases 'address', 'addr' and 'network address' are deprecated as valid server synonyms.</para>
             </summary>
             <value>The server.</value>
         </member>
@@ -7919,25 +7980,25 @@
             <summary></summary>
             <remarks>ER_DUMP_NOT_IMPLEMENTED</remarks>
         </member>
-        <member name="F:MySql.Data.MySqlClient.MySqlErrorCode.FlushMasterBinLogClosed">
+        <member name="F:MySql.Data.MySqlClient.MySqlErrorCode.FlushSourceBinLogClosed">
             <summary></summary>
-            <remarks>ER_FLUSH_MASTER_BINLOG_CLOSED</remarks>
+            <remarks>ER_FLUSH_SOURCE_BINLOG_CLOSED</remarks>
         </member>
         <member name="F:MySql.Data.MySqlClient.MySqlErrorCode.IndexRebuild">
             <summary></summary>
             <remarks>ER_INDEX_REBUILD</remarks>
         </member>
-        <member name="F:MySql.Data.MySqlClient.MySqlErrorCode.MasterError">
+        <member name="F:MySql.Data.MySqlClient.MySqlErrorCode.SourceError">
             <summary></summary>
-            <remarks>ER_MASTER</remarks>
+            <remarks>ER_SOURCE</remarks>
         </member>
-        <member name="F:MySql.Data.MySqlClient.MySqlErrorCode.MasterNetRead">
+        <member name="F:MySql.Data.MySqlClient.MySqlErrorCode.SourceNetRead">
             <summary></summary>
-            <remarks>ER_MASTER_NET_READ</remarks>
+            <remarks>ER_SOURCE_NET_READ</remarks>
         </member>
-        <member name="F:MySql.Data.MySqlClient.MySqlErrorCode.MasterNetWrite">
+        <member name="F:MySql.Data.MySqlClient.MySqlErrorCode.SourceNetWrite">
             <summary></summary>
-            <remarks>ER_MASTER_NET_WRITE</remarks>
+            <remarks>ER_SOURCE_NET_WRITE</remarks>
         </member>
         <member name="F:MySql.Data.MySqlClient.MySqlErrorCode.FullTextMatchingKeyNotFound">
             <summary></summary>
@@ -7967,25 +8028,25 @@
             <summary></summary>
             <remarks>ER_TRANS_CACHE_FULL</remarks>
         </member>
-        <member name="F:MySql.Data.MySqlClient.MySqlErrorCode.SlaveMustStop">
+        <member name="F:MySql.Data.MySqlClient.MySqlErrorCode.ReplicaMustStop">
             <summary></summary>
-            <remarks>ER_SLAVE_MUST_STOP</remarks>
+            <remarks>ER_REPLICA_MUST_STOP</remarks>
         </member>
-        <member name="F:MySql.Data.MySqlClient.MySqlErrorCode.SlaveNotRunning">
+        <member name="F:MySql.Data.MySqlClient.MySqlErrorCode.ReplicaNotRunning">
             <summary></summary>
-            <remarks>ER_SLAVE_NOT_RUNNING</remarks>
+            <remarks>ER_REPLICA_NOT_RUNNING</remarks>
         </member>
-        <member name="F:MySql.Data.MySqlClient.MySqlErrorCode.BadSlave">
+        <member name="F:MySql.Data.MySqlClient.MySqlErrorCode.BadReplica">
             <summary></summary>
-            <remarks>ER_BAD_SLAVE</remarks>
+            <remarks>ER_BAD_REPLICA</remarks>
         </member>
-        <member name="F:MySql.Data.MySqlClient.MySqlErrorCode.MasterInfo">
+        <member name="F:MySql.Data.MySqlClient.MySqlErrorCode.SourceInfo">
             <summary></summary>
-            <remarks>ER_MASTER_INFO</remarks>
+            <remarks>ER_SOURCE_INFO</remarks>
         </member>
-        <member name="F:MySql.Data.MySqlClient.MySqlErrorCode.SlaveThread">
+        <member name="F:MySql.Data.MySqlClient.MySqlErrorCode.ReplicaThread">
             <summary></summary>
-            <remarks>ER_SLAVE_THREAD</remarks>
+            <remarks>ER_REPLICA_THREAD</remarks>
         </member>
         <member name="F:MySql.Data.MySqlClient.MySqlErrorCode.TooManyUserConnections">
             <summary></summary>
@@ -8047,13 +8108,13 @@
             <summary></summary>
             <remarks>ER_ROW_IS_REFERENCED</remarks>
         </member>
-        <member name="F:MySql.Data.MySqlClient.MySqlErrorCode.ConnectToMaster">
+        <member name="F:MySql.Data.MySqlClient.MySqlErrorCode.ConnectToSource">
             <summary></summary>
-            <remarks>ER_CONNECT_TO_MASTER</remarks>
+            <remarks>ER_CONNECT_TO_SOURCE</remarks>
         </member>
-        <member name="F:MySql.Data.MySqlClient.MySqlErrorCode.QueryOnMaster">
+        <member name="F:MySql.Data.MySqlClient.MySqlErrorCode.QueryOnSource">
             <summary></summary>
-            <remarks>ER_QUERY_ON_MASTER</remarks>
+            <remarks>ER_QUERY_ON_SOURCE</remarks>
         </member>
         <member name="F:MySql.Data.MySqlClient.MySqlErrorCode.ErrorWhenExecutingCommand">
             <summary></summary>
@@ -8119,13 +8180,13 @@
             <summary></summary>
             <remarks>ER_NOT_SUPPORTED_YET</remarks>
         </member>
-        <member name="F:MySql.Data.MySqlClient.MySqlErrorCode.MasterFatalErrorReadingBinLog">
+        <member name="F:MySql.Data.MySqlClient.MySqlErrorCode.SourceFatalErrorReadingBinLog">
             <summary></summary>
-            <remarks>ER_MASTER_FATAL_ERROR_READING_BINLOG</remarks>
+            <remarks>ER_SOURCE_FATAL_ERROR_READING_BINLOG</remarks>
         </member>
-        <member name="F:MySql.Data.MySqlClient.MySqlErrorCode.SlaveIgnoredTable">
+        <member name="F:MySql.Data.MySqlClient.MySqlErrorCode.ReplicaIgnoredTable">
             <summary></summary>
-            <remarks>ER_SLAVE_IGNORED_TABLE</remarks>
+            <remarks>ER_REPLICA_IGNORED_TABLE</remarks>
         </member>
         <member name="F:MySql.Data.MySqlClient.MySqlErrorCode.IncorrectGlobalLocalVariable">
             <summary></summary>
@@ -8191,13 +8252,13 @@
             <summary></summary>
             <remarks>ER_COLLATION_CHARSET_MISMATCH</remarks>
         </member>
-        <member name="F:MySql.Data.MySqlClient.MySqlErrorCode.SlaveWasRunning">
+        <member name="F:MySql.Data.MySqlClient.MySqlErrorCode.ReplicaWasRunning">
             <summary></summary>
-            <remarks>ER_SLAVE_WAS_RUNNING</remarks>
+            <remarks>ER_REPLICA_WAS_RUNNING</remarks>
         </member>
-        <member name="F:MySql.Data.MySqlClient.MySqlErrorCode.SlaveWasNotRunning">
+        <member name="F:MySql.Data.MySqlClient.MySqlErrorCode.ReplicaWasNotRunning">
             <summary></summary>
-            <remarks>ER_SLAVE_WAS_NOT_RUNNING</remarks>
+            <remarks>ER_REPLICA_WAS_NOT_RUNNING</remarks>
         </member>
         <member name="F:MySql.Data.MySqlClient.MySqlErrorCode.TooBigForUncompress">
             <summary></summary>
@@ -8271,9 +8332,9 @@
             <summary></summary>
             <remarks>ER_UNKNOWN_COLLATION</remarks>
         </member>
-        <member name="F:MySql.Data.MySqlClient.MySqlErrorCode.SlaveIgnoreSSLParameters">
+        <member name="F:MySql.Data.MySqlClient.MySqlErrorCode.ReplicaIgnoreSSLParameters">
             <summary></summary>
-            <remarks>ER_SLAVE_IGNORED_SSL_PARAMS</remarks>
+            <remarks>ER_REPLICA_IGNORED_SSL_PARAMS</remarks>
         </member>
         <member name="F:MySql.Data.MySqlClient.MySqlErrorCode.ServerIsInSecureAuthMode">
             <summary></summary>
@@ -8283,13 +8344,13 @@
             <summary></summary>
             <remarks>ER_WARN_FIELD_RESOLVED</remarks>
         </member>
-        <member name="F:MySql.Data.MySqlClient.MySqlErrorCode.BadSlaveUntilCondition">
+        <member name="F:MySql.Data.MySqlClient.MySqlErrorCode.BadReplicaUntilCondition">
             <summary></summary>
-            <remarks>ER_BAD_SLAVE_UNTIL_COND</remarks>
+            <remarks>ER_BAD_REPLICA_UNTIL_COND</remarks>
         </member>
-        <member name="F:MySql.Data.MySqlClient.MySqlErrorCode.MissingSkipSlave">
+        <member name="F:MySql.Data.MySqlClient.MySqlErrorCode.MissingSkipReplica">
             <summary></summary>
-            <remarks>ER_MISSING_SKIP_SLAVE</remarks>
+            <remarks>ER_MISSING_SKIP_REPLICA</remarks>
         </member>
         <member name="F:MySql.Data.MySqlClient.MySqlErrorCode.ErrorUntilConditionIgnored">
             <summary></summary>
@@ -9535,9 +9596,9 @@
             <summary></summary>
             <remarks>ER_EVENT_CANNOT_ALTER_IN_THE_PAST</remarks>
         </member>
-        <member name="F:MySql.Data.MySqlClient.MySqlErrorCode.SlaveIncident">
+        <member name="F:MySql.Data.MySqlClient.MySqlErrorCode.ReplicaIncident">
             <summary></summary>
-            <remarks>ER_SLAVE_INCIDENT</remarks>
+            <remarks>ER_REPLICA_INCIDENT</remarks>
         </member>
         <member name="F:MySql.Data.MySqlClient.MySqlErrorCode.NoPartitionForGivenValueSilent">
             <summary></summary>
@@ -9547,25 +9608,25 @@
             <summary></summary>
             <remarks>ER_BINLOG_UNSAFE_STATEMENT</remarks>
         </member>
-        <member name="F:MySql.Data.MySqlClient.MySqlErrorCode.SlaveFatalError">
+        <member name="F:MySql.Data.MySqlClient.MySqlErrorCode.ReplicaFatalError">
             <summary></summary>
-            <remarks>ER_SLAVE_FATAL_ERROR</remarks>
+            <remarks>ER_REPLICA_FATAL_ERROR</remarks>
         </member>
-        <member name="F:MySql.Data.MySqlClient.MySqlErrorCode.SlaveRelayLogReadFailure">
+        <member name="F:MySql.Data.MySqlClient.MySqlErrorCode.ReplicaRelayLogReadFailure">
             <summary></summary>
-            <remarks>ER_SLAVE_RELAY_LOG_READ_FAILURE</remarks>
+            <remarks>ER_REPLICA_RELAY_LOG_READ_FAILURE</remarks>
         </member>
-        <member name="F:MySql.Data.MySqlClient.MySqlErrorCode.SlaveRelayLogWriteFailure">
+        <member name="F:MySql.Data.MySqlClient.MySqlErrorCode.ReplicaRelayLogWriteFailure">
             <summary></summary>
-            <remarks>ER_SLAVE_RELAY_LOG_WRITE_FAILURE</remarks>
+            <remarks>ER_REPLICA_RELAY_LOG_WRITE_FAILURE</remarks>
         </member>
-        <member name="F:MySql.Data.MySqlClient.MySqlErrorCode.SlaveCreateEventFailure">
+        <member name="F:MySql.Data.MySqlClient.MySqlErrorCode.ReplicaCreateEventFailure">
             <summary></summary>
-            <remarks>ER_SLAVE_CREATE_EVENT_FAILURE</remarks>
+            <remarks>ER_REPLICA_CREATE_EVENT_FAILURE</remarks>
         </member>
-        <member name="F:MySql.Data.MySqlClient.MySqlErrorCode.SlaveMasterComFailure">
+        <member name="F:MySql.Data.MySqlClient.MySqlErrorCode.ReplicaSourceComFailure">
             <summary></summary>
-            <remarks>ER_SLAVE_MASTER_COM_FAILURE</remarks>
+            <remarks>ER_REPLICA_SOURCE_COM_FAILURE</remarks>
         </member>
         <member name="F:MySql.Data.MySqlClient.MySqlErrorCode.BinLogLoggingImpossible">
             <summary></summary>
@@ -9607,17 +9668,17 @@
             <summary></summary>
             <remarks>ER_CANT_CREATE_SROUTINE</remarks>
         </member>
-        <member name="F:MySql.Data.MySqlClient.MySqlErrorCode.SlaveAmbiguousExecMode">
+        <member name="F:MySql.Data.MySqlClient.MySqlErrorCode.ReplicaAmbiguousExecMode">
             <summary></summary>
-            <remarks>ER_SLAVE_AMBIGOUS_EXEC_MODE</remarks>
+            <remarks>ER_REPLICA_AMBIGOUS_EXEC_MODE</remarks>
         </member>
         <member name="F:MySql.Data.MySqlClient.MySqlErrorCode.NoFormatDescriptionEventBeforeBinLogStatement">
             <summary></summary>
             <remarks>ER_NO_FORMAT_DESCRIPTION_EVENT_BEFORE_BINLOG_STATEMENT</remarks>
         </member>
-        <member name="F:MySql.Data.MySqlClient.MySqlErrorCode.SlaveCorruptEvent">
+        <member name="F:MySql.Data.MySqlClient.MySqlErrorCode.ReplicaCorruptEvent">
             <summary></summary>
-            <remarks>ER_SLAVE_CORRUPT_EVENT</remarks>
+            <remarks>ER_REPLICA_CORRUPT_EVENT</remarks>
         </member>
         <member name="F:MySql.Data.MySqlClient.MySqlErrorCode.LoadDataInvalidColumn">
             <summary></summary>
@@ -9643,9 +9704,9 @@
             <summary></summary>
             <remarks>ER_DELAYED_NOT_SUPPORTED</remarks>
         </member>
-        <member name="F:MySql.Data.MySqlClient.MySqlErrorCode.WarningNoMasterInfo">
+        <member name="F:MySql.Data.MySqlClient.MySqlErrorCode.WarningNoSourceInfo">
             <summary></summary>
-            <remarks>WARN_NO_MASTER_INFO</remarks>
+            <remarks>WARN_NO_SOURCE_INFO</remarks>
         </member>
         <member name="F:MySql.Data.MySqlClient.MySqlErrorCode.WarningOptionIgnored">
             <summary></summary>
@@ -9667,13 +9728,13 @@
             <summary></summary>
             <remarks>ER_WARN_ENGINE_TRANSACTION_ROLLBACK</remarks>
         </member>
-        <member name="F:MySql.Data.MySqlClient.MySqlErrorCode.SlaveHeartbeatFailure">
+        <member name="F:MySql.Data.MySqlClient.MySqlErrorCode.ReplicaHeartbeatFailure">
             <summary></summary>
-            <remarks>ER_SLAVE_HEARTBEAT_FAILURE</remarks>
+            <remarks>ER_REPLICA_HEARTBEAT_FAILURE</remarks>
         </member>
-        <member name="F:MySql.Data.MySqlClient.MySqlErrorCode.SlaveHeartbeatValueOutOfRange">
+        <member name="F:MySql.Data.MySqlClient.MySqlErrorCode.ReplicaHeartbeatValueOutOfRange">
             <summary></summary>
-            <remarks>ER_SLAVE_HEARTBEAT_VALUE_OUT_OF_RANGE</remarks>
+            <remarks>ER_REPLICA_HEARTBEAT_VALUE_OUT_OF_RANGE</remarks>
         </member>
         <member name="F:MySql.Data.MySqlClient.MySqlErrorCode.NDBReplicationSchemaError">
             <summary></summary>
@@ -10258,7 +10319,12 @@
         </member>
         <member name="P:MySql.Data.MySqlClient.ReplicationServerConfigurationElement.IsMaster">
             <summary>
-            Gets or sets whether the replication server is configured as master.
+            Gets or sets whether the replication server is configured as source.
+            </summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.ReplicationServerConfigurationElement.IsSource">
+            <summary>
+            Gets or sets whether the replication server is configured as source.
             </summary>
         </member>
         <member name="P:MySql.Data.MySqlClient.ReplicationServerConfigurationElement.ConnectionString">
@@ -10298,7 +10364,7 @@
             Gets the next server from a replication group
             </summary>
             <param name="groupName">Group name</param>
-            <param name="isMaster">True if the server to return must be a master</param>
+            <param name="isSource">True if the server to return must be a source</param>
             <returns>Replication Server defined by the Load Balancing plugin</returns>
         </member>
         <member name="M:MySql.Data.MySqlClient.Replication.ReplicationManager.GetGroup(System.String)">
@@ -10320,7 +10386,7 @@
             Assigns a new server driver to the connection object
             </summary>
             <param name="groupName">Group name</param>
-            <param name="master">True if the server connection to assign must be a master</param>
+            <param name="source">True if the server connection to assign must be a source</param>
             <param name="connection">MySqlConnection object where the new driver will be assigned</param>
         </member>
         <member name="T:MySql.Data.MySqlClient.Replication.ReplicationRoundRobinServerGroup">
@@ -10332,7 +10398,7 @@
             <summary>
             Gets an available server based on Round Robin load balancing.
             </summary>
-            <param name="isMaster">Flag indicating if the server to return must be a master.</param>
+            <param name="isSource">Flag indicating if the server to return must be a source.</param>
             <returns>A <see cref="T:MySql.Data.MySqlClient.Replication.ReplicationServer"/> object representing the next available server.</returns>
         </member>
         <member name="T:MySql.Data.MySqlClient.Replication.ReplicationServer">
@@ -10347,7 +10413,12 @@
         </member>
         <member name="P:MySql.Data.MySqlClient.Replication.ReplicationServer.IsMaster">
             <summary>
-            Gets a value indicating whether the server is master or slave.
+            Gets a value indicating whether the server is source or replica.
+            </summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Replication.ReplicationServer.IsSource">
+            <summary>
+            Gets a value indicating whether the server is source or replica.
             </summary>
         </member>
         <member name="P:MySql.Data.MySqlClient.Replication.ReplicationServer.ConnectionString">
@@ -10394,7 +10465,7 @@
             Adds a server into the group.
             </summary>
             <param name="name">The server name.</param>
-            <param name="isMaster">A flag indicating if the server to add is master or slave.</param>
+            <param name="isSource">A flag indicating if the server to add is source or replica.</param>
             <param name="connectionString">The connection string used by this server.</param>
             <returns>A <see cref="T:MySql.Data.MySqlClient.Replication.ReplicationServer"/> object representing the recently added object.</returns>
         </member>
@@ -10415,7 +10486,7 @@
             <summary>
             Must be implemented. Defines the next server for a custom load balancing implementation.
             </summary>
-            <param name="isMaster">Defines if the server to return is a master or any.</param>
+            <param name="isSource">Defines if the server to return is a source or any.</param>
             <returns>The next server based on the load balancing implementation.
             Null if no available server is found.
             </returns>
@@ -10424,7 +10495,7 @@
             <summary>
             Defines the next server for a custom load balancing implementation.
             </summary>
-            <param name="isMaster">Defines if the server to return is a master or any.</param>
+            <param name="isSource">Defines if the server to return is a source or any.</param>
             <param name="settings">Currently not being used.</param>
             <returns>The next server based on the load balancing implementation.
             Null if no available server is found.
@@ -11796,6 +11867,11 @@
         <member name="P:MySql.Data.Resources.InvalidCertificateKey">
             <summary>
               Looks up a localized string similar to The provided key is invalid..
+            </summary>
+        </member>
+        <member name="P:MySql.Data.Resources.InvalidCertificateThumbprint">
+            <summary>
+              Looks up a localized string similar to Certificate with Thumbprint &apos;{0}&apos; not found..
             </summary>
         </member>
         <member name="P:MySql.Data.Resources.InvalidColumnOrdinal">
@@ -14781,7 +14857,6 @@
             Opens a session to the server given or to the first available server if multiple servers were specified.
             </summary>
             <param name="connectionString">The connection string or URI string format.
-            The aliases 'address', 'addr' and 'network address' are deprecated as valid server synonyms.
             </param>
             <returns>A <see cref="T:MySqlX.XDevAPI.Session"/> object representing the established session.</returns>
             <remarks>Multiple hosts can be specified as part of the <paramref name="connectionString"/> which
@@ -14793,7 +14868,6 @@
             Opens a session to the server given.
             </summary>
             <param name="connectionData">The connection data for the server.
-            The aliases 'address', 'addr' and 'network address' are deprecated as valid server synonyms.
             </param>
             <returns>A <see cref="T:MySqlX.XDevAPI.Session"/> object representing the established session.</returns>
         </member>
@@ -14802,7 +14876,6 @@
             Creates a new <see cref="T:MySqlX.XDevAPI.Client"/> instance.
             </summary>
             <param name="connectionString">The connection string or URI string format.
-            The aliases 'address', 'addr' and 'network address' are deprecated as valid server synonyms.
             </param>
             <param name="connectionOptions">The connection options in JSON string format.</param>
             <returns>A <see cref="T:MySqlX.XDevAPI.Client"/> object representing a session pool.</returns>
@@ -14812,7 +14885,6 @@
             Creates a new <see cref="T:MySqlX.XDevAPI.Client"/> instance.
             </summary>
             <param name="connectionString">The connection string or URI string format.
-            The aliases 'address', 'addr' and 'network address' are deprecated as valid server synonyms.
             </param>
             <param name="connectionOptions">The connection options in object format.
             <example>
@@ -14835,7 +14907,6 @@
             Creates a new <see cref="T:MySqlX.XDevAPI.Client"/> instance.
             </summary>
             <param name="connectionData">The connection data.
-            The aliases 'address', 'addr' and 'network address' are deprecated as valid server synonyms.
             </param>
             <param name="connectionOptions">The connection options in JSON string format.</param>
             <returns>A <see cref="T:MySqlX.XDevAPI.Client"/> object representing a session pool.</returns>
@@ -14845,7 +14916,6 @@
             Creates a new <see cref="T:MySqlX.XDevAPI.Client"/> instance.
             </summary>
             <param name="connectionData">The connection data.
-            The aliases 'address', 'addr' and 'network address' are deprecated as valid server synonyms.
             </param>
             <param name="connectionOptions">The connection options in object format.
             <example>

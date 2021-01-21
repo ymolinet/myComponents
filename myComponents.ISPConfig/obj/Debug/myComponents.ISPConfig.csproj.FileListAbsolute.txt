@@ -3,3 +3,8 @@ D:\Projets\myComponents\myComponents.ISPConfig\bin\Debug\myComponents.ISPConfig.
 D:\Projets\myComponents\myComponents.ISPConfig\obj\Debug\myComponents.ISPConfig.csproj.CoreCompileInputs.cache
 D:\Projets\myComponents\myComponents.ISPConfig\obj\Debug\myComponents.ISPConfig.dll
 D:\Projets\myComponents\myComponents.ISPConfig\obj\Debug\myComponents.ISPConfig.pdb
+C:\Users\Yannick\source\repos\myComponents\myComponents.ISPConfig\bin\Debug\myComponents.ISPConfig.dll
+C:\Users\Yannick\source\repos\myComponents\myComponents.ISPConfig\bin\Debug\myComponents.ISPConfig.pdb
+C:\Users\Yannick\source\repos\myComponents\myComponents.ISPConfig\obj\Debug\myComponents.ISPConfig.csproj.CoreCompileInputs.cache
+C:\Users\Yannick\source\repos\myComponents\myComponents.ISPConfig\obj\Debug\myComponents.ISPConfig.dll
+C:\Users\Yannick\source\repos\myComponents\myComponents.ISPConfig\obj\Debug\myComponents.ISPConfig.pdb

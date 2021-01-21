@@ -5,3 +5,11 @@ D:\Projets\myComponents\myComponents.OpenERP7\obj\Debug\myComponents.OpenERP7.cs
 D:\Projets\myComponents\myComponents.OpenERP7\obj\Debug\myComponents.OpenERP7.csproj.CopyComplete
 D:\Projets\myComponents\myComponents.OpenERP7\obj\Debug\myComponents.OpenERP7.dll
 D:\Projets\myComponents\myComponents.OpenERP7\obj\Debug\myComponents.OpenERP7.pdb
+C:\Users\Yannick\source\repos\myComponents\myComponents.OpenERP7\bin\Debug\myComponents.OpenERP7.dll
+C:\Users\Yannick\source\repos\myComponents\myComponents.OpenERP7\bin\Debug\myComponents.OpenERP7.pdb
+C:\Users\Yannick\source\repos\myComponents\myComponents.OpenERP7\bin\Debug\CookComputing.XmlRpcV2.dll
+C:\Users\Yannick\source\repos\myComponents\myComponents.OpenERP7\obj\Debug\myComponents.OpenERP7.csproj.CoreCompileInputs.cache
+C:\Users\Yannick\source\repos\myComponents\myComponents.OpenERP7\obj\Debug\myComponents.OpenERP7.csproj.CopyComplete
+C:\Users\Yannick\source\repos\myComponents\myComponents.OpenERP7\obj\Debug\myComponents.OpenERP7.dll
+C:\Users\Yannick\source\repos\myComponents\myComponents.OpenERP7\obj\Debug\myComponents.OpenERP7.pdb
+C:\Users\Yannick\source\repos\myComponents\myComponents.OpenERP7\obj\Debug\myComponents.OpenERP7.csprojAssemblyReference.cache

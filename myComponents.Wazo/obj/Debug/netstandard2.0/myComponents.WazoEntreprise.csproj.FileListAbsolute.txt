@@ -1,0 +1,9 @@
+C:\Users\Yannick\source\repos\myComponents\myComponents.WazoEntreprise\bin\Debug\netstandard2.0\myComponents.WazoEntreprise.deps.json
+C:\Users\Yannick\source\repos\myComponents\myComponents.WazoEntreprise\bin\Debug\netstandard2.0\myComponents.WazoEntreprise.dll
+C:\Users\Yannick\source\repos\myComponents\myComponents.WazoEntreprise\bin\Debug\netstandard2.0\myComponents.WazoEntreprise.pdb
+C:\Users\Yannick\source\repos\myComponents\myComponents.WazoEntreprise\obj\Debug\netstandard2.0\myComponents.WazoEntreprise.csprojAssemblyReference.cache
+C:\Users\Yannick\source\repos\myComponents\myComponents.WazoEntreprise\obj\Debug\netstandard2.0\myComponents.WazoEntreprise.AssemblyInfoInputs.cache
+C:\Users\Yannick\source\repos\myComponents\myComponents.WazoEntreprise\obj\Debug\netstandard2.0\myComponents.WazoEntreprise.AssemblyInfo.cs
+C:\Users\Yannick\source\repos\myComponents\myComponents.WazoEntreprise\obj\Debug\netstandard2.0\myComponents.WazoEntreprise.csproj.CoreCompileInputs.cache
+C:\Users\Yannick\source\repos\myComponents\myComponents.WazoEntreprise\obj\Debug\netstandard2.0\myComponents.WazoEntreprise.dll
+C:\Users\Yannick\source\repos\myComponents\myComponents.WazoEntreprise\obj\Debug\netstandard2.0\myComponents.WazoEntreprise.pdb
