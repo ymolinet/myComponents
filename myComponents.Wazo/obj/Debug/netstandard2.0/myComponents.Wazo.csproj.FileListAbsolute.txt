@@ -7,3 +7,12 @@ C:\Users\Yannick\source\repos\myComponents\myComponents.WazoEntreprise\obj\Debug
 C:\Users\Yannick\source\repos\myComponents\myComponents.WazoEntreprise\obj\Debug\netstandard2.0\myComponents.Wazo.csproj.CoreCompileInputs.cache
 C:\Users\Yannick\source\repos\myComponents\myComponents.WazoEntreprise\obj\Debug\netstandard2.0\myComponents.Wazo.dll
 C:\Users\Yannick\source\repos\myComponents\myComponents.WazoEntreprise\obj\Debug\netstandard2.0\myComponents.Wazo.pdb
+C:\Users\Yannick\source\repos\myComponents\myComponents.Wazo\bin\Debug\netstandard2.0\myComponents.Wazo.deps.json
+C:\Users\Yannick\source\repos\myComponents\myComponents.Wazo\bin\Debug\netstandard2.0\myComponents.Wazo.dll
+C:\Users\Yannick\source\repos\myComponents\myComponents.Wazo\bin\Debug\netstandard2.0\myComponents.Wazo.pdb
+C:\Users\Yannick\source\repos\myComponents\myComponents.Wazo\obj\Debug\netstandard2.0\myComponents.Wazo.AssemblyInfoInputs.cache
+C:\Users\Yannick\source\repos\myComponents\myComponents.Wazo\obj\Debug\netstandard2.0\myComponents.Wazo.AssemblyInfo.cs
+C:\Users\Yannick\source\repos\myComponents\myComponents.Wazo\obj\Debug\netstandard2.0\myComponents.Wazo.csproj.CoreCompileInputs.cache
+C:\Users\Yannick\source\repos\myComponents\myComponents.Wazo\obj\Debug\netstandard2.0\myComponents.Wazo.dll
+C:\Users\Yannick\source\repos\myComponents\myComponents.Wazo\obj\Debug\netstandard2.0\myComponents.Wazo.pdb
+C:\Users\Yannick\source\repos\myComponents\myComponents.Wazo\obj\Debug\netstandard2.0\myComponents.Wazo.csprojAssemblyReference.cache

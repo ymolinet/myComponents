@@ -17,4 +17,3 @@ C:\Users\Yannick\source\repos\myComponents\myComponents.DatatablesDotNet\obj\Deb
 C:\Users\Yannick\source\repos\myComponents\myComponents.DatatablesDotNet\obj\Debug\myComponents.DatatablesDotNet.csproj.CopyComplete
 C:\Users\Yannick\source\repos\myComponents\myComponents.DatatablesDotNet\obj\Debug\myComponents.DatatablesDotNet.dll
 C:\Users\Yannick\source\repos\myComponents\myComponents.DatatablesDotNet\obj\Debug\myComponents.DatatablesDotNet.pdb
-C:\Users\Yannick\source\repos\myComponents\myComponents.DatatablesDotNet\obj\Debug\myComponents.DatatablesDotNet.csprojAssemblyReference.cache

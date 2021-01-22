@@ -12,4 +12,3 @@ C:\Users\Yannick\source\repos\myComponents\myComponents.OpenERP7\obj\Debug\myCom
 C:\Users\Yannick\source\repos\myComponents\myComponents.OpenERP7\obj\Debug\myComponents.OpenERP7.csproj.CopyComplete
 C:\Users\Yannick\source\repos\myComponents\myComponents.OpenERP7\obj\Debug\myComponents.OpenERP7.dll
 C:\Users\Yannick\source\repos\myComponents\myComponents.OpenERP7\obj\Debug\myComponents.OpenERP7.pdb
-C:\Users\Yannick\source\repos\myComponents\myComponents.OpenERP7\obj\Debug\myComponents.OpenERP7.csprojAssemblyReference.cache

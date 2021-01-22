@@ -34,4 +34,3 @@ C:\Users\Yannick\source\repos\myComponents\myComponents.MSGraph\obj\Debug\myComp
 C:\Users\Yannick\source\repos\myComponents\myComponents.MSGraph\obj\Debug\myComponents.MSGraph.csproj.CopyComplete
 C:\Users\Yannick\source\repos\myComponents\myComponents.MSGraph\obj\Debug\myComponents.MSGraph.dll
 C:\Users\Yannick\source\repos\myComponents\myComponents.MSGraph\obj\Debug\myComponents.MSGraph.pdb
-C:\Users\Yannick\source\repos\myComponents\myComponents.MSGraph\obj\Debug\myComponents.MSGraph.csprojAssemblyReference.cache

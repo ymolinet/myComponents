@@ -46,4 +46,3 @@ C:\Users\Yannick\source\repos\myComponents\myComponents.Utilities\obj\Debug\myCo
 C:\Users\Yannick\source\repos\myComponents\myComponents.Utilities\obj\Debug\myComponents.Utilities.csproj.CopyComplete
 C:\Users\Yannick\source\repos\myComponents\myComponents.Utilities\obj\Debug\myComponents.Utilities.dll
 C:\Users\Yannick\source\repos\myComponents\myComponents.Utilities\obj\Debug\myComponents.Utilities.pdb
-C:\Users\Yannick\source\repos\myComponents\myComponents.Utilities\obj\Debug\myComponents.Utilities.csprojAssemblyReference.cache

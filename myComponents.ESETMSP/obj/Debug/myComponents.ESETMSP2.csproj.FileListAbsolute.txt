@@ -20,4 +20,3 @@ C:\Users\Yannick\source\repos\myComponents\myComponents.ESETMSP\obj\Debug\myComp
 C:\Users\Yannick\source\repos\myComponents\myComponents.ESETMSP\obj\Debug\myComponents.ESETMSP2.csproj.CopyComplete
 C:\Users\Yannick\source\repos\myComponents\myComponents.ESETMSP\obj\Debug\myComponents.ESETMSP.dll
 C:\Users\Yannick\source\repos\myComponents\myComponents.ESETMSP\obj\Debug\myComponents.ESETMSP.pdb
-C:\Users\Yannick\source\repos\myComponents\myComponents.ESETMSP\obj\Debug\myComponents.ESETMSP2.csprojAssemblyReference.cache
