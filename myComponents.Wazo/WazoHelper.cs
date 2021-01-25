@@ -32,11 +32,11 @@ namespace myComponents.Wazo
         public bool Login(string Username, string Password)
         {
             _auth = new AuthenticationData() { username = Username, password = Password };
-            HttpResponseMessage response = _client.PostAsJsonAsync("/api/auth", _auth).Result;
+            HttpResponseMessage response = _client.PostAsJsonAsync("/api/auth/0.1/token", _auth).Result;
             if (response.IsSuccessStatusCode)
             {
                 AuthenticationResponse authenticationResponse = response.Content.ReadAsAsync<AuthenticationResponse>().Result;
-                _client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", authenticationResponse.token);
+                _client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("X-Auth-Token", authenticationResponse.token);
                 return true;
             } else
                 return false;
