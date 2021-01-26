@@ -15,4 +15,3 @@ C:\Users\Yannick\source\repos\myComponents\myComponents.Wazo\obj\Debug\netstanda
 C:\Users\Yannick\source\repos\myComponents\myComponents.Wazo\obj\Debug\netstandard2.0\myComponents.Wazo.csproj.CoreCompileInputs.cache
 C:\Users\Yannick\source\repos\myComponents\myComponents.Wazo\obj\Debug\netstandard2.0\myComponents.Wazo.dll
 C:\Users\Yannick\source\repos\myComponents\myComponents.Wazo\obj\Debug\netstandard2.0\myComponents.Wazo.pdb
-C:\Users\Yannick\source\repos\myComponents\myComponents.Wazo\obj\Debug\netstandard2.0\myComponents.Wazo.csprojAssemblyReference.cache
